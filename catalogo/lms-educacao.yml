@@ -1,0 +1,490 @@
+categoria: lms-educacao
+titulo_pt: Educação e cursos (LMS)
+titulo_en: Education and courses (LMS)
+itens:
+- repo: moodle/moodle
+  nome: Moodle
+  alternativa_a:
+  - Blackboard
+  - Canvas
+  pt: Ambiente virtual de aprendizagem mais usado no mundo, com cursos, tarefas, provas e fóruns.
+  en: The world's most used virtual learning environment, with courses, assignments, quizzes and forums.
+  stack:
+  - PHP
+  - MySQL
+  site: https://moodle.org
+  open_core: false
+- repo: instructure/canvas-lms
+  nome: Canvas LMS
+  alternativa_a:
+  - Blackboard
+  pt: Plataforma de gestão de aprendizagem usada por universidades, com cursos, notas e módulos.
+  en: Learning management platform used by universities, with courses, grading and modules.
+  stack:
+  - Ruby
+  - Rails
+  site: https://www.instructure.com/canvas
+  open_core: true
+  nota: A versão hospedada tem recursos pagos
+- repo: openedx/edx-platform
+  nome: Open edX
+  alternativa_a:
+  - Coursera
+  - Udemy
+  pt: Plataforma de cursos online em larga escala, base de MOOCs como o edX.
+  en: Large-scale online course platform that powers MOOCs such as edX.
+  stack:
+  - Python
+  - Django
+  site: https://openedx.org
+  open_core: false
+- repo: chamilo/chamilo-lms
+  nome: Chamilo
+  alternativa_a:
+  - Blackboard
+  pt: LMS simples e leve focado em cursos, avaliações e emissão de certificados.
+  en: Simple, light LMS focused on courses, assessments and certificate issuing.
+  stack:
+  - PHP
+  - Symfony
+  site: https://chamilo.org
+  open_core: false
+- repo: sakaiproject/sakai
+  nome: Sakai
+  alternativa_a:
+  - Blackboard
+  pt: Plataforma colaborativa de ensino criada por universidades, com cursos, tarefas e notas.
+  en: Collaborative learning platform built by universities with courses, assignments and gradebook.
+  stack:
+  - Java
+  site: https://www.sakailms.org
+  open_core: false
+- repo: formalms/formalms
+  nome: Forma LMS
+  alternativa_a:
+  - Docebo
+  pt: LMS corporativo para treinamento de equipes, com catálogo, trilhas e certificação.
+  en: Corporate LMS for staff training with catalogs, learning paths and certification.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.formalms.org
+  open_core: false
+- repo: frappe/lms
+  nome: Frappe Learning
+  alternativa_a:
+  - Teachable
+  - Udemy
+  pt: Plataforma de cursos com aulas, quizzes, certificados e turmas, no ecossistema Frappe.
+  en: Course platform with lessons, quizzes, certificates and batches in the Frappe ecosystem.
+  stack:
+  - Python
+  - Vue
+  site: https://frappe.io/lms
+  open_core: false
+- repo: overhangio/tutor
+  nome: Tutor
+  alternativa_a: []
+  pt: Distribuição Docker para instalar e operar o Open edX sem sofrimento.
+  en: Docker-based distribution to install and run Open edX with far less pain.
+  stack:
+  - Python
+  - Docker
+  site: https://docs.tutor.edly.io
+  open_core: false
+- repo: ILIAS-eLearning/ILIAS
+  nome: ILIAS
+  alternativa_a:
+  - Blackboard
+  pt: LMS completo com cursos, avaliações, portfólios e padrões como SCORM.
+  en: Full LMS with courses, assessments, portfolios and standards such as SCORM.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.ilias.de
+  open_core: false
+- repo: claroline/Claroline
+  nome: Claroline Connect
+  alternativa_a:
+  - Blackboard
+  pt: Plataforma de aprendizagem colaborativa com cursos, recursos e avaliações.
+  en: Collaborative learning platform with courses, resources and assessments.
+  stack:
+  - PHP
+  - Symfony
+  site: https://www.claroline.net
+  open_core: false
+  nota: Conferir se segue ativo
+- repo: bigbluebutton/bigbluebutton
+  nome: BigBlueButton
+  alternativa_a:
+  - Zoom
+  pt: Sistema de web conferência feito para aulas, com quadro branco, enquetes e salas de grupo.
+  en: Web conferencing built for teaching, with whiteboard, polls and breakout rooms.
+  stack:
+  - Java
+  - HTML5
+  site: https://bigbluebutton.org
+  open_core: false
+- repo: Lumieducation/Lumi
+  nome: Lumi
+  alternativa_a:
+  - H5P.com
+  pt: Aplicativo de desktop para criar e rodar conteúdos interativos H5P offline.
+  en: Desktop app to create and run interactive H5P content offline.
+  stack:
+  - TypeScript
+  - Electron
+  site: https://lumi.education
+  open_core: false
+- repo: learningequality/kolibri
+  nome: Kolibri
+  alternativa_a:
+  - Khan Academy
+  pt: Plataforma de ensino offline para escolas com pouca internet, com bibliotecas de conteúdo.
+  en: Offline-first learning platform for schools with poor connectivity and content libraries.
+  stack:
+  - Python
+  - Vue
+  site: https://learningequality.org/kolibri
+  open_core: false
+- repo: oppia/oppia
+  nome: Oppia
+  alternativa_a:
+  - Khan Academy
+  pt: Plataforma de aulas interativas e gratuitas em forma de conversa, para aprender praticando.
+  en: Free interactive lessons delivered as conversations, designed for learning by doing.
+  stack:
+  - Python
+  - TypeScript
+  site: https://www.oppia.org
+  open_core: false
+- repo: ankitects/anki
+  nome: Anki
+  alternativa_a:
+  - Quizlet
+  pt: Programa de cartões de memória com repetição espaçada para estudar e fixar conteúdo.
+  en: Flashcard program using spaced repetition to study and retain material.
+  stack:
+  - Rust
+  - Python
+  - TypeScript
+  site: https://apps.ankiweb.net
+  open_core: false
+- repo: OpenOLAT/OpenOLAT
+  nome: OpenOLAT
+  alternativa_a:
+  - Blackboard
+  pt: LMS para universidades com cursos, testes, portfólio e forte integração.
+  en: LMS for universities with courses, tests, portfolios and strong integrations.
+  stack:
+  - Java
+  site: https://www.openolat.com
+  open_core: false
+- repo: opencast/opencast
+  nome: Opencast
+  alternativa_a:
+  - Panopto
+  pt: Sistema de captura, gestão e distribuição de vídeo de aulas para instituições.
+  en: System to capture, manage and distribute lecture video for institutions.
+  stack:
+  - Java
+  site: https://opencast.org
+  open_core: false
+- repo: MaharaProject/mahara
+  nome: Mahara
+  alternativa_a:
+  - Portfolium
+  pt: Plataforma de portfólios digitais para estudantes registrarem e compartilharem seu aprendizado.
+  en: Digital portfolio platform for students to record and share their learning.
+  stack:
+  - PHP
+  site: https://mahara.org
+  open_core: false
+- repo: openwebwork/webwork2
+  nome: WeBWorK
+  alternativa_a:
+  - WebAssign
+  pt: Sistema de listas de exercícios online de matemática com correção automática.
+  en: Online homework system for mathematics with automatic grading.
+  stack:
+  - Perl
+  - JavaScript
+  site: https://openwebwork.org
+  open_core: false
+- repo: codecombat/codecombat
+  nome: CodeCombat
+  alternativa_a:
+  - Codecademy
+  pt: Jogo para aprender a programar escrevendo código de verdade, com versão para escolas.
+  en: Game that teaches programming by writing real code, with a classroom edition for schools.
+  stack:
+  - CoffeeScript
+  - Node.js
+  site: https://codecombat.com
+  open_core: false
+- repo: freeCodeCamp/freeCodeCamp
+  nome: freeCodeCamp
+  alternativa_a:
+  - Codecademy
+  pt: Plataforma gratuita de currículo em programação com exercícios e certificações.
+  en: Free coding curriculum platform with exercises and certifications.
+  stack:
+  - TypeScript
+  - Node.js
+  site: https://www.freecodecamp.org
+  open_core: false
+- repo: TheOdinProject/theodinproject
+  nome: The Odin Project
+  alternativa_a:
+  - Codecademy
+  pt: Currículo gratuito de desenvolvimento web full stack, com projetos e comunidade.
+  en: Free full-stack web development curriculum with projects and a community.
+  stack:
+  - Ruby
+  - Rails
+  site: https://www.theodinproject.com
+  open_core: false
+- repo: exercism/website
+  nome: Exercism
+  alternativa_a:
+  - Codecademy
+  pt: Plataforma de prática de programação em dezenas de linguagens com mentoria voluntária.
+  en: Coding practice platform in dozens of languages with volunteer mentoring.
+  stack:
+  - Ruby
+  - Rails
+  site: https://exercism.org
+  open_core: false
+- repo: Coursemology/coursemology2
+  nome: Coursemology
+  alternativa_a:
+  - Blackboard
+  pt: LMS gamificado com missões, pontos e trilhas de aprendizagem para turmas.
+  en: Gamified LMS with missions, points and learning paths for classes.
+  stack:
+  - Ruby
+  - Rails
+  - React
+  site: https://coursemology.org
+  open_core: false
+- repo: GibbonEdu/core
+  nome: Gibbon
+  alternativa_a:
+  - PowerSchool
+  pt: Plataforma de gestão escolar com alunos, turmas, presença e notas.
+  en: School management platform handling students, classes, attendance and grades.
+  stack:
+  - PHP
+  - MySQL
+  site: https://gibbonedu.org
+  open_core: false
+- repo: openeducat/openeducat_erp
+  nome: OpenEduCat
+  alternativa_a:
+  - PowerSchool
+  pt: ERP escolar sobre Odoo com matrículas, turmas, presença e biblioteca.
+  en: School ERP on top of Odoo covering admissions, classes, attendance and library.
+  stack:
+  - Python
+  - Odoo
+  site: https://www.openeducat.org
+  open_core: true
+  nota: Edição Enterprise paga
+- repo: pupilfirst/pupilfirst
+  nome: Pupilfirst
+  alternativa_a:
+  - Teachable
+  pt: LMS para cursos com mentoria e acompanhamento de turmas, com revisão por pares.
+  en: LMS for cohort-based courses with coaching, team progress tracking and review workflows.
+  stack:
+  - Ruby
+  - Rails
+  - React
+  site: https://www.pupilfirst.com
+  open_core: false
+- repo: mitodl/mitxonline
+  nome: MITx Online
+  alternativa_a:
+  - Coursera
+  pt: Plataforma de matrículas e cursos online do MIT, integrada ao Open edX.
+  en: MIT's enrollment and online courses platform integrated with Open edX.
+  stack:
+  - Python
+  - Django
+  open_core: false
+  nota: Conferir se segue ativo
+- repo: jupyter/nbgrader
+  nome: nbgrader
+  alternativa_a:
+  - Gradescope
+  pt: Ferramenta para criar e corrigir tarefas de programação em notebooks Jupyter.
+  en: Tool to create and grade programming assignments delivered as Jupyter notebooks.
+  stack:
+  - Python
+  site: https://nbgrader.readthedocs.io
+  open_core: false
+- repo: LiaScript/LiaScript
+  nome: LiaScript
+  alternativa_a: []
+  pt: Plataforma que transforma documentos Markdown em cursos interativos no navegador.
+  en: Platform that turns Markdown documents into interactive browser-based courses.
+  stack:
+  - Elm
+  - TypeScript
+  site: https://liascript.github.io
+  open_core: false
+- repo: studip/studip
+  nome: Stud.IP
+  alternativa_a:
+  - Blackboard
+  pt: Sistema de gestão de estudos para universidades, com cursos, agendas e comunidades.
+  en: University study management system with courses, schedules and communities.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.studip.de
+  open_core: false
+- repo: gunet/openeclass
+  nome: Open eClass
+  alternativa_a:
+  - Blackboard
+  pt: Plataforma de ensino a distância grega, com cursos, tarefas e vídeo-aulas.
+  en: Greek e-learning platform with courses, assignments and video lessons.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.openeclass.org
+  open_core: false
+- repo: apluslms/a-plus
+  nome: A+ LMS
+  alternativa_a:
+  - Gradescope
+  pt: LMS voltado a exercícios com correção automática, criado na Universidade Aalto.
+  en: Exercise-centered LMS with automatic assessment, developed at Aalto University.
+  stack:
+  - Python
+  - Django
+  site: https://apluslms.github.io
+  open_core: false
+- repo: oat-sa/tao-core
+  nome: TAO
+  alternativa_a:
+  - Pearson VUE
+  pt: Plataforma de avaliações e provas padronizadas em larga escala.
+  en: Platform for building and delivering large-scale standardized assessments.
+  stack:
+  - PHP
+  site: https://www.taotesting.com
+  open_core: true
+  nota: Há edição comercial
+- repo: openfun/ralph
+  nome: Ralph
+  alternativa_a:
+  - Learning Locker
+  pt: Servidor de registros de aprendizagem xAPI, para guardar e analisar dados educacionais.
+  en: xAPI learning record store for collecting and analyzing educational activity data.
+  stack:
+  - Python
+  open_core: false
+- repo: openfun/marsha
+  nome: Marsha
+  alternativa_a:
+  - Panopto
+  pt: Plataforma de vídeo educacional que se integra a LMS via LTI.
+  en: Educational video platform that plugs into an LMS through LTI.
+  stack:
+  - Python
+  - Django
+  - React
+  open_core: false
+- repo: openfun/joanie
+  nome: Joanie
+  alternativa_a:
+  - Teachable
+  pt: Back-end de catálogo, matrículas e pagamentos de cursos online.
+  en: Back end for online course catalog, enrollments and payments.
+  stack:
+  - Python
+  - Django
+  open_core: false
+  nota: Conferir se segue ativo
+- repo: LearningLocker/learninglocker
+  nome: Learning Locker
+  alternativa_a:
+  - Watershed
+  pt: Repositório de dados de aprendizagem xAPI com painéis de análise.
+  en: xAPI learning data repository with analytics dashboards.
+  stack:
+  - Node.js
+  - MongoDB
+  open_core: true
+  nota: Conferir se segue ativo
+- repo: Project-Sunbird/sunbird-ed-portal
+  nome: Sunbird Ed
+  alternativa_a: []
+  pt: Portal de ensino digital para governos, com conteúdo, cursos e certificação.
+  en: Digital learning portal for governments with content, courses and certification.
+  stack:
+  - TypeScript
+  - Node.js
+  site: https://sunbird.org
+  open_core: false
+  nota: Slug incerto
+- repo: learningequality/studio
+  nome: Kolibri Studio
+  alternativa_a: []
+  pt: Ferramenta online para montar e organizar canais de conteúdo educacional do Kolibri.
+  en: Online tool to build and organize educational content channels for Kolibri.
+  stack:
+  - Python
+  - Vue
+  open_core: false
+- repo: hypothesis/h
+  nome: Hypothesis
+  alternativa_a: []
+  pt: Plataforma de anotação de textos na web, muito usada em salas de aula para leitura coletiva.
+  en: Web text annotation platform widely used in classrooms for collaborative reading.
+  stack:
+  - Python
+  site: https://web.hypothes.is
+  open_core: false
+- repo: LibreLingo/LibreLingo
+  nome: LibreLingo
+  alternativa_a:
+  - Duolingo
+  pt: Ferramenta comunitária para aprender idiomas com cursos em formato de lições curtas.
+  en: Community tool for learning languages through short, lesson-style courses.
+  stack:
+  - JavaScript
+  - Svelte
+  site: https://librelingo.app
+  open_core: false
+  nota: Conferir se segue ativo
+- repo: Tatoeba/tatoeba2
+  nome: Tatoeba
+  alternativa_a: []
+  pt: Banco colaborativo de frases traduzidas que apoia o estudo de idiomas.
+  en: Collaborative database of translated sentences that supports language study.
+  stack:
+  - PHP
+  site: https://tatoeba.org
+  open_core: false
+- repo: moodlehq/moodleapp
+  nome: Moodle App
+  alternativa_a: []
+  pt: Aplicativo móvel oficial do Moodle para acessar cursos e atividades do celular.
+  en: Official Moodle mobile app for reaching courses and activities from a phone.
+  stack:
+  - TypeScript
+  - Ionic
+  open_core: false
+- repo: openedx/course-discovery
+  nome: Open edX Course Discovery
+  alternativa_a: []
+  pt: Serviço de catálogo e busca de cursos do ecossistema Open edX.
+  en: Course catalog and search service in the Open edX ecosystem.
+  stack:
+  - Python
+  - Django
+  open_core: false

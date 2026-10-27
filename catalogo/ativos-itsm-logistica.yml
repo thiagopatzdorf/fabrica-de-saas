@@ -1,0 +1,243 @@
+categoria: ativos-itsm-logistica
+titulo_pt: Ativos, ITSM, logística e frota
+titulo_en: Assets, ITSM, logistics and fleet
+itens:
+- repo: grokability/snipe-it
+  nome: Snipe-IT
+  alternativa_a:
+  - ServiceNow Asset Management
+  - Freshservice
+  pt: Controle de ativos de TI, licenças e acessórios com histórico de quem usa o quê.
+  en: IT asset tracking for hardware, licenses and accessories with a record of who holds what.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  site: https://snipeitapp.com
+  open_core: true
+- repo: RotherOSS/otobo
+  nome: OTOBO
+  alternativa_a:
+  - ServiceNow
+  - BMC Remedy
+  pt: Plataforma de gestão de chamados e serviços de TI, derivada do OTRS.
+  en: Ticketing and IT service management platform derived from OTRS.
+  stack:
+  - Perl
+  - MySQL
+  site: https://otobo.io
+  open_core: false
+- repo: allegro/ralph
+  nome: Ralph
+  alternativa_a:
+  - ServiceNow CMDB
+  pt: Gestão de ativos e CMDB para data centers e escritórios.
+  en: Asset management and CMDB for data centers and offices.
+  stack:
+  - Python
+  - Django
+  site: https://ralph.allegro.tech
+  open_core: false
+- repo: Part-DB/Part-DB-server
+  nome: Part-DB
+  alternativa_a:
+  - Octopart
+  - Digi-Key lists
+  pt: Inventário de componentes eletrônicos com estoque, locais e BOM.
+  en: Electronic component inventory with stock, locations and BOM.
+  stack:
+  - PHP
+  - Symfony
+  site: https://docs.part-db.de
+  open_core: false
+- repo: sysadminsmedia/homebox
+  nome: Homebox
+  alternativa_a:
+  - Sortly
+  - Encircle
+  pt: Inventário doméstico simples com etiquetas, fotos e garantia dos itens.
+  en: Simple home inventory with labels, photos and item warranties.
+  stack:
+  - Go
+  - Vue
+  - SQLite
+  site: https://homebox.software
+  open_core: false
+- repo: grocy/grocy
+  nome: Grocy
+  alternativa_a:
+  - Pantry apps
+  pt: Gestão de despensa e casa com estoque, compras, receitas e tarefas.
+  en: Household and pantry management with stock, shopping, recipes and chores.
+  stack:
+  - PHP
+  - SQLite
+  site: https://grocy.info
+  open_core: false
+- repo: Shelf-nu/shelf.nu
+  nome: Shelf
+  alternativa_a:
+  - Asset Panda
+  - Sortly
+  pt: Rastreio de ativos com QR code, reservas e custódia para equipes.
+  en: Asset tracking with QR codes, bookings and custody for teams.
+  stack:
+  - TypeScript
+  - Remix
+  - PostgreSQL
+  site: https://www.shelf.nu
+  open_core: false
+- repo: netbox-community/netbox
+  nome: NetBox
+  alternativa_a:
+  - Device42
+  - SolarWinds IPAM
+  pt: 'Fonte de verdade de rede: IPAM, DCIM, racks, cabos e circuitos.'
+  en: Network source of truth covering IPAM, DCIM, racks, cables and circuits.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  site: https://netboxlabs.com/oss/netbox
+  open_core: true
+- repo: nautobot/nautobot
+  nome: Nautobot
+  alternativa_a:
+  - Device42
+  pt: Plataforma de fonte de verdade e automação de rede, extensível por apps.
+  en: Network source of truth and automation platform extensible with apps.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  site: https://nautobot.com
+  open_core: true
+- repo: phpipam/phpipam
+  nome: phpIPAM
+  alternativa_a:
+  - SolarWinds IPAM
+  - Infoblox
+  pt: Gerenciador de endereços IP com sub-redes, VLANs e descoberta.
+  en: IP address manager with subnets, VLANs and discovery.
+  stack:
+  - PHP
+  - MySQL
+  site: https://phpipam.net
+  open_core: false
+- repo: RackTables/racktables
+  nome: RackTables
+  alternativa_a:
+  - Device42
+  pt: Documenta racks, servidores e cabeamento de data center.
+  en: Documents racks, servers and cabling in a data center.
+  stack:
+  - PHP
+  - MySQL
+  open_core: false
+- repo: OCSInventory-NG/OCSInventory-ocsreports
+  nome: OCS Inventory
+  alternativa_a:
+  - Lansweeper
+  pt: Inventário automático de hardware e software das máquinas da rede.
+  en: Automatic hardware and software inventory of machines on the network.
+  stack:
+  - PHP
+  - Perl
+  - MySQL
+  site: https://ocsinventory-ng.org
+  open_core: false
+- repo: Ylianst/MeshCentral
+  nome: MeshCentral
+  alternativa_a:
+  - TeamViewer
+  - ConnectWise Control
+  pt: Gestão remota de computadores com agente, terminal e área de trabalho remota.
+  en: Remote computer management with agent, terminal and remote desktop.
+  stack:
+  - Node.js
+  site: https://meshcentral.com
+  open_core: false
+- repo: polonel/trudesk
+  nome: Trudesk
+  alternativa_a:
+  - Zendesk
+  pt: Gestão de chamados com tempo real, grupos e relatórios.
+  en: Ticket management with real-time updates, groups and reports.
+  stack:
+  - Node.js
+  - MongoDB
+  open_core: false
+- repo: traccar/traccar
+  nome: Traccar
+  alternativa_a:
+  - Geotab
+  - Fleetio
+  pt: Servidor de rastreamento GPS com suporte a centenas de modelos de rastreador.
+  en: GPS tracking server supporting hundreds of tracker models.
+  stack:
+  - Java
+  - H2
+  - MySQL
+  site: https://www.traccar.org
+  open_core: false
+- repo: fleetbase/fleetbase
+  nome: Fleetbase
+  alternativa_a:
+  - Onfleet
+  - Bringg
+  pt: Plataforma de logística e entregas com despacho, rastreio e gestão de frota.
+  en: Logistics and delivery platform with dispatch, tracking and fleet management.
+  stack:
+  - PHP
+  - Ember
+  - MySQL
+  site: https://www.fleetbase.io
+  open_core: false
+- repo: VROOM-Project/vroom
+  nome: VROOM
+  alternativa_a:
+  - Route4Me
+  - Routific
+  pt: Motor de otimização de rotas de veículos, usado atrás de apps de entrega.
+  en: Vehicle routing optimization engine used behind delivery apps.
+  stack:
+  - C++
+  site: http://vroom-project.org
+  open_core: false
+- repo: hargata/lubelog
+  nome: LubeLogger
+  alternativa_a:
+  - Fleetio
+  - Simply Auto
+  pt: Registro de manutenção e custos de veículos, com lembretes e relatórios.
+  en: Vehicle maintenance and cost log with reminders and reports.
+  stack:
+  - C#
+  - ASP.NET
+  site: https://lubelogger.com
+  open_core: false
+- repo: alfhou/hammond
+  nome: Hammond
+  alternativa_a:
+  - Fuelly
+  - Drivvo
+  pt: Controle de gastos e abastecimentos de veículos pessoais ou de frota pequena.
+  en: Tracks vehicle expenses and fuel for personal vehicles or small fleets.
+  stack:
+  - Go
+  - Vue
+  - SQLite
+  open_core: false
+- repo: karrioapi/karrio
+  nome: Karrio
+  alternativa_a:
+  - EasyPost
+  - Shippo
+  pt: Plataforma de API de frete para cotar, emitir etiquetas e rastrear com várias transportadoras.
+  en: Shipping API platform to rate, label and track across many carriers.
+  stack:
+  - Python
+  - Django
+  - Next.js
+  site: https://karrio.io
+  open_core: false

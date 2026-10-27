@@ -1,0 +1,323 @@
+categoria: arquivos-office-colaboracao
+titulo_pt: Arquivos, escritório e colaboração
+titulo_en: Files, office and collaboration
+itens:
+- repo: nextcloud/server
+  nome: Nextcloud
+  alternativa_a:
+  - Google Drive
+  - Dropbox
+  - Microsoft 365
+  pt: Nuvem própria para arquivos, agenda, contatos e edição online, com centenas de apps e chamadas de vídeo.
+  en: Self-hosted cloud for files, calendar, contacts and online editing, with hundreds of apps and video calls.
+  stack:
+  - PHP
+  - Vue
+  - MySQL
+  site: https://nextcloud.com
+  open_core: true
+  nota: Há edição Enterprise com suporte.
+- repo: owncloud/ocis
+  nome: ownCloud Infinite Scale
+  alternativa_a:
+  - Dropbox
+  - Google Drive
+  pt: Plataforma de arquivos reescrita em Go para sincronizar e compartilhar documentos em servidor próprio.
+  en: Go rewrite of ownCloud for syncing and sharing files on your own server, built to scale.
+  stack:
+  - Go
+  - Vue
+  open_core: true
+- repo: opencloud-eu/opencloud
+  nome: OpenCloud
+  alternativa_a:
+  - Dropbox
+  - Google Drive
+  pt: Nuvem de arquivos de código aberto, derivada do oCIS, para guardar, compartilhar e colaborar em servidor próprio.
+  en: Open source file cloud forked from oCIS for storing, sharing and collaborating on your own server.
+  stack:
+  - Go
+  - Vue
+  open_core: false
+- repo: seafile/seafile
+  nome: Seafile
+  alternativa_a:
+  - Dropbox
+  - Google Drive
+  pt: Servidor de sincronização e compartilhamento de arquivos com bibliotecas versionadas e criptografia opcional.
+  en: File sync and sharing server with versioned libraries and optional client-side encryption.
+  stack:
+  - C
+  - Python
+  - MySQL
+  open_core: true
+- repo: syncthing/syncthing
+  nome: Syncthing
+  alternativa_a:
+  - Dropbox
+  - Resilio Sync
+  pt: Sincroniza pastas entre dispositivos direto de um para o outro, sem servidor central e com criptografia.
+  en: Syncs folders directly between devices with no central server and end-to-end encryption.
+  stack:
+  - Go
+  open_core: false
+- repo: filebrowser/filebrowser
+  nome: File Browser
+  alternativa_a:
+  - Dropbox
+  - Google Drive
+  pt: Gerenciador de arquivos web leve para navegar, enviar, editar e compartilhar pastas de um servidor.
+  en: Lightweight web file manager to browse, upload, edit and share folders on a server.
+  stack:
+  - Go
+  - Vue
+  open_core: false
+- repo: ONLYOFFICE/DocumentServer
+  nome: ONLYOFFICE Docs
+  alternativa_a:
+  - Microsoft 365
+  - Google Docs
+  pt: Editor online de documentos, planilhas e apresentações compatível com formatos Office e edição simultânea.
+  en: Online editor for documents, spreadsheets and slides, Office-compatible with real-time co-editing.
+  stack:
+  - JavaScript
+  - C++
+  - Node.js
+  open_core: true
+- repo: CollaboraOnline/online
+  nome: Collabora Online
+  alternativa_a:
+  - Microsoft 365
+  - Google Docs
+  pt: Suíte de escritório baseada no LibreOffice que roda no navegador, com edição colaborativa em tempo real.
+  en: LibreOffice-based office suite running in the browser, with real-time collaborative editing.
+  stack:
+  - C++
+  - TypeScript
+  open_core: true
+- repo: paperless-ngx/paperless-ngx
+  nome: Paperless-ngx
+  alternativa_a:
+  - Evernote Scannable
+  - Dropbox
+  pt: Digitaliza e indexa documentos em papel com OCR, etiquetas e busca de texto completo.
+  en: Scans and indexes paper documents with OCR, tags and full-text search.
+  stack:
+  - Python
+  - Django
+  - Angular
+  open_core: false
+- repo: sismics/docs
+  nome: Teedy
+  alternativa_a:
+  - Google Drive
+  pt: Gestão de documentos leve, com OCR, etiquetas, versões e busca.
+  en: Lightweight document management with OCR, tags, versions and search.
+  stack:
+  - Java
+  - AngularJS
+  open_core: false
+- repo: Stirling-Tools/Stirling-PDF
+  nome: Stirling PDF
+  alternativa_a:
+  - Adobe Acrobat
+  - Smallpdf
+  pt: 'Caixa de ferramentas web para PDF: juntar, dividir, converter, assinar e fazer OCR.'
+  en: 'Web toolbox for PDFs: merge, split, convert, sign and OCR.'
+  stack:
+  - Java
+  - Spring Boot
+  open_core: true
+- repo: ethercalc/ethercalc
+  nome: EtherCalc
+  alternativa_a:
+  - Google Sheets
+  pt: Planilha colaborativa em tempo real, simples de hospedar.
+  en: Real-time collaborative spreadsheet, easy to host.
+  stack:
+  - JavaScript
+  - Redis
+  open_core: false
+- repo: wekan/wekan
+  nome: WeKan
+  alternativa_a:
+  - Trello
+  pt: Quadros kanban de código aberto com listas, etiquetas e responsáveis.
+  en: Open source kanban boards with lists, labels and assignees.
+  stack:
+  - Meteor
+  - JavaScript
+  - MongoDB
+  open_core: false
+- repo: kanboard/kanboard
+  nome: Kanboard
+  alternativa_a:
+  - Trello
+  pt: Quadro kanban minimalista com automações simples e instalação leve.
+  en: Minimalist kanban board with simple automations and a light install.
+  stack:
+  - PHP
+  open_core: false
+- repo: vikunja/vikunja
+  nome: Vikunja
+  alternativa_a:
+  - Todoist
+  - Trello
+  pt: Gerenciador de tarefas com listas, kanban, gantt e compartilhamento entre equipes.
+  en: Task manager with lists, kanban, gantt and team sharing.
+  stack:
+  - Go
+  - Vue
+  open_core: false
+- repo: pydio/cells
+  nome: Pydio Cells
+  alternativa_a:
+  - Dropbox
+  - Box
+  pt: Plataforma de compartilhamento de arquivos para empresas, com fluxos de trabalho e armazenamento próprio.
+  en: Enterprise file sharing platform with workflows and bring-your-own storage.
+  stack:
+  - Go
+  - React
+  open_core: true
+- repo: drakkan/sftpgo
+  nome: SFTPGo
+  alternativa_a:
+  - Dropbox Business
+  - Box
+  pt: Servidor de arquivos com SFTP, FTPS, WebDAV e HTTP, com usuários virtuais e vários backends.
+  en: File server offering SFTP, FTPS, WebDAV and HTTP, with virtual users and several storage backends.
+  stack:
+  - Go
+  open_core: true
+- repo: cloudreve/cloudreve
+  nome: Cloudreve
+  alternativa_a:
+  - Google Drive
+  - Dropbox
+  pt: Sistema de nuvem pessoal que junta vários provedores de armazenamento sob uma interface só.
+  en: Personal cloud that unifies several storage providers under one interface.
+  stack:
+  - Go
+  - React
+  open_core: false
+- repo: schlagmichdoch/PairDrop
+  nome: PairDrop
+  alternativa_a:
+  - AirDrop
+  - WeTransfer
+  pt: Envio de arquivos entre aparelhos próximos pelo navegador, sem instalar nada.
+  en: Send files between nearby devices straight from the browser, no install needed.
+  stack:
+  - JavaScript
+  - WebRTC
+  open_core: false
+- repo: PrivateBin/PrivateBin
+  nome: PrivateBin
+  alternativa_a:
+  - Pastebin
+  pt: Pastebin que cifra no navegador, de modo que o servidor nunca vê o conteúdo.
+  en: Pastebin that encrypts in the browser so the server never sees the content.
+  stack:
+  - PHP
+  - JavaScript
+  open_core: false
+- repo: excalidraw/excalidraw
+  nome: Excalidraw
+  alternativa_a:
+  - Miro
+  - Lucidchart
+  pt: Quadro branco com traço de mão livre, colaboração em tempo real e exportação simples.
+  en: Whiteboard with a hand-drawn look, real-time collaboration and easy export.
+  stack:
+  - TypeScript
+  - React
+  open_core: false
+- repo: jgraph/drawio
+  nome: draw.io
+  alternativa_a:
+  - Lucidchart
+  - Visio
+  pt: Editor de diagramas e fluxogramas que roda no navegador ou em servidor próprio.
+  en: Diagram and flowchart editor that runs in the browser or on your own server.
+  stack:
+  - JavaScript
+  open_core: false
+- repo: karakeep-app/karakeep
+  nome: Karakeep
+  alternativa_a:
+  - Pocket
+  - Raindrop.io
+  pt: Guarda links, notas e imagens, com etiquetas automáticas por IA e arquivamento de páginas.
+  en: Saves links, notes and images, with AI auto-tagging and page archiving.
+  stack:
+  - TypeScript
+  - Next.js
+  open_core: false
+  nota: Antigo Hoarder.
+- repo: overleaf/overleaf
+  nome: Overleaf
+  alternativa_a:
+  - Overleaf Cloud
+  - Google Docs
+  pt: Editor colaborativo de LaTeX com pré-visualização em PDF, para artigos e teses.
+  en: Collaborative LaTeX editor with live PDF preview, for papers and theses.
+  stack:
+  - Node.js
+  - TeX
+  open_core: true
+  nota: Community Edition; há edição Server Pro.
+- repo: mickael-kerjean/filestash
+  nome: Filestash
+  alternativa_a:
+  - Dropbox
+  - Google Drive
+  pt: Interface web única para acessar SFTP, S3, FTP, WebDAV e outros armazenamentos.
+  en: One web interface to reach SFTP, S3, FTP, WebDAV and other storage backends.
+  stack:
+  - Go
+  - JavaScript
+  open_core: true
+- repo: docspell/docspell
+  nome: Docspell
+  alternativa_a:
+  - Evernote
+  - Dropbox
+  pt: Gestão de documentos com OCR, sugestão de metadados e busca.
+  en: Document management with OCR, metadata suggestions and search.
+  stack:
+  - Scala
+  - Elm
+  open_core: false
+- repo: papermerge/papermerge-core
+  nome: Papermerge
+  alternativa_a:
+  - Evernote
+  - Dropbox
+  pt: Arquivo digital com OCR, versões e pastas para documentos escaneados.
+  en: Digital archive with OCR, versions and folders for scanned documents.
+  stack:
+  - Python
+  - React
+  open_core: true
+- repo: filegator/filegator
+  nome: FileGator
+  alternativa_a:
+  - Dropbox
+  pt: Gerenciador de arquivos multiusuário com envio por arrastar e soltar.
+  en: Multi-user file manager with drag-and-drop uploads.
+  stack:
+  - PHP
+  - Vue
+  open_core: false
+- repo: projectsend/projectsend
+  nome: ProjectSend
+  alternativa_a:
+  - WeTransfer
+  - Dropbox
+  pt: Portal para enviar arquivos a clientes, com permissões e notificações.
+  en: Portal for sharing files with clients, with permissions and notifications.
+  stack:
+  - PHP
+  - MySQL
+  open_core: false

@@ -1,0 +1,267 @@
+categoria: rh-ponto-folha
+titulo_pt: RH, ponto e folha
+titulo_en: HR, time & attendance and payroll
+itens:
+- repo: patrickschiller/openclockwork
+  nome: OpenClockwork
+  alternativa_a:
+  - Pontomais
+  - Clockify
+  pt: Registro de ponto e presença da equipe em app web, simples de subir com Docker.
+  en: Web app for clocking in and out and tracking team attendance, easy to deploy with Docker.
+  stack:
+  - Docker
+  open_core: false
+  nota: Não é REP-P homologado; sem pt-BR ainda.
+  destaque: true
+- repo: kimai/kimai
+  nome: Kimai
+  alternativa_a:
+  - Toggl Track
+  - Clockify
+  - Harvest
+  pt: Controle de horas por projeto e cliente, com relatórios, faturamento e API.
+  en: Time tracking by project and customer, with reports, invoicing and an API.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+  site: https://www.kimai.org
+  open_core: false
+  destaque: true
+- repo: solidtime-io/solidtime
+  nome: solidtime
+  alternativa_a:
+  - Toggl Track
+  - Clockify
+  pt: Rastreador de tempo moderno para equipes e freelancers, com projetos, taxas e relatórios.
+  en: Modern time tracker for teams and freelancers, with projects, billable rates and reports.
+  stack:
+  - Laravel
+  - Vue
+  - PostgreSQL
+  site: https://www.solidtime.io
+  open_core: false
+- repo: frappe/hrms
+  nome: Frappe HR
+  alternativa_a:
+  - BambooHR
+  - Gusto
+  - Totvs RH
+  pt: 'Sistema de RH completo: cadastro, férias, presença, despesas, folha e avaliações.'
+  en: 'Full HR suite: employee records, leave, attendance, expenses, payroll and appraisals.'
+  stack:
+  - Python
+  - Frappe
+  - MariaDB
+  site: https://frappehr.com
+  open_core: false
+  destaque: true
+- repo: orangehrm/orangehrm
+  nome: OrangeHRM
+  alternativa_a:
+  - BambooHR
+  - Workday
+  pt: Gestão de pessoas com cadastro de funcionários, férias, ponto, recrutamento e desempenho.
+  en: People management with employee records, leave, time, recruitment and performance.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+  site: https://www.orangehrm.com
+  open_core: true
+- repo: almarklein/timetagger
+  nome: TimeTagger
+  alternativa_a:
+  - Toggl Track
+  - Clockify
+  pt: Controle de tempo minimalista por tags, com linha do tempo e relatórios.
+  en: Minimalist tag-based time tracker with a timeline view and reports.
+  stack:
+  - Python
+  - JavaScript
+  site: https://timetagger.app
+  open_core: false
+- repo: traggo/server
+  nome: Traggo
+  alternativa_a:
+  - Toggl Track
+  - Timeular
+  pt: Rastreio de tempo por tags com painéis personalizados para analisar onde as horas vão.
+  en: Tag-based time tracking with custom dashboards to see where hours go.
+  stack:
+  - Go
+  - React
+  open_core: false
+- repo: mimnets/OpenHRApp
+  nome: OpenHRApp
+  alternativa_a:
+  - Pontomais
+  - BambooHR
+  pt: App de RH leve com presença, férias e gestão de funcionários.
+  en: Lightweight HR app covering attendance, leave and employee management.
+  stack:
+  - TypeScript
+  - React
+  open_core: false
+- repo: ever-co/ever-gauzy
+  nome: Gauzy
+  alternativa_a:
+  - Hubstaff
+  - Upwork
+  - Time Doctor
+  pt: Plataforma para gerir equipes, tempo, projetos, contratação e finanças da empresa.
+  en: Platform to run teams, time tracking, projects, hiring and finances in one place.
+  stack:
+  - TypeScript
+  - Angular
+  - NestJS
+  site: https://gauzy.co
+  open_core: false
+- repo: ever-co/ever-teams
+  nome: Ever Teams
+  alternativa_a:
+  - Jira
+  - Hubstaff
+  pt: Gestão de tarefas e tempo de equipes, com cronômetro e acompanhamento de produtividade.
+  en: Team task and time management with timers and productivity tracking.
+  stack:
+  - TypeScript
+  - Next.js
+  open_core: false
+- repo: horilla-opensource/horilla
+  nome: Horilla
+  alternativa_a:
+  - BambooHR
+  - Zoho People
+  pt: Sistema de RH com recrutamento, ponto, férias, folha e avaliação de desempenho.
+  en: HR system with recruitment, attendance, leave, payroll and performance reviews.
+  stack:
+  - Python
+  - Django
+  site: https://www.horilla.com
+  open_core: false
+- repo: bbalet/jorani
+  nome: Jorani
+  alternativa_a:
+  - Pontomais
+  - Kenjo
+  pt: Gestão de férias e ausências com fluxo de aprovação e calendário da equipe.
+  en: Leave and absence management with approval workflow and team calendars.
+  stack:
+  - PHP
+  - CodeIgniter
+  - MySQL
+  open_core: false
+- repo: gamonoid/icehrm
+  nome: IceHrm
+  alternativa_a:
+  - BambooHR
+  - Zoho People
+  pt: 'RH para pequenas empresas: funcionários, férias, folhas de horas e despesas.'
+  en: 'HR for small companies: employees, leave, timesheets and expenses.'
+  stack:
+  - PHP
+  - MySQL
+  open_core: true
+- repo: Sentrifugo/Sentrifugo
+  nome: Sentrifugo
+  alternativa_a:
+  - BambooHR
+  pt: Plataforma de RH configurável com cadastro, férias, avaliações e recrutamento.
+  en: Configurable HR platform with employee records, leave, appraisals and hiring.
+  stack:
+  - PHP
+  - MySQL
+  open_core: false
+- repo: ActivityWatch/activitywatch
+  nome: ActivityWatch
+  alternativa_a:
+  - RescueTime
+  - Time Doctor
+  pt: Registra automaticamente em que apps e sites você gasta o tempo, tudo local.
+  en: Automatically records which apps and sites you spend time on, all stored locally.
+  stack:
+  - Python
+  - Rust
+  - Vue
+  site: https://activitywatch.net
+  open_core: false
+- repo: johannesjo/super-productivity
+  nome: Super Productivity
+  alternativa_a:
+  - Toggl Track
+  - Todoist
+  pt: Gerenciador de tarefas com cronômetro, folhas de horas e integração com Jira e GitHub.
+  en: Task manager with timers, timesheets and Jira and GitHub integration.
+  stack:
+  - TypeScript
+  - Angular
+  site: https://super-productivity.com
+  open_core: false
+- repo: Worklenz/worklenz
+  nome: Worklenz
+  alternativa_a:
+  - Asana
+  - Harvest
+  pt: Gestão de projetos com controle de tempo, alocação de recursos e relatórios.
+  en: Project management with time tracking, resource allocation and reports.
+  stack:
+  - TypeScript
+  - React
+  - PostgreSQL
+  open_core: false
+- repo: opencats/OpenCATS
+  nome: OpenCATS
+  alternativa_a:
+  - Gupy
+  - Greenhouse
+  pt: Sistema de recrutamento para acompanhar vagas, candidatos e entrevistas.
+  en: Recruiting system to track job openings, candidates and interviews.
+  stack:
+  - PHP
+  - MySQL
+  open_core: false
+- repo: MayGo/tockler
+  nome: Tockler
+  alternativa_a:
+  - RescueTime
+  - Toggl Track
+  pt: App de desktop que registra o uso do computador e mostra uma linha do tempo do dia.
+  en: Desktop app that logs computer usage and shows a timeline of your day.
+  stack:
+  - TypeScript
+  - Electron
+  open_core: false
+- repo: projecthamster/hamster
+  nome: Hamster
+  alternativa_a:
+  - Toggl Track
+  pt: Rastreador de tempo para Linux, com atividades e categorias e relatórios simples.
+  en: Linux time tracker with activities, categories and simple reports.
+  stack:
+  - Python
+  - GTK
+  open_core: false
+- repo: muety/wakapi
+  nome: Wakapi
+  alternativa_a:
+  - WakaTime
+  pt: Mede o tempo de programação por projeto e linguagem, compatível com plugins do WakaTime.
+  en: Measures coding time per project and language, compatible with WakaTime plugins.
+  stack:
+  - Go
+  - SQLite
+  open_core: false
+- repo: payroll-engine/PayrollEngine
+  nome: Payroll Engine
+  alternativa_a:
+  - ADP
+  - Senior
+  pt: Motor de folha de pagamento configurável por regras, com API e execução em lote.
+  en: Rule-driven payroll engine with an API and batch calculation.
+  stack:
+  - C#
+  - .NET
+  - SQL Server
+  open_core: false

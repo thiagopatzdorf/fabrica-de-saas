@@ -1,0 +1,69 @@
+# Produtos próprios (MIT) desta árvore. Fonte do bloco "Código nosso" do README e dos llms*.txt.
+# O número de testes é o medido no dia da publicação (comando em cada apps/<pasta>/README.md).
+itens:
+  - pasta: gestao-juridica
+    nome: Gestão Jurídica
+    pt: "Escritório de advocacia: processos (CNJ validado), prazos pelo CPC, agenda, documentos com versões, alertas e login com papéis."
+    en: "Law-firm management: cases (CNJ number validated), CPC deadlines, calendar, versioned documents, alerts and role-based login."
+    stack: [Python, FastAPI, SQLite]
+    testes: 129
+    aviso_pt: "a integração com o DataJud nunca foi chamada na API real e não há assinatura ICP-Brasil."
+    aviso_en: "the DataJud integration was never called against the real API and there is no ICP-Brasil signing."
+  - pasta: links-de-pagamento
+    nome: Links de Pagamento
+    pt: "Links de pagamento no seu Stripe (valor fixo, livre, mensal; Pix, cartão, parcelado), checkout com a sua marca e webhook assinado."
+    en: "Payment links on your own Stripe account (fixed, free or monthly amounts; Pix, card, installments), branded checkout and signed webhook."
+    stack: [Cloudflare Worker, KV]
+    testes: 62
+    aviso_pt: "pagamentos só foram exercitados em modo falso; use a chave de teste do Stripe primeiro."
+    aviso_en: "payments were only exercised in fake mode; use the Stripe test key first."
+  - pasta: loja-minima
+    nome: Loja Mínima
+    pt: "Loja pequena: vitrine, carrinho, checkout, painel do dono e frete; o preço é sempre recalculado no servidor."
+    en: "Small online store: storefront, cart, checkout, owner dashboard and shipping; the price is always recomputed on the server."
+    stack: [Cloudflare Worker, KV]
+    testes: 43
+    aviso_pt: "pagamentos só foram exercitados em modo falso; use a chave de teste do Stripe primeiro."
+    aviso_en: "payments were only exercised in fake mode; use the Stripe test key first."
+  - pasta: hub-de-marketplaces
+    nome: Hub de Marketplaces
+    pt: "Hub de e-commerce multicanal: catálogo, preço, estoque, anúncios e pedidos. Os adaptadores de canal são SIMULADOS."
+    en: "Multichannel e-commerce hub: catalog, price, stock, listings and orders. The channel adapters are SIMULATED."
+    stack: [TanStack Start, Postgres, Better Auth]
+    testes: 42
+    aviso_pt: "os adaptadores ML/Shopee/Amazon/Magalu são simulados; integrar os reais é o próximo passo (docs/adaptadores.md da pasta)."
+    aviso_en: "the ML/Shopee/Amazon/Magalu adapters are simulated; wiring the real ones is the next step."
+  - pasta: fitrich
+    nome: Fitrich
+    pt: "Finanças pessoais e treino/nutrição, 100% no aparelho (PWA, sem backend), em português e inglês."
+    en: "Personal finance plus workout/nutrition, 100% on-device (PWA, no backend), in Portuguese and English."
+    stack: [JavaScript, IndexedDB]
+    testes: 592
+  - pasta: banco-de-questoes
+    nome: Banco de Questões
+    pt: "Banco de questões para concursos, com progresso por matéria e \"chance de passar\"."
+    en: "Question bank for Brazilian public-service exams, with progress per subject and a \"chance to pass\" estimate."
+    stack: [Next.js, Prisma, Postgres, Auth.js]
+    testes: 29
+    aviso_pt: "as 60 questões são fictícias (direitos de conteúdo real são de quem operar) e há avisos do npm audit descritos no README da pasta."
+    aviso_en: "the 60 questions are fictional (rights to real content belong to the operator) and there are npm audit warnings described in the folder README."
+  - pasta: kanban-de-equipe
+    nome: Kanban de Equipe
+    pt: "Kanban, projetos, equipe e financeiro leve; sincroniza Issues do GitHub e traz servidor MCP para agentes de IA."
+    en: "Kanban, projects, team and a lightweight budget view; syncs GitHub Issues and ships an MCP server for AI agents."
+    stack: [Node, Express, MongoDB, MCP]
+    testes: 62
+  - pasta: pdv-restaurante
+    nome: PDV de Restaurante
+    pt: "PDV de restaurante: mesas, comandas, cozinha, caixa e divisão de conta."
+    en: "Restaurant point of sale: tables, orders, kitchen, cash register and bill splitting."
+    stack: [HTML, JavaScript]
+    testes: 14
+    aviso_pt: "a NFC-e é só uma prévia sem valor fiscal."
+    aviso_en: "the NFC-e is only a preview with no fiscal value."
+  - pasta: migracao-de-legado
+    nome: Migração de Legado
+    pt: "Kit para tirar sistema legado do lugar: lê Delphi ou Laravel, escreve o contrato de regras e gera o app novo."
+    en: "Kit to move a legacy system: reads Delphi or Laravel, writes the business-rules contract and generates the new app."
+    stack: [Python]
+    testes: 75

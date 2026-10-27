@@ -1,0 +1,332 @@
+categoria: video-reunioes-streaming
+titulo_pt: Vídeo, reuniões e streaming
+titulo_en: Video, meetings and streaming
+itens:
+- repo: jitsi/jitsi-meet
+  nome: Jitsi Meet
+  alternativa_a:
+  - Zoom
+  - Google Meet
+  pt: Videoconferência em WebRTC, sem conta, com salas por link, compartilhamento de tela e gravação.
+  en: 'WebRTC video conferencing with no account needed: room links, screen sharing and recording.'
+  stack:
+  - Java
+  - JavaScript
+  open_core: false
+- repo: livekit/livekit
+  nome: LiveKit
+  alternativa_a:
+  - Twilio Video
+  - Agora
+  pt: Servidor WebRTC escalável e SDKs para criar chamadas de áudio, vídeo e agentes de voz.
+  en: Scalable WebRTC server and SDKs to build audio, video calls and voice agents.
+  stack:
+  - Go
+  - WebRTC
+  open_core: false
+  nota: Infraestrutura para construir produtos; há nuvem paga.
+- repo: jellyfin/jellyfin
+  nome: Jellyfin
+  alternativa_a:
+  - Plex
+  - Netflix
+  pt: Servidor de mídia que organiza e transmite filmes, séries e música da sua coleção.
+  en: Media server that organizes and streams your movies, shows and music.
+  stack:
+  - C#
+  - .NET
+  open_core: false
+- repo: owncast/owncast
+  nome: Owncast
+  alternativa_a:
+  - Twitch
+  - YouTube Live
+  pt: Servidor de transmissão ao vivo com chat embutido, para ter sua própria plataforma.
+  en: Live streaming server with built-in chat so you can run your own platform.
+  stack:
+  - Go
+  - React
+  open_core: false
+- repo: Chocobozzz/PeerTube
+  nome: PeerTube
+  alternativa_a:
+  - YouTube
+  - Vimeo
+  pt: Plataforma de vídeo federada que usa P2P para aliviar o servidor.
+  en: Federated video platform that uses P2P to offload the server.
+  stack:
+  - TypeScript
+  - Angular
+  - PostgreSQL
+  open_core: false
+- repo: mediacms-io/mediacms
+  nome: MediaCMS
+  alternativa_a:
+  - YouTube
+  - Vimeo
+  pt: Sistema de gestão de vídeos e mídia com transcodificação, categorias e comentários.
+  en: Video and media content management with transcoding, categories and comments.
+  stack:
+  - Python
+  - Django
+  - React
+  open_core: false
+- repo: ant-media/Ant-Media-Server
+  nome: Ant Media Server
+  alternativa_a:
+  - Wowza
+  - Agora
+  pt: Servidor de streaming de baixa latência com WebRTC, RTMP e HLS.
+  en: Low-latency streaming server supporting WebRTC, RTMP and HLS.
+  stack:
+  - Java
+  open_core: true
+  nota: Edição Community Apache; recursos extras são Enterprise.
+- repo: OvenMediaEngine/OvenMediaEngine
+  nome: OvenMediaEngine
+  alternativa_a:
+  - Wowza
+  pt: Servidor de streaming com latência sub-segundo via WebRTC e LLHLS.
+  en: Streaming server with sub-second latency over WebRTC and LL-HLS.
+  stack:
+  - C++
+  open_core: false
+- repo: ossrs/srs
+  nome: SRS
+  alternativa_a:
+  - Wowza
+  pt: Servidor de mídia em tempo real com RTMP, WebRTC, HLS e SRT.
+  en: Real-time media server handling RTMP, WebRTC, HLS and SRT.
+  stack:
+  - C++
+  open_core: false
+- repo: bluenviron/mediamtx
+  nome: MediaMTX
+  alternativa_a:
+  - Wowza
+  pt: Servidor e proxy de mídia pronto para uso que converte entre RTSP, RTMP, HLS e WebRTC.
+  en: Ready-to-use media server and proxy converting between RTSP, RTMP, HLS and WebRTC.
+  stack:
+  - Go
+  open_core: false
+- repo: obsproject/obs-studio
+  nome: OBS Studio
+  alternativa_a:
+  - Streamlabs
+  - vMix
+  pt: Programa de gravação e transmissão ao vivo com cenas, fontes e filtros.
+  en: Recording and live streaming app with scenes, sources and filters.
+  stack:
+  - C++
+  - Qt
+  open_core: false
+- repo: jech/galene
+  nome: Galène
+  alternativa_a:
+  - Zoom
+  pt: Servidor de videoconferência simples, de pouco consumo, para salas pequenas e aulas.
+  en: Simple, low-resource videoconferencing server for small rooms and classes.
+  stack:
+  - Go
+  open_core: false
+- repo: miroslavpejic85/mirotalksfu
+  nome: MiroTalk SFU
+  alternativa_a:
+  - Zoom
+  - Google Meet
+  pt: Videoconferência WebRTC escalável com salas, chat, compartilhamento e gravação.
+  en: Scalable WebRTC video conferencing with rooms, chat, sharing and recording.
+  stack:
+  - Node.js
+  - mediasoup
+  open_core: false
+- repo: element-hq/element-call
+  nome: Element Call
+  alternativa_a:
+  - Zoom
+  - Microsoft Teams
+  pt: Chamadas de vídeo em grupo sobre a rede Matrix, com criptografia.
+  en: Group video calls over the Matrix network, with encryption.
+  stack:
+  - TypeScript
+  - React
+  open_core: true
+- repo: suitenumerique/meet
+  nome: La Suite Meet
+  alternativa_a:
+  - Zoom
+  - Google Meet
+  pt: Videoconferência do governo francês, construída sobre o LiveKit.
+  en: Videoconferencing from the French public sector, built on LiveKit.
+  stack:
+  - Python
+  - Django
+  - React
+  open_core: false
+- repo: OpenVidu/openvidu
+  nome: OpenVidu
+  alternativa_a:
+  - Twilio Video
+  - Zoom SDK
+  pt: Plataforma para integrar videochamadas em aplicativos, sobre LiveKit.
+  en: Platform to embed video calls into applications, built on LiveKit.
+  stack:
+  - Java
+  - TypeScript
+  open_core: true
+- repo: tubearchivist/tubearchivist
+  nome: Tube Archivist
+  alternativa_a:
+  - YouTube
+  pt: Arquiva e indexa canais do YouTube para assistir e buscar offline.
+  en: Archives and indexes YouTube channels for offline watching and search.
+  stack:
+  - Python
+  - Django
+  - Elasticsearch
+  open_core: false
+- repo: iv-org/invidious
+  nome: Invidious
+  alternativa_a:
+  - YouTube
+  pt: Interface alternativa do YouTube, sem anúncios e sem rastreamento.
+  en: Alternative front end for YouTube without ads or tracking.
+  stack:
+  - Crystal
+  - PostgreSQL
+  open_core: false
+- repo: FreeTubeApp/FreeTube
+  nome: FreeTube
+  alternativa_a:
+  - YouTube
+  pt: Aplicativo de desktop para assistir YouTube com privacidade e assinaturas locais.
+  en: Desktop app to watch YouTube privately with local subscriptions.
+  stack:
+  - JavaScript
+  - Electron
+  - Vue
+  open_core: false
+- repo: alexta69/metube
+  nome: MeTube
+  alternativa_a:
+  - 4K Video Downloader
+  pt: Interface web para baixar vídeos e áudios de vários sites com yt-dlp.
+  en: Web interface for downloading videos and audio from many sites using yt-dlp.
+  stack:
+  - Python
+  - Angular
+  open_core: false
+- repo: kieraneglin/pinchflat
+  nome: Pinchflat
+  alternativa_a:
+  - YouTube Premium
+  pt: Baixa automaticamente canais e listas do YouTube para a sua biblioteca de mídia.
+  en: Automatically downloads YouTube channels and playlists into your media library.
+  stack:
+  - Elixir
+  - Phoenix
+  open_core: false
+- repo: xbmc/xbmc
+  nome: Kodi
+  alternativa_a:
+  - Plex
+  - Apple TV
+  pt: Central de mídia para assistir filmes, séries, música e TV ao vivo, com suporte a add-ons.
+  en: Media center for movies, shows, music and live TV, extensible with add-ons.
+  stack:
+  - C++
+  - Python
+  open_core: false
+- repo: datarhei/restreamer
+  nome: Restreamer
+  alternativa_a:
+  - Restream
+  - Streamyard
+  pt: Servidor para transmitir ao vivo para vários destinos a partir de uma câmera ou fonte.
+  en: Server for streaming live to several destinations from a camera or other source.
+  stack:
+  - Go
+  - React
+  open_core: true
+- repo: CapSoftware/Cap
+  nome: Cap
+  alternativa_a:
+  - Loom
+  pt: Gravador de tela com compartilhamento por link, no estilo Loom.
+  en: Screen recorder with shareable links, Loom-style.
+  stack:
+  - Rust
+  - TypeScript
+  - Tauri
+  open_core: true
+  nota: Partes do produto têm licença própria.
+- repo: alyssaxuu/screenity
+  nome: Screenity
+  alternativa_a:
+  - Loom
+  - Screencastify
+  pt: Extensão de navegador para gravar a tela com anotações e câmera.
+  en: Browser extension to record the screen with annotations and camera.
+  stack:
+  - JavaScript
+  open_core: false
+- repo: Red5/red5-server
+  nome: Red5
+  alternativa_a:
+  - Wowza
+  - Adobe Media Server
+  pt: Servidor de streaming em Java com RTMP e suporte a aplicações em tempo real.
+  en: Java streaming server with RTMP and real-time application support.
+  stack:
+  - Java
+  open_core: true
+- repo: meetecho/janus-gateway
+  nome: Janus
+  alternativa_a:
+  - Twilio Video
+  pt: Servidor WebRTC de uso geral, com plugins para conferência, streaming e gravação.
+  en: General-purpose WebRTC server with plugins for conferencing, streaming and recording.
+  stack:
+  - C
+  open_core: false
+- repo: steveseguin/vdo.ninja
+  nome: VDO.Ninja
+  alternativa_a:
+  - Zoom
+  - StreamYard
+  pt: Leva vídeo de celulares e computadores para o OBS com WebRTC, sem instalar nada.
+  en: Brings video from phones and computers into OBS via WebRTC with no install.
+  stack:
+  - JavaScript
+  - WebRTC
+  open_core: false
+- repo: LizardByte/Sunshine
+  nome: Sunshine
+  alternativa_a:
+  - GeForce Now
+  - Steam Link
+  pt: Servidor de streaming de jogos e da área de trabalho para clientes Moonlight.
+  en: Game and desktop streaming host for Moonlight clients.
+  stack:
+  - C++
+  open_core: false
+- repo: moonlight-stream/moonlight-qt
+  nome: Moonlight
+  alternativa_a:
+  - GeForce Now
+  - Steam Link
+  pt: Cliente que transmite jogos de um PC para outros dispositivos com baixa latência.
+  en: Client that streams games from a PC to other devices with low latency.
+  stack:
+  - C++
+  - Qt
+  open_core: false
+- repo: DDVTECH/mistserver
+  nome: MistServer
+  alternativa_a:
+  - Wowza
+  pt: Servidor de streaming que fala muitos protocolos e converte entre eles.
+  en: Streaming server that speaks many protocols and converts between them.
+  stack:
+  - C++
+  open_core: false

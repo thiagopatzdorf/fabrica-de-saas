@@ -1,0 +1,486 @@
+categoria: cms-sites-blog
+titulo_pt: CMS, sites e blog
+titulo_en: CMS, websites and blogs
+itens:
+- repo: WordPress/WordPress
+  nome: WordPress
+  alternativa_a:
+  - Wix
+  - Squarespace
+  pt: Sistema de publicação mais usado da web, para sites, blogs e lojas, com milhares de plugins e temas.
+  en: The web's most used publishing system for sites, blogs and shops, with thousands of plugins and themes.
+  stack:
+  - PHP
+  - MySQL
+  site: https://wordpress.org
+  open_core: false
+- repo: strapi/strapi
+  nome: Strapi
+  alternativa_a:
+  - Contentful
+  pt: CMS headless em Node.js que gera API REST e GraphQL a partir de tipos de conteúdo.
+  en: Headless Node.js CMS that generates REST and GraphQL APIs from content types.
+  stack:
+  - Node.js
+  - TypeScript
+  site: https://strapi.io
+  open_core: true
+  nota: Recursos enterprise em pasta ee
+- repo: payloadcms/payload
+  nome: Payload
+  alternativa_a:
+  - Contentful
+  - Sanity
+  pt: CMS headless e framework de apps que roda dentro do Next.js, com painel admin gerado do código.
+  en: Headless CMS and app framework that runs inside Next.js with an admin panel generated from code.
+  stack:
+  - TypeScript
+  - Next.js
+  site: https://payloadcms.com
+  open_core: false
+- repo: drupal/drupal
+  nome: Drupal
+  alternativa_a:
+  - Adobe Experience Manager
+  pt: CMS modular para sites complexos, com taxonomias, papéis e multilíngue de nascença.
+  en: Modular CMS for complex sites, with taxonomies, roles and built-in multilingual support.
+  stack:
+  - PHP
+  site: https://www.drupal.org
+  open_core: false
+  nota: Repositório espelho do GitHub
+- repo: joomla/joomla-cms
+  nome: Joomla
+  alternativa_a:
+  - Wix
+  pt: CMS PHP maduro para sites e portais, com extensões, multilíngue e controle de acesso.
+  en: Mature PHP CMS for sites and portals with extensions, multilingual support and access control.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.joomla.org
+  open_core: false
+- repo: keystonejs/keystone
+  nome: KeystoneJS
+  alternativa_a:
+  - Contentful
+  pt: CMS headless em TypeScript onde o esquema em código gera API GraphQL e painel admin.
+  en: Headless TypeScript CMS where a code-defined schema yields a GraphQL API and admin UI.
+  stack:
+  - TypeScript
+  - Next.js
+  site: https://keystonejs.com
+  open_core: false
+- repo: tinacms/tinacms
+  nome: TinaCMS
+  alternativa_a:
+  - Contentful
+  pt: CMS headless com edição visual na página, guardando o conteúdo em arquivos no Git.
+  en: Headless CMS with on-page visual editing that stores content as files in Git.
+  stack:
+  - TypeScript
+  - React
+  site: https://tina.io
+  open_core: false
+- repo: decaporg/decap-cms
+  nome: Decap CMS
+  alternativa_a:
+  - Contentful
+  pt: Editor de conteúdo para sites estáticos que grava Markdown direto no repositório Git.
+  en: Content editor for static sites that writes Markdown straight into a Git repository.
+  stack:
+  - JavaScript
+  - React
+  site: https://decapcms.org
+  open_core: false
+  nota: Antigo Netlify CMS
+- repo: sanity-io/sanity
+  nome: Sanity Studio
+  alternativa_a:
+  - Contentful
+  pt: Estúdio de edição de conteúdo configurável em React, ligado ao backend hospedado da Sanity.
+  en: Configurable React content studio that connects to Sanity's hosted content backend.
+  stack:
+  - TypeScript
+  - React
+  site: https://www.sanity.io
+  open_core: true
+  nota: O armazenamento de conteúdo é serviço proprietário
+- repo: apostrophecms/apostrophe
+  nome: ApostropheCMS
+  alternativa_a:
+  - Squarespace
+  pt: CMS em Node.js com edição direta na página e geração de páginas por blocos.
+  en: Node.js CMS with in-context page editing and block-based page building.
+  stack:
+  - Node.js
+  - MongoDB
+  site: https://apostrophecms.com
+  open_core: true
+  nota: Há edição Pro paga
+- repo: wagtail/wagtail
+  nome: Wagtail
+  alternativa_a:
+  - Contentful
+  pt: CMS em Django com editor por blocos e painel amigável a redatores.
+  en: Django-based CMS with a block editor and an admin friendly to content editors.
+  stack:
+  - Python
+  - Django
+  site: https://wagtail.org
+  open_core: false
+- repo: django-cms/django-cms
+  nome: django CMS
+  alternativa_a: []
+  pt: CMS corporativo para Django com edição na página e suporte a várias línguas.
+  en: Enterprise CMS for Django with front-end editing and multilingual support.
+  stack:
+  - Python
+  - Django
+  site: https://www.django-cms.org
+  open_core: false
+- repo: Umbraco/Umbraco-CMS
+  nome: Umbraco
+  alternativa_a:
+  - Sitecore
+  pt: CMS em .NET flexível, com editor amigável e ampla comunidade de pacotes.
+  en: Flexible .NET CMS with a friendly editor and a broad community package ecosystem.
+  stack:
+  - C#
+  - .NET
+  site: https://umbraco.com
+  open_core: false
+- repo: OrchardCMS/OrchardCore
+  nome: Orchard Core
+  alternativa_a: []
+  pt: Framework modular e CMS multi-tenant sobre ASP.NET Core.
+  en: Modular application framework and multi-tenant CMS on ASP.NET Core.
+  stack:
+  - C#
+  - .NET
+  site: https://orchardcore.net
+  open_core: false
+- repo: concretecms/concretecms
+  nome: Concrete CMS
+  alternativa_a:
+  - Squarespace
+  pt: CMS PHP com edição direta na página, permissões finas e versões de conteúdo.
+  en: PHP CMS with in-page editing, fine-grained permissions and content versioning.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.concretecms.org
+  open_core: false
+- repo: TYPO3/typo3
+  nome: TYPO3
+  alternativa_a:
+  - Adobe Experience Manager
+  pt: CMS corporativo europeu para grandes sites multilíngues e multi-site.
+  en: European enterprise CMS for large multilingual, multi-site websites.
+  stack:
+  - PHP
+  - MySQL
+  site: https://typo3.org
+  open_core: false
+- repo: getgrav/grav
+  nome: Grav
+  alternativa_a:
+  - Squarespace
+  pt: CMS sem banco de dados que guarda páginas em arquivos Markdown, rápido e simples.
+  en: Database-free CMS that stores pages as Markdown files, fast and simple.
+  stack:
+  - PHP
+  - Twig
+  site: https://getgrav.org
+  open_core: false
+- repo: bolt/core
+  nome: Bolt CMS
+  alternativa_a: []
+  pt: CMS em PHP sobre Symfony, com tipos de conteúdo configuráveis e API.
+  en: PHP CMS built on Symfony with configurable content types and an API.
+  stack:
+  - PHP
+  - Symfony
+  site: https://boltcms.io
+  open_core: false
+  nota: Conferir se segue ativo
+- repo: wintercms/winter
+  nome: Winter CMS
+  alternativa_a: []
+  pt: CMS em Laravel com plugins e temas, fork comunitário do October CMS.
+  en: Laravel-based CMS with plugins and themes, a community fork of October CMS.
+  stack:
+  - PHP
+  - Laravel
+  site: https://wintercms.com
+  open_core: false
+- repo: silverstripe/silverstripe-cms
+  nome: Silverstripe CMS
+  alternativa_a: []
+  pt: CMS em PHP com painel flexível e modelagem de páginas e dados por código.
+  en: PHP CMS with a flexible admin panel and page and data modeling through code.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.silverstripe.org
+  open_core: false
+- repo: microweber/microweber
+  nome: Microweber
+  alternativa_a:
+  - Wix
+  - Shopify
+  pt: Construtor de sites por arrastar e soltar com blog e loja integrados, em Laravel.
+  en: Drag-and-drop website builder with built-in blog and shop, built on Laravel.
+  stack:
+  - PHP
+  - Laravel
+  site: https://microweber.org
+  open_core: false
+- repo: GetPublii/Publii
+  nome: Publii
+  alternativa_a:
+  - Squarespace
+  pt: App de desktop para criar sites estáticos com editor visual e publicação em vários servidores.
+  en: Desktop app for building static websites with a visual editor and one-click publishing.
+  stack:
+  - JavaScript
+  - Electron
+  site: https://getpublii.com
+  open_core: false
+- repo: bludit/bludit
+  nome: Bludit
+  alternativa_a: []
+  pt: CMS leve em PHP que guarda tudo em arquivos JSON, sem banco de dados.
+  en: Lightweight PHP CMS that stores everything in JSON files with no database.
+  stack:
+  - PHP
+  site: https://www.bludit.com
+  open_core: false
+- repo: writefreely/writefreely
+  nome: WriteFreely
+  alternativa_a:
+  - Medium
+  pt: Plataforma de blog minimalista, com federação via ActivityPub.
+  en: Minimalist blogging platform with ActivityPub federation.
+  stack:
+  - Go
+  - SQLite
+  site: https://writefreely.org
+  open_core: false
+- repo: Plume-org/Plume
+  nome: Plume
+  alternativa_a:
+  - Medium
+  pt: Motor de blog federado multiusuário que usa ActivityPub.
+  en: Federated multi-user blog engine built on ActivityPub.
+  stack:
+  - Rust
+  open_core: false
+  nota: Conferir se segue ativo
+- repo: Cockpit-HQ/cockpit
+  nome: Cockpit
+  alternativa_a:
+  - Contentful
+  pt: CMS headless e API de conteúdo em PHP, com modelos flexíveis e painel simples.
+  en: Headless CMS and content API in PHP with flexible models and a simple admin.
+  stack:
+  - PHP
+  site: https://getcockpit.com
+  open_core: true
+  nota: Versão Pro paga
+- repo: backdrop/backdrop
+  nome: Backdrop CMS
+  alternativa_a: []
+  pt: CMS em PHP derivado do Drupal 7, voltado a pequenas organizações e custo baixo.
+  en: PHP CMS forked from Drupal 7, aimed at small organizations on a budget.
+  stack:
+  - PHP
+  site: https://backdropcms.org
+  open_core: false
+- repo: processwire/processwire
+  nome: ProcessWire
+  alternativa_a: []
+  pt: CMS e framework em PHP com campos e templates flexíveis e API bem simples.
+  en: PHP CMS and framework with flexible fields and templates and a simple API.
+  stack:
+  - PHP
+  - MySQL
+  site: https://processwire.com
+  open_core: false
+- repo: contao/contao
+  nome: Contao
+  alternativa_a: []
+  pt: CMS PHP sobre Symfony para sites institucionais, forte na Alemanha.
+  en: PHP CMS on Symfony for corporate sites, especially popular in Germany.
+  stack:
+  - PHP
+  - Symfony
+  site: https://contao.org
+  open_core: false
+- repo: redaxo/redaxo
+  nome: REDAXO
+  alternativa_a: []
+  pt: CMS em PHP modular, sem tema fixo, preferido por agências europeias.
+  en: Modular PHP CMS with no fixed theme, favored by European agencies.
+  stack:
+  - PHP
+  - MySQL
+  site: https://redaxo.org
+  open_core: false
+- repo: BuilderIO/builder
+  nome: Builder.io
+  alternativa_a:
+  - Webflow
+  - Contentful
+  pt: Construtor visual de páginas headless para equipes de marketing editarem sites em código.
+  en: Headless visual page builder letting marketers edit code-based sites.
+  stack:
+  - TypeScript
+  - React
+  site: https://www.builder.io
+  open_core: true
+  nota: Plataforma hospedada é paga
+- repo: webstudio-is/webstudio
+  nome: Webstudio
+  alternativa_a:
+  - Webflow
+  pt: Construtor visual de sites open source, alternativa ao Webflow que exporta código.
+  en: Open source visual site builder, a Webflow alternative that exports code.
+  stack:
+  - TypeScript
+  - React
+  site: https://webstudio.is
+  open_core: false
+- repo: Squidex/squidex
+  nome: Squidex
+  alternativa_a:
+  - Contentful
+  pt: CMS headless com API GraphQL, versionamento e fluxo de aprovação de conteúdo.
+  en: Headless CMS with GraphQL API, versioning and a content approval workflow.
+  stack:
+  - C#
+  - .NET
+  - MongoDB
+  site: https://squidex.io
+  open_core: false
+- repo: dotCMS/core
+  nome: dotCMS
+  alternativa_a:
+  - Adobe Experience Manager
+  pt: CMS híbrido headless em Java para conteúdo corporativo e várias marcas.
+  en: Hybrid headless Java CMS for enterprise content and multi-brand sites.
+  stack:
+  - Java
+  site: https://www.dotcms.com
+  open_core: true
+- repo: liferay/liferay-portal
+  nome: Liferay
+  alternativa_a:
+  - SharePoint
+  pt: Plataforma de portais e experiência digital em Java, com CMS, usuários e integração.
+  en: Java digital experience and portal platform with CMS, user management and integrations.
+  stack:
+  - Java
+  site: https://www.liferay.com
+  open_core: true
+  nota: Edição DXP é paga
+- repo: silexlabs/Silex
+  nome: Silex
+  alternativa_a:
+  - Wix
+  pt: Editor visual de sites no navegador, para criar páginas HTML e CSS sem programar.
+  en: Browser-based visual website editor for building HTML and CSS pages without coding.
+  stack:
+  - TypeScript
+  site: https://www.silex.me
+  open_core: false
+  nota: Conferir se segue ativo
+- repo: picocms/Pico
+  nome: Pico
+  alternativa_a: []
+  pt: CMS de arquivos planos que transforma Markdown em páginas, sem painel nem banco.
+  en: Flat-file CMS that turns Markdown into pages with no admin panel or database.
+  stack:
+  - PHP
+  site: https://picocms.org
+  open_core: false
+- repo: typecho/typecho
+  nome: Typecho
+  alternativa_a:
+  - WordPress.com
+  pt: Plataforma de blog leve em PHP, simples e rápida, popular na China.
+  en: Light, fast PHP blogging platform, popular in China.
+  stack:
+  - PHP
+  site: https://typecho.org
+  open_core: false
+- repo: halo-dev/halo
+  nome: Halo
+  alternativa_a:
+  - WordPress.com
+  pt: Sistema de blog e sites em Java com editor moderno e sistema de plugins.
+  en: Java blog and site system with a modern editor and a plugin system.
+  stack:
+  - Java
+  - Vue
+  site: https://www.halo.run
+  open_core: false
+- repo: textpattern/textpattern
+  nome: Textpattern
+  alternativa_a: []
+  pt: CMS PHP enxuto e flexível, com sua própria linguagem de modelos.
+  en: Lean, flexible PHP CMS with its own template tag language.
+  stack:
+  - PHP
+  - MySQL
+  site: https://textpattern.com
+  open_core: false
+- repo: lektor/lektor
+  nome: Lektor
+  alternativa_a: []
+  pt: Gerador de sites estáticos em Python com painel de edição opcional.
+  en: Python static site generator with an optional admin editing panel.
+  stack:
+  - Python
+  site: https://www.getlektor.com
+  open_core: false
+- repo: sulu/sulu
+  nome: Sulu
+  alternativa_a: []
+  pt: CMS sobre Symfony voltado a sites multilíngues, com edição de conteúdo por blocos.
+  en: Symfony-based CMS for multilingual sites with block-based content editing.
+  stack:
+  - PHP
+  - Symfony
+  site: https://sulu.io
+  open_core: false
+- repo: neos/neos-development-collection
+  nome: Neos
+  alternativa_a: []
+  pt: CMS em PHP com edição direta na página, hierarquia de conteúdo e multi-site.
+  en: PHP CMS with inline editing, content hierarchies and multi-site support.
+  stack:
+  - PHP
+  site: https://www.neos.io
+  open_core: false
+- repo: webiny/webiny-js
+  nome: Webiny
+  alternativa_a:
+  - Contentful
+  pt: CMS headless e construtor de páginas serverless que roda na AWS.
+  en: Serverless headless CMS and page builder that runs on AWS.
+  stack:
+  - TypeScript
+  - Node.js
+  site: https://www.webiny.com
+  open_core: true
+  nota: Parte dos recursos exige licença
+- repo: plone/Products.CMFPlone
+  nome: Plone
+  alternativa_a: []
+  pt: CMS em Python para intranets e portais, com forte controle de permissões e workflow.
+  en: Python CMS for intranets and portals with strong permissions and workflow.
+  stack:
+  - Python
+  site: https://plone.org
+  open_core: false

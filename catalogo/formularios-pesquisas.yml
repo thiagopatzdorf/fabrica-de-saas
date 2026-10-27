@@ -1,0 +1,220 @@
+categoria: formularios-pesquisas
+titulo_pt: Formulários e pesquisas
+titulo_en: Forms and surveys
+itens:
+- repo: formbricks/formbricks
+  nome: Formbricks
+  alternativa_a:
+  - Typeform
+  - Qualtrics
+  pt: Plataforma de pesquisas e feedback dentro do produto, por link ou embutida, com lógica condicional.
+  en: Survey and in-product feedback platform, via link or embedded, with conditional logic.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  site: https://formbricks.com
+  open_core: true
+- repo: heyform/heyform
+  nome: HeyForm
+  alternativa_a:
+  - Typeform
+  - Google Forms
+  pt: Construtor de formulários conversacionais com lógica, campos ocultos e relatórios.
+  en: Conversational form builder with logic, hidden fields and reports.
+  stack:
+  - TypeScript
+  - React
+  - MongoDB
+  site: https://heyform.net
+  open_core: false
+- repo: LimeSurvey/LimeSurvey
+  nome: LimeSurvey
+  alternativa_a:
+  - SurveyMonkey
+  - Qualtrics
+  pt: Sistema completo de pesquisas com lógica de ramificação, cotas e muitos tipos de pergunta.
+  en: Full survey system with branching logic, quotas and many question types.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.limesurvey.org
+  open_core: false
+- repo: opnform/opnform
+  nome: OpnForm
+  alternativa_a:
+  - Typeform
+  - Tally
+  pt: Construtor de formulários sem limite de envios, com campos condicionais e integrações.
+  en: Form builder with unlimited submissions, conditional fields and integrations.
+  stack:
+  - Laravel
+  - Vue
+  - PHP
+  site: https://opnform.com
+  open_core: true
+- repo: formio/formio
+  nome: Form.io
+  alternativa_a:
+  - Typeform
+  - Jotform
+  pt: Plataforma de formulários e APIs de dados baseada em JSON, para montar apps por formulários.
+  en: JSON-based form and data API platform for building form-driven applications.
+  stack:
+  - Node.js
+  - MongoDB
+  site: https://form.io
+  open_core: true
+- repo: kobotoolbox/kpi
+  nome: KoboToolbox
+  alternativa_a:
+  - SurveyCTO
+  - Google Forms
+  pt: Coleta de dados em campo, offline, usada por ONGs e pesquisadores em ambientes difíceis.
+  en: Offline field data collection used by NGOs and researchers in challenging settings.
+  stack:
+  - Python
+  - Django
+  - React
+  site: https://www.kobotoolbox.org
+  open_core: false
+- repo: getodk/central
+  nome: ODK Central
+  alternativa_a:
+  - SurveyCTO
+  pt: Servidor do Open Data Kit para gerir formulários, envios e usuários da coleta móvel.
+  en: Open Data Kit server to manage forms, submissions and users for mobile data collection.
+  stack:
+  - Node.js
+  - Vue
+  - PostgreSQL
+  site: https://getodk.org
+  open_core: false
+- repo: enketo/enketo
+  nome: Enketo
+  alternativa_a:
+  - Google Forms
+  pt: Motor web de formulários XForms que roda no navegador e funciona offline.
+  en: Web engine for XForms that runs in the browser and works offline.
+  stack:
+  - JavaScript
+  - Node.js
+  site: https://enketo.org
+  open_core: false
+- repo: nextcloud/forms
+  nome: Nextcloud Forms
+  alternativa_a:
+  - Google Forms
+  pt: App de formulários e enquetes para o Nextcloud, com compartilhamento e resultados.
+  en: Forms and polls app for Nextcloud, with sharing and results.
+  stack:
+  - PHP
+  - Vue
+  open_core: false
+- repo: compdemocracy/polis
+  nome: Polis
+  alternativa_a:
+  - Mentimeter
+  pt: Sistema de opinião em tempo real que agrupa respostas para mostrar consensos de uma comunidade.
+  en: Real-time opinion system that clusters responses to reveal a community's consensus.
+  stack:
+  - Node.js
+  - Clojure
+  - PostgreSQL
+  site: https://pol.is
+  open_core: false
+- repo: opengovsg/FormSG
+  nome: FormSG
+  alternativa_a:
+  - Google Forms
+  - Typeform
+  pt: Formulários do governo de Singapura, com criptografia de respostas e login oficial.
+  en: Singapore government forms builder with encrypted responses and official login.
+  stack:
+  - TypeScript
+  - Node.js
+  - MongoDB
+  site: https://form.gov.sg
+  open_core: false
+- repo: alphagov/forms-admin
+  nome: GOV.UK Forms
+  alternativa_a:
+  - Google Forms
+  pt: Ferramenta do governo britânico para criar formulários de serviços públicos.
+  en: UK government tool for building public service forms.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  open_core: false
+- repo: surveysolutions/surveysolutions
+  nome: Survey Solutions
+  alternativa_a:
+  - SurveyCTO
+  pt: Plataforma do Banco Mundial para pesquisas assistidas por computador, como censos e domicílios.
+  en: World Bank platform for computer-assisted surveys such as household and census data.
+  stack:
+  - C#
+  - .NET
+  - PostgreSQL
+  site: https://mysurvey.solutions
+  open_core: false
+- repo: ImperialCollegeLondon/epicollect5-server
+  nome: Epicollect5
+  alternativa_a:
+  - Google Forms
+  - SurveyCTO
+  pt: Plataforma de coleta de dados móvel para projetos científicos, com mapas e exportação.
+  en: Mobile data collection platform for scientific projects, with maps and export.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  site: https://five.epicollect.net
+  open_core: false
+- repo: surveyking/surveyking
+  nome: SurveyKing
+  alternativa_a:
+  - SurveyMonkey
+  pt: Sistema de pesquisas, provas e questionários com editor visual e análise de respostas.
+  en: Survey, exam and questionnaire system with a visual editor and response analytics.
+  stack:
+  - Java
+  - React
+  - Spring
+  open_core: false
+- repo: quillforms/quillforms
+  nome: Quill Forms
+  alternativa_a:
+  - Typeform
+  pt: Plugin de WordPress que cria formulários conversacionais, uma pergunta por vez.
+  en: WordPress plugin that builds conversational forms, one question at a time.
+  stack:
+  - PHP
+  - React
+  site: https://quillforms.com
+  open_core: true
+- repo: ohmyform/ohmyform
+  nome: OhMyForm
+  alternativa_a:
+  - Typeform
+  - Google Forms
+  pt: Construtor de formulários e pesquisas com designer visual e estatísticas de resposta.
+  en: Form and survey builder with a visual designer and response statistics.
+  stack:
+  - TypeScript
+  - NestJS
+  - React
+  site: https://ohmyform.com
+  open_core: false
+- repo: tellform/tellform
+  nome: TellForm
+  alternativa_a:
+  - Typeform
+  pt: Construtor de formulários online gratuito com visual de conversa e relatórios.
+  en: Free online form builder with a conversational look and reports.
+  stack:
+  - Node.js
+  - MongoDB
+  - Angular
+  open_core: false

@@ -1,0 +1,299 @@
+categoria: low-code-bancos-visuais
+titulo_pt: Low-code e bancos de dados visuais
+titulo_en: Low-code and visual databases
+itens:
+- repo: nocodb/nocodb
+  nome: NocoDB
+  alternativa_a:
+  - Airtable
+  pt: Transforma bancos SQL em planilhas colaborativas com formulários, galeria, kanban e API automática.
+  en: Turns SQL databases into collaborative spreadsheets with forms, gallery, kanban views and an automatic API.
+  stack:
+  - TypeScript
+  - Vue
+  - Node.js
+  site: https://nocodb.com
+  destaque: true
+- repo: baserow/baserow
+  nome: Baserow
+  alternativa_a:
+  - Airtable
+  pt: Banco de dados sem código com tabelas, visões, formulários e construtor de aplicativos, pronto para hospedar.
+  en: No-code database with tables, views, forms and an app builder, ready to self-host.
+  stack:
+  - Python
+  - Django
+  - Vue
+  - PostgreSQL
+  site: https://baserow.io
+  open_core: true
+- repo: appsmithorg/appsmith
+  nome: Appsmith
+  alternativa_a:
+  - Retool
+  pt: Monta painéis e ferramentas internas arrastando widgets e ligando a bancos e APIs com JavaScript.
+  en: Builds dashboards and internal tools by dragging widgets and wiring them to databases and APIs with JavaScript.
+  stack:
+  - Java
+  - TypeScript
+  - React
+  - MongoDB
+  site: https://www.appsmith.com
+  open_core: true
+  destaque: true
+- repo: ToolJet/ToolJet
+  nome: ToolJet
+  alternativa_a:
+  - Retool
+  pt: Plataforma low-code para criar apps internos com consultas, componentes visuais e automação de fluxos.
+  en: Low-code platform for building internal apps with queries, visual components and workflow automation.
+  stack:
+  - JavaScript
+  - React
+  - Node.js
+  - PostgreSQL
+  site: https://www.tooljet.com
+  open_core: true
+- repo: budibase/budibase
+  nome: Budibase
+  alternativa_a:
+  - Retool
+  - Airtable
+  pt: Cria aplicativos de negócio, formulários e automações sobre bancos próprios ou externos, com interface visual.
+  en: Creates business apps, forms and automations on top of built-in or external databases through a visual editor.
+  stack:
+  - TypeScript
+  - Svelte
+  - Node.js
+  - CouchDB
+  site: https://budibase.com
+  open_core: true
+- repo: nocobase/nocobase
+  nome: NocoBase
+  alternativa_a:
+  - Airtable
+  - Power Apps
+  pt: Plataforma extensível de aplicações sem código, com modelo de dados, permissões e plugins para tudo.
+  en: Extensible no-code application platform with a data model, permissions and plugins for nearly everything.
+  stack:
+  - TypeScript
+  - React
+  - Node.js
+  site: https://www.nocobase.com
+  open_core: true
+- repo: teableio/teable
+  nome: Teable
+  alternativa_a:
+  - Airtable
+  pt: Planilha-banco de dados sobre Postgres, rápida com milhões de linhas, com visões, automações e colaboração.
+  en: Postgres-backed spreadsheet database that stays fast with millions of rows, with views, automations and collaboration.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  site: https://teable.io
+  open_core: true
+- repo: gristlabs/grist-core
+  nome: Grist
+  alternativa_a:
+  - Airtable
+  - Excel
+  pt: Planilha relacional com fórmulas em Python, widgets e controle de acesso por linha.
+  en: Relational spreadsheet with Python formulas, widgets and row-level access rules.
+  stack:
+  - TypeScript
+  - Python
+  - SQLite
+  site: https://www.getgrist.com
+- repo: apitable/apitable
+  nome: APITable
+  alternativa_a:
+  - Airtable
+  pt: Banco de dados visual para equipes, com visões em grade e kanban, automação e API aberta.
+  en: Visual database for teams, with grid and kanban views, automation and an open API.
+  stack:
+  - TypeScript
+  - Java
+  - React
+- repo: undb-io/undb
+  nome: undb
+  alternativa_a:
+  - Airtable
+  pt: Banco de dados privado sem código, leve, com tabelas, visões e formulários para uso próprio.
+  en: Lightweight private no-code database with tables, views and forms for self-hosting.
+  stack:
+  - TypeScript
+  - Svelte
+  - SQLite
+- repo: rowyio/rowy
+  nome: Rowy
+  alternativa_a:
+  - Airtable
+  pt: Interface de planilha para o Firestore, com colunas calculadas e funções de nuvem editáveis.
+  en: Spreadsheet-style interface for Firestore with computed columns and editable cloud functions.
+  stack:
+  - TypeScript
+  - React
+  - Firebase
+- repo: nextcloud/tables
+  nome: Nextcloud Tables
+  alternativa_a:
+  - Airtable
+  pt: App do Nextcloud para criar tabelas e listas estruturadas compartilhadas dentro da própria nuvem privada.
+  en: Nextcloud app to build shared structured tables and lists inside your own private cloud.
+  stack:
+  - PHP
+  - Vue
+- repo: lowcoder-org/lowcoder
+  nome: Lowcoder
+  alternativa_a:
+  - Retool
+  pt: Construtor visual de apps internos e painéis, com consultas a dados e componentes reutilizáveis.
+  en: Visual builder for internal apps and dashboards, with data queries and reusable components.
+  stack:
+  - TypeScript
+  - React
+  - Java
+- repo: illacloud/illa-builder
+  nome: ILLA Builder
+  alternativa_a:
+  - Retool
+  pt: Editor de ferramentas internas que combina componentes de interface com ações sobre bancos e APIs.
+  en: Internal tool editor that combines interface components with actions over databases and APIs.
+  stack:
+  - TypeScript
+  - React
+  - Go
+- repo: lowdefy/lowdefy
+  nome: Lowdefy
+  alternativa_a:
+  - Retool
+  pt: Monta apps web, painéis e formulários a partir de arquivos YAML, sem escrever interface à mão.
+  en: Assembles web apps, dashboards and forms from YAML files without hand-writing the interface.
+  stack:
+  - JavaScript
+  - Next.js
+  - Node.js
+- repo: frappe/frappe
+  nome: Frappe Framework
+  alternativa_a:
+  - Salesforce
+  - Power Apps
+  pt: Plataforma full-stack em que modelos de dados viram telas, permissões e API, base do ERPNext.
+  en: Full-stack platform where data models become screens, permissions and APIs; the base of ERPNext.
+  stack:
+  - Python
+  - JavaScript
+  - MariaDB
+  site: https://frappe.io
+- repo: frappe/builder
+  nome: Frappe Builder
+  alternativa_a:
+  - Webflow
+  pt: Editor visual de páginas web que publica sites e landing pages ligados aos dados do Frappe.
+  en: Visual web page editor that publishes sites and landing pages tied to Frappe data.
+  stack:
+  - Vue
+  - Python
+  - TypeScript
+- repo: saltcorn/saltcorn
+  nome: Saltcorn
+  alternativa_a:
+  - Airtable
+  - Bubble
+  pt: Construtor sem código de aplicações de banco de dados, com tabelas, vistas e extensões instaláveis.
+  en: No-code builder for database applications, with tables, views and installable extensions.
+  stack:
+  - JavaScript
+  - Node.js
+  - PostgreSQL
+- repo: lovasoa/SQLPage
+  nome: SQLPage
+  alternativa_a:
+  - Retool
+  pt: Servidor que gera páginas web e painéis a partir de consultas SQL, sem camada de código extra.
+  en: Server that generates web pages and dashboards straight from SQL queries, with no extra code layer.
+  stack:
+  - Rust
+  - SQL
+- repo: cortezaproject/corteza
+  nome: Corteza
+  alternativa_a:
+  - Salesforce
+  - Power Apps
+  pt: Plataforma low-code com CRM, fluxos e construtor de módulos para montar sistemas de gestão.
+  en: Low-code platform with CRM, workflows and a module builder for assembling business systems.
+  stack:
+  - Go
+  - Vue
+  - PostgreSQL
+- repo: convertigo/convertigo
+  nome: Convertigo
+  alternativa_a:
+  - Mendix
+  - OutSystems
+  pt: Plataforma low-code para apps móveis e web que integra sistemas legados e APIs por fluxos visuais.
+  en: Low-code platform for mobile and web apps that integrates legacy systems and APIs through visual flows.
+  stack:
+  - Java
+  - Angular
+  open_core: true
+- repo: skyvers/skyve
+  nome: Skyve
+  alternativa_a:
+  - Mendix
+  - OutSystems
+  pt: Plataforma low-code em Java que gera aplicações corporativas completas a partir de modelos e metadados.
+  en: Java low-code platform that generates complete enterprise applications from models and metadata.
+  stack:
+  - Java
+  - SQL
+- repo: amplication/amplication
+  nome: Amplication
+  alternativa_a:
+  - Backendless
+  - Xano
+  pt: Gera serviços de backend em Node.js e .NET a partir de um modelo de dados, com código editável.
+  en: Generates Node.js and .NET backend services from a data model, with code you can edit.
+  stack:
+  - TypeScript
+  - NestJS
+  - Prisma
+  open_core: true
+- repo: outerbase/studio
+  nome: Outerbase Studio
+  alternativa_a:
+  - TablePlus
+  pt: Cliente de bancos no navegador com edição de tabelas, consultas e conexões para SQLite e Postgres.
+  en: In-browser database client with table editing, queries and connections for SQLite and Postgres.
+  stack:
+  - TypeScript
+  - React
+- repo: SoftwareBrothers/adminjs
+  nome: AdminJS
+  alternativa_a:
+  - Retool
+  pt: Painel administrativo gerado automaticamente a partir dos modelos de dados de uma aplicação Node.js.
+  en: Admin panel generated automatically from the data models of a Node.js application.
+  stack:
+  - TypeScript
+  - React
+  - Node.js
+- repo: OpenRefine/OpenRefine
+  nome: OpenRefine
+  alternativa_a:
+  - Trifacta
+  pt: Ferramenta para limpar, transformar e reconciliar dados bagunçados em tabelas, no navegador.
+  en: Tool to clean, transform and reconcile messy tabular data, running in the browser.
+  stack:
+  - Java
+  - JavaScript
+- repo: sosedoff/pgweb
+  nome: pgweb
+  alternativa_a:
+  - pgAdmin
+  pt: Cliente web leve para PostgreSQL, distribuído como um binário único.
+  en: Lightweight web client for PostgreSQL shipped as a single binary.
+  stack:
+  - Go
+  - JavaScript

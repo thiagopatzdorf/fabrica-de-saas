@@ -1,0 +1,248 @@
+categoria: agendamento-calendario
+titulo_pt: Agendamento e calendário
+titulo_en: Scheduling and calendar
+itens:
+- repo: calcom/cal.com
+  nome: Cal.com
+  alternativa_a:
+  - Calendly
+  pt: Agendamento de reuniões com tipos de evento, disponibilidade, fluxos e integrações de calendário.
+  en: Meeting scheduling with event types, availability, workflows and calendar integrations.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  site: https://cal.com
+  open_core: true
+- repo: rallly/rallly
+  nome: Rallly
+  alternativa_a:
+  - Doodle
+  pt: Enquetes para encontrar o melhor horário entre várias pessoas, sem cadastro dos convidados.
+  en: Polls to find the best time for a group, with no sign-up for guests.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  site: https://rallly.co
+  open_core: true
+- repo: easyappointments/easyappointments
+  nome: Easy!Appointments
+  alternativa_a:
+  - Calendly
+  - Acuity Scheduling
+  pt: Sistema de marcação de horários para serviços, com clientes, equipe e sincronia com Google Calendar.
+  en: Appointment booking for services with customers, staff and Google Calendar sync.
+  stack:
+  - PHP
+  - CodeIgniter
+  - MySQL
+  site: https://easyappointments.org
+  open_core: false
+- repo: LibreBooking/app
+  nome: LibreBooking
+  alternativa_a:
+  - Robin
+  - Skedda
+  pt: Reserva de salas, equipamentos e recursos com regras de acesso, quotas e aprovações.
+  en: Booking for rooms, equipment and resources with access rules, quotas and approvals.
+  stack:
+  - PHP
+  - MySQL
+  site: https://librebooking.org
+  open_core: false
+- repo: thunderbird/appointment
+  nome: Thunderbird Appointment
+  alternativa_a:
+  - Calendly
+  pt: Ferramenta da Thunderbird para compartilhar disponibilidade e receber marcações de horário.
+  en: Thunderbird tool to share your availability and receive bookings.
+  stack:
+  - Python
+  - Vue
+  - FastAPI
+  site: https://appointment.day
+  open_core: false
+- repo: nextcloud/calendar
+  nome: Nextcloud Calendar
+  alternativa_a:
+  - Google Calendar
+  pt: Agenda do Nextcloud com CalDAV, calendários compartilhados e marcação de horários.
+  en: Nextcloud calendar app with CalDAV, shared calendars and appointment booking.
+  stack:
+  - PHP
+  - Vue
+  open_core: false
+- repo: Kozea/Radicale
+  nome: Radicale
+  alternativa_a:
+  - Google Calendar
+  pt: Servidor CalDAV e CardDAV simples e leve para agendas e contatos.
+  en: Simple, lightweight CalDAV and CardDAV server for calendars and contacts.
+  stack:
+  - Python
+  site: https://radicale.org
+  open_core: false
+- repo: fruux/Baikal
+  nome: Baïkal
+  alternativa_a:
+  - Google Calendar
+  pt: Servidor CalDAV e CardDAV leve com painel web, baseado no sabre/dav.
+  en: Lightweight CalDAV and CardDAV server with a web admin, built on sabre/dav.
+  stack:
+  - PHP
+  - SQLite
+  site: https://sabre.io/baikal
+  open_core: false
+- repo: tchapi/davis
+  nome: Davis
+  alternativa_a:
+  - Google Calendar
+  pt: Painel e servidor CalDAV, CardDAV e WebDAV moderno sobre o sabre/dav.
+  en: Modern CalDAV, CardDAV and WebDAV server and admin UI on top of sabre/dav.
+  stack:
+  - PHP
+  - Symfony
+  open_core: false
+- repo: jelmer/xandikos
+  nome: Xandikos
+  alternativa_a:
+  - Google Calendar
+  pt: Servidor CalDAV/CardDAV leve que guarda tudo em um repositório Git.
+  en: Lightweight CalDAV/CardDAV server that stores everything in a Git repository.
+  stack:
+  - Python
+  - Git
+  open_core: false
+- repo: Alinto/sogo
+  nome: SOGo
+  alternativa_a:
+  - Microsoft Exchange
+  - Google Workspace
+  pt: Groupware com agenda, contatos e e-mail via web, compatível com CalDAV e ActiveSync.
+  en: Groupware with web calendar, contacts and mail, compatible with CalDAV and ActiveSync.
+  stack:
+  - Objective-C
+  - PostgreSQL
+  site: https://www.sogo.nu
+  open_core: false
+- repo: framasoft/framadate
+  nome: Framadate
+  alternativa_a:
+  - Doodle
+  pt: Serviço de enquetes de data e de outros temas, para decidir horários em grupo.
+  en: Poll service for dates and other topics, to decide on schedules as a group.
+  stack:
+  - PHP
+  - MySQL
+  site: https://framadate.org
+  open_core: false
+- repo: jelhan/croodle
+  nome: Croodle
+  alternativa_a:
+  - Doodle
+  pt: App de enquetes de data sem backend de banco de dados, com respostas cifradas.
+  en: Date poll app with no database backend and encrypted responses.
+  stack:
+  - Ember
+  - JavaScript
+  open_core: false
+- repo: Etar-Group/Etar-Calendar
+  nome: Etar
+  alternativa_a:
+  - Google Calendar
+  pt: App de calendário para Android, livre e leve, que usa os calendários do aparelho.
+  en: Free, lightweight Android calendar app that uses the device's calendars.
+  stack:
+  - Kotlin
+  - Android
+  open_core: false
+- repo: FossifyOrg/Calendar
+  nome: Fossify Calendar
+  alternativa_a:
+  - Google Calendar
+  pt: App de calendário para Android, sem anúncios, com eventos, lembretes e importação.
+  en: Ad-free Android calendar app with events, reminders and import.
+  stack:
+  - Kotlin
+  - Android
+  site: https://www.fossify.org
+  open_core: false
+- repo: alainm23/planify
+  nome: Planify
+  alternativa_a:
+  - Todoist
+  - Google Calendar
+  pt: Planejador de tarefas e agenda para o desktop Linux, com projetos e lembretes.
+  en: Task and schedule planner for the Linux desktop, with projects and reminders.
+  stack:
+  - Vala
+  - GTK
+  open_core: false
+- repo: etesync/server
+  nome: Etebase
+  alternativa_a:
+  - Google Calendar
+  pt: Servidor de sincronização de agenda, contatos e tarefas com criptografia de ponta a ponta.
+  en: Sync server for calendar, contacts and tasks with end-to-end encryption.
+  stack:
+  - Python
+  - Django
+  site: https://www.etebase.com
+  open_core: false
+- repo: meeting-room-booking-system/mrbs-code
+  nome: MRBS
+  alternativa_a:
+  - Robin
+  - Skedda
+  pt: Sistema web para reservar salas de reunião, com visões por dia, semana e mês.
+  en: Web system for booking meeting rooms, with day, week and month views.
+  stack:
+  - PHP
+  - MySQL
+  site: https://mrbs.sourceforge.io
+  open_core: false
+- repo: lennart-k/rustical
+  nome: RustiCal
+  alternativa_a:
+  - Google Calendar
+  pt: Servidor CalDAV e CardDAV leve escrito em Rust.
+  en: Lightweight CalDAV and CardDAV server written in Rust.
+  stack:
+  - Rust
+  - SQLite
+  open_core: false
+- repo: HiEventsDev/hi.events
+  nome: Hi.Events
+  alternativa_a:
+  - Eventbrite
+  pt: Gestão de eventos com venda de ingressos, check-in e páginas de evento.
+  en: Event management with ticket sales, check-in and event pages.
+  stack:
+  - PHP
+  - Laravel
+  - React
+  site: https://hi.events
+  open_core: false
+- repo: alfio-event/alf.io
+  nome: alf.io
+  alternativa_a:
+  - Eventbrite
+  pt: Sistema de emissão de ingressos e reservas para eventos, com foco em privacidade.
+  en: Ticketing and reservation system for events, with a privacy focus.
+  stack:
+  - Java
+  - Spring
+  - PostgreSQL
+  site: https://alf.io
+  open_core: false
+- repo: timeoff-management/timeoff-management-application
+  nome: TimeOff.Management
+  alternativa_a:
+  - BambooHR
+  pt: Controle de férias e folgas da equipe, com calendário e fluxo de aprovação.
+  en: Team leave and time-off tracking with a calendar and approval workflow.
+  stack:
+  - Node.js
+  - SQLite
+  open_core: false

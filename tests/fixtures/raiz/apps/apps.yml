@@ -1,0 +1,14 @@
+itens:
+  - pasta: demo-a
+    nome: Demo A
+    pt: "Produto de teste A."
+    en: "Test product A."
+    stack: [Python]
+    testes: 10
+    aviso_pt: "só serve de fixture."
+  - pasta: demo-b
+    nome: Demo B
+    pt: "Produto de teste B."
+    en: "Test product B."
+    stack: [Node, Express]
+    testes: 5

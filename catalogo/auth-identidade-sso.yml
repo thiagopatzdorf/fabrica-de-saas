@@ -1,0 +1,489 @@
+categoria: auth-identidade-sso
+titulo_pt: Autenticação, identidade e SSO
+titulo_en: Authentication, identity and SSO
+itens:
+- repo: keycloak/keycloak
+  nome: Keycloak
+  alternativa_a:
+  - Auth0
+  - Okta
+  pt: Servidor de identidade com SSO, OIDC, SAML, federação de usuários e gestão de realms.
+  en: Identity server with SSO, OIDC, SAML, user federation and multi-realm management.
+  stack:
+  - Java
+  - Quarkus
+  site: https://www.keycloak.org
+  open_core: false
+- repo: goauthentik/authentik
+  nome: authentik
+  alternativa_a:
+  - Okta
+  - Auth0
+  pt: Provedor de identidade moderno com fluxos configuráveis, SSO, proxy de autenticação e LDAP.
+  en: Modern identity provider with configurable flows, SSO, an auth proxy and LDAP outpost.
+  stack:
+  - Python
+  - Go
+  - TypeScript
+  site: https://goauthentik.io
+  open_core: true
+  nota: Há edição enterprise paga
+- repo: zitadel/zitadel
+  nome: ZITADEL
+  alternativa_a:
+  - Auth0
+  - Clerk
+  pt: Plataforma de identidade multi-tenant com login, SSO, MFA e eventos auditáveis.
+  en: Multi-tenant identity platform with login, SSO, MFA and an auditable event store.
+  stack:
+  - Go
+  - PostgreSQL
+  site: https://zitadel.com
+  open_core: false
+- repo: ory/kratos
+  nome: Ory Kratos
+  alternativa_a:
+  - Auth0
+  - Clerk
+  pt: 'Gestão de contas via API: cadastro, login, recuperação, MFA e perfil, sem tela imposta.'
+  en: 'API-first user management: sign-up, login, recovery, MFA and profiles with no fixed UI.'
+  stack:
+  - Go
+  site: https://www.ory.sh
+  open_core: false
+- repo: ory/hydra
+  nome: Ory Hydra
+  alternativa_a:
+  - Auth0
+  - Okta
+  pt: Servidor OAuth 2.0 e OpenID Connect certificado, que delega o login ao seu sistema.
+  en: Certified OAuth 2.0 and OpenID Connect server that delegates login to your own system.
+  stack:
+  - Go
+  site: https://www.ory.sh
+  open_core: false
+- repo: ory/keto
+  nome: Ory Keto
+  alternativa_a:
+  - Auth0 FGA
+  pt: Servidor de permissões inspirado no Zanzibar do Google, para controle de acesso refinado.
+  en: Permission server inspired by Google Zanzibar for fine-grained access control.
+  stack:
+  - Go
+  open_core: false
+- repo: ory/oathkeeper
+  nome: Ory Oathkeeper
+  alternativa_a: []
+  pt: Proxy que autentica e autoriza requisições antes de chegarem aos seus serviços.
+  en: Identity and access proxy that authenticates and authorizes requests before they reach services.
+  stack:
+  - Go
+  open_core: false
+- repo: authelia/authelia
+  nome: Authelia
+  alternativa_a:
+  - Okta
+  pt: Portal de autenticação e autorização com 2FA e SSO, usado atrás de proxies reversos.
+  en: Authentication and authorization portal with 2FA and SSO, used behind reverse proxies.
+  stack:
+  - Go
+  - React
+  site: https://www.authelia.com
+  open_core: false
+- repo: supertokens/supertokens-core
+  nome: SuperTokens
+  alternativa_a:
+  - Auth0
+  - Clerk
+  pt: Login e sessões auto-hospedados com SDKs prontos, MFA e login social.
+  en: Self-hosted login and sessions with ready SDKs, MFA and social login.
+  stack:
+  - Java
+  - Node.js
+  site: https://supertokens.com
+  open_core: true
+  nota: Alguns recursos exigem licença paga
+- repo: casdoor/casdoor
+  nome: Casdoor
+  alternativa_a:
+  - Auth0
+  - Okta
+  pt: Plataforma de login com interface web, OAuth, OIDC, SAML, CAS e vários provedores sociais.
+  en: Login platform with a web UI supporting OAuth, OIDC, SAML, CAS and many social providers.
+  stack:
+  - Go
+  - React
+  site: https://casdoor.org
+  open_core: false
+- repo: logto-io/logto
+  nome: Logto
+  alternativa_a:
+  - Auth0
+  - Clerk
+  pt: Infraestrutura de identidade para apps e SaaS, com SSO, multi-tenant e RBAC.
+  en: Identity infrastructure for apps and SaaS with SSO, multi-tenancy and RBAC.
+  stack:
+  - TypeScript
+  - PostgreSQL
+  site: https://logto.io
+  open_core: false
+- repo: teamhanko/hanko
+  nome: Hanko
+  alternativa_a:
+  - Auth0
+  - Clerk
+  pt: Autenticação sem senha com passkeys e componentes web prontos para login.
+  en: Passwordless authentication with passkeys and drop-in web components for login.
+  stack:
+  - Go
+  - TypeScript
+  site: https://www.hanko.io
+  open_core: false
+- repo: dexidp/dex
+  nome: Dex
+  alternativa_a: []
+  pt: Provedor OpenID Connect leve que conecta LDAP, SAML e GitHub a aplicações, comum em Kubernetes.
+  en: Lightweight OpenID Connect provider bridging LDAP, SAML and GitHub to apps, common in Kubernetes.
+  stack:
+  - Go
+  site: https://dexidp.io
+  open_core: false
+- repo: pocket-id/pocket-id
+  nome: Pocket ID
+  alternativa_a:
+  - Auth0
+  pt: Provedor OIDC simples que usa apenas passkeys, pensado para homelab e equipes pequenas.
+  en: Simple OIDC provider that uses only passkeys, built for homelabs and small teams.
+  stack:
+  - Go
+  - Svelte
+  site: https://pocket-id.org
+  open_core: false
+- repo: lldap/lldap
+  nome: LLDAP
+  alternativa_a:
+  - Active Directory
+  pt: Servidor LDAP enxuto com interface web, para quem só precisa de usuários e grupos.
+  en: Lightweight LDAP server with a web UI for teams that only need users and groups.
+  stack:
+  - Rust
+  open_core: false
+- repo: openfga/openfga
+  nome: OpenFGA
+  alternativa_a:
+  - Auth0 FGA
+  pt: Motor de autorização refinada inspirado no Zanzibar, com modelo de relações entre objetos.
+  en: Fine-grained authorization engine inspired by Zanzibar, modeling relationships between objects.
+  stack:
+  - Go
+  site: https://openfga.dev
+  open_core: false
+- repo: cerbos/cerbos
+  nome: Cerbos
+  alternativa_a:
+  - Permit.io
+  pt: Serviço de autorização com políticas em YAML avaliadas fora do código da aplicação.
+  en: Authorization service that evaluates YAML policies outside your application code.
+  stack:
+  - Go
+  site: https://cerbos.dev
+  open_core: false
+- repo: dani-garcia/vaultwarden
+  nome: Vaultwarden
+  alternativa_a:
+  - 1Password
+  - Bitwarden
+  pt: Servidor leve compatível com os clientes do Bitwarden para guardar senhas da equipe.
+  en: Lightweight server compatible with Bitwarden clients for storing team passwords.
+  stack:
+  - Rust
+  open_core: false
+- repo: openbao/openbao
+  nome: OpenBao
+  alternativa_a:
+  - HashiCorp Vault
+  pt: Gestão de segredos e criptografia como serviço, fork comunitário do Vault.
+  en: Secrets management and encryption as a service, a community fork of Vault.
+  stack:
+  - Go
+  site: https://openbao.org
+  open_core: false
+- repo: infisical/infisical
+  nome: Infisical
+  alternativa_a:
+  - Doppler
+  - 1Password
+  pt: Plataforma de segredos e chaves para sincronizar variáveis entre ambientes e equipes.
+  en: Secrets and key management platform to sync environment variables across teams.
+  stack:
+  - TypeScript
+  - PostgreSQL
+  site: https://infisical.com
+  open_core: true
+  nota: Edição enterprise em pasta ee
+- repo: passbolt/passbolt_api
+  nome: Passbolt
+  alternativa_a:
+  - 1Password
+  - LastPass
+  pt: Gerenciador de senhas para equipes, com criptografia OpenPGP e compartilhamento.
+  en: Team password manager built on OpenPGP encryption with shared credentials.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.passbolt.com
+  open_core: true
+  nota: Edição Pro paga
+- repo: authgear/authgear-server
+  nome: Authgear
+  alternativa_a:
+  - Auth0
+  pt: Plataforma de identidade com login, MFA, SSO e interface de login personalizável.
+  en: Identity platform with login, MFA, SSO and a customizable authentication UI.
+  stack:
+  - Go
+  - PostgreSQL
+  open_core: false
+- repo: boxyhq/jackson
+  nome: BoxyHQ SAML Jackson
+  alternativa_a:
+  - WorkOS
+  pt: Ponte SAML e SCIM que dá SSO corporativo a apps SaaS sem implementar o protocolo.
+  en: SAML and SCIM bridge that gives SaaS apps enterprise SSO without implementing the protocol.
+  stack:
+  - TypeScript
+  - Node.js
+  site: https://boxyhq.com
+  open_core: true
+  nota: Recursos corporativos pagos
+- repo: kanidm/kanidm
+  nome: Kanidm
+  alternativa_a:
+  - Okta
+  pt: Plataforma de identidade com OAuth2, LDAP, RADIUS e passkeys, escrita em Rust.
+  en: Identity platform with OAuth2, LDAP, RADIUS and passkeys, written in Rust.
+  stack:
+  - Rust
+  site: https://kanidm.com
+  open_core: false
+- repo: privacyidea/privacyidea
+  nome: privacyIDEA
+  alternativa_a:
+  - Duo
+  pt: Servidor de autenticação multifator com tokens OTP, hardware e integração com LDAP.
+  en: Multi-factor authentication server with OTP and hardware tokens plus LDAP integration.
+  stack:
+  - Python
+  site: https://privacyidea.org
+  open_core: true
+- repo: freeipa/freeipa
+  nome: FreeIPA
+  alternativa_a:
+  - Active Directory
+  pt: Gestão de identidade e política para Linux, com Kerberos, LDAP, DNS e certificados.
+  en: Identity and policy management for Linux combining Kerberos, LDAP, DNS and certificates.
+  stack:
+  - Python
+  - C
+  site: https://www.freeipa.org
+  open_core: false
+- repo: glauth/glauth
+  nome: GLAuth
+  alternativa_a: []
+  pt: Servidor LDAP simples e leve com backends de arquivo, SQL e outros.
+  en: Simple, lightweight LDAP server with file, SQL and other backends.
+  stack:
+  - Go
+  open_core: false
+- repo: tinyauthapp/tinyauth
+  nome: Tinyauth
+  alternativa_a:
+  - Authelia
+  pt: Camada de login simples para proteger apps atrás de proxy reverso, com OAuth.
+  en: Simple login layer to protect apps behind a reverse proxy, with OAuth support.
+  stack:
+  - Go
+  - React
+  open_core: false
+- repo: JanssenProject/jans
+  nome: Janssen Project
+  alternativa_a:
+  - Okta
+  pt: Plataforma de identidade e acesso com OAuth, OIDC, FIDO2, SCIM e gestão de usuários.
+  en: Identity and access platform with OAuth, OIDC, FIDO2, SCIM and user management.
+  stack:
+  - Java
+  - Python
+  site: https://jans.io
+  open_core: false
+- repo: simplesamlphp/simplesamlphp
+  nome: SimpleSAMLphp
+  alternativa_a: []
+  pt: Aplicação PHP para SSO via SAML, funcionando como provedor de serviço ou de identidade.
+  en: PHP application for SAML-based SSO acting as a service provider or identity provider.
+  stack:
+  - PHP
+  site: https://simplesamlphp.org
+  open_core: false
+- repo: sebadob/rauthy
+  nome: Rauthy
+  alternativa_a: []
+  pt: Provedor OIDC pequeno e rápido com passkeys, embutindo o banco para fácil implantação.
+  en: Small, fast OIDC provider with passkeys and an embedded database for easy deployment.
+  stack:
+  - Rust
+  - Svelte
+  open_core: false
+- repo: pomerium/pomerium
+  nome: Pomerium
+  alternativa_a:
+  - Cloudflare Access
+  pt: Proxy ciente de identidade para dar acesso a apps internos sem VPN.
+  en: Identity-aware proxy that grants access to internal apps without a VPN.
+  stack:
+  - Go
+  site: https://www.pomerium.com
+  open_core: true
+  nota: Console corporativo é pago
+- repo: oauth2-proxy/oauth2-proxy
+  nome: OAuth2 Proxy
+  alternativa_a: []
+  pt: Proxy reverso que exige login por OAuth2 ou OIDC antes de liberar uma aplicação.
+  en: Reverse proxy that requires OAuth2 or OIDC login before letting traffic reach an app.
+  stack:
+  - Go
+  site: https://oauth2-proxy.github.io/oauth2-proxy
+  open_core: false
+- repo: vouch/vouch-proxy
+  nome: Vouch Proxy
+  alternativa_a: []
+  pt: Serviço de SSO para Nginx que valida cookies contra provedores como Google e Okta.
+  en: SSO service for Nginx that validates cookies against providers such as Google and Okta.
+  stack:
+  - Go
+  open_core: false
+- repo: Bubka/2FAuth
+  nome: 2FAuth
+  alternativa_a:
+  - Authy
+  pt: Aplicativo web para guardar e gerar códigos de autenticação em dois fatores.
+  en: Web app to store and generate two-factor authentication codes.
+  stack:
+  - PHP
+  - Laravel
+  open_core: false
+- repo: Evolveum/midpoint
+  nome: midPoint
+  alternativa_a:
+  - SailPoint
+  pt: Plataforma de governança e provisionamento de identidades em ambientes corporativos.
+  en: Identity governance and provisioning platform for enterprise environments.
+  stack:
+  - Java
+  site: https://evolveum.com/midpoint
+  open_core: true
+- repo: apache/syncope
+  nome: Apache Syncope
+  alternativa_a:
+  - SailPoint
+  pt: Sistema de gestão de identidades digitais com provisionamento e workflows.
+  en: Digital identity management system with provisioning and workflows.
+  stack:
+  - Java
+  site: https://syncope.apache.org
+  open_core: false
+- repo: apereo/cas
+  nome: Apereo CAS
+  alternativa_a: []
+  pt: Servidor de SSO muito usado em universidades, com CAS, OIDC, SAML e MFA.
+  en: SSO server widely used in universities, supporting CAS, OIDC, SAML and MFA.
+  stack:
+  - Java
+  site: https://apereo.github.io/cas
+  open_core: false
+- repo: warrant-dev/warrant
+  nome: Warrant
+  alternativa_a:
+  - Auth0 FGA
+  pt: Serviço de autorização com RBAC e relações para definir quem acessa o quê.
+  en: Authorization service with RBAC and relationships to define who can access what.
+  stack:
+  - Go
+  open_core: false
+  nota: Conferir se segue ativo
+- repo: permify/permify
+  nome: Permify
+  alternativa_a:
+  - Auth0 FGA
+  pt: Serviço de autorização que modela permissões como relações, inspirado no Zanzibar.
+  en: Authorization service modeling permissions as relations, inspired by Zanzibar.
+  stack:
+  - Go
+  site: https://permify.co
+  open_core: false
+- repo: LinOTP/LinOTP
+  nome: LinOTP
+  alternativa_a:
+  - Duo
+  pt: Servidor de autenticação multifator que aceita vários tipos de token e usuários de LDAP.
+  en: Multi-factor authentication server supporting many token types and LDAP users.
+  stack:
+  - Python
+  site: https://www.linotp.org
+  open_core: true
+- repo: ldapaccountmanager/lam
+  nome: LDAP Account Manager
+  alternativa_a: []
+  pt: Interface web para administrar usuários, grupos e hosts em servidores LDAP.
+  en: Web interface to administer users, groups and hosts in LDAP directories.
+  stack:
+  - PHP
+  site: https://www.ldap-account-manager.org
+  open_core: true
+- repo: authorizerdev/authorizer
+  nome: Authorizer
+  alternativa_a:
+  - Auth0
+  - Clerk
+  pt: Camada de autenticação auto-hospedada com GraphQL, login social e e-mail mágico.
+  en: Self-hosted authentication layer with GraphQL, social login and magic links.
+  stack:
+  - Go
+  - React
+  site: https://authorizer.dev
+  open_core: false
+- repo: supabase/auth
+  nome: Supabase Auth
+  alternativa_a:
+  - Auth0
+  - Firebase Auth
+  pt: Servidor de autenticação baseado em JWT que cuida de usuários, sessões e login social.
+  en: JWT-based authentication server handling users, sessions and social login.
+  stack:
+  - Go
+  - PostgreSQL
+  site: https://supabase.com/auth
+  open_core: false
+- repo: wso2/product-is
+  nome: WSO2 Identity Server
+  alternativa_a:
+  - Okta
+  - Auth0
+  pt: Servidor de identidade corporativo com SSO, federação, MFA e gestão de acesso.
+  en: Enterprise identity server with SSO, federation, MFA and access management.
+  stack:
+  - Java
+  site: https://wso2.com/identity-server
+  open_core: true
+- repo: firezone/firezone
+  nome: Firezone
+  alternativa_a:
+  - Tailscale
+  - Cloudflare Access
+  pt: Acesso de rede zero trust com WireGuard e políticas por identidade, no lugar de VPN.
+  en: Zero-trust network access on WireGuard with identity-based policies, replacing a VPN.
+  stack:
+  - Elixir
+  - Rust
+  site: https://www.firezone.dev
+  open_core: false

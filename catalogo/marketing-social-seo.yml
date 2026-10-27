@@ -1,0 +1,211 @@
+categoria: marketing-social-seo
+titulo_pt: Marketing, redes sociais e SEO
+titulo_en: Marketing, social media and SEO
+itens:
+- repo: gitroomhq/postiz-app
+  nome: Postiz
+  alternativa_a:
+  - Buffer
+  - Hootsuite
+  - Later
+  pt: Agendador de posts para várias redes sociais, com calendário, equipe, análises e geração de texto por IA.
+  en: Social media scheduler for many networks, with calendar, teams, analytics and AI-assisted copy.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  open_core: false
+  destaque: true
+- repo: inovector/mixpost
+  nome: Mixpost
+  alternativa_a:
+  - Buffer
+  - Hootsuite
+  pt: Gestão de redes sociais self-hosted com agendamento, calendário, biblioteca de mídia e trabalho em equipe.
+  en: Self-hosted social media manager with scheduling, calendar, media library and team collaboration.
+  stack:
+  - PHP
+  - Laravel
+  - Vue
+  open_core: true
+  nota: Versão Lite aberta; Pro e Enterprise pagas.
+- repo: dubinc/dub
+  nome: Dub
+  alternativa_a:
+  - Bitly
+  - Rebrandly
+  pt: Encurtador de links com domínio próprio, analytics de cliques, QR codes e programa de afiliados.
+  en: Link shortener with custom domains, click analytics, QR codes and affiliate programs.
+  stack:
+  - TypeScript
+  - Next.js
+  - MySQL
+  open_core: true
+  nota: Pasta ee com código comercial.
+  destaque: true
+- repo: shlinkio/shlink
+  nome: Shlink
+  alternativa_a:
+  - Bitly
+  - Rebrandly
+  pt: Servidor de links curtos com API REST, domínios múltiplos, QR codes e estatísticas de visitas.
+  en: Short-link server with REST API, multiple domains, QR codes and visit statistics.
+  stack:
+  - PHP
+  - MySQL
+  open_core: false
+- repo: YOURLS/YOURLS
+  nome: YOURLS
+  alternativa_a:
+  - Bitly
+  pt: Encurtador de URLs clássico, com plugins, estatísticas por link e domínio próprio.
+  en: Classic URL shortener with plugins, per-link stats and your own domain.
+  stack:
+  - PHP
+  - MySQL
+  open_core: false
+- repo: thedevs-network/kutt
+  nome: Kutt
+  alternativa_a:
+  - Bitly
+  - TinyURL
+  pt: Encurtador moderno com domínios personalizados, links protegidos por senha e estatísticas de acesso.
+  en: Modern link shortener with custom domains, password-protected links and access stats.
+  stack:
+  - Node.js
+  - PostgreSQL
+  open_core: false
+- repo: ccbikai/Sink
+  nome: Sink
+  alternativa_a:
+  - Bitly
+  - Dub
+  pt: Encurtador com analytics que roda de graça em Cloudflare Workers, com painel e links com expiração.
+  en: Link shortener with analytics that runs on Cloudflare Workers, with a dashboard and expiring links.
+  stack:
+  - Nuxt
+  - TypeScript
+  open_core: false
+- repo: LinkStackOrg/linkstack
+  nome: LinkStack
+  alternativa_a:
+  - Linktree
+  - Beacons
+  pt: Página de links tipo Linktree hospedada por você, com vários usuários, temas e métricas de cliques.
+  en: Self-hosted link-in-bio page builder with multiple users, themes and click counts.
+  stack:
+  - PHP
+  - Laravel
+  - SQLite
+  open_core: false
+  nota: Menos certeza do slug da organização.
+- repo: StJudeWasHere/seonaut
+  nome: SEOnaut
+  alternativa_a:
+  - Screaming Frog
+  - Sitebulb
+  pt: Rastreador de SEO que varre um site e aponta links quebrados, títulos duplicados e erros de indexação.
+  en: SEO crawler that scans a site and flags broken links, duplicate titles and indexing problems.
+  stack:
+  - Go
+  - MySQL
+  open_core: false
+- repo: towfiqi/serpbear
+  nome: SerpBear
+  alternativa_a:
+  - SEMrush
+  - Ahrefs
+  - SERP Robot
+  pt: Monitor de posição de palavras-chave no Google, com histórico, alertas por e-mail e integração ao Search Console.
+  en: Google keyword rank tracker with history, email alerts and Search Console integration.
+  stack:
+  - Next.js
+  - TypeScript
+  - SQLite
+  open_core: false
+- repo: beb7/greenflare
+  nome: Greenflare
+  alternativa_a:
+  - Screaming Frog
+  pt: Rastreador de SEO para desktop que audita links, metadados e códigos de resposta de um site.
+  en: Desktop SEO crawler that audits links, metadata and response codes across a site.
+  stack:
+  - Python
+  open_core: false
+  nota: Pode estar parado.
+- repo: harlan-zw/unlighthouse
+  nome: Unlighthouse
+  alternativa_a:
+  - Semrush Site Audit
+  pt: Roda o Lighthouse em todas as páginas de um site e entrega um relatório único de desempenho e SEO.
+  en: Runs Lighthouse on every page of a site and builds one report on performance and SEO.
+  stack:
+  - TypeScript
+  - Node.js
+  open_core: false
+- repo: Yoast/wordpress-seo
+  nome: Yoast SEO
+  alternativa_a:
+  - Rank Math
+  pt: Plugin de SEO para WordPress com análise de conteúdo, sitemaps, dados estruturados e metatags.
+  en: WordPress SEO plugin with content analysis, sitemaps, structured data and meta tags.
+  stack:
+  - PHP
+  - JavaScript
+  open_core: true
+  nota: Versão Premium paga em separado.
+- repo: sybrew/the-seo-framework
+  nome: The SEO Framework
+  alternativa_a:
+  - Yoast
+  - Rank Math
+  pt: Plugin de SEO para WordPress leve, que gera metatags, sitemap e dados estruturados automaticamente.
+  en: Lightweight WordPress SEO plugin that generates meta tags, sitemaps and structured data automatically.
+  stack:
+  - PHP
+  open_core: false
+- repo: typebot-io/typebot
+  nome: Typebot
+  alternativa_a:
+  - Typeform
+  - Landbot
+  - ManyChat
+  pt: Construtor de chatbots e formulários conversacionais para captar leads e incorporar em sites.
+  en: Builder for chatbots and conversational forms to capture leads and embed on websites.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  open_core: true
+  nota: Licença AGPL; recursos de equipe são pagos.
+- repo: harry0703/MoneyPrinterTurbo
+  nome: MoneyPrinterTurbo
+  alternativa_a:
+  - InVideo
+  - Pictory
+  pt: Gera vídeos curtos para redes sociais a partir de um tema, com roteiro, narração, legendas e trilha.
+  en: Generates short social media videos from a topic, with script, voiceover, captions and music.
+  stack:
+  - Python
+  open_core: false
+- repo: ldidry/lstu
+  nome: Lstu
+  alternativa_a:
+  - Bitly
+  pt: Encurtador de URLs da Framasoft, simples, com estatísticas e API.
+  en: URL shortener from the Framasoft community, simple, with stats and an API.
+  stack:
+  - Perl
+  - SQLite
+  open_core: false
+  nota: 'Menos certeza: projeto pequeno.'
+- repo: sitespeedio/sitespeed.io
+  nome: sitespeed.io
+  alternativa_a:
+  - Calibre
+  - SpeedCurve
+  pt: Mede desempenho de páginas com navegadores reais e guarda métricas em Graphite ou InfluxDB.
+  en: Measures page performance with real browsers and stores metrics in Graphite or InfluxDB.
+  stack:
+  - Node.js
+  open_core: false

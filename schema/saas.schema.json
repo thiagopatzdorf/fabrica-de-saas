@@ -1,0 +1,336 @@
+{
+  "$defs": {
+    "catalogo": {
+      "additionalProperties": false,
+      "properties": {
+        "itens": {
+          "items": {
+            "$ref": "#/$defs/item_catalogo"
+          },
+          "type": "array"
+        },
+        "meta": {
+          "required": [
+            "gerado_em",
+            "total",
+            "ativos",
+            "rebaixados",
+            "categorias"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "meta",
+        "itens"
+      ],
+      "type": "object"
+    },
+    "categoria": {
+      "additionalProperties": false,
+      "properties": {
+        "categoria": {
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        "itens": {
+          "items": {
+            "$ref": "#/$defs/item_entrada"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "titulo_en": {
+          "maxLength": 60,
+          "minLength": 1,
+          "type": "string"
+        },
+        "titulo_pt": {
+          "maxLength": 60,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "categoria",
+        "titulo_pt",
+        "titulo_en",
+        "itens"
+      ],
+      "type": "object"
+    },
+    "item_catalogo": {
+      "additionalProperties": false,
+      "properties": {
+        "alternativa_a": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "aviso": {
+          "type": "string"
+        },
+        "categoria": {
+          "type": "string"
+        },
+        "destaque": {
+          "type": "boolean"
+        },
+        "en": {
+          "maxLength": 140,
+          "minLength": 1,
+          "type": "string"
+        },
+        "estrelas": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "licenca": {
+          "enum": [
+            "MIT",
+            "Apache-2.0",
+            "BSD-2-Clause",
+            "BSD-3-Clause",
+            "ISC",
+            "0BSD",
+            "Unlicense",
+            "CC0-1.0",
+            "MPL-2.0",
+            "LGPL-2.1",
+            "LGPL-2.1-only",
+            "LGPL-2.1-or-later",
+            "LGPL-3.0",
+            "LGPL-3.0-only",
+            "LGPL-3.0-or-later",
+            "GPL-2.0",
+            "GPL-2.0-only",
+            "GPL-2.0-or-later",
+            "GPL-3.0",
+            "GPL-3.0-only",
+            "GPL-3.0-or-later",
+            "AGPL-3.0",
+            "AGPL-3.0-only",
+            "AGPL-3.0-or-later",
+            "EUPL-1.2",
+            "EPL-2.0",
+            "Zlib"
+          ]
+        },
+        "motivo": {
+          "type": "string"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "nota": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "open_core": {
+          "type": "boolean"
+        },
+        "pt": {
+          "maxLength": 140,
+          "minLength": 1,
+          "type": "string"
+        },
+        "repo": {
+          "type": "string"
+        },
+        "site": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stack": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 4,
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "ok",
+            "rebaixado"
+          ]
+        },
+        "ultimo_push": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "categoria",
+        "repo",
+        "url",
+        "nome",
+        "alternativa_a",
+        "pt",
+        "en",
+        "stack",
+        "site",
+        "open_core",
+        "nota",
+        "destaque",
+        "licenca",
+        "estrelas",
+        "ultimo_push",
+        "status",
+        "motivo",
+        "aviso"
+      ],
+      "type": "object"
+    },
+    "item_entrada": {
+      "additionalProperties": false,
+      "properties": {
+        "alternativa_a": {
+          "items": {
+            "maxLength": 40,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 10,
+          "minItems": 0,
+          "type": "array"
+        },
+        "destaque": {
+          "type": "boolean"
+        },
+        "en": {
+          "maxLength": 140,
+          "minLength": 1,
+          "not": {
+            "pattern": "(?i)(https?://|www\\.|ftp://)"
+          },
+          "type": "string"
+        },
+        "nome": {
+          "maxLength": 60,
+          "minLength": 1,
+          "not": {
+            "pattern": "(?i)(https?://|www\\.|ftp://)"
+          },
+          "type": "string"
+        },
+        "nota": {
+          "maxLength": 200,
+          "minLength": 1,
+          "not": {
+            "pattern": "(?i)(https?://|www\\.|ftp://)"
+          },
+          "type": "string"
+        },
+        "open_core": {
+          "type": "boolean"
+        },
+        "pt": {
+          "maxLength": 140,
+          "minLength": 1,
+          "not": {
+            "pattern": "(?i)(https?://|www\\.|ftp://)"
+          },
+          "type": "string"
+        },
+        "repo": {
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+          "type": "string"
+        },
+        "site": {
+          "pattern": "^https?://\\S+$",
+          "type": "string"
+        },
+        "stack": {
+          "items": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 4,
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "repo",
+        "nome",
+        "pt",
+        "en",
+        "stack"
+      ],
+      "type": "object"
+    },
+    "verificado": {
+      "properties": {
+        "gerado_em": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "repos": {
+          "additionalProperties": {
+            "properties": {
+              "arquivado": {
+                "type": "boolean"
+              },
+              "aviso": {
+                "type": "string"
+              },
+              "canonico": {
+                "type": "string"
+              },
+              "estrelas": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "motivo": {
+                "type": "string"
+              },
+              "pushed_at": {
+                "type": "string"
+              },
+              "spdx": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "ok",
+                  "rebaixado",
+                  "excluido"
+                ]
+              }
+            },
+            "required": [
+              "canonico",
+              "spdx",
+              "estrelas",
+              "pushed_at",
+              "arquivado",
+              "status",
+              "motivo"
+            ],
+            "type": "object"
+          },
+          "type": "object"
+        }
+      },
+      "required": [
+        "gerado_em",
+        "repos"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/schema/saas.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Gerado por scripts/gerar.py. Raiz: use #/$defs/categoria (catalogo/<slug>.yml lido como JSON), #/$defs/catalogo (catalogo.json) ou #/$defs/verificado (catalogo/verificado.json).",
+  "title": "Fábrica de SaaS"
+}

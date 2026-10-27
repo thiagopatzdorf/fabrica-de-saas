@@ -1,0 +1,132 @@
+categoria: imobiliario-hotelaria-reservas
+titulo_pt: Imobiliário, hotelaria e reservas
+titulo_en: Real estate, hospitality and bookings
+itens:
+- repo: alextselegidis/easyappointments
+  nome: Easy!Appointments
+  alternativa_a:
+  - Setmore
+  - Acuity Scheduling
+  pt: 'Agenda online para pequenos negócios: clientes marcam horário com prestadores e serviços, com sincronização de calendário.'
+  en: 'Online appointment booking for small businesses: customers pick providers and services, with calendar sync.'
+  stack:
+  - PHP
+  - CodeIgniter
+  - MySQL
+  open_core: false
+- repo: QloApps/QloApps
+  nome: QloApps
+  alternativa_a:
+  - Booking.com Extranet
+  - Cloudbeds
+  pt: Motor de reservas e gestão para hotéis, com site de reservas, quartos, tarifas e painel administrativo.
+  en: Hotel booking engine and management with reservation site, rooms, rates and admin back office.
+  stack:
+  - PHP
+  - PrestaShop
+  - MySQL
+  open_core: false
+- repo: lukevella/rallly
+  nome: Rallly
+  alternativa_a:
+  - Doodle
+  pt: Enquetes para achar o melhor horário de um encontro de grupo, sem exigir cadastro dos convidados.
+  en: Group scheduling polls to find the best meeting time, with no sign-up needed for invitees.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  open_core: false
+- repo: pretix/pretix
+  nome: pretix
+  alternativa_a:
+  - Eventbrite
+  - Ticketmaster
+  pt: Sistema de ingressos para eventos de qualquer porte, extensível por plugins, com loja própria e controle de entrada.
+  en: Ticketing system for events of any size, extensible via plugins, with its own shop and entry control.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  open_core: false
+- repo: indico/indico
+  nome: Indico
+  alternativa_a:
+  - Cvent
+  pt: 'Gestão de eventos e conferências: inscrição, submissão de trabalhos, programação e reserva de salas.'
+  en: 'Event and conference management: registration, paper submission, scheduling and room booking.'
+  stack:
+  - Python
+  - Flask
+  - PostgreSQL
+  open_core: false
+- repo: fossasia/open-event-server
+  nome: Open Event Server
+  alternativa_a:
+  - Eventbrite
+  - Sched
+  pt: Back-end de uma plataforma de eventos com ingressos, programação, palestrantes e patrocinadores via API.
+  en: Back end of an events platform with tickets, schedule, speakers and sponsors exposed through an API.
+  stack:
+  - Python
+  - Flask
+  - PostgreSQL
+  open_core: false
+- repo: pretalx/pretalx
+  nome: pretalx
+  alternativa_a:
+  - Sessionize
+  - EasyChair
+  pt: Chamada de trabalhos e programação de conferências, com revisão por pares e agenda pública.
+  en: Call for proposals and schedule builder for conferences, with peer review and a public agenda.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  open_core: false
+- repo: Attendize/Attendize
+  nome: Attendize
+  alternativa_a:
+  - Eventbrite
+  pt: Venda de ingressos e gestão de participantes para organizadores de eventos, com check-in e relatórios.
+  en: Ticket selling and attendee management for event organizers, with check-in and reporting.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  open_core: false
+- repo: lowercasename/gathio
+  nome: Gathio
+  alternativa_a:
+  - Facebook Events
+  - Meetup
+  pt: Páginas de evento simples, sem conta e com privacidade, para convidar pessoas e coletar confirmações.
+  en: Simple, account-free, privacy-minded event pages to invite people and collect RSVPs.
+  stack:
+  - JavaScript
+  - Node.js
+  - MongoDB
+  open_core: false
+- repo: eventschedule/eventschedule
+  nome: Event Schedule
+  alternativa_a:
+  - Eventbrite
+  - Meetup
+  pt: Calendário público de eventos com páginas por grupo, venda de ingressos e assinatura via iCal.
+  en: Public event calendar with per-group pages, ticket sales and iCal subscriptions.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  open_core: false
+- repo: fossasia/eventyay-tickets
+  nome: Eventyay Tickets
+  alternativa_a:
+  - Eventbrite
+  pt: Bilheteria de eventos derivada do pretix, com ingressos, cupons, check-in e integração com programação.
+  en: Event ticketing based on pretix, with tickets, vouchers, check-in and schedule integration.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  open_core: false

@@ -1,0 +1,552 @@
+categoria: bi-dashboards-dados
+titulo_pt: BI, dashboards e dados
+titulo_en: BI, dashboards and data
+itens:
+- repo: metabase/metabase
+  nome: Metabase
+  alternativa_a:
+  - Tableau
+  - Looker
+  - Power BI
+  pt: Painéis e perguntas sobre seus bancos de dados sem escrever SQL, com editor visual de consultas e compartilhamento.
+  en: Dashboards and questions over your databases without SQL, with a visual query builder and easy sharing.
+  stack:
+  - Clojure
+  - TypeScript
+  open_core: true
+  nota: Edição enterprise paga separada
+- repo: apache/superset
+  nome: Apache Superset
+  alternativa_a:
+  - Tableau
+  - Looker
+  - Power BI
+  pt: Plataforma de exploração e visualização de dados com dezenas de tipos de gráfico, SQL Lab e painéis.
+  en: Data exploration and visualization platform with many chart types, a SQL editor and dashboards.
+  stack:
+  - Python
+  - React
+  open_core: false
+- repo: getredash/redash
+  nome: Redash
+  alternativa_a:
+  - Mode Analytics
+  - Looker
+  pt: Consulta bancos de dados em SQL, visualiza resultados e monta painéis compartilháveis com alertas.
+  en: Query databases in SQL, visualize results and build shareable dashboards with alerts.
+  stack:
+  - Python
+  - TypeScript
+  open_core: false
+- repo: cube-js/cube
+  nome: Cube
+  alternativa_a:
+  - Looker
+  - AtScale
+  pt: Camada semântica que define métricas uma vez e as serve por API a painéis, apps e agentes de IA.
+  en: Semantic layer that defines metrics once and serves them via API to dashboards, apps and AI agents.
+  stack:
+  - Rust
+  - TypeScript
+  open_core: true
+  nota: Serviços cloud pagos
+- repo: evidence-dev/evidence
+  nome: Evidence
+  alternativa_a:
+  - Tableau
+  - Looker
+  pt: Gera relatórios e painéis a partir de SQL e markdown, tratando BI como código versionado.
+  en: Builds reports and dashboards from SQL and markdown, treating BI as version-controlled code.
+  stack:
+  - Svelte
+  - TypeScript
+  - SQL
+  open_core: false
+- repo: lightdash/lightdash
+  nome: Lightdash
+  alternativa_a:
+  - Looker
+  pt: BI que lê seus modelos dbt e transforma as métricas já definidas em painéis e explorações.
+  en: BI tool that reads your dbt models and turns the metrics you defined into dashboards and explores.
+  stack:
+  - TypeScript
+  - React
+  - Postgres
+  open_core: true
+  nota: Recursos enterprise sob licença própria
+- repo: mathesar-foundation/mathesar
+  nome: Mathesar
+  alternativa_a:
+  - Airtable
+  pt: Interface amigável sobre o Postgres para ver, editar e relacionar dados sem conhecer SQL.
+  en: Friendly spreadsheet-like interface over Postgres to browse, edit and link data without SQL.
+  stack:
+  - Python
+  - Svelte
+  - Postgres
+  open_core: false
+- repo: apache/zeppelin
+  nome: Apache Zeppelin
+  alternativa_a:
+  - Databricks Notebooks
+  pt: Notebooks web para análise de dados interativa com Spark, SQL, Python e visualização integrada.
+  en: Web notebooks for interactive data analysis with Spark, SQL and Python and built-in charts.
+  stack:
+  - Java
+  - Angular
+  open_core: false
+- repo: marimo-team/marimo
+  nome: marimo
+  alternativa_a:
+  - Hex
+  - Jupyter
+  pt: Notebook Python reativo que guarda tudo em arquivo .py e pode virar app web ou script.
+  en: Reactive Python notebook stored as plain .py files that can run as a web app or a script.
+  stack:
+  - Python
+  - TypeScript
+  open_core: false
+- repo: jupyterlab/jupyterlab
+  nome: JupyterLab
+  alternativa_a:
+  - Databricks Notebooks
+  - Google Colab
+  pt: Ambiente web de notebooks, código e terminais para ciência de dados e análise exploratória.
+  en: Web environment of notebooks, code and terminals for data science and exploratory analysis.
+  stack:
+  - Python
+  - TypeScript
+  open_core: false
+- repo: apache/airflow
+  nome: Apache Airflow
+  alternativa_a:
+  - AWS MWAA
+  - Astronomer
+  pt: Orquestra pipelines de dados definidos em Python, com agendamento, dependências e monitoramento.
+  en: Orchestrates data pipelines defined in Python, with scheduling, dependencies and monitoring.
+  stack:
+  - Python
+  - React
+  open_core: false
+- repo: dagster-io/dagster
+  nome: Dagster
+  alternativa_a:
+  - Astronomer
+  - Prefect Cloud
+  pt: Orquestrador de dados centrado em ativos, com linhagem, testes e observabilidade dos pipelines.
+  en: Asset-centric data orchestrator with lineage, testing and pipeline observability.
+  stack:
+  - Python
+  - TypeScript
+  open_core: false
+- repo: PrefectHQ/prefect
+  nome: Prefect
+  alternativa_a:
+  - Astronomer
+  - Temporal Cloud
+  pt: Escreva fluxos de dados em Python e execute com agendamento, novas tentativas e painel de acompanhamento.
+  en: Write data workflows in Python and run them with scheduling, retries and a monitoring dashboard.
+  stack:
+  - Python
+  - TypeScript
+  open_core: false
+- repo: kestra-io/kestra
+  nome: Kestra
+  alternativa_a:
+  - Airflow gerenciado
+  - Zapier
+  pt: Orquestrador declarativo em YAML para fluxos de dados e automações, acionado por agenda ou evento.
+  en: Declarative YAML orchestrator for data and automation workflows, triggered by schedule or event.
+  stack:
+  - Java
+  - Vue
+  open_core: true
+  nota: Edição enterprise separada
+- repo: mage-ai/mage-ai
+  nome: Mage
+  alternativa_a:
+  - Fivetran
+  - Astronomer
+  pt: Ferramenta de pipelines de dados com blocos de código em notebook, execução agendada e testes.
+  en: Data pipeline tool with notebook-style code blocks, scheduled runs and built-in tests.
+  stack:
+  - Python
+  - TypeScript
+  open_core: false
+- repo: meltano/meltano
+  nome: Meltano
+  alternativa_a:
+  - Fivetran
+  - Stitch
+  pt: Plataforma de ELT em linha de comando que usa conectores Singer para mover dados entre fontes e destinos.
+  en: Command-line ELT platform that uses Singer connectors to move data between sources and destinations.
+  stack:
+  - Python
+  open_core: false
+- repo: apache/nifi
+  nome: Apache NiFi
+  alternativa_a:
+  - Informatica
+  - Talend
+  pt: Automatiza o fluxo de dados entre sistemas com editor visual, roteamento e rastreio de origem.
+  en: Automates data flow between systems with a visual editor, routing and data provenance tracking.
+  stack:
+  - Java
+  open_core: false
+- repo: apache/dolphinscheduler
+  nome: Apache DolphinScheduler
+  alternativa_a:
+  - Control-M
+  - Airflow gerenciado
+  pt: Agendador distribuído de fluxos de dados com desenho visual de DAGs e execução em escala.
+  en: Distributed workflow scheduler for data jobs with visual DAG design and scalable execution.
+  stack:
+  - Java
+  - TypeScript
+  open_core: false
+- repo: apache/hop
+  nome: Apache Hop
+  alternativa_a:
+  - Talend
+  - Informatica
+  pt: Ferramenta visual de ETL e orquestração, sucessora do Kettle, para montar fluxos de dados sem código.
+  en: Visual ETL and orchestration tool, successor to Kettle, for building data flows with little code.
+  stack:
+  - Java
+  open_core: false
+- repo: apache/seatunnel
+  nome: Apache SeaTunnel
+  alternativa_a:
+  - Fivetran
+  - Informatica
+  pt: Integração de dados em lote e streaming com muitos conectores de origem e destino.
+  en: Batch and streaming data integration with many source and sink connectors.
+  stack:
+  - Java
+  open_core: false
+- repo: dbt-labs/dbt-core
+  nome: dbt Core
+  alternativa_a:
+  - Dataform
+  - Matillion
+  pt: Transforma dados dentro do data warehouse com SQL versionado, testes e documentação gerada.
+  en: Transforms data inside the warehouse with versioned SQL, tests and generated documentation.
+  stack:
+  - Python
+  - SQL
+  open_core: true
+  nota: A nuvem dbt é produto pago à parte
+- repo: open-metadata/OpenMetadata
+  nome: OpenMetadata
+  alternativa_a:
+  - Collibra
+  - Alation
+  pt: Catálogo e governança de dados com descoberta, linhagem, qualidade e colaboração entre times.
+  en: Data catalog and governance with discovery, lineage, quality and team collaboration.
+  stack:
+  - Java
+  - TypeScript
+  open_core: false
+- repo: datahub-project/datahub
+  nome: DataHub
+  alternativa_a:
+  - Collibra
+  - Alation
+  pt: Plataforma de metadados para descobrir, entender e governar ativos de dados com linhagem completa.
+  en: Metadata platform to discover, understand and govern data assets with end-to-end lineage.
+  stack:
+  - Java
+  - Python
+  - React
+  open_core: false
+- repo: amundsen-io/amundsen
+  nome: Amundsen
+  alternativa_a:
+  - Alation
+  pt: Mecanismo de busca de dados que ajuda analistas a achar tabelas, donos e uso dentro da empresa.
+  en: Data search engine that helps analysts find tables, owners and usage inside the company.
+  stack:
+  - Python
+  - React
+  open_core: false
+- repo: rilldata/rill
+  nome: Rill
+  alternativa_a:
+  - Looker
+  - Tableau
+  pt: Painéis de métricas rápidos sobre DuckDB e ClickHouse, definidos como código.
+  en: Fast metrics dashboards on top of DuckDB and ClickHouse, defined as code.
+  stack:
+  - Go
+  - Svelte
+  open_core: false
+- repo: dataease/dataease
+  nome: DataEase
+  alternativa_a:
+  - Power BI
+  - Tableau
+  pt: Ferramenta de análise e visualização de dados com arrastar e soltar, bem usada na China.
+  en: Drag-and-drop data analysis and visualization tool, widely used in China.
+  stack:
+  - Java
+  - Vue
+  open_core: true
+  nota: Há edição profissional paga
+- repo: simonw/datasette
+  nome: Datasette
+  alternativa_a:
+  - Airtable
+  pt: Publica bancos SQLite como site navegável com API JSON, filtros e plugins para exploração.
+  en: Publishes SQLite databases as a browsable site with a JSON API, filters and exploration plugins.
+  stack:
+  - Python
+  - SQLite
+  open_core: false
+- repo: observablehq/framework
+  nome: Observable Framework
+  alternativa_a:
+  - Tableau
+  - Hex
+  pt: Gerador de sites estáticos para painéis e aplicações de dados, com carregadores em qualquer linguagem.
+  en: Static site generator for data dashboards and apps, with data loaders in any language.
+  stack:
+  - TypeScript
+  - JavaScript
+  open_core: false
+- repo: datalens-tech/datalens-ui
+  nome: DataLens
+  alternativa_a:
+  - Looker
+  - Power BI
+  pt: Serviço de BI com conexões, conjuntos de dados, gráficos e painéis, aberto pela Yandex.
+  en: BI service with connections, datasets, charts and dashboards, open-sourced by Yandex.
+  stack:
+  - TypeScript
+  - Node.js
+  open_core: false
+- repo: bytebase/bytebase
+  nome: Bytebase
+  alternativa_a:
+  - Liquibase Pro
+  - PlanetScale
+  pt: Controle de mudanças de banco de dados com revisão de SQL, aprovação, migração e auditoria.
+  en: Database change management with SQL review, approvals, migrations and audit trail.
+  stack:
+  - Go
+  - Vue
+  open_core: true
+  nota: Planos pagos liberam recursos enterprise
+- repo: dbeaver/cloudbeaver
+  nome: CloudBeaver
+  alternativa_a:
+  - DataGrip
+  - TablePlus
+  pt: Cliente web de banco de dados com editor SQL, navegação de esquemas e várias conexões.
+  en: Web database client with SQL editor, schema browsing and multiple connections.
+  stack:
+  - Java
+  - TypeScript
+  open_core: true
+  nota: Edição enterprise separada
+- repo: pgadmin-org/pgadmin4
+  nome: pgAdmin
+  alternativa_a:
+  - DataGrip
+  pt: Interface web e desktop para administrar bancos PostgreSQL, consultar e acompanhar atividade.
+  en: Web and desktop interface to administer PostgreSQL databases, run queries and watch activity.
+  stack:
+  - Python
+  - JavaScript
+  open_core: false
+- repo: vrana/adminer
+  nome: Adminer
+  alternativa_a:
+  - phpMyAdmin
+  - DataGrip
+  pt: Gerenciador de banco de dados num único arquivo PHP, compatível com vários SGBDs.
+  en: Database manager in a single PHP file that works with many database engines.
+  stack:
+  - PHP
+  open_core: false
+- repo: phpmyadmin/phpmyadmin
+  nome: phpMyAdmin
+  alternativa_a:
+  - MySQL Workbench
+  pt: Administração de MySQL e MariaDB pelo navegador, com navegação de tabelas, SQL e importação.
+  en: Browser-based administration for MySQL and MariaDB with table browsing, SQL and import tools.
+  stack:
+  - PHP
+  - JavaScript
+  open_core: false
+- repo: sqlpad/sqlpad
+  nome: SQLPad
+  alternativa_a:
+  - Redash
+  - Mode Analytics
+  pt: Editor web de SQL leve para escrever consultas, gerar gráficos e compartilhar resultados.
+  en: Lightweight web SQL editor to write queries, chart results and share them.
+  stack:
+  - Node.js
+  - React
+  open_core: false
+- repo: pinterest/querybook
+  nome: Querybook
+  alternativa_a:
+  - Mode Analytics
+  - Hex
+  pt: Notebook web de análises com SQL, documentação em conjunto e agendamento, criado no Pinterest.
+  en: Web-based analytics notebook with SQL, shared documentation and scheduling, built at Pinterest.
+  stack:
+  - Python
+  - React
+  open_core: false
+- repo: cloudera/hue
+  nome: Hue
+  alternativa_a:
+  - Databricks SQL
+  pt: Editor SQL web com autocompletar para data warehouses e bancos, usado em plataformas Hadoop.
+  en: Web SQL editor with autocomplete for warehouses and databases, common on Hadoop platforms.
+  stack:
+  - Python
+  - JavaScript
+  open_core: false
+- repo: ankane/blazer
+  nome: Blazer
+  alternativa_a:
+  - Mode Analytics
+  - Redash
+  pt: Gem Rails que adiciona consultas SQL salvas, painéis e alertas ao aplicativo.
+  en: Rails engine that adds saved SQL queries, dashboards and alerts to your app.
+  stack:
+  - Ruby
+  - Rails
+  open_core: false
+- repo: Canner/WrenAI
+  nome: WrenAI
+  alternativa_a:
+  - ThoughtSpot
+  pt: Consulta dados em linguagem natural usando uma camada semântica e gera SQL e gráficos.
+  en: Ask questions of your data in natural language through a semantic layer, producing SQL and charts.
+  stack:
+  - Python
+  - TypeScript
+  open_core: false
+- repo: elementary-data/elementary
+  nome: Elementary
+  alternativa_a:
+  - Monte Carlo
+  pt: Observabilidade de dados para projetos dbt, com testes de anomalia e relatório de saúde.
+  en: Data observability for dbt projects, with anomaly tests and a health report.
+  stack:
+  - Python
+  - SQL
+  open_core: true
+  nota: Há versão cloud paga
+- repo: frappe/insights
+  nome: Frappe Insights
+  alternativa_a:
+  - Metabase
+  - Power BI
+  pt: Ferramenta de BI do ecossistema Frappe com construtor visual de consultas e painéis.
+  en: BI tool from the Frappe ecosystem with a visual query builder and dashboards.
+  stack:
+  - Python
+  - Vue
+  open_core: false
+- repo: ariacom/Seal-Report
+  nome: Seal Report
+  alternativa_a:
+  - Crystal Reports
+  - JasperReports
+  pt: Gerador de relatórios e painéis para .NET que lê bancos e agenda envio por e-mail.
+  en: Reporting and dashboard generator for .NET that reads databases and schedules email delivery.
+  stack:
+  - C#
+  - .NET
+  open_core: false
+- repo: chartdb/chartdb
+  nome: ChartDB
+  alternativa_a:
+  - dbdiagram.io
+  pt: Desenha diagramas de bancos de dados a partir de uma consulta, direto no navegador.
+  en: Draws database diagrams in the browser from a single query on your schema.
+  stack:
+  - TypeScript
+  - React
+  open_core: false
+- repo: dbgate/dbgate
+  nome: DbGate
+  alternativa_a:
+  - DataGrip
+  - TablePlus
+  pt: Cliente de banco de dados para SQL e NoSQL, usável como app desktop ou no navegador.
+  en: Database client for SQL and NoSQL, usable as a desktop app or in the browser.
+  stack:
+  - JavaScript
+  - Svelte
+  open_core: true
+  nota: Edição premium paga
+- repo: beekeeper-studio/beekeeper-studio
+  nome: Beekeeper Studio
+  alternativa_a:
+  - TablePlus
+  - DataGrip
+  pt: Editor SQL e cliente de banco de dados multiplataforma com interface moderna.
+  en: Cross-platform SQL editor and database client with a modern interface.
+  stack:
+  - TypeScript
+  - Vue
+  open_core: true
+  nota: Edição comercial com mais recursos
+- repo: KnowageLabs/Knowage
+  nome: Knowage
+  alternativa_a:
+  - Power BI
+  - Qlik
+  pt: Suíte de BI com painéis, relatórios, mapas e análise de big data.
+  en: BI suite with dashboards, reports, maps and big data analysis.
+  stack:
+  - Java
+  - Angular
+  open_core: true
+  nota: Edição enterprise separada
+- repo: ckan/ckan
+  nome: CKAN
+  alternativa_a:
+  - Socrata
+  pt: Portal de dados abertos para publicar, catalogar e baixar conjuntos de dados, usado por governos.
+  en: Open data portal to publish, catalog and download datasets, widely used by governments.
+  stack:
+  - Python
+  open_core: false
+- repo: MarquezProject/marquez
+  nome: Marquez
+  alternativa_a:
+  - Collibra
+  pt: Serviço de metadados que registra linhagem de jobs e conjuntos de dados via OpenLineage.
+  en: Metadata service that records lineage of jobs and datasets through OpenLineage.
+  stack:
+  - Java
+  - TypeScript
+  open_core: false
+- repo: treeverse/lakeFS
+  nome: lakeFS
+  alternativa_a:
+  - Databricks Delta
+  pt: Controle de versão para data lakes com branches, commits e reversão sobre armazenamento de objetos.
+  en: Version control for data lakes with branches, commits and rollback over object storage.
+  stack:
+  - Go
+  - TypeScript
+  open_core: true
+  nota: Edição enterprise separada
+- repo: apache/kylin
+  nome: Apache Kylin
+  alternativa_a:
+  - Looker
+  - AtScale
+  pt: Motor OLAP que pré-calcula cubos para responder consultas analíticas em escala de bilhões de linhas.
+  en: OLAP engine that precomputes cubes to answer analytical queries over billions of rows.
+  stack:
+  - Java
+  open_core: false

@@ -1,0 +1,449 @@
+categoria: comunidade-foruns-membros
+titulo_pt: Comunidade, fóruns e membros
+titulo_en: Community, forums and memberships
+itens:
+- repo: discourse/discourse
+  nome: Discourse
+  alternativa_a:
+  - Circle
+  - Tribe
+  pt: Plataforma de fórum moderna para comunidades, com categorias, moderação e confiança progressiva.
+  en: Modern forum platform for communities, with categories, moderation and progressive trust levels.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  site: https://www.discourse.org
+  open_core: false
+- repo: flarum/framework
+  nome: Flarum
+  alternativa_a:
+  - Circle
+  pt: Fórum leve e extensível, com visual limpo e extensões instaláveis pelo painel.
+  en: Lightweight, extensible forum software with a clean look and installable extensions.
+  stack:
+  - PHP
+  - MySQL
+  - Mithril
+  site: https://flarum.org
+  open_core: false
+- repo: NodeBB/NodeBB
+  nome: NodeBB
+  alternativa_a:
+  - Circle
+  - Vanilla Forums
+  pt: Software de fórum em tempo real, com plugins, temas e login social.
+  en: Real-time forum software with plugins, themes and social login.
+  stack:
+  - Node.js
+  - Redis
+  - MongoDB
+  site: https://nodebb.org
+  open_core: false
+- repo: mastodon/mastodon
+  nome: Mastodon
+  alternativa_a:
+  - Twitter
+  - X
+  pt: Rede social federada de microblog, sem anúncios, que conversa com todo o fediverso.
+  en: Federated microblogging social network without ads that talks to the whole fediverse.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  - Redis
+  site: https://joinmastodon.org
+  open_core: false
+- repo: misskey-dev/misskey
+  nome: Misskey
+  alternativa_a:
+  - Twitter
+  - X
+  pt: Rede social federada com reações, canais e uma interface bem personalizável.
+  en: Federated social network with reactions, channels and a highly customizable interface.
+  stack:
+  - TypeScript
+  - Vue
+  - PostgreSQL
+  site: https://misskey-hub.net
+  open_core: false
+- repo: LemmyNet/lemmy
+  nome: Lemmy
+  alternativa_a:
+  - Reddit
+  pt: Agregador de links e discussões federado, no estilo de comunidades do Reddit.
+  en: Federated link aggregator and discussion platform in the style of Reddit communities.
+  stack:
+  - Rust
+  - PostgreSQL
+  site: https://join-lemmy.org
+  open_core: false
+- repo: MbinOrg/mbin
+  nome: Mbin
+  alternativa_a:
+  - Reddit
+  pt: Agregador de conteúdo e microblog federado, sucessor da comunidade do kbin.
+  en: Federated content aggregator and microblog, community successor to kbin.
+  stack:
+  - PHP
+  - Symfony
+  - PostgreSQL
+  site: https://joinmbin.org
+  open_core: false
+- repo: zulip/zulip
+  nome: Zulip
+  alternativa_a:
+  - Slack
+  - Discord
+  pt: Chat de equipe e comunidade organizado por tópicos dentro de cada canal.
+  en: Team and community chat organized by topics inside each channel.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  site: https://zulip.com
+  open_core: false
+- repo: apache/answer
+  nome: Apache Answer
+  alternativa_a:
+  - Stack Overflow for Teams
+  - Quora
+  pt: Plataforma de perguntas e respostas para comunidades e bases de conhecimento.
+  en: Q&A platform for communities and knowledge bases.
+  stack:
+  - Go
+  - React
+  - MySQL
+  site: https://answer.apache.org
+  open_core: false
+- repo: q2a/question2answer
+  nome: Question2Answer
+  alternativa_a:
+  - Stack Overflow for Teams
+  pt: Site de perguntas e respostas com votos, categorias e plugins.
+  en: Question and answer site with voting, categories and plugins.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.question2answer.org
+  open_core: false
+- repo: forem/forem
+  nome: Forem
+  alternativa_a:
+  - Medium
+  - Hashnode
+  pt: Software por trás do DEV, para montar comunidades de publicação e discussão.
+  en: Software behind DEV, used to build publishing and discussion communities.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  site: https://www.forem.com
+  open_core: false
+- repo: vanilla/vanilla
+  nome: Vanilla Forums
+  alternativa_a:
+  - Circle
+  pt: Fórum de comunidade com categorias, ideias e enquetes.
+  en: Community forum with categories, ideas and polls.
+  stack:
+  - PHP
+  - MySQL
+  site: https://open.vanillaforums.com
+  open_core: true
+- repo: phpbb/phpbb
+  nome: phpBB
+  alternativa_a:
+  - Vanilla Forums
+  pt: Clássico fórum em PHP, com permissões finas e grande acervo de extensões.
+  en: Classic PHP forum with fine-grained permissions and a large extension library.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.phpbb.com
+  open_core: false
+- repo: mybb/mybb
+  nome: MyBB
+  alternativa_a:
+  - Vanilla Forums
+  pt: Fórum gratuito e fácil de instalar, com plugins e temas.
+  en: Free, easy-to-install forum with plugins and themes.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.mybb.com
+  open_core: false
+- repo: SimpleMachines/SMF2.1
+  nome: Simple Machines Forum
+  alternativa_a:
+  - Vanilla Forums
+  pt: Fórum em PHP com painel de administração simples e muitos recursos prontos.
+  en: PHP forum with a simple admin panel and many built-in features.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.simplemachines.org
+  open_core: false
+- repo: rafalp/Misago
+  nome: Misago
+  alternativa_a:
+  - Vanilla Forums
+  pt: Fórum moderno em Python, com tempo real e moderação detalhada.
+  en: Modern Python forum with real-time updates and detailed moderation.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  open_core: false
+- repo: friendica/friendica
+  nome: Friendica
+  alternativa_a:
+  - Facebook
+  pt: Rede social federada com perfis, grupos e contatos de vários protocolos.
+  en: Federated social network with profiles, groups and contacts across several protocols.
+  stack:
+  - PHP
+  - MySQL
+  site: https://friendi.ca
+  open_core: false
+- repo: diaspora/diaspora
+  nome: diaspora*
+  alternativa_a:
+  - Facebook
+  pt: Rede social descentralizada onde cada pessoa controla seus dados e aspectos de contato.
+  en: Decentralized social network where each person controls their data and contact aspects.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  site: https://diasporafoundation.org
+  open_core: false
+- repo: pixelfed/pixelfed
+  nome: Pixelfed
+  alternativa_a:
+  - Instagram
+  pt: Rede de compartilhamento de fotos federada, com álbuns, stories e coleções.
+  en: Federated photo sharing network with albums, stories and collections.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  site: https://pixelfed.org
+  open_core: false
+- repo: bonfirenetworks/bonfire-app
+  nome: Bonfire
+  alternativa_a:
+  - Facebook
+  - Circle
+  pt: Rede social federada modular, para comunidades que querem ajustar regras e recursos.
+  en: Modular federated social network for communities that want to tune rules and features.
+  stack:
+  - Elixir
+  - Phoenix
+  - PostgreSQL
+  site: https://bonfirenetworks.org
+  open_core: false
+- repo: humhub/humhub
+  nome: HumHub
+  alternativa_a:
+  - Yammer
+  - Facebook Workplace
+  pt: Rede social corporativa e de comunidade com espaços, módulos e mensagens.
+  en: Social network for companies and communities with spaces, modules and messaging.
+  stack:
+  - PHP
+  - Yii
+  - MySQL
+  site: https://www.humhub.com
+  open_core: true
+- repo: Elgg/Elgg
+  nome: Elgg
+  alternativa_a:
+  - Ning
+  - Facebook
+  pt: Motor de rede social para montar sites de comunidade com plugins.
+  en: Social networking engine for building community sites with plugins.
+  stack:
+  - PHP
+  - MySQL
+  site: https://elgg.org
+  open_core: false
+- repo: goalgorilla/open_social
+  nome: Open Social
+  alternativa_a:
+  - Ning
+  - Mighty Networks
+  pt: Distribuição Drupal para comunidades online, com grupos, eventos e engajamento.
+  en: Drupal distribution for online communities, with groups, events and engagement.
+  stack:
+  - PHP
+  - Drupal
+  - MySQL
+  site: https://www.getopensocial.com
+  open_core: false
+- repo: opencollective/opencollective-frontend
+  nome: Open Collective
+  alternativa_a:
+  - Patreon
+  - Kickstarter
+  pt: Plataforma de financiamento transparente para coletivos e projetos abertos.
+  en: Transparent funding platform for collectives and open projects.
+  stack:
+  - JavaScript
+  - React
+  - PostgreSQL
+  site: https://opencollective.com
+  open_core: false
+- repo: liberapay/liberapay.com
+  nome: Liberapay
+  alternativa_a:
+  - Patreon
+  pt: Plataforma de doações recorrentes mantida por uma organização sem fins lucrativos.
+  en: Recurring donations platform run by a nonprofit organization.
+  stack:
+  - Python
+  - PostgreSQL
+  site: https://liberapay.com
+  open_core: false
+- repo: spectria/tildes
+  nome: Tildes
+  alternativa_a:
+  - Reddit
+  pt: Site de comunidade com tópicos, grupos e moderação, sem anúncios.
+  en: Community site with topics, groups and moderation, no ads.
+  stack:
+  - Python
+  - Pyramid
+  - PostgreSQL
+  site: https://tildes.net
+  open_core: false
+- repo: lobsters/lobsters
+  nome: Lobsters
+  alternativa_a:
+  - Hacker News
+  - Reddit
+  pt: Agregador de links por convite, com tags e árvore de convites.
+  en: Invite-only link aggregator with tags and an invitation tree.
+  stack:
+  - Ruby
+  - Rails
+  - MySQL
+  site: https://lobste.rs
+  open_core: false
+- repo: umputun/remark42
+  nome: Remark42
+  alternativa_a:
+  - Disqus
+  pt: Motor de comentários privado para sites, com login social e moderação.
+  en: Private comment engine for websites with social login and moderation.
+  stack:
+  - Go
+  - Preact
+  - BoltDB
+  site: https://remark42.com
+  open_core: false
+- repo: isso-comments/isso
+  nome: Isso
+  alternativa_a:
+  - Disqus
+  pt: Servidor de comentários leve para blogs, com banco SQLite e moderação.
+  en: Lightweight comment server for blogs, with SQLite storage and moderation.
+  stack:
+  - Python
+  - SQLite
+  site: https://isso-comments.de
+  open_core: false
+- repo: djyde/cusdis
+  nome: Cusdis
+  alternativa_a:
+  - Disqus
+  pt: Sistema de comentários minimalista para blogs, sem rastreio.
+  en: Minimalist comment system for blogs with no tracking.
+  stack:
+  - TypeScript
+  - Next.js
+  - Prisma
+  site: https://cusdis.com
+  open_core: false
+- repo: walinejs/waline
+  nome: Waline
+  alternativa_a:
+  - Disqus
+  pt: Sistema de comentários com painel de moderação, notificações e várias bases.
+  en: Comment system with moderation dashboard, notifications and several databases.
+  stack:
+  - TypeScript
+  - Node.js
+  site: https://waline.js.org
+  open_core: false
+- repo: ArtalkJS/Artalk
+  nome: Artalk
+  alternativa_a:
+  - Disqus
+  pt: Comentários autohospedados para sites, com notificações e painel.
+  en: Self-hosted comments for websites with notifications and a dashboard.
+  stack:
+  - Go
+  - TypeScript
+  - SQLite
+  site: https://artalk.js.org
+  open_core: false
+- repo: coralproject/talk
+  nome: Coral
+  alternativa_a:
+  - Disqus
+  - Viafoura
+  pt: Plataforma de comentários para veículos de notícias, com ferramentas de moderação.
+  en: Comment platform for news publishers with moderation tooling.
+  stack:
+  - TypeScript
+  - GraphQL
+  - MongoDB
+  site: https://coralproject.net
+  open_core: false
+- repo: mlogclub/bbs-go
+  nome: bbs-go
+  alternativa_a:
+  - Discourse
+  pt: Fórum em Go com artigos, tópicos e sistema de pontos.
+  en: Go forum with articles, topics and a points system.
+  stack:
+  - Go
+  - Vue
+  - MySQL
+  open_core: false
+- repo: jointakahe/takahe
+  nome: Takahē
+  alternativa_a:
+  - Mastodon
+  pt: Servidor ActivityPub para vários domínios, pensado para quem hospeda muitas contas.
+  en: Multi-domain ActivityPub server aimed at people hosting many accounts.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  site: https://jointakahe.org
+  open_core: false
+- repo: element-hq/synapse
+  nome: Synapse
+  alternativa_a:
+  - Slack
+  - Discord
+  pt: Servidor Matrix para chat federado e criptografado de comunidades e equipes.
+  en: Matrix homeserver for federated, end-to-end encrypted chat for communities and teams.
+  stack:
+  - Python
+  - PostgreSQL
+  site: https://matrix.org
+  open_core: false
+- repo: spacebarchat/server
+  nome: Spacebar
+  alternativa_a:
+  - Discord
+  pt: Servidor compatível com a API do Discord, para comunidades autohospedadas.
+  en: Discord-API-compatible server for self-hosted communities.
+  stack:
+  - TypeScript
+  - Node.js
+  site: https://spacebar.chat
+  open_core: false

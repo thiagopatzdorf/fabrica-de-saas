@@ -1,0 +1,493 @@
+categoria: devops-ci-erros-flags
+titulo_pt: DevOps, CI, erros e feature flags
+titulo_en: DevOps, CI, error tracking and feature flags
+itens:
+- repo: jenkinsci/jenkins
+  nome: Jenkins
+  alternativa_a:
+  - CircleCI
+  - TeamCity
+  pt: Servidor de automação para builds, testes e entregas, extensível por milhares de plugins.
+  en: Automation server for builds, tests and deliveries, extensible with thousands of plugins.
+  stack:
+  - Java
+  - Groovy
+  open_core: false
+- repo: woodpecker-ci/woodpecker
+  nome: Woodpecker CI
+  alternativa_a:
+  - CircleCI
+  - Travis CI
+  pt: CI leve que roda pipelines em containers, definido por YAML e integrado a forges Git.
+  en: Lightweight CI running container-based pipelines defined in YAML and tied to Git forges.
+  stack:
+  - Go
+  - Vue
+  open_core: false
+- repo: concourse/concourse
+  nome: Concourse
+  alternativa_a:
+  - CircleCI
+  pt: CI baseado em pipelines declarativos e containers, onde tudo é um recurso versionado.
+  en: CI built on declarative pipelines and containers, where everything is a versioned resource.
+  stack:
+  - Go
+  - Elm
+  open_core: false
+- repo: buildbot/buildbot
+  nome: Buildbot
+  alternativa_a:
+  - TeamCity
+  pt: Framework de integração contínua configurado em Python, com muitos workers e estratégias de build.
+  en: Continuous integration framework configured in Python, with many workers and build strategies.
+  stack:
+  - Python
+  - Twisted
+  open_core: false
+- repo: gocd/gocd
+  nome: GoCD
+  alternativa_a:
+  - Bamboo
+  pt: Servidor de entrega contínua com modelagem de pipelines e visualização do fluxo de valor.
+  en: Continuous delivery server with pipeline modeling and value stream visualization.
+  stack:
+  - Java
+  - Ruby
+  open_core: false
+- repo: tektoncd/pipeline
+  nome: Tekton Pipelines
+  alternativa_a:
+  - CircleCI
+  pt: Pipelines de CI/CD declarados como recursos do Kubernetes, executados em containers.
+  en: CI/CD pipelines declared as Kubernetes resources and executed in containers.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: argoproj/argo-cd
+  nome: Argo CD
+  alternativa_a:
+  - Octopus Deploy
+  pt: 'Entrega contínua declarativa por GitOps: sincroniza clusters Kubernetes com o estado no repositório.'
+  en: Declarative GitOps continuous delivery that syncs Kubernetes clusters with the repo state.
+  stack:
+  - Go
+  - TypeScript
+  - Kubernetes
+  open_core: false
+- repo: argoproj/argo-workflows
+  nome: Argo Workflows
+  alternativa_a:
+  - Airflow
+  pt: Motor de workflows em containers para Kubernetes, com passos em paralelo e DAGs.
+  en: Container-native workflow engine for Kubernetes with parallel steps and DAGs.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: argoproj/argo-rollouts
+  nome: Argo Rollouts
+  alternativa_a:
+  - LaunchDarkly
+  pt: Deploys progressivos no Kubernetes, como canário e blue-green, com análise automática de métricas.
+  en: Progressive delivery on Kubernetes, such as canary and blue-green, with automatic metric analysis.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: fluxcd/flux2
+  nome: Flux
+  alternativa_a:
+  - Octopus Deploy
+  pt: Entrega contínua por GitOps que mantém clusters Kubernetes alinhados a repositórios Git.
+  en: GitOps continuous delivery that keeps Kubernetes clusters aligned with Git repositories.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: fluxcd/flagger
+  nome: Flagger
+  alternativa_a:
+  - LaunchDarkly
+  pt: Automatiza lançamentos canário e A/B no Kubernetes, avançando conforme métricas de saúde.
+  en: Automates canary and A/B releases on Kubernetes, advancing based on health metrics.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: akuity/kargo
+  nome: Kargo
+  alternativa_a:
+  - Spinnaker
+  pt: Orquestra a promoção de versões entre ambientes via GitOps, com etapas e verificações.
+  en: Orchestrates release promotion across environments using GitOps, with stages and verification.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: spinnaker/spinnaker
+  nome: Spinnaker
+  alternativa_a:
+  - Octopus Deploy
+  pt: Entrega contínua multi-nuvem com pipelines, estratégias de implantação e gestão de versões.
+  en: Multi-cloud continuous delivery with pipelines, deployment strategies and release management.
+  stack:
+  - Java
+  - Kotlin
+  - TypeScript
+  open_core: false
+- repo: jenkins-x/jx
+  nome: Jenkins X
+  alternativa_a:
+  - CircleCI
+  pt: CI/CD automatizado para Kubernetes, com ambientes de preview e promoção via GitOps.
+  en: Automated CI/CD for Kubernetes, with preview environments and GitOps promotion.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: semaphoreui/semaphore
+  nome: Semaphore UI
+  alternativa_a:
+  - Ansible Tower
+  pt: Interface web para executar Ansible, Terraform, OpenTofu e scripts, com agenda, histórico e acesso.
+  en: Web UI to run Ansible, Terraform, OpenTofu and scripts, with scheduling, history and access control.
+  stack:
+  - Go
+  - Vue
+  open_core: true
+- repo: dagger/dagger
+  nome: Dagger
+  alternativa_a:
+  - CircleCI
+  pt: Motor de pipelines programáveis que rodam igual na máquina local e em qualquer CI, em containers.
+  en: Programmable pipeline engine running containers the same locally and in any CI.
+  stack:
+  - Go
+  - BuildKit
+  open_core: false
+- repo: gitlab-org/gitlab
+  nome: GitLab
+  alternativa_a:
+  - GitHub
+  - Bitbucket
+  pt: Plataforma de DevOps completa com repositórios, CI/CD, revisão de código, issues e registro.
+  en: Complete DevOps platform with repositories, CI/CD, code review, issues and registry.
+  stack:
+  - Ruby
+  - Go
+  - PostgreSQL
+  open_core: true
+- repo: harness/harness
+  nome: Harness Open Source
+  alternativa_a:
+  - GitHub
+  pt: Plataforma de código e CI/CD com repositórios Git, pipelines, registro de pacotes e ambientes.
+  en: Code and CI/CD platform with Git repos, pipelines, package registry and environments.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: theonedev/onedev
+  nome: OneDev
+  alternativa_a:
+  - GitLab
+  - Bitbucket
+  pt: Servidor Git com CI/CD integrado, quadro de issues e busca de código, fácil de rodar.
+  en: Git server with built-in CI/CD, issue board and code search, easy to run.
+  stack:
+  - Java
+  - Wicket
+  open_core: false
+- repo: screwdriver-cd/screwdriver
+  nome: Screwdriver
+  alternativa_a:
+  - CircleCI
+  pt: Plataforma de build e entrega contínua criada para escala, com pipelines definidos em YAML.
+  en: Build and continuous delivery platform designed for scale, with YAML-defined pipelines.
+  stack:
+  - JavaScript
+  - Node.js
+  open_core: false
+- repo: rundeck/rundeck
+  nome: Rundeck
+  alternativa_a:
+  - PagerDuty Runbook Automation
+  pt: 'Automação de operações: executa tarefas e runbooks em muitos servidores, com agenda e controle.'
+  en: 'Operations automation: runs jobs and runbooks across many servers with scheduling and access control.'
+  stack:
+  - Java
+  - Groovy
+  open_core: true
+- repo: StackStorm/st2
+  nome: StackStorm
+  alternativa_a:
+  - PagerDuty Runbook Automation
+  pt: 'Automação orientada a eventos: sensores disparam regras que executam ações e fluxos de remediação.'
+  en: 'Event-driven automation: sensors trigger rules that run actions and remediation flows.'
+  stack:
+  - Python
+  - MongoDB
+  open_core: false
+- repo: ansible/awx
+  nome: AWX
+  alternativa_a:
+  - Ansible Automation Platform
+  pt: Interface web e API para rodar playbooks Ansible, com inventários, credenciais e agendamento.
+  en: Web UI and API to run Ansible playbooks, with inventories, credentials and scheduling.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  open_core: false
+- repo: theforeman/foreman
+  nome: Foreman
+  alternativa_a:
+  - Red Hat Satellite
+  pt: Provisiona e gerencia o ciclo de vida de servidores físicos e virtuais com Puppet ou Ansible.
+  en: Provisions and manages the lifecycle of physical and virtual servers with Puppet or Ansible.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  open_core: false
+- repo: runatlantis/atlantis
+  nome: Atlantis
+  alternativa_a:
+  - Terraform Cloud
+  pt: 'Automatiza Terraform por pull request: roda plan e apply por comentários e guarda o histórico.'
+  en: 'Automates Terraform via pull requests: runs plan and apply from comments and keeps history.'
+  stack:
+  - Go
+  - Terraform
+  open_core: false
+- repo: diggerhq/digger
+  nome: Digger
+  alternativa_a:
+  - Terraform Cloud
+  pt: Executa Terraform e OpenTofu dentro do seu CI, com travas, planos por PR e orquestração.
+  en: Runs Terraform and OpenTofu inside your own CI, with locks, per-PR plans and orchestration.
+  stack:
+  - Go
+  - Terraform
+  open_core: true
+- repo: AzBuilder/terrakube
+  nome: Terrakube
+  alternativa_a:
+  - Terraform Cloud
+  pt: Plataforma para executar e organizar Terraform e OpenTofu, com workspaces, módulos e políticas.
+  en: Platform to run and organize Terraform and OpenTofu, with workspaces, modules and policies.
+  stack:
+  - Java
+  - TypeScript
+  open_core: false
+- repo: backstage/backstage
+  nome: Backstage
+  alternativa_a:
+  - Cortex
+  - OpsLevel
+  pt: Portal de desenvolvedores com catálogo de serviços, documentação e modelos para criar projetos.
+  en: Developer portal with a service catalog, docs and templates to scaffold projects.
+  stack:
+  - TypeScript
+  - React
+  - Node.js
+  open_core: false
+- repo: renovatebot/renovate
+  nome: Renovate
+  alternativa_a:
+  - Dependabot
+  pt: Mantém dependências atualizadas abrindo pull requests automáticos, com regras e agrupamentos.
+  en: Keeps dependencies up to date by opening automated pull requests, with rules and grouping.
+  stack:
+  - TypeScript
+  - Node.js
+  open_core: false
+- repo: SonarSource/sonarqube
+  nome: SonarQube
+  alternativa_a:
+  - Codacy
+  - Code Climate
+  pt: 'Análise contínua da qualidade do código: bugs, vulnerabilidades, cobertura e dívida técnica.'
+  en: 'Continuous code quality analysis: bugs, vulnerabilities, coverage and technical debt.'
+  stack:
+  - Java
+  - TypeScript
+  open_core: true
+- repo: DependencyTrack/dependency-track
+  nome: Dependency-Track
+  alternativa_a:
+  - Snyk
+  pt: Acompanha componentes de software por SBOM e aponta vulnerabilidades e riscos de licença.
+  en: Tracks software components via SBOM and flags vulnerabilities and license risks.
+  stack:
+  - Java
+  - Vue
+  open_core: false
+- repo: goharbor/harbor
+  nome: Harbor
+  alternativa_a:
+  - Docker Hub
+  - Amazon ECR
+  pt: Registro de imagens de containers com controle de acesso, varredura de vulnerabilidades e replicação.
+  en: Container image registry with access control, vulnerability scanning and replication.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: apache/incubator-devlake
+  nome: Apache DevLake
+  alternativa_a:
+  - LinearB
+  - Jellyfish
+  pt: Reúne dados de Git, issues e CI para medir métricas DORA e a saúde da engenharia.
+  en: Pulls data from Git, issues and CI to measure DORA metrics and engineering health.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: kubeshop/testkube
+  nome: Testkube
+  alternativa_a:
+  - BrowserStack
+  pt: Orquestra testes de qualquer ferramenta dentro do Kubernetes, desacoplados do pipeline de CI.
+  en: Orchestrates tests from any tool inside Kubernetes, decoupled from the CI pipeline.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: true
+- repo: reportportal/reportportal
+  nome: ReportPortal
+  alternativa_a:
+  - Allure TestOps
+  pt: Central de resultados de testes com análise assistida de falhas e painéis em tempo real.
+  en: Test results hub with assisted failure analysis and real-time dashboards.
+  stack:
+  - Java
+  - React
+  open_core: false
+- repo: litmuschaos/litmus
+  nome: Litmus
+  alternativa_a:
+  - Gremlin
+  pt: Plataforma de engenharia do caos para Kubernetes, com experimentos prontos e relatórios de resiliência.
+  en: Chaos engineering platform for Kubernetes with ready experiments and resilience reports.
+  stack:
+  - Go
+  - React
+  open_core: false
+- repo: chaos-mesh/chaos-mesh
+  nome: Chaos Mesh
+  alternativa_a:
+  - Gremlin
+  pt: Injeta falhas de rede, disco e CPU em Kubernetes para testar a resiliência dos sistemas.
+  en: Injects network, disk and CPU faults into Kubernetes to test system resilience.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: errbit/errbit
+  nome: Errbit
+  alternativa_a:
+  - Airbrake
+  - Rollbar
+  pt: Coletor de erros de aplicações, compatível com a API do Airbrake, que agrupa e notifica falhas.
+  en: Application error collector, compatible with the Airbrake API, that groups and notifies failures.
+  stack:
+  - Ruby
+  - Rails
+  - MongoDB
+  open_core: false
+- repo: exceptionless/Exceptionless
+  nome: Exceptionless
+  alternativa_a:
+  - Rollbar
+  - Bugsnag
+  pt: Monitoramento de erros e logs em tempo real, com alertas, projetos e clientes para várias linguagens.
+  en: Real-time error and log monitoring with alerts, projects and clients for many languages.
+  stack:
+  - C#
+  - .NET
+  - Elasticsearch
+  open_core: false
+- repo: Unleash/unleash
+  nome: Unleash
+  alternativa_a:
+  - LaunchDarkly
+  pt: Servidor de feature flags com estratégias de liberação gradual, segmentos e SDKs para várias linguagens.
+  en: Feature flag server with gradual rollout strategies, segments and SDKs for many languages.
+  stack:
+  - TypeScript
+  - Node.js
+  - PostgreSQL
+  open_core: true
+- repo: Flagsmith/flagsmith
+  nome: Flagsmith
+  alternativa_a:
+  - LaunchDarkly
+  pt: Feature flags e configuração remota com segmentos de usuários, testes e painel de gestão.
+  en: Feature flags and remote config with user segments, experiments and a management dashboard.
+  stack:
+  - Python
+  - Django
+  - React
+  open_core: true
+- repo: flipt-io/flipt
+  nome: Flipt
+  alternativa_a:
+  - LaunchDarkly
+  pt: Feature flags que podem ser guardados no Git, com avaliação rápida e interface de gestão.
+  en: Feature flags that can live in Git, with fast evaluation and a management UI.
+  stack:
+  - Go
+  - React
+  open_core: true
+- repo: FeatureProbe/FeatureProbe
+  nome: FeatureProbe
+  alternativa_a:
+  - LaunchDarkly
+  pt: Gestão de feature flags e testes A/B com liberação gradual, alvos e métricas.
+  en: Feature flag management and A/B testing with gradual rollout, targeting and metrics.
+  stack:
+  - Rust
+  - Java
+  - React
+  open_core: false
+- repo: bucketeer-io/bucketeer
+  nome: Bucketeer
+  alternativa_a:
+  - LaunchDarkly
+  pt: Plataforma de feature flags e experimentos A/B com SDKs e painel de controle.
+  en: Feature flag and A/B experiment platform with SDKs and a control dashboard.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: thomaspoignant/go-feature-flag
+  nome: GO Feature Flag
+  alternativa_a:
+  - LaunchDarkly
+  pt: Feature flags configuradas por arquivos em Git, S3 ou HTTP, com relay proxy e sem banco próprio.
+  en: Feature flags configured via files in Git, S3 or HTTP, with a relay proxy and no database.
+  stack:
+  - Go
+  open_core: false
+- repo: openflagr/flagr
+  nome: Flagr
+  alternativa_a:
+  - Optimizely
+  pt: Serviço de feature flags e experimentação com segmentação e regras de distribuição por API.
+  en: Feature flag and experimentation service with segmentation and distribution rules over an API.
+  stack:
+  - Go
+  - React
+  open_core: false
+- repo: featurevisor/featurevisor
+  nome: Featurevisor
+  alternativa_a:
+  - LaunchDarkly
+  pt: Gerencia flags, testes e configuração como arquivos em Git, com validação e SDKs.
+  en: Manages flags, experiments and config as files in Git, with validation and SDKs.
+  stack:
+  - TypeScript
+  open_core: false

@@ -1,0 +1,299 @@
+categoria: analytics-produto-web
+titulo_pt: Analytics de produto e web
+titulo_en: Product and web analytics
+itens:
+- repo: plausible/analytics
+  nome: Plausible
+  alternativa_a:
+  - Google Analytics
+  pt: Analytics de sites leve e sem cookies, com painel de uma página e metas de conversão.
+  en: Lightweight cookie-free web analytics with a one-page dashboard and conversion goals.
+  stack:
+  - Elixir
+  - ClickHouse
+  - PostgreSQL
+  open_core: false
+  nota: AGPL; edição Community sem alguns recursos pagos.
+  destaque: true
+- repo: umami-software/umami
+  nome: Umami
+  alternativa_a:
+  - Google Analytics
+  - Mixpanel
+  pt: Analytics de sites focado em privacidade, com eventos, funis, retenção e painel simples.
+  en: Privacy-focused web analytics with events, funnels, retention and a simple dashboard.
+  stack:
+  - Next.js
+  - TypeScript
+  - PostgreSQL
+  open_core: false
+  destaque: true
+- repo: PostHog/posthog
+  nome: PostHog
+  alternativa_a:
+  - Mixpanel
+  - Amplitude
+  - Hotjar
+  pt: Plataforma de produto com analytics de eventos, gravação de sessões, feature flags, testes A/B e pesquisas.
+  en: Product platform with event analytics, session replay, feature flags, A/B tests and surveys.
+  stack:
+  - Python
+  - TypeScript
+  - ClickHouse
+  open_core: true
+  nota: Pasta ee é proprietária.
+  destaque: true
+- repo: matomo-org/matomo
+  nome: Matomo
+  alternativa_a:
+  - Google Analytics
+  pt: Analytics de sites completo, com mapas de calor opcionais, funis, e-commerce e dados sob seu controle.
+  en: Full-featured web analytics with e-commerce, funnels and full data ownership.
+  stack:
+  - PHP
+  - MySQL
+  open_core: true
+  nota: Plugins premium vendidos à parte.
+- repo: electerious/Ackee
+  nome: Ackee
+  alternativa_a:
+  - Google Analytics
+  pt: Analytics de sites minimalista, auto-hospedado, que não usa cookies e mostra visitas e referências.
+  en: Minimal self-hosted web analytics with no cookies, showing visits and referrers.
+  stack:
+  - Node.js
+  - MongoDB
+  open_core: false
+- repo: arp242/goatcounter
+  nome: GoatCounter
+  alternativa_a:
+  - Google Analytics
+  - Plausible
+  pt: Contador de visitas simples e leve, sem rastreamento invasivo, em um binário só.
+  en: Simple, lightweight visit counter without invasive tracking, shipped as a single binary.
+  stack:
+  - Go
+  - SQLite
+  - PostgreSQL
+  open_core: false
+- repo: milesmcc/shynet
+  nome: Shynet
+  alternativa_a:
+  - Google Analytics
+  pt: Analytics moderno que funciona até sem JavaScript, com foco em privacidade e baixo consumo.
+  en: Modern analytics that works even without JavaScript, privacy-focused and light on resources.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  open_core: false
+- repo: ihucos/counter.dev
+  nome: Counter.dev
+  alternativa_a:
+  - Google Analytics
+  pt: Analytics web simples e gratuito, com painel de visitas, origens e dispositivos, sem cookies.
+  en: Simple free web analytics with dashboards for visits, sources and devices, no cookies.
+  stack:
+  - Go
+  - Redis
+  open_core: false
+  nota: 'Menos certeza: pode ter pouca atividade.'
+- repo: offen/offen
+  nome: Offen
+  alternativa_a:
+  - Google Analytics
+  pt: Analytics que dá ao visitante acesso aos próprios dados e coleta só o necessário.
+  en: Analytics that lets visitors see and delete their own data and collects only what is needed.
+  stack:
+  - Go
+  - JavaScript
+  open_core: false
+  nota: 'Menos certeza: possivelmente arquivado.'
+- repo: Open-Web-Analytics/Open-Web-Analytics
+  nome: Open Web Analytics
+  alternativa_a:
+  - Google Analytics
+  pt: Analytics de sites auto-hospedado com mapas de calor, gravação de cliques e rastreio de e-commerce.
+  en: Self-hosted web analytics with heatmaps, click recording and e-commerce tracking.
+  stack:
+  - PHP
+  - MySQL
+  open_core: false
+- repo: Litlyx/litlyx
+  nome: Litlyx
+  alternativa_a:
+  - Google Analytics
+  - Mixpanel
+  pt: Analytics de sites e eventos com instalação em uma linha e painel de métricas em tempo real.
+  en: Web and event analytics with one-line install and a real-time metrics dashboard.
+  stack:
+  - TypeScript
+  - Vue
+  - MongoDB
+  open_core: false
+  nota: 'Menos certeza: projeto novo.'
+- repo: rybbit-io/rybbit
+  nome: Rybbit
+  alternativa_a:
+  - Google Analytics
+  - Plausible
+  pt: Analytics de sites e produto com replay de sessão, funis, mapas de origem e sem cookies.
+  en: Web and product analytics with session replay, funnels and origin maps, cookie-free.
+  stack:
+  - TypeScript
+  - Next.js
+  - ClickHouse
+  open_core: false
+- repo: Swetrix/swetrix
+  nome: Swetrix
+  alternativa_a:
+  - Google Analytics
+  - Plausible
+  pt: Analytics de sites com privacidade, monitoramento de erros e de desempenho, e painel em tempo real.
+  en: Privacy-friendly web analytics with error and performance monitoring and a real-time dashboard.
+  stack:
+  - TypeScript
+  - ClickHouse
+  open_core: false
+- repo: Openpanel-dev/openpanel
+  nome: OpenPanel
+  alternativa_a:
+  - Mixpanel
+  - Plausible
+  pt: Analytics de produto e de sites com eventos, funis, retenção e perfis de usuário.
+  en: Product and web analytics with events, funnels, retention and user profiles.
+  stack:
+  - TypeScript
+  - ClickHouse
+  - PostgreSQL
+  open_core: false
+- repo: aptabase/aptabase
+  nome: Aptabase
+  alternativa_a:
+  - Mixpanel
+  - Firebase Analytics
+  pt: Analytics para apps móveis e desktop, sem identificar usuários, com SDKs para várias plataformas.
+  en: Analytics for mobile and desktop apps that does not identify users, with SDKs for many platforms.
+  stack:
+  - C#
+  - ClickHouse
+  - React
+  open_core: false
+- repo: medama-io/medama
+  nome: Medama
+  alternativa_a:
+  - Google Analytics
+  - Plausible
+  pt: Analytics de sites minimalista e rápido, em um binário só, sem cookies.
+  en: Minimal, fast web analytics in a single binary, with no cookies.
+  stack:
+  - Go
+  - React
+  - SQLite
+  open_core: false
+- repo: msgbyte/tianji
+  nome: Tianji
+  alternativa_a:
+  - Google Analytics
+  - Uptime Robot
+  pt: Painel único com analytics de sites, monitor de disponibilidade e status de servidores.
+  en: One dashboard combining website analytics, uptime monitoring and server status.
+  stack:
+  - TypeScript
+  - React
+  - PostgreSQL
+  open_core: false
+- repo: benvinegar/counterscale
+  nome: Counterscale
+  alternativa_a:
+  - Google Analytics
+  - Plausible
+  pt: Analytics de sites que roda em Cloudflare Workers, barato e simples de manter.
+  en: Web analytics that runs on Cloudflare Workers, cheap and easy to maintain.
+  stack:
+  - TypeScript
+  - Remix
+  open_core: false
+- repo: openreplay/openreplay
+  nome: OpenReplay
+  alternativa_a:
+  - Hotjar
+  - FullStory
+  - LogRocket
+  pt: Replay de sessões com devtools, mapas de calor e analytics para entender o que o usuário viu e fez.
+  en: Session replay with devtools, heatmaps and analytics to see what users saw and did.
+  stack:
+  - Go
+  - Python
+  - TypeScript
+  open_core: true
+  nota: 'Verificar licença: ee separada.'
+- repo: Countly/countly-server
+  nome: Countly
+  alternativa_a:
+  - Mixpanel
+  - Firebase Analytics
+  pt: Analytics de produto para web e mobile, com eventos, funis, crash reports e notificações push.
+  en: Product analytics for web and mobile with events, funnels, crash reports and push notifications.
+  stack:
+  - Node.js
+  - MongoDB
+  open_core: true
+  nota: Edição Enterprise paga.
+- repo: jitsucom/jitsu
+  nome: Jitsu
+  alternativa_a:
+  - Segment
+  - RudderStack
+  pt: Coleta de eventos de clientes que envia dados para warehouses e ferramentas de marketing.
+  en: Customer event collection that streams data into warehouses and marketing tools.
+  stack:
+  - TypeScript
+  - Node.js
+  - PostgreSQL
+  open_core: false
+- repo: growthbook/growthbook
+  nome: GrowthBook
+  alternativa_a:
+  - Optimizely
+  - LaunchDarkly
+  - Statsig
+  pt: Plataforma de testes A/B e feature flags que calcula resultados sobre o seu data warehouse.
+  en: A/B testing and feature flag platform that computes results on top of your data warehouse.
+  stack:
+  - TypeScript
+  - Node.js
+  - MongoDB
+  open_core: true
+  nota: Pasta enterprise com licença própria.
+- repo: allinurl/goaccess
+  nome: GoAccess
+  alternativa_a:
+  - Google Analytics
+  - AWStats
+  pt: Analisador de logs de servidor web que mostra estatísticas em tempo real no terminal ou no navegador.
+  en: Web server log analyzer showing real-time stats in the terminal or browser.
+  stack:
+  - C
+  open_core: false
+- repo: ibericode/koko-analytics
+  nome: Koko Analytics
+  alternativa_a:
+  - Google Analytics
+  - Jetpack Stats
+  pt: Plugin de WordPress com analytics simples e sem cookies, guardando tudo no seu banco.
+  en: WordPress analytics plugin that is simple and cookieless, keeping all data in your own database.
+  stack:
+  - PHP
+  - JavaScript
+  open_core: false
+- repo: eldy/awstats
+  nome: AWStats
+  alternativa_a:
+  - Google Analytics
+  pt: Gerador de estatísticas de acesso a partir de logs de servidor web, FTP e e-mail.
+  en: Statistics generator that turns web, FTP and mail server logs into access reports.
+  stack:
+  - Perl
+  open_core: false
+  nota: Menos certeza do slug; projeto antigo.

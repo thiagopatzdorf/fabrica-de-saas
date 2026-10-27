@@ -1,0 +1,71 @@
+# Fábrica de SaaS
+
+> Catálogo verificado de SaaS open source (836 projetos em 37 categorias, licença e atividade conferidas no GitHub em 2026-10-27) mais 9 produtos próprios em MIT. Verified catalog of open source SaaS alternatives, plus 9 MIT products of our own.
+
+O catálogo só aponta para os projetos; nada de terceiros é copiado. Fatos (licença SPDX, estrelas, último push) vêm da API do GitHub, descrições são nossas, em português e inglês. / The catalog only links to projects; facts come from the GitHub API, descriptions are ours.
+
+## Dados / Data
+
+- [catalogo.json](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo.json): um objeto por projeto, com `meta` e esquema / one object per project
+- [catalogo.csv](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo.csv): a mesma tabela em CSV / same data as CSV
+- [llms-full.txt](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/llms-full.txt): o catálogo inteiro, uma linha por projeto / full catalog, one line per project
+- [schema/saas.schema.json](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/schema/saas.schema.json): esquema JSON / JSON Schema
+
+## Docs
+
+- [AGENTS.md](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/AGENTS.md): como consultar, propor entradas e verificar localmente / how to query, propose entries and verify
+- [LICENSE-POLICY.md](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/LICENSE-POLICY.md): licenças aceitas e recusadas / accepted and rejected licenses
+- [CONTRIBUTING.md](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/CONTRIBUTING.md): como adicionar um SaaS / how to add a SaaS
+- [docs/estatisticas.md](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/docs/estatisticas.md): contagens / counts
+
+## Categorias / Categories
+
+- [Agendamento e calendário / Scheduling and calendar](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/agendamento-calendario.md): 17 projetos
+- [Analytics de produto e web / Product and web analytics](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/analytics-produto-web.md): 18 projetos
+- [Arquivos, escritório e colaboração / Files, office and collaboration](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/arquivos-office-colaboracao.md): 21 projetos
+- [Atendimento e helpdesk / Support and helpdesk](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/atendimento-helpdesk.md): 11 projetos
+- [Ativos, ITSM, logística e frota / Assets, ITSM, logistics and fleet](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/ativos-itsm-logistica.md): 16 projetos
+- [Autenticação, identidade e SSO / Authentication, identity and SSO](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/auth-identidade-sso.md): 41 projetos
+- [Automação e workflows / Automation and workflows](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/automacao-workflow-ipaas.md): 23 projetos
+- [Backend, APIs e BaaS / Backend, APIs and BaaS](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/backend-api-baas.md): 34 projetos
+- [BI, dashboards e dados / BI, dashboards and data](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/bi-dashboards-dados.md): 37 projetos
+- [Chat e comunicação de equipe / Team chat and communication](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/chat-equipe.md): 12 projetos
+- [CMS, sites e blog / CMS, websites and blogs](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/cms-sites-blog.md): 34 projetos
+- [Comunidade, fóruns e membros / Community, forums and memberships](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/comunidade-foruns-membros.md): 27 projetos
+- [Contratos e assinatura eletrônica / Contracts and e-signature](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/contratos-assinatura-eletronica.md): 6 projetos
+- [CRM e vendas / CRM and sales](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/crm-vendas.md): 9 projetos
+- [DevOps, CI, erros e feature flags / DevOps, CI, error tracking and feature flags](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/devops-ci-erros-flags.md): 42 projetos
+- [E-commerce e PDV / E-commerce and POS](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/ecommerce-pdv.md): 19 projetos
+- [E-mail marketing e newsletter / Email marketing and newsletters](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/email-marketing-newsletter.md): 11 projetos
+- [ERP, contabilidade e finanças / ERP, accounting and finance](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/erp-contabilidade-financas.md): 20 projetos
+- [Feedback, roadmap e changelog / Feedback, roadmap and changelog](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/feedback-roadmap-changelog.md): 4 projetos
+- [Formulários e pesquisas / Forms and surveys](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/formularios-pesquisas.md): 8 projetos
+- [IA e aplicações de LLM / AI and LLM apps](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/ia-llm-apps.md): 44 projetos
+- [Imobiliário, hotelaria e reservas / Real estate, hospitality and bookings](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/imobiliario-hotelaria-reservas.md): 5 projetos
+- [Educação e cursos (LMS) / Education and courses (LMS)](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/lms-educacao.md): 29 projetos
+- [Low-code e bancos de dados visuais / Low-code and visual databases](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/low-code-bancos-visuais.md): 19 projetos
+- [Marketing, redes sociais e SEO / Marketing, social media and SEO](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/marketing-social-seo.md): 13 projetos
+- [Mídia, podcast e fotos / Media, podcasts and photos](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/midia-podcast-fotos.md): 34 projetos
+- [Monitoramento e observabilidade / Monitoring and observability](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/monitoramento-observabilidade.md): 44 projetos
+- [PaaS, deploy e hospedagem / PaaS, deploy and hosting](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/paas-deploy-hospedagem.md): 36 projetos
+- [Pagamentos, assinaturas e faturamento / Payments, subscriptions and billing](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/pagamentos-assinaturas-faturamento.md): 12 projetos
+- [Projetos e tarefas / Projects and tasks](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/projetos-tarefas.md): 12 projetos
+- [RH, ponto e folha / HR, time & attendance and payroll](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/rh-ponto-folha.md): 20 projetos
+- [Saúde e clínicas / Healthcare and clinics](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/saude-clinicas.md): 12 projetos
+- [Segurança, senhas e segredos / Security, passwords and secrets](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/seguranca-senhas-segredos.md): 40 projetos
+- [Starters e boilerplates de SaaS / SaaS starters and boilerplates](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/starters-saas.md): 27 projetos
+- [Status page e uptime / Status pages and uptime](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/status-uptime.md): 19 projetos
+- [Vídeo, reuniões e streaming / Video, meetings and streaming](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/video-reunioes-streaming.md): 27 projetos
+- [Wiki, documentação e notas / Wiki, docs and notes](https://raw.githubusercontent.com/thiagopatzdorf/fabrica-de-saas/main/catalogo/wiki-docs-notas.md): 33 projetos
+
+## Código nosso / Our code
+
+- [Gestão Jurídica](https://github.com/thiagopatzdorf/fabrica-de-saas/blob/main/apps/gestao-juridica): Law-firm management: cases (CNJ number validated), CPC deadlines, calendar, versioned documents, alerts and role-based login.
+- [Links de Pagamento](https://github.com/thiagopatzdorf/fabrica-de-saas/blob/main/apps/links-de-pagamento): Payment links on your own Stripe account (fixed, free or monthly amounts; Pix, card, installments), branded checkout and signed webhook.
+- [Loja Mínima](https://github.com/thiagopatzdorf/fabrica-de-saas/blob/main/apps/loja-minima): Small online store: storefront, cart, checkout, owner dashboard and shipping; the price is always recomputed on the server.
+- [Hub de Marketplaces](https://github.com/thiagopatzdorf/fabrica-de-saas/blob/main/apps/hub-de-marketplaces): Multichannel e-commerce hub: catalog, price, stock, listings and orders. The channel adapters are SIMULATED.
+- [Fitrich](https://github.com/thiagopatzdorf/fabrica-de-saas/blob/main/apps/fitrich): Personal finance plus workout/nutrition, 100% on-device (PWA, no backend), in Portuguese and English.
+- [Banco de Questões](https://github.com/thiagopatzdorf/fabrica-de-saas/blob/main/apps/banco-de-questoes): Question bank for Brazilian public-service exams, with progress per subject and a "chance to pass" estimate.
+- [Kanban de Equipe](https://github.com/thiagopatzdorf/fabrica-de-saas/blob/main/apps/kanban-de-equipe): Kanban, projects, team and a lightweight budget view; syncs GitHub Issues and ships an MCP server for AI agents.
+- [PDV de Restaurante](https://github.com/thiagopatzdorf/fabrica-de-saas/blob/main/apps/pdv-restaurante): Restaurant point of sale: tables, orders, kitchen, cash register and bill splitting.
+- [Migração de Legado](https://github.com/thiagopatzdorf/fabrica-de-saas/blob/main/apps/migracao-de-legado): Kit to move a legacy system: reads Delphi or Laravel, writes the business-rules contract and generates the new app.

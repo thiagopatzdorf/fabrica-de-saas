@@ -1,0 +1,31 @@
+name: Reportar problema / Report a problem
+description: Licença errada, projeto morto, link quebrado, dado desatualizado.
+title: "[problema] dono/nome"
+labels: ["problema"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repositório afetado (dono/nome) ou arquivo
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Licença errada ou mudou
+        - Projeto arquivado ou morto
+        - Link quebrado
+        - Descrição errada
+        - Erro no script ou no CI
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: detalhe
+    attributes:
+      label: O que está errado e como você viu
+      description: Link da fonte, se tiver. Não cole tokens ou senhas. Vulnerabilidade? Veja SECURITY.md.
+    validations:
+      required: true

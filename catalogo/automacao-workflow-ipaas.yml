@@ -1,0 +1,298 @@
+categoria: automacao-workflow-ipaas
+titulo_pt: Automação e workflows
+titulo_en: Automation and workflows
+itens:
+- repo: activepieces/activepieces
+  nome: Activepieces
+  alternativa_a:
+  - Zapier
+  - Make
+  pt: Automação sem código com peças reutilizáveis, fluxos visuais e integrações com apps e IA.
+  en: No-code automation with reusable pieces, a visual builder and integrations with apps and AI.
+  stack:
+  - TypeScript
+  - Angular
+  - Node.js
+  open_core: true
+- repo: windmill-labs/windmill
+  nome: Windmill
+  alternativa_a:
+  - Retool Workflows
+  - Zapier
+  pt: Plataforma para transformar scripts em fluxos, jobs agendados e interfaces internas.
+  en: Platform that turns scripts into workflows, scheduled jobs and internal UIs.
+  stack:
+  - Rust
+  - Svelte
+  - PostgreSQL
+  open_core: true
+- repo: huginn/huginn
+  nome: Huginn
+  alternativa_a:
+  - IFTTT
+  - Zapier
+  pt: Agentes que monitoram a web e disparam ações, como um IFTTT autohospedado.
+  en: Agents that watch the web and trigger actions, like a self-hosted IFTTT.
+  stack:
+  - Ruby
+  - Rails
+  open_core: false
+- repo: node-red/node-red
+  nome: Node-RED
+  alternativa_a:
+  - Zapier
+  - IFTTT
+  pt: Programação visual por fluxos para ligar dispositivos, APIs e serviços.
+  en: Visual flow programming to wire together devices, APIs and services.
+  stack:
+  - Node.js
+  - JavaScript
+  open_core: false
+- repo: automatisch/automatisch
+  nome: Automatisch
+  alternativa_a:
+  - Zapier
+  pt: Alternativa aberta ao Zapier para conectar apps e montar fluxos automáticos.
+  en: Open alternative to Zapier for connecting apps and building automatic workflows.
+  stack:
+  - Node.js
+  - React
+  - PostgreSQL
+  open_core: true
+- repo: temporalio/temporal
+  nome: Temporal
+  alternativa_a:
+  - AWS Step Functions
+  pt: 'Motor de execução durável: fluxos de longa duração que sobrevivem a falhas.'
+  en: 'Durable execution engine: long-running workflows that survive failures.'
+  stack:
+  - Go
+  open_core: true
+  nota: Há nuvem paga.
+- repo: conductor-oss/conductor
+  nome: Conductor
+  alternativa_a:
+  - AWS Step Functions
+  pt: Orquestrador de microsserviços criado na Netflix, com fluxos em JSON.
+  en: Microservice orchestrator born at Netflix, with JSON-defined workflows.
+  stack:
+  - Java
+  open_core: true
+- repo: triggerdotdev/trigger.dev
+  nome: Trigger.dev
+  alternativa_a:
+  - Inngest
+  - Zapier
+  pt: Tarefas em segundo plano e fluxos de longa duração escritos em TypeScript.
+  en: Background jobs and long-running workflows written in TypeScript.
+  stack:
+  - TypeScript
+  - Node.js
+  open_core: true
+- repo: spotify/luigi
+  nome: Luigi
+  alternativa_a:
+  - Airflow
+  pt: Biblioteca e servidor Python para encadear tarefas em lote com dependências.
+  en: Python framework and server to chain batch tasks with dependencies.
+  stack:
+  - Python
+  open_core: false
+- repo: flowable/flowable-engine
+  nome: Flowable
+  alternativa_a:
+  - Camunda
+  - Pega
+  pt: Motor de BPMN, CMMN e DMN para processos de negócio em Java.
+  en: BPMN, CMMN and DMN engine for business processes on Java.
+  stack:
+  - Java
+  open_core: true
+- repo: Activiti/Activiti
+  nome: Activiti
+  alternativa_a:
+  - Camunda
+  pt: Motor leve de processos de negócio com BPMN 2.0.
+  en: Lightweight business process engine built on BPMN 2.0.
+  stack:
+  - Java
+  open_core: false
+- repo: hatchet-dev/hatchet
+  nome: Hatchet
+  alternativa_a:
+  - Temporal
+  - Inngest
+  pt: Fila de tarefas e orquestração de fluxos duráveis sobre Postgres.
+  en: Task queue and durable workflow orchestration on top of Postgres.
+  stack:
+  - Go
+  - TypeScript
+  - PostgreSQL
+  open_core: false
+- repo: jhuckaby/Cronicle
+  nome: Cronicle
+  alternativa_a:
+  - Cron
+  - Rundeck
+  pt: Agendador de tarefas com interface web, múltiplos servidores e histórico.
+  en: Task scheduler with a web UI, multiple servers and run history.
+  stack:
+  - Node.js
+  open_core: false
+- repo: flyteorg/flyte
+  nome: Flyte
+  alternativa_a:
+  - Airflow
+  pt: Orquestrador de fluxos de dados e aprendizado de máquina, tipado e reproduzível.
+  en: Typed, reproducible workflow orchestrator for data and machine learning.
+  stack:
+  - Go
+  - Python
+  open_core: false
+- repo: Netflix/metaflow
+  nome: Metaflow
+  alternativa_a:
+  - SageMaker Pipelines
+  pt: Framework para construir e operar fluxos de ciência de dados.
+  en: Framework for building and operating data science workflows.
+  stack:
+  - Python
+  open_core: false
+- repo: distribworks/dkron
+  nome: Dkron
+  alternativa_a:
+  - Cron
+  - Control-M
+  pt: Agendador de tarefas distribuído e tolerante a falhas, com painel web.
+  en: Distributed, fault-tolerant job scheduler with a web dashboard.
+  stack:
+  - Go
+  open_core: true
+- repo: robotframework/robotframework
+  nome: Robot Framework
+  alternativa_a:
+  - UiPath
+  - Automation Anywhere
+  pt: Framework de automação de testes e RPA com sintaxe por palavras-chave.
+  en: Keyword-driven automation framework for testing and RPA.
+  stack:
+  - Python
+  open_core: false
+- repo: adnanh/webhook
+  nome: webhook
+  alternativa_a:
+  - Zapier Webhooks
+  pt: Servidor que roda comandos locais quando recebe chamadas HTTP.
+  en: Server that runs local commands when it receives HTTP calls.
+  stack:
+  - Go
+  open_core: false
+- repo: Shuffle/Shuffle
+  nome: Shuffle
+  alternativa_a:
+  - Splunk SOAR
+  - Tines
+  pt: Plataforma aberta de automação de segurança, com fluxos visuais e integrações.
+  en: Open security automation platform with visual workflows and integrations.
+  stack:
+  - Go
+  - React
+  open_core: true
+- repo: TracecatHQ/tracecat
+  nome: Tracecat
+  alternativa_a:
+  - Tines
+  - Torq
+  pt: Automação de segurança com fluxos em YAML e interface visual.
+  en: Security automation with YAML workflows and a visual builder.
+  stack:
+  - Python
+  - TypeScript
+  open_core: true
+- repo: OpenFn/lightning
+  nome: OpenFn Lightning
+  alternativa_a:
+  - Zapier
+  - Workato
+  pt: Plataforma de fluxos de integração voltada a organizações sociais e de saúde.
+  en: Integration workflow platform aimed at social-impact and health organizations.
+  stack:
+  - Elixir
+  - Phoenix
+  open_core: false
+  nota: Licença a conferir.
+- repo: simstudioai/sim
+  nome: Sim
+  alternativa_a:
+  - Zapier
+  - n8n
+  pt: Construtor visual de fluxos de agentes de IA conectados a ferramentas.
+  en: Visual builder for AI agent workflows wired to tools.
+  stack:
+  - TypeScript
+  - Next.js
+  open_core: true
+- repo: langflow-ai/langflow
+  nome: Langflow
+  alternativa_a:
+  - Zapier
+  pt: Editor visual de fluxos e agentes de IA, com componentes e API.
+  en: Visual editor for AI workflows and agents, with components and an API.
+  stack:
+  - Python
+  - React
+  open_core: false
+- repo: FlowiseAI/Flowise
+  nome: Flowise
+  alternativa_a:
+  - Zapier
+  pt: Construtor visual de fluxos de modelos de linguagem e agentes.
+  en: Visual builder for LLM flows and agents.
+  stack:
+  - TypeScript
+  - Node.js
+  - React
+  open_core: true
+- repo: bonitasoft/bonita-engine
+  nome: Bonita
+  alternativa_a:
+  - Pega
+  - Camunda
+  pt: Plataforma de processos de negócio com modelagem BPMN e automação.
+  en: Business process platform with BPMN modeling and automation.
+  stack:
+  - Java
+  open_core: true
+- repo: ProcessMaker/processmaker
+  nome: ProcessMaker
+  alternativa_a:
+  - Pega
+  - Appian
+  pt: Plataforma de BPM e fluxos de trabalho de baixo código.
+  en: Low-code BPM and workflow platform.
+  stack:
+  - PHP
+  - Laravel
+  - Vue
+  open_core: true
+- repo: dagu-org/dagu
+  nome: Dagu
+  alternativa_a:
+  - Airflow
+  - Cron
+  pt: Motor de fluxos leve em YAML, com interface web e sem banco de dados.
+  en: Lightweight YAML workflow engine with a web UI and no database.
+  stack:
+  - Go
+  - React
+  open_core: false
+- repo: cadence-workflow/cadence
+  nome: Cadence
+  alternativa_a:
+  - AWS Step Functions
+  pt: Motor de fluxos duráveis criado na Uber, precursor do Temporal.
+  en: Durable workflow engine from Uber, predecessor of Temporal.
+  stack:
+  - Go
+  open_core: false
+  nota: Repo foi movido de uber/cadence.

@@ -1,0 +1,193 @@
+categoria: pagamentos-assinaturas-faturamento
+titulo_pt: Pagamentos, assinaturas e faturamento
+titulo_en: Payments, subscriptions and billing
+itens:
+- repo: killbill/killbill
+  nome: Kill Bill
+  alternativa_a:
+  - Chargebee
+  - Recurly
+  - Zuora
+  pt: Motor de assinaturas e cobrança recorrente com planos, faturas e catálogo flexível.
+  en: Subscription and recurring billing engine with plans, invoices and a flexible catalog.
+  stack:
+  - Java
+  - MySQL
+  site: https://killbill.io
+  open_core: false
+- repo: getlago/lago-api
+  nome: Lago
+  alternativa_a:
+  - Chargebee
+  - Stripe Billing
+  - Metronome
+  pt: 'Faturamento por uso e assinaturas: mede eventos, calcula preço e emite faturas.'
+  en: 'Usage-based and subscription billing: ingests events, prices them and issues invoices.'
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  site: https://www.getlago.com
+  open_core: true
+- repo: openmeter/openmeter
+  nome: OpenMeter
+  alternativa_a:
+  - Metronome
+  - Orb
+  pt: Medição de uso em tempo real para cobrar por consumo e controlar limites.
+  en: Real-time usage metering to bill by consumption and enforce entitlements.
+  stack:
+  - Go
+  - ClickHouse
+  - Kafka
+  site: https://openmeter.io
+  open_core: false
+- repo: juspay/hyperswitch
+  nome: Hyperswitch
+  alternativa_a:
+  - Stripe
+  - Adyen
+  pt: Orquestrador de pagamentos que liga vários provedores por uma API única, com roteamento.
+  en: Payment orchestrator connecting many processors behind one API, with smart routing.
+  stack:
+  - Rust
+  - PostgreSQL
+  - Redis
+  site: https://hyperswitch.io
+  open_core: false
+- repo: btcpayserver/btcpayserver
+  nome: BTCPay Server
+  alternativa_a:
+  - Coinbase Commerce
+  - BitPay
+  pt: Processador de pagamentos em bitcoin que você hospeda, sem intermediário.
+  en: Self-hosted bitcoin payment processor with no middleman.
+  stack:
+  - C#
+  - .NET
+  - PostgreSQL
+  site: https://btcpayserver.org
+  open_core: false
+- repo: polar-sh/polar
+  nome: Polar
+  alternativa_a:
+  - Lemon Squeezy
+  - Paddle
+  - Gumroad
+  pt: Plataforma para vender produtos digitais e assinaturas, cuidando de checkout e impostos.
+  en: Platform for selling digital products and subscriptions, handling checkout and taxes.
+  stack:
+  - Python
+  - TypeScript
+  - PostgreSQL
+  site: https://polar.sh
+  open_core: false
+- repo: flexprice/flexprice
+  nome: Flexprice
+  alternativa_a:
+  - Orb
+  - Metronome
+  - Chargebee
+  pt: Infraestrutura de cobrança por uso para produtos de IA e SaaS, com planos e créditos.
+  en: Usage billing infrastructure for AI and SaaS products, with plans and credits.
+  stack:
+  - Go
+  - PostgreSQL
+  - ClickHouse
+  open_core: true
+- repo: useautumn/autumn
+  nome: Autumn
+  alternativa_a:
+  - Stripe Billing
+  - Chargebee
+  pt: Camada de preços e limites sobre o Stripe para montar planos e cobrança por uso.
+  en: Pricing and entitlement layer on top of Stripe for plans and usage-based billing.
+  stack:
+  - TypeScript
+  - PostgreSQL
+  open_core: false
+- repo: FOSSBilling/FOSSBilling
+  nome: FOSSBilling
+  alternativa_a:
+  - WHMCS
+  - Blesta
+  pt: Faturamento e atendimento para empresas de hospedagem e serviços digitais.
+  en: Billing and client management for hosting and digital service providers.
+  stack:
+  - PHP
+  - MySQL
+  site: https://fossbilling.org
+  open_core: false
+- repo: Paymenter/Paymenter
+  nome: Paymenter
+  alternativa_a:
+  - WHMCS
+  pt: Plataforma de cobrança para vender hospedagem e serviços com cobrança recorrente.
+  en: Billing platform to sell hosting and services with recurring payments.
+  stack:
+  - PHP
+  - Laravel
+  site: https://paymenter.org
+  open_core: false
+- repo: InvoicePlane/InvoicePlane
+  nome: InvoicePlane
+  alternativa_a:
+  - FreshBooks
+  - Conta Azul
+  pt: Emissão de orçamentos e faturas com controle de pagamentos e clientes.
+  en: Quotes and invoices with payment and client tracking.
+  stack:
+  - PHP
+  - CodeIgniter
+  - MySQL
+  site: https://invoiceplane.com
+  open_core: false
+- repo: opencollective/opencollective-api
+  nome: Open Collective
+  alternativa_a:
+  - Patreon
+  - GoFundMe
+  pt: Arrecadação e gestão transparente de dinheiro para comunidades e projetos coletivos.
+  en: Transparent fundraising and money management for communities and collective projects.
+  stack:
+  - Node.js
+  - PostgreSQL
+  - GraphQL
+  site: https://opencollective.com
+  open_core: false
+- repo: lnbits/lnbits
+  nome: LNbits
+  alternativa_a:
+  - PayPal
+  - Coinbase Commerce
+  pt: Carteiras e contas sobre Lightning Network, com extensões de cobrança e pagamento.
+  en: Wallets and accounts on the Lightning Network, with billing and payment extensions.
+  stack:
+  - Python
+  - FastAPI
+  site: https://lnbits.com
+  open_core: false
+- repo: bitcart/bitcart
+  nome: BitcartCC
+  alternativa_a:
+  - BitPay
+  - Coinbase Commerce
+  pt: Processador de pagamentos em criptomoedas com checkout, lojas e carteiras próprias.
+  en: Cryptocurrency payment processor with checkout, stores and self-custody wallets.
+  stack:
+  - Python
+  - FastAPI
+  - PostgreSQL
+  site: https://bitcart.ai
+  open_core: false
+- repo: ellite/Wallos
+  nome: Wallos
+  alternativa_a:
+  - Bobby
+  - Rocket Money
+  pt: Controla assinaturas e gastos recorrentes pessoais, com alertas de renovação.
+  en: Tracks personal subscriptions and recurring expenses with renewal reminders.
+  stack:
+  - PHP
+  - SQLite
+  open_core: false

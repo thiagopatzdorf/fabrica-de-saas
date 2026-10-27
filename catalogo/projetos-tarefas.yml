@@ -1,0 +1,295 @@
+categoria: projetos-tarefas
+titulo_pt: Projetos e tarefas
+titulo_en: Projects and tasks
+itens:
+- repo: makeplane/plane
+  nome: Plane
+  alternativa_a:
+  - Jira
+  - Linear
+  - Asana
+  pt: Gestão de projetos com tarefas, ciclos, módulos, páginas e visões; alternativa direta ao Jira e ao Linear.
+  en: Project management with issues, cycles, modules, pages and views; a direct alternative to Jira and Linear.
+  stack:
+  - TypeScript
+  - Next.js
+  - Django
+  - PostgreSQL
+  site: https://plane.so
+  open_core: true
+  nota: Há edição comercial com recursos extras
+- repo: openproject/openproject
+  nome: OpenProject
+  alternativa_a:
+  - Jira
+  - MS Project
+  - Asana
+  pt: Gestão de projetos completa com Gantt, quadros ágeis, orçamento e controle de horas.
+  en: Full project management with Gantt, agile boards, budgets and time tracking.
+  stack:
+  - Ruby
+  - Rails
+  - Angular
+  - PostgreSQL
+  site: https://www.openproject.org
+  open_core: true
+  nota: Edição enterprise com recursos extras
+- repo: taigaio/taiga-back
+  nome: Taiga
+  alternativa_a:
+  - Jira
+  - Trello
+  pt: Gestão de projetos ágil com scrum, kanban, épicos e histórias de usuário, de visual cuidado.
+  en: Agile project management with scrum, kanban, epics and user stories, with a polished interface.
+  stack:
+  - Python
+  - Django
+  - Angular
+  - PostgreSQL
+  site: https://taiga.io
+  open_core: false
+  nota: Repo do backend; o frontend é separado
+- repo: go-vikunja/vikunja
+  nome: Vikunja
+  alternativa_a:
+  - Todoist
+  - Asana
+  - Trello
+  pt: Gerenciador de tarefas e projetos com listas, kanban, Gantt e tabela, com API aberta.
+  en: Task and project manager with list, kanban, Gantt and table views, plus an open API.
+  stack:
+  - Go
+  - Vue
+  - SQLite
+  - PostgreSQL
+  site: https://vikunja.io
+  open_core: false
+- repo: plankanban/planka
+  nome: Planka
+  alternativa_a:
+  - Trello
+  pt: Kanban autohospedado com tempo real, quadros, listas, cartões e notificações para equipes pequenas.
+  en: Self-hosted real-time kanban with boards, lists, cards and notifications for small teams.
+  stack:
+  - JavaScript
+  - React
+  - PostgreSQL
+  site: https://planka.app
+  open_core: true
+  nota: Existem recursos pagos em edição Pro
+- repo: redmine/redmine
+  nome: Redmine
+  alternativa_a:
+  - Jira
+  - Basecamp
+  pt: Gestor de projetos e de bugs veterano, com Gantt, wiki, controle de horas e muitos plugins.
+  en: Veteran project and bug tracker with Gantt, wiki, time tracking and a large plugin ecosystem.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  - MySQL
+  site: https://www.redmine.org
+  open_core: false
+- repo: leantime/leantime
+  nome: Leantime
+  alternativa_a:
+  - Asana
+  - Monday
+  - ClickUp
+  pt: Gestão de projetos para times sem formação em gerência, com objetivos, tarefas, linha do tempo e canvas.
+  en: Project management for teams without a PM background, with goals, tasks, timeline and canvases.
+  stack:
+  - PHP
+  - MySQL
+  site: https://leantime.io
+  open_core: false
+- repo: nextcloud/deck
+  nome: Nextcloud Deck
+  alternativa_a:
+  - Trello
+  pt: App de quadros kanban dentro do Nextcloud, ligado a arquivos, calendário e compartilhamento.
+  en: Kanban boards app inside Nextcloud, linked to files, calendar and sharing.
+  stack:
+  - PHP
+  - Vue
+  site: https://apps.nextcloud.com/apps/deck
+  open_core: false
+- repo: hcengineering/platform
+  nome: Huly
+  alternativa_a:
+  - Linear
+  - Jira
+  - Notion
+  - Slack
+  pt: Plataforma tudo-em-um com tarefas, documentos, chat, calendário e RH numa só aplicação.
+  en: All-in-one platform with tasks, docs, chat, calendar and HR in a single application.
+  stack:
+  - TypeScript
+  - Svelte
+  - MongoDB
+  site: https://huly.io
+  open_core: false
+- repo: RestyaPlatform/board
+  nome: Restyaboard
+  alternativa_a:
+  - Trello
+  pt: Kanban estilo Trello com checklists, anexos, filtros e aplicativos para celular.
+  en: Trello-style kanban with checklists, attachments, filters and mobile apps.
+  stack:
+  - PHP
+  - PostgreSQL
+  site: https://restya.com
+  open_core: true
+  nota: Parte dos apps é paga
+- repo: Orangescrum/orangescrum
+  nome: Orangescrum
+  alternativa_a:
+  - Basecamp
+  - Asana
+  pt: Gestão de projetos e tarefas com controle de horas, recursos e relatórios.
+  en: Project and task management with time logs, resources and reports.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.orangescrum.org
+  open_core: true
+  nota: Edição comunitária e edição paga
+- repo: mantisbt/mantisbt
+  nome: MantisBT
+  alternativa_a:
+  - Jira
+  pt: Rastreador de bugs simples e veterano, com fluxos de status, filtros, plugins e e-mail.
+  en: Simple, veteran bug tracker with status workflows, filters, plugins and email notifications.
+  stack:
+  - PHP
+  - MySQL
+  site: https://mantisbt.org
+  open_core: false
+- repo: Enalean/tuleap
+  nome: Tuleap
+  alternativa_a:
+  - Jira
+  - Azure DevOps
+  pt: Plataforma de gestão do ciclo de vida de software com agile, rastreabilidade e testes.
+  en: Software lifecycle management platform with agile planning, traceability and testing.
+  stack:
+  - PHP
+  - Vue
+  - MySQL
+  site: https://www.tuleap.org
+  open_core: true
+  nota: Há edição Enterprise
+- repo: easysoft/zentaopms
+  nome: ZenTao
+  alternativa_a:
+  - Jira
+  pt: Gestão de projetos ágeis e de testes, com requisitos, sprints, bugs e relatórios.
+  en: Agile project and test management with requirements, sprints, bugs and reports.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.zentao.pm
+  open_core: true
+  nota: Edições comerciais existem
+- repo: kanbn/kan
+  nome: Kan
+  alternativa_a:
+  - Trello
+  pt: Kanban de código aberto com quadros, cartões, espaços de trabalho e interface limpa.
+  en: Open source kanban with boards, cards, workspaces and a clean interface.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  site: https://kan.bn
+  open_core: false
+- repo: chrisvel/tududi
+  nome: tududi
+  alternativa_a:
+  - Todoist
+  - Things
+  pt: Gerenciador de tarefas autohospedado com áreas, projetos, notas e tarefas recorrentes.
+  en: Self-hosted task manager with areas, projects, notes and recurring tasks.
+  stack:
+  - JavaScript
+  - React
+  - SQLite
+  site: https://tududi.com
+  open_core: false
+- repo: donetick/donetick
+  nome: Donetick
+  alternativa_a:
+  - Todoist
+  pt: Gerenciador de tarefas e rotinas domésticas com recorrência, atribuição e pontos.
+  en: Task and household chore manager with recurrence, assignment and points.
+  stack:
+  - Go
+  - React
+  - SQLite
+  site: https://donetick.com
+  open_core: false
+- repo: HabitRPG/habitica
+  nome: Habitica
+  alternativa_a:
+  - Todoist
+  - Forest
+  pt: Gerenciador de hábitos e tarefas com mecânica de RPG, missões e grupos.
+  en: Habit and task manager gamified as an RPG, with quests and parties.
+  stack:
+  - JavaScript
+  - Vue
+  - MongoDB
+  site: https://habitica.com
+  open_core: false
+- repo: BaldissaraMatheus/Tasks.md
+  nome: Tasks.md
+  alternativa_a:
+  - Trello
+  pt: Quadro kanban que guarda cada tarefa como arquivo Markdown em disco, sem banco de dados.
+  en: Kanban board that stores each task as a Markdown file on disk, no database needed.
+  stack:
+  - JavaScript
+  - Node.js
+  open_core: false
+- repo: mattermost-community/focalboard
+  nome: Focalboard
+  alternativa_a:
+  - Trello
+  - Notion
+  - Asana
+  pt: Quadros de projeto com visões em tabela, kanban, galeria e calendário, nascido na Mattermost.
+  en: Project boards with table, kanban, gallery and calendar views, born at Mattermost.
+  stack:
+  - Go
+  - React
+  - TypeScript
+  site: https://www.focalboard.com
+  open_core: false
+  nota: 'Pouca manutenção: o verificador deve filtrar se estiver parado'
+- repo: phorgeit/phorge
+  nome: Phorge
+  alternativa_a:
+  - Jira
+  - GitHub
+  pt: Suíte de desenvolvimento com tarefas, revisão de código, wiki e quadros, sucessora do Phabricator.
+  en: Developer suite with tasks, code review, wiki and boards, successor to Phabricator.
+  stack:
+  - PHP
+  - MySQL
+  site: https://we.phorge.it
+  open_core: false
+  nota: Repo no GitHub pode ser só espelho; conferir
+- repo: tasks/tasks
+  nome: Tasks.org
+  alternativa_a:
+  - Todoist
+  - Google Tasks
+  pt: App de tarefas para Android com sincronização por CalDAV, lembretes e listas inteligentes.
+  en: Android to-do app with CalDAV sync, reminders and smart lists.
+  stack:
+  - Kotlin
+  - Android
+  site: https://tasks.org
+  open_core: false
+  nota: 'Slug: tasks/tasks, conferir'

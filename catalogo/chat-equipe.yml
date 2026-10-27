@@ -1,0 +1,218 @@
+categoria: chat-equipe
+titulo_pt: Chat e comunicação de equipe
+titulo_en: Team chat and communication
+itens:
+- repo: mattermost/mattermost
+  nome: Mattermost
+  alternativa_a:
+  - Slack
+  - Microsoft Teams
+  pt: Mensageria de equipe com canais, threads, chamadas e playbooks, pensada para times técnicos e ambientes controlados.
+  en: Team messaging with channels, threads, calls and playbooks, built for technical teams and controlled environments.
+  stack:
+  - Go
+  - React
+  - PostgreSQL
+  site: https://mattermost.com
+  open_core: true
+  nota: Recursos enterprise em edição separada
+- repo: RocketChat/Rocket.Chat
+  nome: Rocket.Chat
+  alternativa_a:
+  - Slack
+  - Microsoft Teams
+  pt: Chat de equipe e comunidades com canais, vídeo, federação com Matrix e apps; roda em servidor próprio.
+  en: Team and community chat with channels, video, Matrix federation and apps; runs on your own server.
+  stack:
+  - TypeScript
+  - Meteor
+  - MongoDB
+  site: https://www.rocket.chat
+  open_core: true
+  nota: Há edição enterprise
+- repo: element-hq/element-web
+  nome: Element Web
+  alternativa_a:
+  - Slack
+  - Microsoft Teams
+  pt: Cliente web principal da rede Matrix, com salas, threads, chamadas e criptografia.
+  en: Main web client for the Matrix network, with rooms, threads, calls and encryption.
+  stack:
+  - TypeScript
+  - React
+  site: https://element.io
+  open_core: false
+- repo: nextcloud/spreed
+  nome: Nextcloud Talk
+  alternativa_a:
+  - Microsoft Teams
+  - Zoom
+  pt: App de conversas e videochamadas do Nextcloud, com salas, compartilhamento de tela e integração com arquivos.
+  en: Nextcloud chat and video calls app with rooms, screen sharing and file integration.
+  stack:
+  - PHP
+  - Vue
+  site: https://nextcloud.com/talk
+  open_core: false
+- repo: basecamp/once-campfire
+  nome: Campfire
+  alternativa_a:
+  - Slack
+  pt: Chat de grupo simples e autohospedado, com salas, mensagens diretas, busca e notificações.
+  en: Simple self-hosted group chat with rooms, direct messages, search and notifications.
+  stack:
+  - Ruby
+  - Rails
+  - SQLite
+  open_core: false
+- repo: tinode/chat
+  nome: Tinode
+  alternativa_a:
+  - WhatsApp
+  - Telegram
+  pt: Servidor de mensagens instantâneas com clientes web e mobile, grupos, canais e histórico sincronizado.
+  en: Instant messaging server with web and mobile clients, groups, channels and synced history.
+  stack:
+  - Go
+  - MySQL
+  site: https://tinode.co
+  open_core: false
+- repo: mumble-voip/mumble
+  nome: Mumble
+  alternativa_a:
+  - Discord
+  - TeamSpeak
+  pt: Chat de voz de baixa latência e alta qualidade, usado em jogos e equipes remotas.
+  en: Low-latency, high-quality voice chat used in gaming and remote teams.
+  stack:
+  - C++
+  - Qt
+  site: https://www.mumble.info
+  open_core: false
+- repo: thelounge/thelounge
+  nome: The Lounge
+  alternativa_a:
+  - Slack
+  pt: Cliente IRC web hospedado por você, sempre conectado e acessível de qualquer dispositivo.
+  en: Self-hosted web IRC client that stays connected and is reachable from any device.
+  stack:
+  - TypeScript
+  - Node.js
+  site: https://thelounge.chat
+  open_core: false
+- repo: convos-chat/convos
+  nome: Convos
+  alternativa_a:
+  - Slack
+  pt: Cliente IRC web que mantém a conexão ativa, com arquivo de histórico e interface para celular.
+  en: Always-on web IRC client with message history and a mobile-friendly interface.
+  stack:
+  - Perl
+  - Mojolicious
+  site: https://convos.chat
+  open_core: false
+- repo: processone/ejabberd
+  nome: ejabberd
+  alternativa_a:
+  - WhatsApp
+  - Slack
+  pt: Servidor XMPP robusto e escalável para mensagens em tempo real, com clusters e MQTT.
+  en: Robust, scalable XMPP server for real-time messaging, with clustering and MQTT.
+  stack:
+  - Erlang
+  site: https://www.process-one.net/ejabberd
+  open_core: false
+- repo: igniterealtime/Openfire
+  nome: Openfire
+  alternativa_a:
+  - Slack
+  - Microsoft Teams
+  pt: Servidor XMPP em Java com administração web, para mensageria corporativa em tempo real.
+  en: Java XMPP server with web administration for real-time corporate messaging.
+  stack:
+  - Java
+  site: https://www.igniterealtime.org/projects/openfire
+  open_core: false
+- repo: cinnyapp/cinny
+  nome: Cinny
+  alternativa_a:
+  - Slack
+  - Discord
+  pt: Cliente Matrix para web e desktop com visual limpo e foco em simplicidade.
+  en: Matrix client for web and desktop with a clean look and a focus on simplicity.
+  stack:
+  - TypeScript
+  - React
+  site: https://cinny.in
+  open_core: false
+- repo: krille-chan/fluffychat
+  nome: FluffyChat
+  alternativa_a:
+  - WhatsApp
+  - Telegram
+  pt: Cliente Matrix multiplataforma com visual amigável, para celular, web e desktop.
+  en: Cross-platform Matrix client with a friendly interface for mobile, web and desktop.
+  stack:
+  - Dart
+  - Flutter
+  site: https://fluffychat.im
+  open_core: false
+- repo: kiwiirc/kiwiirc
+  nome: Kiwi IRC
+  alternativa_a:
+  - Slack
+  pt: Cliente IRC para a web que dá para embutir em sites e personalizar com temas e plugins.
+  en: Web IRC client that can be embedded in sites and customized with themes and plugins.
+  stack:
+  - JavaScript
+  - Vue
+  site: https://kiwiirc.com
+  open_core: false
+- repo: wireapp/wire-server
+  nome: Wire Server
+  alternativa_a:
+  - Slack
+  - Microsoft Teams
+  pt: Backend da plataforma Wire de mensagens e chamadas com criptografia ponta a ponta para equipes.
+  en: Backend for the Wire messaging and calling platform with end-to-end encryption for teams.
+  stack:
+  - Haskell
+  - Cassandra
+  site: https://wire.com
+  open_core: false
+- repo: stoatchat/stoatchat
+  nome: Stoat
+  alternativa_a:
+  - Discord
+  - Slack
+  pt: Plataforma de chat de comunidades e equipes, antes chamada Revolt, com servidores e canais de voz.
+  en: Community and team chat platform formerly known as Revolt, with servers and voice channels.
+  stack:
+  - Rust
+  - MongoDB
+  site: https://stoat.chat
+  open_core: false
+  nota: Confirmar slug após a troca de nome Revolt para Stoat
+- repo: element-hq/dendrite
+  nome: Dendrite
+  alternativa_a:
+  - Slack
+  pt: Servidor Matrix de segunda geração, mais leve que o Synapse, para quem quer menos consumo de recursos.
+  en: Second-generation Matrix homeserver, lighter than Synapse for those who want lower resource use.
+  stack:
+  - Go
+  - PostgreSQL
+  site: https://matrix-org.github.io/dendrite
+  open_core: false
+  nota: Verificar se ainda recebe manutenção
+- repo: matrix-construct/tuwunel
+  nome: Tuwunel
+  alternativa_a:
+  - Slack
+  pt: Servidor Matrix escrito em Rust, enxuto e rápido, sucessor da linhagem Conduit/conduwuit.
+  en: Rust Matrix homeserver, lean and fast, successor to the Conduit/conduwuit line.
+  stack:
+  - Rust
+  - RocksDB
+  site: https://matrix-construct.github.io/tuwunel
+  open_core: false

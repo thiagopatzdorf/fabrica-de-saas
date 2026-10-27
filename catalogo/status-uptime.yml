@@ -1,0 +1,247 @@
+categoria: status-uptime
+titulo_pt: Status page e uptime
+titulo_en: Status pages and uptime
+itens:
+- repo: louislam/uptime-kuma
+  nome: Uptime Kuma
+  alternativa_a:
+  - UptimeRobot
+  - Pingdom
+  pt: Monitor de disponibilidade com painel bonito, muitos tipos de checagem e avisos por dezenas de canais.
+  en: Uptime monitor with a clean dashboard, many check types and alerts on dozens of channels.
+  stack:
+  - Node.js
+  - Vue
+  - SQLite
+  open_core: false
+  nota: Referência da categoria
+  destaque: true
+- repo: TwiN/gatus
+  nome: Gatus
+  alternativa_a:
+  - Statuspage
+  - Pingdom
+  pt: Painel de status orientado a configuração em YAML, com condições de teste e alertas.
+  en: Status dashboard driven by YAML config, with test conditions and alerting.
+  stack:
+  - Go
+  open_core: false
+- repo: cachethq/cachet
+  nome: Cachet
+  alternativa_a:
+  - Statuspage
+  - Atlassian Statuspage
+  pt: Página de status pública para comunicar incidentes e manutenções aos clientes.
+  en: Public status page to communicate incidents and maintenance to customers.
+  stack:
+  - PHP
+  - Laravel
+  open_core: false
+- repo: healthchecks/healthchecks
+  nome: Healthchecks
+  alternativa_a:
+  - Cronitor
+  - Dead Man's Snitch
+  pt: 'Monitora tarefas agendadas: avisa quando um cron ou rotina deixa de dar sinal no horário.'
+  en: 'Monitors scheduled jobs: alerts you when a cron or routine fails to check in on time.'
+  stack:
+  - Python
+  - Django
+  open_core: false
+- repo: statping-ng/statping-ng
+  nome: Statping-ng
+  alternativa_a:
+  - Statuspage
+  - UptimeRobot
+  pt: Página de status com monitoramento embutido de sites e APIs, continuação do Statping.
+  en: Status page with built-in monitoring of sites and APIs, a continuation of Statping.
+  stack:
+  - Go
+  - Vue
+  open_core: false
+  nota: Mantido em ritmo lento
+- repo: oneuptime/oneuptime
+  nome: OneUptime
+  alternativa_a:
+  - Pingdom
+  - Statuspage
+  - PagerDuty
+  pt: Plataforma única de monitoramento, status page, incidentes, plantão, logs e APM.
+  en: One platform for monitoring, status pages, incidents, on-call, logs and APM.
+  stack:
+  - TypeScript
+  - Node.js
+  open_core: false
+- repo: upptime/upptime
+  nome: Upptime
+  alternativa_a:
+  - UptimeRobot
+  - Statuspage
+  pt: Monitor e página de status rodando de graça no GitHub Actions e GitHub Pages.
+  en: Uptime monitor and status page that runs for free on GitHub Actions and GitHub Pages.
+  stack:
+  - TypeScript
+  - GitHub Actions
+  open_core: false
+- repo: bluewave-labs/Checkmate
+  nome: Checkmate
+  alternativa_a:
+  - UptimeRobot
+  - Pingdom
+  pt: Monitora disponibilidade e infraestrutura de servidores com painel de status e alertas.
+  en: Monitors uptime and server infrastructure with a status page and alerts.
+  stack:
+  - Node.js
+  - React
+  - MongoDB
+  open_core: false
+- repo: openstatusHQ/openstatus
+  nome: OpenStatus
+  alternativa_a:
+  - Statuspage
+  - Checkly
+  pt: Monitoramento sintético de várias regiões e páginas de status para equipes de produto.
+  en: Multi-region synthetic monitoring and status pages for product teams.
+  stack:
+  - TypeScript
+  - Next.js
+  open_core: false
+- repo: rajnandan1/kener
+  nome: Kener
+  alternativa_a:
+  - Statuspage
+  pt: Página de status moderna e simples de personalizar, com monitores e incidentes.
+  en: Modern status page that is easy to customize, with monitors and incident posts.
+  stack:
+  - Svelte
+  - Node.js
+  open_core: false
+- repo: valeriansaliou/vigil
+  nome: Vigil
+  alternativa_a:
+  - Statuspage
+  - Pingdom
+  pt: Página de status em Rust com sondas locais e remotas e notificações em vários canais.
+  en: Rust status page with local and remote probes and notifications on several channels.
+  stack:
+  - Rust
+  open_core: false
+- repo: adamcooke/staytus
+  nome: Staytus
+  alternativa_a:
+  - Statuspage
+  pt: Sistema de página de status para publicar incidentes, manutenções e inscrições de e-mail.
+  en: Status page system to publish incidents, maintenance and email subscriptions.
+  stack:
+  - Ruby
+  - Rails
+  open_core: false
+  nota: Atualizações raras
+- repo: cstate/cstate
+  nome: cState
+  alternativa_a:
+  - Statuspage
+  pt: Página de status estática gerada com Hugo, sem servidor e sem banco de dados.
+  en: Static status page built with Hugo, with no server and no database.
+  stack:
+  - Hugo
+  - Go
+  open_core: false
+- repo: apache/hertzbeat
+  nome: Apache HertzBeat
+  alternativa_a:
+  - Datadog
+  - UptimeRobot
+  pt: Monitoramento em tempo real sem agente de sites, bancos, serviços e redes, com alertas.
+  en: Real-time agentless monitoring of sites, databases, services and networks, with alerting.
+  stack:
+  - Java
+  - Angular
+  open_core: false
+- repo: kuvasz-uptime/kuvasz
+  nome: Kuvasz
+  alternativa_a:
+  - UptimeRobot
+  - Pingdom
+  pt: Monitor de disponibilidade e certificados SSL com alertas e página de status.
+  en: Uptime and SSL certificate monitor with alerts and a status page.
+  stack:
+  - Kotlin
+  - Micronaut
+  open_core: false
+- repo: goksan/statusnook
+  nome: Statusnook
+  alternativa_a:
+  - Statuspage
+  pt: Página de status simples em um único binário, com monitores e publicação de incidentes.
+  en: Simple single-binary status page with monitors and incident publishing.
+  stack:
+  - Go
+  open_core: false
+  nota: Conferir se segue ativo
+- repo: lyc8503/UptimeFlare
+  nome: UptimeFlare
+  alternativa_a:
+  - UptimeRobot
+  - Statuspage
+  pt: Monitor e página de status serverless sobre Cloudflare Workers, sem servidor próprio.
+  en: Serverless uptime monitor and status page on Cloudflare Workers, with no server of your own.
+  stack:
+  - TypeScript
+  - Cloudflare Workers
+  open_core: false
+- repo: 0xfurai/peekaping
+  nome: Peekaping
+  alternativa_a:
+  - UptimeRobot
+  - Pingdom
+  pt: Monitor de disponibilidade com painel, alertas e páginas de status, inspirado no Uptime Kuma.
+  en: Uptime monitor with dashboard, alerts and status pages, inspired by Uptime Kuma.
+  stack:
+  - Go
+  - React
+  open_core: false
+  nota: Projeto novo
+- repo: nezhahq/nezha
+  nome: Nezha
+  alternativa_a:
+  - Datadog
+  - UptimeRobot
+  pt: Monitor leve de servidores e serviços com painel de status, alertas e execução remota.
+  en: Lightweight server and service monitor with a status dashboard, alerts and remote tasks.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: harsxv/tinystatus
+  nome: tinystatus
+  alternativa_a:
+  - Statuspage
+  pt: Gerador de página de status minúsculo em script Python, a partir de uma lista de checagens.
+  en: Tiny Python script that builds a status page from a list of checks.
+  stack:
+  - Python
+  open_core: false
+- repo: dgtlmoon/changedetection.io
+  nome: changedetection.io
+  alternativa_a:
+  - Visualping
+  - Distill
+  pt: Vigia páginas web e avisa quando o conteúdo muda, com filtros e notificações.
+  en: Watches web pages and alerts you when content changes, with filters and notifications.
+  stack:
+  - Python
+  - Flask
+  open_core: true
+  nota: Há serviço hospedado pago
+- repo: Monitorr/Monitorr
+  nome: Monitorr
+  alternativa_a:
+  - Uptime Robot
+  pt: Painel simples para exibir o estado de serviços de uma rede doméstica ou servidor.
+  en: Simple dashboard to show the state of services on a home network or server.
+  stack:
+  - PHP
+  - JavaScript
+  open_core: false
+  nota: Parado há tempos

@@ -1,0 +1,309 @@
+categoria: erp-contabilidade-financas
+titulo_pt: ERP, contabilidade e finanças
+titulo_en: ERP, accounting and finance
+itens:
+- repo: odoo/odoo
+  nome: Odoo
+  alternativa_a:
+  - SAP Business One
+  - NetSuite
+  pt: Suíte modular de gestão com vendas, estoque, contabilidade, compras, RH e e-commerce em uma base só.
+  en: Modular business suite with sales, inventory, accounting, purchasing, HR and e-commerce on one base.
+  stack:
+  - Python
+  - JavaScript
+  - PostgreSQL
+  site: https://www.odoo.com
+  open_core: true
+  destaque: true
+- repo: frappe/erpnext
+  nome: ERPNext
+  alternativa_a:
+  - SAP Business One
+  - NetSuite
+  pt: 'ERP completo para pequenas e médias empresas: contabilidade, estoque, produção, vendas, compras e projetos.'
+  en: 'Full ERP for small and mid-size companies: accounting, inventory, manufacturing, sales, purchasing, projects.'
+  stack:
+  - Python
+  - JavaScript
+  - MariaDB
+  site: https://erpnext.com
+  destaque: true
+- repo: dolibarr/dolibarr
+  nome: Dolibarr
+  alternativa_a:
+  - Bling
+  - QuickBooks
+  pt: ERP e CRM modular para autônomos e pequenas empresas, com faturas, orçamentos, estoque e contratos.
+  en: Modular ERP and CRM for freelancers and small companies, with invoices, quotes, stock and contracts.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.dolibarr.org
+- repo: akaunting/akaunting
+  nome: Akaunting
+  alternativa_a:
+  - QuickBooks
+  - Xero
+  pt: 'Contabilidade online para pequenos negócios: faturas, despesas, contas bancárias e relatórios financeiros.'
+  en: 'Online accounting for small businesses: invoices, expenses, bank accounts and financial reports.'
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  site: https://akaunting.com
+  open_core: true
+- repo: bigcapitalhq/bigcapital
+  nome: Bigcapital
+  alternativa_a:
+  - QuickBooks
+  - Xero
+  pt: Software contábil com contabilidade completa, faturas, estoque, contas a pagar e relatórios.
+  en: Accounting software with double-entry books, invoices, inventory, payables and reporting.
+  stack:
+  - TypeScript
+  - React
+  - Node.js
+  - MySQL
+- repo: InvoiceShelf/InvoiceShelf
+  nome: InvoiceShelf
+  alternativa_a:
+  - FreshBooks
+  - Wave
+  pt: Emissão de faturas e orçamentos, controle de despesas e pagamentos para freelancers e pequenas empresas.
+  en: Invoicing, estimates, expense and payment tracking for freelancers and small businesses.
+  stack:
+  - PHP
+  - Laravel
+  - Vue
+- repo: SolidInvoice/SolidInvoice
+  nome: SolidInvoice
+  alternativa_a:
+  - FreshBooks
+  - Wave
+  pt: Sistema de faturamento para pequenas empresas com clientes, orçamentos, faturas e cobranças recorrentes.
+  en: Billing system for small businesses with clients, quotes, invoices and recurring charges.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+- repo: firefly-iii/firefly-iii
+  nome: Firefly III
+  alternativa_a:
+  - YNAB
+  - Mint
+  pt: Gerenciador de finanças pessoais com contas, orçamentos, categorias, regras e relatórios.
+  en: Personal finance manager with accounts, budgets, categories, rules and reports.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+- repo: actualbudget/actual
+  nome: Actual Budget
+  alternativa_a:
+  - YNAB
+  pt: Orçamento pessoal local-first com envelopes, sincronização entre dispositivos e importação bancária.
+  en: Local-first personal budgeting with envelopes, device sync and bank import.
+  stack:
+  - TypeScript
+  - React
+  - Node.js
+  - SQLite
+- repo: ghostfolio/ghostfolio
+  nome: Ghostfolio
+  alternativa_a:
+  - Personal Capital
+  - Sharesight
+  pt: Acompanhamento de patrimônio e investimentos com ações, ETFs e criptomoedas, com análises de carteira.
+  en: Wealth and investment tracker for stocks, ETFs and crypto, with portfolio analytics.
+  stack:
+  - TypeScript
+  - Angular
+  - NestJS
+  - PostgreSQL
+  open_core: true
+- repo: rotki/rotki
+  nome: Rotki
+  alternativa_a:
+  - CoinTracker
+  - Koinly
+  pt: Carteira e relatório fiscal de criptoativos, com dados criptografados guardados na própria máquina.
+  en: Crypto portfolio and tax reporting tool that keeps encrypted data on your own machine.
+  stack:
+  - Python
+  - TypeScript
+  - Vue
+  open_core: true
+- repo: we-promise/sure
+  nome: Sure
+  alternativa_a:
+  - Mint
+  - Monarch Money
+  pt: Aplicação de finanças pessoais, continuação comunitária do Maybe, com contas, orçamento e patrimônio.
+  en: Personal finance app, community continuation of Maybe, covering accounts, budgets and net worth.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  nota: Fork do Maybe Finance; confirmar slug.
+- repo: spliit-app/spliit
+  nome: Spliit
+  alternativa_a:
+  - Splitwise
+  pt: Divisão de despesas entre amigos e grupos, com saldos e acertos, sem cadastro obrigatório.
+  en: Shared expense splitting for friends and groups, with balances and settlements, no signup required.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+- repo: getlago/lago
+  nome: Lago
+  alternativa_a:
+  - Stripe Billing
+  - Chargebee
+  pt: Motor de cobrança por uso e assinatura, com medição de eventos, planos, faturas e créditos.
+  en: Usage-based and subscription billing engine with event metering, plans, invoices and credits.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  site: https://www.getlago.com
+  open_core: true
+- repo: openmeterio/openmeter
+  nome: OpenMeter
+  alternativa_a:
+  - Metronome
+  - Orb
+  pt: Medição de uso em tempo real para cobrança, limites e créditos de produtos SaaS e de IA.
+  en: Real-time usage metering for billing, entitlements and credits in SaaS and AI products.
+  stack:
+  - Go
+  - Kafka
+  - ClickHouse
+  - PostgreSQL
+- repo: LedgerSMB/LedgerSMB
+  nome: LedgerSMB
+  alternativa_a:
+  - QuickBooks
+  - Sage
+  pt: Contabilidade e ERP em partidas dobradas, com razão, faturas, estoque e múltiplas empresas.
+  en: Double-entry accounting and ERP with ledger, invoices, inventory and multi-company support.
+  stack:
+  - Perl
+  - PostgreSQL
+- repo: frappe/books
+  nome: Frappe Books
+  alternativa_a:
+  - QuickBooks
+  - Tally
+  pt: Contabilidade de desktop simples, offline, com faturas, lançamentos e relatórios para pequenos negócios.
+  en: Simple offline desktop accounting with invoices, journal entries and reports for small businesses.
+  stack:
+  - TypeScript
+  - Vue
+  - Electron
+  - SQLite
+- repo: beancount/fava
+  nome: Fava
+  alternativa_a:
+  - QuickBooks
+  pt: Interface web para livros contábeis em texto Beancount, com balanços, gráficos e consultas.
+  en: Web interface for Beancount plain-text ledgers with balance sheets, charts and queries.
+  stack:
+  - Python
+  - Svelte
+- repo: metasfresh/metasfresh
+  nome: metasfresh
+  alternativa_a:
+  - SAP Business One
+  - Microsoft Dynamics
+  pt: ERP para médias empresas com compras, vendas, logística, produção e contabilidade.
+  en: ERP for mid-size companies covering purchasing, sales, logistics, production and accounting.
+  stack:
+  - Java
+  - PostgreSQL
+  - React
+- repo: apache/ofbiz-framework
+  nome: Apache OFBiz
+  alternativa_a:
+  - SAP
+  - NetSuite
+  pt: Suíte ERP em Java da Apache, com contabilidade, pedidos, estoque, produção e e-commerce.
+  en: Apache's Java ERP suite with accounting, orders, inventory, manufacturing and e-commerce.
+  stack:
+  - Java
+  - Groovy
+- repo: adempiere/adempiere
+  nome: ADempiere
+  alternativa_a:
+  - SAP Business One
+  pt: ERP comunitário em Java com contabilidade, cadeia de suprimentos, produção e CRM.
+  en: Community Java ERP covering accounting, supply chain, manufacturing and CRM.
+  stack:
+  - Java
+  - PostgreSQL
+- repo: idempiere/idempiere
+  nome: iDempiere
+  alternativa_a:
+  - SAP Business One
+  - NetSuite
+  pt: ERP aberto em Java, modular e extensível por plugins, com finanças, estoque e vendas.
+  en: Open Java ERP, modular and plugin-extensible, with finance, inventory and sales.
+  stack:
+  - Java
+  - PostgreSQL
+- repo: axelor/axelor-open-suite
+  nome: Axelor Open Suite
+  alternativa_a:
+  - SAP
+  - Microsoft Dynamics
+  pt: ERP de código aberto em Java com contabilidade, vendas, produção, RH e projetos.
+  en: Open source Java ERP with accounting, sales, manufacturing, HR and projects.
+  stack:
+  - Java
+  - PostgreSQL
+  open_core: true
+- repo: inventree/InvenTree
+  nome: InvenTree
+  alternativa_a:
+  - Fishbowl
+  - Zoho Inventory
+  pt: Gestão de estoque e peças com fornecedores, listas de materiais, pedidos e rastreamento.
+  en: Inventory and parts management with suppliers, bills of materials, orders and tracking.
+  stack:
+  - Python
+  - Django
+  - React
+- repo: frappe/lending
+  nome: Frappe Lending
+  alternativa_a:
+  - nCino
+  - LendingPad
+  pt: Gestão de empréstimos sobre o ERPNext, com solicitações, desembolso, juros e cobrança.
+  en: Loan management on top of ERPNext with applications, disbursement, interest and collections.
+  stack:
+  - Python
+  - MariaDB
+- repo: apache/fineract
+  nome: Apache Fineract
+  alternativa_a:
+  - Temenos
+  - Mambu
+  pt: Plataforma bancária central para microfinanças, com contas, empréstimos, poupança e contabilidade.
+  en: Core banking platform for microfinance with accounts, loans, savings and accounting.
+  stack:
+  - Java
+  - Spring
+  - PostgreSQL
+- repo: vas3k/TaxHacker
+  nome: TaxHacker
+  alternativa_a:
+  - Expensify
+  - Dext
+  pt: Lê recibos e faturas com IA, extrai valores e categorias e organiza despesas para impostos.
+  en: Reads receipts and invoices with AI, extracts amounts and categories and organizes expenses for tax time.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  nota: Confirmar licença e slug.

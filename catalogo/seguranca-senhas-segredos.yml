@@ -1,0 +1,569 @@
+categoria: seguranca-senhas-segredos
+titulo_pt: Segurança, senhas e segredos
+titulo_en: Security, passwords and secrets
+itens:
+- repo: bitwarden/server
+  nome: Bitwarden
+  alternativa_a:
+  - 1Password
+  - LastPass
+  pt: Gerenciador de senhas com cofre compartilhado, cliente em todas as plataformas e servidor próprio.
+  en: Password manager with shared vaults, clients on every platform and a self-hostable server.
+  stack:
+  - C#
+  - .NET
+  - SQL Server
+  site: https://bitwarden.com
+  open_core: true
+- repo: keepassxreboot/keepassxc
+  nome: KeePassXC
+  alternativa_a:
+  - 1Password
+  - LastPass
+  pt: Gerenciador de senhas local e multiplataforma, com cofre em arquivo, TOTP e extensão de navegador.
+  en: Local cross-platform password manager with file-based vault, TOTP and a browser extension.
+  stack:
+  - C++
+  - Qt
+  site: https://keepassxc.org
+  open_core: false
+- repo: padloc/padloc
+  nome: Padloc
+  alternativa_a:
+  - 1Password
+  - LastPass
+  pt: Gerenciador de senhas simples com cofres compartilhados para equipes e servidor próprio.
+  en: Simple password manager with shared team vaults and a self-hostable server.
+  stack:
+  - TypeScript
+  site: https://padloc.app
+  open_core: false
+- repo: gopasspw/gopass
+  nome: gopass
+  alternativa_a:
+  - 1Password
+  pt: Gerenciador de senhas de linha de comando para equipes, baseado em GPG e Git.
+  en: Command-line team password manager built on GPG and Git.
+  stack:
+  - Go
+  site: https://www.gopass.pw
+  open_core: false
+- repo: beemdevelopment/Aegis
+  nome: Aegis Authenticator
+  alternativa_a:
+  - Authy
+  - Google Authenticator
+  pt: App Android de autenticação em dois fatores com cofre criptografado e backups.
+  en: Android two-factor authenticator with an encrypted vault and backups.
+  stack:
+  - Java
+  - Android
+  site: https://getaegis.app
+  open_core: false
+- repo: getsops/sops
+  nome: SOPS
+  alternativa_a:
+  - HashiCorp Vault
+  pt: Cifra arquivos de segredos (YAML, JSON, env) mantendo as chaves legíveis, com KMS, age e PGP.
+  en: Encrypts secret files (YAML, JSON, env) keeping keys readable, with KMS, age and PGP.
+  stack:
+  - Go
+  site: https://getsops.io
+  open_core: false
+- repo: external-secrets/external-secrets
+  nome: External Secrets
+  alternativa_a:
+  - HashiCorp Vault
+  pt: Operador Kubernetes que traz segredos de cofres externos para dentro do cluster.
+  en: Kubernetes operator that syncs secrets from external vaults into the cluster.
+  stack:
+  - Go
+  - Kubernetes
+  site: https://external-secrets.io
+  open_core: false
+- repo: bitnami-labs/sealed-secrets
+  nome: Sealed Secrets
+  alternativa_a:
+  - HashiCorp Vault
+  pt: Cifra segredos do Kubernetes para guardá-los com segurança no Git e decifrar só no cluster.
+  en: Encrypts Kubernetes secrets so they can live safely in Git and be decrypted only in the cluster.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: cyberark/conjur
+  nome: Conjur
+  alternativa_a:
+  - HashiCorp Vault
+  - CyberArk
+  pt: Servidor de gestão de segredos e identidade de máquinas para pipelines e containers.
+  en: Secrets management and machine identity server for pipelines and containers.
+  stack:
+  - Ruby
+  - Postgres
+  site: https://www.conjur.org
+  open_core: true
+- repo: authzed/spicedb
+  nome: SpiceDB
+  alternativa_a:
+  - Auth0 FGA
+  pt: Banco de permissões inspirado no Zanzibar para decidir quem pode fazer o quê em escala.
+  en: Zanzibar-inspired permissions database to decide who can do what at scale.
+  stack:
+  - Go
+  site: https://authzed.com
+  open_core: true
+- repo: wazuh/wazuh
+  nome: Wazuh
+  alternativa_a:
+  - Splunk
+  - CrowdStrike
+  pt: Plataforma de segurança com SIEM, detecção de intrusão, integridade de arquivos e conformidade.
+  en: Security platform with SIEM, intrusion detection, file integrity and compliance monitoring.
+  stack:
+  - C++
+  - Python
+  - OpenSearch
+  site: https://wazuh.com
+  open_core: false
+- repo: crowdsecurity/crowdsec
+  nome: CrowdSec
+  alternativa_a:
+  - Cloudflare WAF
+  pt: Detecta comportamento malicioso nos logs e bloqueia IPs, com inteligência compartilhada pela comunidade.
+  en: Detects malicious behaviour in logs and blocks IPs, using community-shared threat intelligence.
+  stack:
+  - Go
+  site: https://www.crowdsec.net
+  open_core: true
+- repo: falcosecurity/falco
+  nome: Falco
+  alternativa_a:
+  - CrowdStrike
+  pt: Detecção de ameaças em tempo de execução para containers, hosts e Kubernetes, com regras.
+  en: Runtime threat detection for containers, hosts and Kubernetes, driven by rules.
+  stack:
+  - C++
+  site: https://falco.org
+  open_core: false
+- repo: osquery/osquery
+  nome: osquery
+  alternativa_a:
+  - CrowdStrike
+  pt: Expõe o sistema operacional como um banco SQL para investigar e monitorar máquinas.
+  en: Exposes the operating system as a SQL database to investigate and monitor machines.
+  stack:
+  - C++
+  site: https://osquery.io
+  open_core: false
+- repo: fleetdm/fleet
+  nome: Fleet
+  alternativa_a:
+  - Jamf
+  - CrowdStrike
+  pt: Gestão de dispositivos e consultas osquery em escala, com políticas, vulnerabilidades e MDM.
+  en: Device management and osquery at scale, with policies, vulnerability tracking and MDM.
+  stack:
+  - Go
+  - React
+  site: https://fleetdm.com
+  open_core: true
+- repo: Velocidex/velociraptor
+  nome: Velociraptor
+  alternativa_a:
+  - CrowdStrike
+  pt: Plataforma de resposta a incidentes que coleta artefatos forenses e caça ameaças em endpoints.
+  en: Incident response platform that collects forensic artifacts and hunts threats on endpoints.
+  stack:
+  - Go
+  site: https://docs.velociraptor.app
+  open_core: false
+- repo: MISP/MISP
+  nome: MISP
+  alternativa_a:
+  - Recorded Future
+  pt: Plataforma para coletar, compartilhar e correlacionar indicadores de ameaça entre organizações.
+  en: Platform to collect, share and correlate threat indicators between organizations.
+  stack:
+  - PHP
+  - Python
+  site: https://www.misp-project.org
+  open_core: false
+- repo: OpenCTI-Platform/opencti
+  nome: OpenCTI
+  alternativa_a:
+  - Recorded Future
+  pt: Plataforma de inteligência de ameaças que organiza conhecimento em grafo no padrão STIX.
+  en: Threat intelligence platform that organizes knowledge as a graph using the STIX standard.
+  stack:
+  - TypeScript
+  - Python
+  site: https://filigran.io
+  open_core: true
+- repo: DefectDojo/django-DefectDojo
+  nome: DefectDojo
+  alternativa_a:
+  - Snyk
+  - Veracode
+  pt: Central de gestão de vulnerabilidades que reúne resultados de scanners e acompanha correções.
+  en: Vulnerability management hub that gathers scanner results and tracks fixes.
+  stack:
+  - Python
+  - Django
+  site: https://www.defectdojo.org
+  open_core: true
+- repo: zaproxy/zaproxy
+  nome: ZAP
+  alternativa_a:
+  - Burp Suite
+  pt: Scanner de segurança para aplicações web, com proxy de interceptação e testes automatizados.
+  en: Web application security scanner with an intercepting proxy and automated testing.
+  stack:
+  - Java
+  site: https://www.zaproxy.org
+  open_core: false
+- repo: aquasecurity/trivy
+  nome: Trivy
+  alternativa_a:
+  - Snyk
+  - Prisma Cloud
+  pt: Scanner que busca vulnerabilidades, segredos e erros de configuração em imagens, repositórios e IaC.
+  en: Scanner that finds vulnerabilities, secrets and misconfigurations in images, repos and IaC.
+  stack:
+  - Go
+  site: https://trivy.dev
+  open_core: false
+- repo: trufflesecurity/trufflehog
+  nome: TruffleHog
+  alternativa_a:
+  - GitGuardian
+  pt: Procura e verifica credenciais vazadas em repositórios, buckets e históricos.
+  en: Finds and verifies leaked credentials in repositories, buckets and history.
+  stack:
+  - Go
+  site: https://trufflesecurity.com
+  open_core: true
+- repo: gitleaks/gitleaks
+  nome: Gitleaks
+  alternativa_a:
+  - GitGuardian
+  pt: Detecta segredos como chaves e senhas em repositórios Git, no commit e no CI.
+  en: Detects secrets such as keys and passwords in Git repositories, at commit time and in CI.
+  stack:
+  - Go
+  site: https://gitleaks.io
+  open_core: false
+- repo: projectdiscovery/nuclei
+  nome: Nuclei
+  alternativa_a:
+  - Qualys
+  pt: Scanner de vulnerabilidades baseado em templates YAML mantidos pela comunidade.
+  en: Vulnerability scanner driven by community-maintained YAML templates.
+  stack:
+  - Go
+  site: https://projectdiscovery.io
+  open_core: false
+- repo: simple-login/app
+  nome: SimpleLogin
+  alternativa_a:
+  - Apple Hide My Email
+  pt: Serviço de aliases de e-mail que protege seu endereço real e permite responder pelo alias.
+  en: Email alias service that shields your real address and lets you reply from the alias.
+  stack:
+  - Python
+  - Flask
+  - Postgres
+  site: https://simplelogin.io
+  open_core: false
+- repo: anonaddy/anonaddy
+  nome: addy.io
+  alternativa_a:
+  - Apple Hide My Email
+  pt: Serviço de aliases de e-mail anônimos com domínios próprios, criptografia PGP e API.
+  en: Anonymous email alias service with custom domains, PGP encryption and an API.
+  stack:
+  - PHP
+  - Laravel
+  site: https://addy.io
+  open_core: false
+- repo: jhaals/yopass
+  nome: Yopass
+  alternativa_a:
+  - 1Password Share
+  pt: Compartilha segredos por links de uso único, cifrados no cliente e com prazo de expiração.
+  en: Shares secrets through one-time links, encrypted client-side and set to expire.
+  stack:
+  - Go
+  - TypeScript
+  site: https://yopass.se
+  open_core: false
+- repo: onetimesecret/onetimesecret
+  nome: One-Time Secret
+  alternativa_a:
+  - 1Password Share
+  pt: Serviço para enviar senhas e mensagens que podem ser lidas uma única vez e depois somem.
+  en: Service to send passwords and messages that can be read only once and then vanish.
+  stack:
+  - Ruby
+  - Redis
+  site: https://onetimesecret.com
+  open_core: false
+- repo: cryptomator/cryptomator
+  nome: Cryptomator
+  alternativa_a:
+  - Boxcryptor
+  pt: Cria cofres cifrados para qualquer nuvem, com criptografia transparente no seu computador.
+  en: Creates encrypted vaults for any cloud, with transparent encryption on your computer.
+  stack:
+  - Java
+  site: https://cryptomator.org
+  open_core: false
+- repo: cert-manager/cert-manager
+  nome: cert-manager
+  alternativa_a:
+  - DigiCert
+  pt: Emite e renova certificados TLS automaticamente no Kubernetes, com Let's Encrypt e outras CAs.
+  en: Issues and renews TLS certificates automatically in Kubernetes, with Let's Encrypt and other CAs.
+  stack:
+  - Go
+  site: https://cert-manager.io
+  open_core: false
+- repo: smallstep/certificates
+  nome: step-ca
+  alternativa_a:
+  - DigiCert
+  pt: Autoridade certificadora privada online para emitir certificados X.509 e SSH de curta duração.
+  en: Online private certificate authority issuing short-lived X.509 and SSH certificates.
+  stack:
+  - Go
+  site: https://smallstep.com/certificates
+  open_core: false
+- repo: bunkerity/bunkerweb
+  nome: BunkerWeb
+  alternativa_a:
+  - Cloudflare WAF
+  pt: Firewall de aplicações web sobre o Nginx, seguro por padrão, com interface e plugins.
+  en: Web application firewall built on Nginx, secure by default, with a UI and plugins.
+  stack:
+  - Python
+  - Nginx
+  site: https://www.bunkerweb.io
+  open_core: true
+- repo: OISF/suricata
+  nome: Suricata
+  alternativa_a:
+  - Palo Alto IPS
+  pt: Motor de detecção de intrusão e monitoramento de rede com análise de protocolos e regras.
+  en: Network intrusion detection and monitoring engine with protocol analysis and rules.
+  stack:
+  - C
+  - Rust
+  site: https://suricata.io
+  open_core: false
+- repo: zeek/zeek
+  nome: Zeek
+  alternativa_a:
+  - Darktrace
+  pt: Analisador de tráfego de rede que gera logs ricos para caça a ameaças e forense.
+  en: Network traffic analyzer that produces rich logs for threat hunting and forensics.
+  stack:
+  - C++
+  site: https://zeek.org
+  open_core: false
+- repo: ossec/ossec-hids
+  nome: OSSEC
+  alternativa_a:
+  - Splunk
+  - CrowdStrike
+  pt: Sistema de detecção de intrusão em hosts, com análise de logs e integridade de arquivos.
+  en: Host-based intrusion detection with log analysis and file integrity checking.
+  stack:
+  - C
+  site: https://www.ossec.net
+  open_core: false
+- repo: kubescape/kubescape
+  nome: Kubescape
+  alternativa_a:
+  - Prisma Cloud
+  pt: Avalia a postura de segurança de clusters Kubernetes contra frameworks como NSA e CIS.
+  en: Assesses the security posture of Kubernetes clusters against frameworks like NSA and CIS.
+  stack:
+  - Go
+  site: https://kubescape.io
+  open_core: false
+- repo: kyverno/kyverno
+  nome: Kyverno
+  alternativa_a:
+  - Prisma Cloud
+  pt: Motor de políticas nativo de Kubernetes que valida, altera e gera recursos por regras em YAML.
+  en: Kubernetes-native policy engine that validates, mutates and generates resources using YAML rules.
+  stack:
+  - Go
+  site: https://kyverno.io
+  open_core: false
+- repo: open-policy-agent/opa
+  nome: Open Policy Agent
+  alternativa_a:
+  - Styra
+  pt: Motor de políticas geral com linguagem Rego para decidir acesso e conformidade em qualquer stack.
+  en: General policy engine with the Rego language to decide access and compliance across any stack.
+  stack:
+  - Go
+  site: https://www.openpolicyagent.org
+  open_core: false
+- repo: semgrep/semgrep
+  nome: Semgrep
+  alternativa_a:
+  - Snyk Code
+  - Veracode
+  pt: Análise estática rápida que encontra bugs e falhas de segurança com regras que parecem o código.
+  en: Fast static analysis that finds bugs and security flaws using rules that look like the code.
+  stack:
+  - OCaml
+  - Python
+  site: https://semgrep.dev
+  open_core: true
+- repo: anchore/grype
+  nome: Grype
+  alternativa_a:
+  - Snyk
+  pt: Scanner de vulnerabilidades para imagens de container e sistemas de arquivos.
+  en: Vulnerability scanner for container images and filesystems.
+  stack:
+  - Go
+  open_core: false
+- repo: anchore/syft
+  nome: Syft
+  alternativa_a:
+  - Black Duck
+  pt: Gera SBOMs de imagens e diretórios listando pacotes e dependências.
+  en: Generates SBOMs for images and directories, listing packages and dependencies.
+  stack:
+  - Go
+  open_core: false
+- repo: google/osv-scanner
+  nome: OSV-Scanner
+  alternativa_a:
+  - Snyk
+  pt: Verifica dependências do projeto contra a base OSV de vulnerabilidades conhecidas.
+  en: Checks project dependencies against the OSV database of known vulnerabilities.
+  stack:
+  - Go
+  site: https://google.github.io/osv-scanner
+  open_core: false
+- repo: greenbone/openvas-scanner
+  nome: OpenVAS
+  alternativa_a:
+  - Nessus
+  - Qualys
+  pt: Scanner de vulnerabilidades de rede do projeto Greenbone, com milhares de testes.
+  en: Greenbone network vulnerability scanner with tens of thousands of tests.
+  stack:
+  - Rust
+  - C
+  site: https://www.greenbone.net
+  open_core: false
+- repo: rapid7/metasploit-framework
+  nome: Metasploit Framework
+  alternativa_a:
+  - Cobalt Strike
+  pt: Framework de testes de intrusão com exploits, payloads e módulos auxiliares.
+  en: Penetration testing framework with exploits, payloads and auxiliary modules.
+  stack:
+  - Ruby
+  site: https://www.metasploit.com
+  open_core: false
+- repo: mitre/caldera
+  nome: Caldera
+  alternativa_a:
+  - AttackIQ
+  pt: Plataforma de emulação de adversários que automatiza ataques para testar defesas.
+  en: Adversary emulation platform that automates attacks to test defences.
+  stack:
+  - Python
+  site: https://caldera.mitre.org
+  open_core: false
+- repo: google/timesketch
+  nome: Timesketch
+  alternativa_a:
+  - Splunk
+  pt: Ferramenta colaborativa de análise forense de linhas do tempo de eventos.
+  en: Collaborative forensic timeline analysis tool.
+  stack:
+  - Python
+  - Vue
+  - OpenSearch
+  site: https://timesketch.org
+  open_core: false
+- repo: arkime/arkime
+  nome: Arkime
+  alternativa_a:
+  - Darktrace
+  pt: Captura e indexa tráfego de rede em grande escala, com busca e interface web.
+  en: Large-scale network packet capture and indexing, with search and a web UI.
+  stack:
+  - C
+  - JavaScript
+  - OpenSearch
+  site: https://arkime.com
+  open_core: false
+- repo: cowrie/cowrie
+  nome: Cowrie
+  alternativa_a:
+  - Thinkst Canary
+  pt: Honeypot de SSH e Telnet que registra ataques e comandos digitados por invasores.
+  en: SSH and Telnet honeypot that records attacks and the commands intruders type.
+  stack:
+  - Python
+  open_core: false
+- repo: keyfactor/ejbca-ce
+  nome: EJBCA
+  alternativa_a:
+  - DigiCert
+  pt: Autoridade certificadora e PKI completa em Java, com emissão, revogação e protocolos de registro.
+  en: Full Java certificate authority and PKI with issuance, revocation and enrollment protocols.
+  stack:
+  - Java
+  site: https://www.ejbca.org
+  open_core: true
+- repo: OWASP/Nettacker
+  nome: OWASP Nettacker
+  alternativa_a:
+  - Qualys
+  pt: Framework de reconhecimento e varredura automatizada de rede e vulnerabilidades.
+  en: Automated network reconnaissance and vulnerability scanning framework.
+  stack:
+  - Python
+  open_core: false
+- repo: SafeLine/SafeLine
+  nome: SafeLine
+  alternativa_a:
+  - Cloudflare WAF
+  pt: WAF auto-hospedado que filtra ataques web com análise semântica das requisições.
+  en: Self-hosted WAF that filters web attacks using semantic analysis of requests.
+  stack:
+  - Go
+  - Nginx
+  site: https://waf.chaitin.com
+  open_core: false
+- repo: hashicorp/vault-secrets-operator
+  nome: Vault Secrets Operator
+  alternativa_a:
+  - HashiCorp Vault
+  pt: Operador Kubernetes que sincroniza segredos do Vault para Secrets nativos.
+  en: Kubernetes operator that syncs Vault secrets into native Secrets.
+  stack:
+  - Go
+  open_core: false
+- repo: ente-io/ente
+  nome: Ente
+  alternativa_a:
+  - Google Photos
+  - Authy
+  pt: Fotos e autenticador com criptografia de ponta a ponta, apps multiplataforma e servidor próprio.
+  en: End-to-end encrypted photos and authenticator, cross-platform apps and a self-hostable server.
+  stack:
+  - Go
+  - Dart
+  site: https://ente.io
+  open_core: false

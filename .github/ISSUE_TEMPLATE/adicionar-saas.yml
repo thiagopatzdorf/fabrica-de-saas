@@ -1,0 +1,36 @@
+name: Adicionar um SaaS / Add a SaaS
+description: Sugira um SaaS open source para o catálogo (ou abra um PR direto editando catalogo/*.yml).
+title: "[adicionar] dono/nome"
+labels: ["adicionar"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repositório no GitHub (dono/nome)
+      placeholder: twentyhq/twenty
+    validations:
+      required: true
+  - type: input
+    id: substitui
+    attributes:
+      label: Qual SaaS proprietário ele substitui?
+      placeholder: Salesforce, HubSpot
+  - type: input
+    id: categoria
+    attributes:
+      label: Categoria (nome do arquivo em catalogo/, sem .yml)
+      placeholder: crm-vendas
+  - type: textarea
+    id: porque
+    attributes:
+      label: Por que entra (uso real, licença, ativo)
+      description: Cole só o que você sabe; a licença será conferida no GitHub. Não cole segredos.
+  - type: checkboxes
+    id: confirmo
+    attributes:
+      label: Confirmo
+      options:
+        - label: A licença não é BSL, SSPL, Elastic, Commons Clause nem "fair-code" (ver LICENSE-POLICY.md)
+          required: true
+        - label: O repositório não está arquivado
+          required: true

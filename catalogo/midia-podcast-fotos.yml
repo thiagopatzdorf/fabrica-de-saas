@@ -1,0 +1,421 @@
+categoria: midia-podcast-fotos
+titulo_pt: Mídia, podcast e fotos
+titulo_en: Media, podcasts and photos
+itens:
+- repo: immich-app/immich
+  nome: Immich
+  alternativa_a:
+  - Google Photos
+  - iCloud Photos
+  pt: Backup e galeria de fotos e vídeos autohospedada, com app móvel e busca por rosto.
+  en: Self-hosted photo and video backup and gallery with mobile app and face search.
+  stack:
+  - TypeScript
+  - NestJS
+  - PostgreSQL
+  - Svelte
+  site: https://immich.app
+  open_core: false
+- repo: photoprism/photoprism
+  nome: PhotoPrism
+  alternativa_a:
+  - Google Photos
+  pt: Gerenciador de fotos com classificação automática por IA, mapa e rostos.
+  en: Photo manager with automatic AI tagging, map view and faces.
+  stack:
+  - Go
+  - TensorFlow
+  - MariaDB
+  site: https://www.photoprism.app
+  open_core: true
+- repo: LibrePhotos/librephotos
+  nome: LibrePhotos
+  alternativa_a:
+  - Google Photos
+  pt: Galeria autohospedada com reconhecimento de rostos, objetos e cenas.
+  en: Self-hosted gallery with face, object and scene recognition.
+  stack:
+  - Python
+  - Django
+  - React
+  site: https://docs.librephotos.com
+  open_core: false
+- repo: LycheeOrg/Lychee
+  nome: Lychee
+  alternativa_a:
+  - Flickr
+  - SmugMug
+  pt: Galeria de fotos autohospedada com álbuns, compartilhamento e visual limpo.
+  en: Self-hosted photo gallery with albums, sharing and a clean look.
+  stack:
+  - PHP
+  - Laravel
+  - Vue
+  site: https://lycheeorg.dev
+  open_core: false
+- repo: Piwigo/Piwigo
+  nome: Piwigo
+  alternativa_a:
+  - Flickr
+  - SmugMug
+  pt: Galeria de fotos veterana, com plugins, temas e gestão de usuários.
+  en: Veteran photo gallery with plugins, themes and user management.
+  stack:
+  - PHP
+  - MySQL
+  site: https://piwigo.org
+  open_core: false
+- repo: bpatrik/pigallery2
+  nome: PiGallery2
+  alternativa_a:
+  - Google Photos
+  pt: Galeria que lê direto de pastas do disco, sem importar, com busca e mapa.
+  en: Gallery that reads straight from disk folders without importing, with search and map.
+  stack:
+  - TypeScript
+  - Node.js
+  - Angular
+  site: https://bpatrik.github.io/pigallery2
+  open_core: false
+- repo: Webreaper/Damselfly
+  nome: Damselfly
+  alternativa_a:
+  - Adobe Lightroom
+  pt: Gerenciador de fotos de servidor com indexação, rótulos e busca rápida.
+  en: Server-based photo manager with indexing, tags and fast search.
+  stack:
+  - C#
+  - Blazor
+  - SQLite
+  open_core: false
+- repo: photoview/photoview
+  nome: Photoview
+  alternativa_a:
+  - Google Photos
+  pt: Galeria simples para fotos organizadas em pastas, com rostos e mapa.
+  en: Simple gallery for photos organized in folders, with faces and map view.
+  stack:
+  - Go
+  - React
+  - GraphQL
+  open_core: false
+- repo: chevereto/chevereto
+  nome: Chevereto
+  alternativa_a:
+  - Imgur
+  - Flickr
+  pt: Plataforma de hospedagem de imagens com álbuns, usuários e múltiplos storages.
+  en: Image hosting platform with albums, users and multiple storage backends.
+  stack:
+  - PHP
+  - MySQL
+  site: https://chevereto.com
+  open_core: true
+- repo: diced/zipline
+  nome: Zipline
+  alternativa_a:
+  - Imgur
+  - WeTransfer
+  pt: Servidor de upload de arquivos e imagens com links curtos, ótimo para ShareX.
+  en: Upload server for files and images with short links, ShareX friendly.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  site: https://zipline.diced.sh
+  open_core: false
+- repo: navidrome/navidrome
+  nome: Navidrome
+  alternativa_a:
+  - Spotify
+  - Apple Music
+  pt: Servidor de música compatível com Subsonic, leve e com interface web.
+  en: Subsonic-compatible music server that is lightweight and has a web interface.
+  stack:
+  - Go
+  - React
+  - SQLite
+  site: https://www.navidrome.org
+  open_core: false
+- repo: airsonic-advanced/airsonic-advanced
+  nome: Airsonic Advanced
+  alternativa_a:
+  - Spotify
+  pt: Servidor de streaming de música com fork focado em desempenho e recursos extras.
+  en: Music streaming server fork focused on performance and extra features.
+  stack:
+  - Java
+  - Spring
+  open_core: false
+- repo: sentriz/gonic
+  nome: gonic
+  alternativa_a:
+  - Spotify
+  pt: Servidor de música minimalista compatível com Subsonic.
+  en: Minimalist Subsonic-compatible music server.
+  stack:
+  - Go
+  - SQLite
+  open_core: false
+- repo: koel/koel
+  nome: Koel
+  alternativa_a:
+  - Spotify
+  pt: Streaming de música pessoal com interface web e playlists inteligentes.
+  en: Personal music streaming with a web UI and smart playlists.
+  stack:
+  - PHP
+  - Laravel
+  - Vue
+  site: https://koel.dev
+  open_core: true
+- repo: ampache/ampache
+  nome: Ampache
+  alternativa_a:
+  - Spotify
+  pt: Gerenciador e streaming de coleção de mídia com API e vários formatos.
+  en: Media collection manager and streamer with an API and many formats.
+  stack:
+  - PHP
+  - MySQL
+  site: https://ampache.org
+  open_core: false
+- repo: IrosTheBeggar/mStream
+  nome: mStream
+  alternativa_a:
+  - Spotify
+  pt: Servidor de música pessoal simples, com player web e apps.
+  en: Simple personal music server with web player and apps.
+  stack:
+  - Node.js
+  - JavaScript
+  open_core: false
+- repo: music-assistant/server
+  nome: Music Assistant
+  alternativa_a:
+  - Spotify
+  pt: Biblioteca de música que une várias fontes e toca em caixas de som da casa.
+  en: Music library that unifies several sources and plays on speakers around the home.
+  stack:
+  - Python
+  open_core: false
+- repo: advplyr/audiobookshelf
+  nome: Audiobookshelf
+  alternativa_a:
+  - Audible
+  pt: Servidor de audiolivros e podcasts com progresso sincronizado e apps móveis.
+  en: Audiobook and podcast server with synced progress and mobile apps.
+  stack:
+  - Node.js
+  - Vue
+  - SQLite
+  site: https://www.audiobookshelf.org
+  open_core: false
+- repo: Kareadita/Kavita
+  nome: Kavita
+  alternativa_a:
+  - Comixology
+  pt: Servidor de leitura de mangás, quadrinhos e livros com leitor no navegador.
+  en: Reading server for manga, comics and books with a browser reader.
+  stack:
+  - C#
+  - Angular
+  site: https://www.kavitareader.com
+  open_core: false
+- repo: gotson/komga
+  nome: Komga
+  alternativa_a:
+  - Comixology
+  pt: Servidor de quadrinhos e mangás com leitor web e metadados.
+  en: Comics and manga server with web reader and metadata.
+  stack:
+  - Kotlin
+  - Spring
+  - Vue
+  site: https://komga.org
+  open_core: false
+- repo: janeczku/calibre-web
+  nome: Calibre-Web
+  alternativa_a:
+  - Kindle Library
+  - Goodreads
+  pt: Interface web para navegar e ler uma biblioteca do Calibre.
+  en: Web interface to browse and read a Calibre library.
+  stack:
+  - Python
+  - Flask
+  - SQLite
+  open_core: false
+- repo: crocodilestick/Calibre-Web-Automated
+  nome: Calibre-Web Automated
+  alternativa_a:
+  - Kindle Library
+  pt: Variante do Calibre-Web que importa e converte livros automaticamente.
+  en: Calibre-Web variant that ingests and converts books automatically.
+  stack:
+  - Python
+  - Flask
+  - SQLite
+  open_core: false
+- repo: Radarr/Radarr
+  nome: Radarr
+  alternativa_a:
+  - Netflix
+  pt: Gerenciador de coleção de filmes que busca, baixa e organiza automaticamente.
+  en: Movie collection manager that finds, downloads and organizes automatically.
+  stack:
+  - C#
+  - .NET
+  site: https://radarr.video
+  open_core: false
+- repo: Sonarr/Sonarr
+  nome: Sonarr
+  alternativa_a:
+  - Netflix
+  pt: Gerenciador de séries que monitora lançamentos e organiza os episódios.
+  en: TV series manager that tracks releases and organizes episodes.
+  stack:
+  - C#
+  - .NET
+  site: https://sonarr.tv
+  open_core: false
+- repo: Lidarr/Lidarr
+  nome: Lidarr
+  alternativa_a:
+  - Spotify
+  pt: Gerenciador de coleção musical que acompanha artistas e lançamentos.
+  en: Music collection manager that follows artists and releases.
+  stack:
+  - C#
+  - .NET
+  site: https://lidarr.audio
+  open_core: false
+- repo: Prowlarr/Prowlarr
+  nome: Prowlarr
+  alternativa_a:
+  - Jackett
+  pt: Gerenciador de indexadores que alimenta Sonarr, Radarr e semelhantes.
+  en: Indexer manager that feeds Sonarr, Radarr and similar apps.
+  stack:
+  - C#
+  - .NET
+  site: https://prowlarr.com
+  open_core: false
+- repo: morpheus65535/bazarr
+  nome: Bazarr
+  alternativa_a:
+  - OpenSubtitles
+  pt: Baixa e gerencia legendas para filmes e séries da sua biblioteca.
+  en: Downloads and manages subtitles for the movies and shows in your library.
+  stack:
+  - Python
+  - React
+  open_core: false
+- repo: Fallenbagel/jellyseerr
+  nome: Jellyseerr
+  alternativa_a:
+  - Netflix
+  pt: Portal de pedidos de filmes e séries para usuários do Jellyfin, Plex ou Emby.
+  en: Request portal for movies and shows aimed at Jellyfin, Plex or Emby users.
+  stack:
+  - TypeScript
+  - Next.js
+  open_core: false
+- repo: Ombi-app/Ombi
+  nome: Ombi
+  alternativa_a:
+  - Netflix
+  pt: Portal onde usuários pedem conteúdo para a biblioteca do servidor de mídia.
+  en: Portal where users request content for the media server library.
+  stack:
+  - C#
+  - Angular
+  open_core: false
+- repo: Tautulli/Tautulli
+  nome: Tautulli
+  alternativa_a:
+  - Plex Pass stats
+  pt: Monitora e gera estatísticas de uso de um servidor Plex.
+  en: Monitors and reports usage statistics for a Plex server.
+  stack:
+  - Python
+  open_core: false
+- repo: CyferShepard/Jellystat
+  nome: Jellystat
+  alternativa_a:
+  - Plex Pass stats
+  pt: Estatísticas e histórico de reprodução para servidores Jellyfin.
+  en: Playback statistics and history for Jellyfin servers.
+  stack:
+  - JavaScript
+  - React
+  - PostgreSQL
+  open_core: false
+- repo: wizarrrrr/wizarr
+  nome: Wizarr
+  alternativa_a:
+  - Plex Invites
+  pt: Sistema de convites para novos usuários de servidores de mídia.
+  en: Invitation system for new users of media servers.
+  stack:
+  - Python
+  - Flask
+  open_core: false
+- repo: akhilrex/podgrab
+  nome: Podgrab
+  alternativa_a:
+  - Pocket Casts
+  - Overcast
+  pt: Gerenciador de podcasts que baixa episódios automaticamente.
+  en: Podcast manager that downloads episodes automatically.
+  stack:
+  - Go
+  open_core: false
+- repo: SamTV12345/PodFetch
+  nome: PodFetch
+  alternativa_a:
+  - Pocket Casts
+  - Overcast
+  pt: Servidor e player de podcasts autohospedado com sincronização.
+  en: Self-hosted podcast server and player with sync.
+  stack:
+  - Rust
+  - React
+  open_core: false
+- repo: PodcastGenerator/PodcastGenerator
+  nome: Podcast Generator
+  alternativa_a:
+  - Libsyn
+  - Podbean
+  pt: Hospedagem simples de podcast com feed RSS e painel de publicação.
+  en: Simple podcast hosting with an RSS feed and publishing dashboard.
+  stack:
+  - PHP
+  site: https://podcastgenerator.net
+  open_core: false
+- repo: AzuraCast/AzuraCast
+  nome: AzuraCast
+  alternativa_a:
+  - Spotify
+  - Radionomy
+  pt: Estação de rádio web completa com programação, listeners e AutoDJ.
+  en: Complete web radio station suite with scheduling, listener stats and AutoDJ.
+  stack:
+  - PHP
+  - Liquidsoap
+  - MariaDB
+  site: https://www.azuracast.com
+  open_core: false
+- repo: libretime/libretime
+  nome: LibreTime
+  alternativa_a:
+  - Spotify
+  - Radionomy
+  pt: Automação de rádio com agenda, playlists e transmissão ao vivo.
+  en: Radio automation with scheduling, playlists and live broadcasting.
+  stack:
+  - Python
+  - PHP
+  - PostgreSQL
+  site: https://libretime.org
+  open_core: false

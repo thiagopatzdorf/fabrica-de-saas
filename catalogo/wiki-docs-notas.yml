@@ -1,0 +1,441 @@
+categoria: wiki-docs-notas
+titulo_pt: Wiki, documentação e notas
+titulo_en: Wiki, docs and notes
+itens:
+- repo: toeverything/AFFiNE
+  nome: AFFiNE
+  alternativa_a:
+  - Notion
+  - Miro
+  pt: Espaço de trabalho que une documentos, quadros brancos e bancos de dados num só lugar, com foco em privacidade.
+  en: Workspace merging docs, whiteboards and databases in one place, with a privacy-first approach.
+  stack:
+  - TypeScript
+  - Rust
+  - React
+  site: https://affine.pro
+  open_core: false
+- repo: AppFlowy-IO/AppFlowy
+  nome: AppFlowy
+  alternativa_a:
+  - Notion
+  pt: Alternativa ao Notion com notas, wikis e projetos, rodando como app nativo e podendo ser hospedada por você.
+  en: Notion alternative for notes, wikis and projects, running as a native app and self-hostable.
+  stack:
+  - Flutter
+  - Rust
+  - Dart
+  site: https://appflowy.com
+  open_core: false
+- repo: requarks/wiki
+  nome: Wiki.js
+  alternativa_a:
+  - Confluence
+  pt: Wiki moderna com editor Markdown e visual, controle de acesso e sincronização do conteúdo com Git.
+  en: Modern wiki with Markdown and visual editors, access control and Git content sync.
+  stack:
+  - Node.js
+  - Vue
+  - PostgreSQL
+  site: https://js.wiki
+  open_core: false
+- repo: BookStackApp/BookStack
+  nome: BookStack
+  alternativa_a:
+  - Confluence
+  pt: Wiki organizada em prateleiras, livros, capítulos e páginas, simples de usar e de hospedar.
+  en: Wiki organized into shelves, books, chapters and pages, easy to use and to self-host.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  site: https://www.bookstackapp.com
+  open_core: false
+- repo: usememos/memos
+  nome: Memos
+  alternativa_a:
+  - Google Keep
+  - Evernote
+  pt: Serviço leve de notas rápidas em Markdown, estilo linha do tempo, com API e dados sob seu controle.
+  en: Lightweight Markdown quick-notes service with a timeline feed, an API and data under your control.
+  stack:
+  - Go
+  - React
+  - SQLite
+  site: https://usememos.com
+  open_core: false
+- repo: laurent22/joplin
+  nome: Joplin
+  alternativa_a:
+  - Evernote
+  pt: Aplicativo de notas em Markdown com sincronização cifrada, clipper para web e apps em todas as plataformas.
+  en: Markdown note app with encrypted sync, a web clipper and apps for every platform.
+  stack:
+  - TypeScript
+  - Electron
+  - React Native
+  site: https://joplinapp.org
+  open_core: false
+- repo: siyuan-note/siyuan
+  nome: SiYuan
+  alternativa_a:
+  - Notion
+  - Roam Research
+  pt: Gerenciador de conhecimento em blocos com referências bidirecionais, que roda local e pode ser hospedado.
+  en: Block-based knowledge manager with bidirectional links, running locally or self-hosted.
+  stack:
+  - Go
+  - TypeScript
+  - Electron
+  site: https://b3log.org/siyuan
+  open_core: false
+- repo: logseq/logseq
+  nome: Logseq
+  alternativa_a:
+  - Roam Research
+  - Notion
+  pt: Caderno de outline com links entre páginas e diário, em arquivos locais Markdown ou Org.
+  en: Outliner notebook with page links and daily journals, stored as local Markdown or Org files.
+  stack:
+  - Clojure
+  - ClojureScript
+  - Electron
+  site: https://logseq.com
+  open_core: false
+- repo: TriliumNext/Trilium
+  nome: Trilium Notes
+  alternativa_a:
+  - Evernote
+  - Notion
+  pt: Base de conhecimento hierárquica com notas ricas, anotações em código e sincronização com servidor próprio.
+  en: Hierarchical knowledge base with rich notes, code notes and sync with your own server.
+  stack:
+  - TypeScript
+  - Node.js
+  - SQLite
+  open_core: false
+- repo: docmost/docmost
+  nome: Docmost
+  alternativa_a:
+  - Confluence
+  - Notion
+  pt: Wiki colaborativa em tempo real com espaços, permissões e comentários para documentação de equipes.
+  en: Real-time collaborative wiki with spaces, permissions and comments for team documentation.
+  stack:
+  - TypeScript
+  - NestJS
+  - PostgreSQL
+  site: https://docmost.com
+  open_core: true
+- repo: hedgedoc/hedgedoc
+  nome: HedgeDoc
+  alternativa_a:
+  - Google Docs
+  - HackMD
+  pt: Editor Markdown colaborativo em tempo real, bom para atas, rascunhos e apresentações.
+  en: Real-time collaborative Markdown editor, good for meeting notes, drafts and slides.
+  stack:
+  - TypeScript
+  - Node.js
+  - PostgreSQL
+  site: https://hedgedoc.org
+  open_core: false
+- repo: gollum/gollum
+  nome: Gollum
+  alternativa_a:
+  - Confluence
+  pt: Wiki simples cujas páginas são arquivos num repositório Git, editáveis pelo navegador ou localmente.
+  en: Simple wiki whose pages are files in a Git repository, editable in the browser or locally.
+  stack:
+  - Ruby
+  - Git
+  open_core: false
+- repo: dokuwiki/dokuwiki
+  nome: DokuWiki
+  alternativa_a:
+  - Confluence
+  pt: Wiki sem banco de dados que guarda páginas em arquivos de texto, com muitos plugins.
+  en: Database-free wiki that stores pages as plain text files, with a large plugin ecosystem.
+  stack:
+  - PHP
+  site: https://www.dokuwiki.org
+  open_core: false
+- repo: silverbulletmd/silverbullet
+  nome: SilverBullet
+  alternativa_a:
+  - Notion
+  - Obsidian
+  pt: Ambiente de notas em Markdown programável, com consultas, templates e funciona offline.
+  en: Programmable Markdown notes environment with queries, templates and offline support.
+  stack:
+  - TypeScript
+  - Deno
+  site: https://silverbullet.md
+  open_core: false
+- repo: standardnotes/app
+  nome: Standard Notes
+  alternativa_a:
+  - Evernote
+  pt: Aplicativo de notas com criptografia de ponta a ponta e foco em longevidade e privacidade.
+  en: Notes app with end-to-end encryption, built for longevity and privacy.
+  stack:
+  - TypeScript
+  - React
+  site: https://standardnotes.com
+  open_core: false
+- repo: nextcloud/notes
+  nome: Nextcloud Notes
+  alternativa_a:
+  - Evernote
+  - Google Keep
+  pt: Aplicativo de notas em Markdown para o Nextcloud, com apps móveis e sincronização.
+  en: Markdown notes app for Nextcloud, with mobile apps and sync.
+  stack:
+  - PHP
+  - Vue
+  open_core: false
+- repo: xwiki/xwiki-platform
+  nome: XWiki
+  alternativa_a:
+  - Confluence
+  pt: Plataforma de wiki corporativa extensível, com aplicações estruturadas, macros e permissões finas.
+  en: Extensible enterprise wiki platform with structured apps, macros and fine-grained permissions.
+  stack:
+  - Java
+  - Velocity
+  site: https://www.xwiki.org
+  open_core: false
+- repo: TiddlyWiki/TiddlyWiki5
+  nome: TiddlyWiki
+  alternativa_a:
+  - Notion
+  - Evernote
+  pt: Caderno não linear em um único arquivo HTML ou em Node.js, feito de pequenos blocos reutilizáveis.
+  en: Non-linear notebook in a single HTML file or Node.js, built from small reusable blocks.
+  stack:
+  - JavaScript
+  site: https://tiddlywiki.com
+  open_core: false
+- repo: zim-desktop-wiki/zim-desktop-wiki
+  nome: Zim
+  alternativa_a:
+  - Evernote
+  pt: Wiki pessoal de desktop que guarda notas em arquivos de texto, com links e anexos.
+  en: Desktop personal wiki that stores notes as text files, with links and attachments.
+  stack:
+  - Python
+  - GTK
+  site: https://zim-wiki.org
+  open_core: false
+- repo: Linbreux/wikmd
+  nome: wikmd
+  alternativa_a:
+  - Confluence
+  pt: Wiki de arquivos Markdown muito leve, com histórico em Git e instalação trivial.
+  en: Very light wiki on Markdown files with Git history and a trivial install.
+  stack:
+  - Python
+  - Flask
+  open_core: false
+- repo: redimp/otterwiki
+  nome: An Otter Wiki
+  alternativa_a:
+  - Confluence
+  pt: Wiki minimalista que usa Markdown e Git, com instalação simples por container.
+  en: Minimalist wiki using Markdown and Git, easy to install as a container.
+  stack:
+  - Python
+  - Flask
+  - Git
+  site: https://otterwiki.com
+  open_core: false
+- repo: ryanlelek/Raneto
+  nome: Raneto
+  alternativa_a:
+  - GitBook
+  - Confluence
+  pt: Base de conhecimento a partir de arquivos Markdown, sem banco de dados, com busca embutida.
+  en: Knowledge base built from Markdown files, with no database and built-in search.
+  stack:
+  - Node.js
+  - Markdown
+  site: https://raneto.com
+  open_core: false
+- repo: typemill/typemill
+  nome: Typemill
+  alternativa_a:
+  - GitBook
+  pt: CMS de arquivos para documentação e manuais, com editor visual em Markdown.
+  en: Flat-file CMS for documentation and manuals, with a visual Markdown editor.
+  stack:
+  - PHP
+  - Vue
+  site: https://typemill.net
+  open_core: false
+- repo: dullage/flatnotes
+  nome: flatnotes
+  alternativa_a:
+  - Evernote
+  pt: 'App de notas sem banco de dados: cada nota é um arquivo Markdown, com busca rápida.'
+  en: Database-less notes app where each note is a Markdown file, with fast search.
+  stack:
+  - Python
+  - Vue
+  open_core: false
+- repo: fccview/jotty
+  nome: Jotty
+  alternativa_a:
+  - Google Keep
+  - Todoist
+  pt: App leve para listas de tarefas e notas, hospedável em casa, com arquivos simples.
+  en: Lightweight self-hosted app for checklists and notes, storing plain files.
+  stack:
+  - Next.js
+  - TypeScript
+  open_core: false
+- repo: colanode/colanode
+  nome: Colanode
+  alternativa_a:
+  - Notion
+  - Slack
+  pt: Plataforma local-first que junta páginas, bancos de dados, arquivos e chat de equipe.
+  en: Local-first platform combining pages, databases, files and team chat.
+  stack:
+  - TypeScript
+  - React
+  - PostgreSQL
+  site: https://colanode.com
+  open_core: false
+- repo: reorproject/reor
+  nome: Reor
+  alternativa_a:
+  - Obsidian
+  - Notion
+  pt: App de notas em Markdown com busca semântica e modelos de IA rodando localmente.
+  en: Markdown notes app with semantic search and AI models running locally.
+  stack:
+  - TypeScript
+  - Electron
+  site: https://reorproject.org
+  open_core: false
+- repo: OmGodse/Notally
+  nome: Notally
+  alternativa_a:
+  - Google Keep
+  pt: App Android de notas e listas simples, sem anúncios nem rastreio, com backup local.
+  en: Simple Android notes and lists app with no ads or tracking and local backup.
+  stack:
+  - Kotlin
+  - Android
+  open_core: false
+- repo: dnote/dnote
+  nome: Dnote
+  alternativa_a:
+  - Evernote
+  pt: Caderno de linha de comando para anotar o que se aprende, com servidor de sincronização.
+  en: Command-line notebook for capturing what you learn, with a sync server.
+  stack:
+  - Go
+  - SQLite
+  site: https://www.getdnote.com
+  open_core: false
+- repo: jgm/gitit
+  nome: Gitit
+  alternativa_a:
+  - Confluence
+  pt: Wiki que guarda as páginas num repositório Git ou Darcs, com Markdown e pandoc.
+  en: Wiki storing pages in a Git or Darcs repository, with Markdown and pandoc.
+  stack:
+  - Haskell
+  - Git
+  open_core: false
+- repo: foswiki/foswiki
+  nome: Foswiki
+  alternativa_a:
+  - Confluence
+  pt: Wiki corporativo estruturado com formulários, macros, controle de acesso e muitos plugins.
+  en: Structured enterprise wiki with forms, macros, access control and many plugins.
+  stack:
+  - Perl
+  site: https://foswiki.org
+  open_core: false
+- repo: QOwnNotes/QOwnNotes
+  nome: QOwnNotes
+  alternativa_a:
+  - Evernote
+  pt: Bloco de notas em Markdown para desktop que integra com Nextcloud e ownCloud.
+  en: Desktop Markdown notepad that integrates with Nextcloud and ownCloud.
+  stack:
+  - C++
+  - Qt
+  site: https://www.qownnotes.org
+  open_core: false
+- repo: Zettlr/Zettlr
+  nome: Zettlr
+  alternativa_a:
+  - Notion
+  - Scrivener
+  pt: Editor Markdown para pesquisa e escrita acadêmica, com notas ligadas e citações.
+  en: Markdown editor for research and academic writing, with linked notes and citations.
+  stack:
+  - TypeScript
+  - Electron
+  site: https://www.zettlr.com
+  open_core: false
+- repo: streetwriters/notesnook
+  nome: Notesnook
+  alternativa_a:
+  - Evernote
+  pt: App de notas com criptografia de ponta a ponta, editor rico e clipper para web.
+  en: Notes app with end-to-end encryption, a rich editor and a web clipper.
+  stack:
+  - TypeScript
+  - React
+  site: https://notesnook.com
+  open_core: false
+- repo: cryptpad/cryptpad
+  nome: CryptPad
+  alternativa_a:
+  - Google Docs
+  pt: 'Suíte colaborativa com criptografia de ponta a ponta: documentos, planilhas, quadros e formulários.'
+  en: 'End-to-end encrypted collaboration suite: documents, spreadsheets, boards and forms.'
+  stack:
+  - JavaScript
+  - Node.js
+  site: https://cryptpad.org
+  open_core: false
+- repo: ether/etherpad-lite
+  nome: Etherpad
+  alternativa_a:
+  - Google Docs
+  pt: Editor de texto colaborativo em tempo real, leve e com muitos plugins.
+  en: Lightweight real-time collaborative text editor with many plugins.
+  stack:
+  - Node.js
+  - JavaScript
+  site: https://etherpad.org
+  open_core: false
+- repo: suitenumerique/docs
+  nome: Docs (La Suite)
+  alternativa_a:
+  - Notion
+  - Google Docs
+  pt: Editor colaborativo de documentos desenvolvido para a administração pública francesa.
+  en: Collaborative document editor built for the French public administration.
+  stack:
+  - Python
+  - Django
+  - React
+  open_core: false
+- repo: Automattic/simplenote-electron
+  nome: Simplenote
+  alternativa_a:
+  - Evernote
+  pt: Cliente web e desktop do app de notas minimalista Simplenote, com sincronização.
+  en: Web and desktop client for the minimalist Simplenote note app, with sync.
+  stack:
+  - TypeScript
+  - React
+  - Electron
+  site: https://simplenote.com
+  open_core: false

@@ -1,0 +1,30 @@
+categoria: crm-vendas
+titulo_pt: CRM e vendas
+titulo_en: CRM and sales
+itens:
+  - repo: twentyhq/twenty
+    nome: Twenty
+    alternativa_a: [Salesforce, HubSpot]
+    pt: "CRM moderno para equipes de vendas, com objetos e visões personalizáveis."
+    en: "Modern CRM for sales teams with customizable objects and views."
+    stack: [TypeScript, React, PostgreSQL]
+    site: https://twenty.com
+    destaque: true
+  - repo: acme/crmoss
+    nome: CRM Parado
+    alternativa_a: [Pipedrive]
+    pt: "CRM simples que não recebe commits há muito tempo."
+    en: "Simple CRM that has not seen commits for a long time."
+    stack: [PHP]
+    nota: "ainda funciona, mas sem manutenção"
+  - repo: EvilCorp/Bsl
+    nome: Fonte Visível
+    alternativa_a: [Salesforce]
+    pt: "CRM com licença BUSL, deve ficar de fora."
+    en: "CRM under BUSL, must be left out."
+    stack: [Go]
+  - repo: ghost/gone
+    nome: Fantasma
+    pt: "Repositório que não existe mais."
+    en: "Repository that no longer exists."
+    stack: [Ruby]

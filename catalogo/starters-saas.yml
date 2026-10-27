@@ -1,0 +1,403 @@
+categoria: starters-saas
+titulo_pt: Starters e boilerplates de SaaS
+titulo_en: SaaS starters and boilerplates
+itens:
+- repo: wasp-lang/open-saas
+  nome: Open SaaS
+  alternativa_a:
+  - ShipFast
+  - Supastarter
+  pt: Template de SaaS gratuito com pagamentos, auth, painel admin e IA sobre Wasp.
+  en: Free SaaS template with payments, auth, admin dashboard and AI, built on Wasp.
+  stack:
+  - TypeScript
+  - React
+  - Node.js
+  - Prisma
+  site: https://opensaas.sh
+  open_core: false
+- repo: nextjs/saas-starter
+  nome: Next.js SaaS Starter
+  alternativa_a:
+  - ShipFast
+  pt: Starter oficial em Next.js com Stripe, login por JWT e painel de equipe.
+  en: Official Next.js starter with Stripe, JWT auth and a team dashboard.
+  stack:
+  - TypeScript
+  - Next.js
+  - Postgres
+  - Stripe
+  open_core: false
+- repo: ixartz/SaaS-Boilerplate
+  nome: SaaS Boilerplate
+  alternativa_a:
+  - ShipFast
+  - Supastarter
+  pt: Base de SaaS multi-tenant em Next.js com auth, equipes, i18n e testes.
+  en: Multi-tenant Next.js SaaS base with auth, teams, i18n and tests.
+  stack:
+  - TypeScript
+  - Next.js
+  - Tailwind
+  - Drizzle
+  site: https://saas-boilerplate-nextjs.com
+  open_core: false
+- repo: ixartz/Next-js-Boilerplate
+  nome: Next.js Boilerplate
+  alternativa_a:
+  - ShipFast
+  pt: Ponto de partida Next.js com TypeScript, Tailwind, testes e i18n prontos.
+  en: Next.js starting point with TypeScript, Tailwind, tests and i18n ready.
+  stack:
+  - TypeScript
+  - Next.js
+  - Tailwind
+  open_core: false
+- repo: makerkit/next-supabase-saas-kit-lite
+  nome: Makerkit Lite
+  alternativa_a:
+  - Makerkit
+  - Supastarter
+  pt: Versão aberta do kit de SaaS com Next.js e Supabase, com contas e faturamento.
+  en: Open edition of a Next.js and Supabase SaaS kit with accounts and billing.
+  stack:
+  - TypeScript
+  - Next.js
+  - Supabase
+  open_core: true
+- repo: boxyhq/saas-starter-kit
+  nome: BoxyHQ SaaS Starter Kit
+  alternativa_a:
+  - Auth0 Organizations
+  - ShipFast
+  pt: Starter empresarial com SSO SAML, diretório sincronizado e trilha de auditoria.
+  en: Enterprise starter with SAML SSO, directory sync and audit logs.
+  stack:
+  - TypeScript
+  - Next.js
+  - Prisma
+  site: https://boxyhq.com
+  open_core: false
+- repo: apptension/saas-boilerplate
+  nome: Apptension SaaS Boilerplate
+  alternativa_a:
+  - Pegasus
+  pt: Boilerplate de SaaS com React, Django, Stripe e infraestrutura na AWS.
+  en: SaaS boilerplate with React, Django, Stripe and AWS infrastructure.
+  stack:
+  - TypeScript
+  - Python
+  - Django
+  - React
+  site: https://apptension.com
+  open_core: false
+- repo: nextacular/nextacular
+  nome: Nextacular
+  alternativa_a:
+  - ShipFast
+  pt: Starter multi-tenant em Next.js com domínios personalizados e pagamentos.
+  en: Multi-tenant Next.js starter with custom domains and payments.
+  stack:
+  - JavaScript
+  - Next.js
+  - Prisma
+  open_core: false
+- repo: mickasmt/next-saas-stripe-starter
+  nome: Next SaaS Stripe Starter
+  alternativa_a:
+  - ShipFast
+  pt: Starter em Next.js com Stripe, auth, painel e blog com MDX.
+  en: Next.js starter with Stripe, auth, dashboard and an MDX blog.
+  stack:
+  - TypeScript
+  - Next.js
+  - Prisma
+  - Stripe
+  site: https://next-saas-stripe-starter.vercel.app
+  open_core: false
+- repo: vercel/nextjs-subscription-payments
+  nome: Next.js Subscription Payments
+  alternativa_a:
+  - ShipFast
+  pt: Exemplo de assinaturas com Stripe e Supabase em Next.js.
+  en: Subscription example using Stripe and Supabase on Next.js.
+  stack:
+  - TypeScript
+  - Next.js
+  - Supabase
+  - Stripe
+  open_core: false
+- repo: vercel/platforms
+  nome: Platforms Starter Kit
+  alternativa_a:
+  - Substack
+  - Shopify Themes
+  pt: Starter de plataforma multi-tenant com subdomínios e domínios próprios.
+  en: Multi-tenant platform starter with subdomains and custom domains.
+  stack:
+  - TypeScript
+  - Next.js
+  - Postgres
+  open_core: false
+- repo: vercel/next-forge
+  nome: next-forge
+  alternativa_a:
+  - ShipFast
+  - Supastarter
+  pt: Template de produção em monorepo com web, app, API, docs e e-mail.
+  en: Production-grade monorepo template with web, app, API, docs and email.
+  stack:
+  - TypeScript
+  - Next.js
+  - Turborepo
+  - Prisma
+  open_core: false
+- repo: razikus/supabase-nextjs-template
+  nome: Supabase Next.js Template
+  alternativa_a:
+  - ShipFast
+  pt: Template de SaaS com Next.js, Supabase, Tailwind e autenticação pronta.
+  en: SaaS template with Next.js, Supabase, Tailwind and ready-made auth.
+  stack:
+  - TypeScript
+  - Next.js
+  - Supabase
+  open_core: false
+- repo: thedevdojo/wave
+  nome: Wave
+  alternativa_a:
+  - Laravel Spark
+  pt: Framework de SaaS em Laravel com assinaturas, planos, blog e painel.
+  en: Laravel SaaS framework with subscriptions, plans, blog and dashboard.
+  stack:
+  - PHP
+  - Laravel
+  - Livewire
+  site: https://devdojo.com/wave
+  open_core: false
+- repo: laravel/jetstream
+  nome: Laravel Jetstream
+  alternativa_a:
+  - Laravel Spark
+  pt: Kit inicial do Laravel com equipes, 2FA, sessões e tokens de API.
+  en: Laravel starter kit with teams, 2FA, sessions and API tokens.
+  stack:
+  - PHP
+  - Laravel
+  - Livewire
+  site: https://jetstream.laravel.com
+  open_core: false
+- repo: laravel/breeze
+  nome: Laravel Breeze
+  alternativa_a:
+  - Laravel Spark
+  pt: Kit mínimo de autenticação do Laravel com várias opções de front-end.
+  en: Minimal Laravel authentication starter with several front-end options.
+  stack:
+  - PHP
+  - Laravel
+  - Tailwind
+  site: https://laravel.com/docs/starter-kits
+  open_core: false
+- repo: cookiecutter/cookiecutter-django
+  nome: Cookiecutter Django
+  alternativa_a:
+  - SaaS Pegasus
+  pt: Gerador de projeto Django pronto para produção, com Docker e boas práticas.
+  en: Production-ready Django project generator with Docker and best practices.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  - Docker
+  open_core: false
+- repo: fastapi/full-stack-fastapi-template
+  nome: Full Stack FastAPI Template
+  alternativa_a:
+  - SaaS Pegasus
+  pt: Template full stack com FastAPI, React, PostgreSQL, Docker e CI.
+  en: Full-stack template with FastAPI, React, PostgreSQL, Docker and CI.
+  stack:
+  - Python
+  - FastAPI
+  - React
+  - PostgreSQL
+  open_core: false
+- repo: bullet-train-co/bullet_train
+  nome: Bullet Train
+  alternativa_a:
+  - Jumpstart Pro
+  pt: Framework de SaaS em Rails com equipes, permissões, API e cobrança.
+  en: Rails SaaS framework with teams, permissions, API and billing.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  site: https://bullettrain.co
+  open_core: true
+- repo: excid3/jumpstart
+  nome: Jumpstart
+  alternativa_a:
+  - Jumpstart Pro
+  pt: Template de aplicação Rails com contas, equipes e pagamentos.
+  en: Rails application template with accounts, teams and payments.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  open_core: true
+- repo: brocoders/nestjs-boilerplate
+  nome: NestJS Boilerplate
+  alternativa_a:
+  - Supastarter
+  pt: Base de API em NestJS com auth, TypeORM ou Mongoose, e-mail e Docker.
+  en: NestJS API base with auth, TypeORM or Mongoose, email and Docker.
+  stack:
+  - TypeScript
+  - NestJS
+  - PostgreSQL
+  open_core: false
+- repo: CriticalMoments/CMSaasStarter
+  nome: CMSaasStarter
+  alternativa_a:
+  - ShipFast
+  pt: Starter de SaaS em SvelteKit com Supabase, Stripe, site de marketing e painel.
+  en: SvelteKit SaaS starter with Supabase, Stripe, marketing site and dashboard.
+  stack:
+  - TypeScript
+  - SvelteKit
+  - Supabase
+  - Stripe
+  site: https://saasstarter.work
+  open_core: false
+- repo: epicweb-dev/epic-stack
+  nome: Epic Stack
+  alternativa_a:
+  - ShipFast
+  pt: Pilha opinativa em Remix para apps full stack, com SQLite, testes e deploy.
+  en: Opinionated Remix stack for full-stack apps with SQLite, tests and deployment.
+  stack:
+  - TypeScript
+  - Remix
+  - SQLite
+  - Prisma
+  site: https://www.epicweb.dev/epic-stack
+  open_core: false
+- repo: remix-run/indie-stack
+  nome: Remix Indie Stack
+  alternativa_a:
+  - ShipFast
+  pt: Starter Remix com auth por e-mail, SQLite, testes e deploy na Fly.
+  en: Remix starter with email auth, SQLite, tests and Fly deployment.
+  stack:
+  - TypeScript
+  - Remix
+  - SQLite
+  - Prisma
+  open_core: false
+- repo: dev-xo/stripe-stack
+  nome: Stripe Stack
+  alternativa_a:
+  - ShipFast
+  pt: Starter Remix com assinaturas Stripe, auth e testes.
+  en: Remix starter with Stripe subscriptions, auth and tests.
+  stack:
+  - TypeScript
+  - Remix
+  - Prisma
+  - Stripe
+  open_core: false
+- repo: nuxt-ui-templates/saas
+  nome: Nuxt SaaS Template
+  alternativa_a:
+  - ShipFast
+  pt: Template de SaaS em Nuxt com landing, preços, blog e painel.
+  en: Nuxt SaaS template with landing page, pricing, blog and dashboard.
+  stack:
+  - TypeScript
+  - Nuxt
+  - Vue
+  - Tailwind
+  open_core: false
+- repo: mikestefanello/pagoda
+  nome: Pagoda
+  alternativa_a:
+  - Laravel Spark
+  pt: Base de aplicação web em Go com auth, tarefas em fila e HTMX.
+  en: Go web application base with auth, queued tasks and HTMX.
+  stack:
+  - Go
+  - Echo
+  - HTMX
+  - SQLite
+  open_core: false
+- repo: aspnetboilerplate/aspnetboilerplate
+  nome: ASP.NET Boilerplate
+  alternativa_a:
+  - ABP Commercial
+  pt: Framework de aplicação .NET com multi-tenancy, módulos e camadas prontas.
+  en: .NET application framework with multi-tenancy, modules and ready-made layers.
+  stack:
+  - C#
+  - ASP.NET
+  - EF Core
+  open_core: false
+- repo: abpframework/abp
+  nome: ABP Framework
+  alternativa_a:
+  - ABP Commercial
+  pt: Plataforma .NET modular com multi-tenancy, módulos e arquitetura DDD.
+  en: Modular .NET platform with multi-tenancy, modules and DDD architecture.
+  stack:
+  - C#
+  - .NET
+  - Angular
+  site: https://abp.io
+  open_core: true
+- repo: jhipster/generator-jhipster
+  nome: JHipster
+  alternativa_a:
+  - SaaS Pegasus
+  pt: Gerador de aplicações Spring Boot com front-end moderno e microsserviços.
+  en: Application generator for Spring Boot with a modern front-end and microservices.
+  stack:
+  - Java
+  - Spring Boot
+  - Angular
+  - React
+  site: https://www.jhipster.tech
+  open_core: false
+- repo: t3-oss/create-t3-turbo
+  nome: create-t3-turbo
+  alternativa_a:
+  - ShipFast
+  pt: Monorepo com Next.js, Expo, tRPC e Drizzle no estilo T3.
+  en: T3-style monorepo with Next.js, Expo, tRPC and Drizzle.
+  stack:
+  - TypeScript
+  - Next.js
+  - Expo
+  - tRPC
+  open_core: false
+- repo: michaelshimeles/nextjs-starter-kit
+  nome: Next.js Starter Kit
+  alternativa_a:
+  - ShipFast
+  pt: Starter de SaaS em Next.js com auth, pagamentos e painel prontos.
+  en: Next.js SaaS starter with auth, payments and dashboard ready.
+  stack:
+  - TypeScript
+  - Next.js
+  - Drizzle
+  open_core: false
+- repo: wsvincent/djangox
+  nome: DjangoX
+  alternativa_a:
+  - SaaS Pegasus
+  pt: Starter Django com contas, e-mail e Bootstrap para começar rápido.
+  en: Django starter with accounts, email and Bootstrap for a fast start.
+  stack:
+  - Python
+  - Django
+  - PostgreSQL
+  open_core: false

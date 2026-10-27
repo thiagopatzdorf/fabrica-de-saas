@@ -1,0 +1,215 @@
+categoria: saude-clinicas
+titulo_pt: Saúde e clínicas
+titulo_en: Healthcare and clinics
+itens:
+- repo: openemr/openemr
+  nome: OpenEMR
+  alternativa_a:
+  - Epic
+  - athenahealth
+  pt: Prontuário eletrônico e gestão de consultórios com agenda, receitas, faturamento e portal do paciente.
+  en: Electronic health records and practice management with scheduling, prescriptions, billing and a patient portal.
+  stack:
+  - PHP
+  - MySQL
+  - JavaScript
+  site: https://www.open-emr.org
+  destaque: true
+- repo: openmrs/openmrs-core
+  nome: OpenMRS
+  alternativa_a:
+  - Epic
+  - Cerner
+  pt: Plataforma de prontuário médico modular, muito usada em sistemas de saúde de países em desenvolvimento.
+  en: Modular medical record platform widely used in health systems of developing countries.
+  stack:
+  - Java
+  - Spring
+  - MySQL
+  site: https://openmrs.org
+- repo: Bahmni/bahmni-core
+  nome: Bahmni
+  alternativa_a:
+  - Epic
+  - Cerner
+  pt: Sistema hospitalar completo sobre o OpenMRS, com registro, consultas, farmácia, exames e faturamento.
+  en: Full hospital system built on OpenMRS, with registration, consultations, pharmacy, labs and billing.
+  stack:
+  - Java
+  - AngularJS
+  - MySQL
+- repo: medplum/medplum
+  nome: Medplum
+  alternativa_a:
+  - Epic
+  - Redox
+  pt: Plataforma de desenvolvimento de saúde com servidor FHIR, autenticação, automações e apps clínicos.
+  en: Healthcare development platform with a FHIR server, authentication, automation and clinical apps.
+  stack:
+  - TypeScript
+  - React
+  - PostgreSQL
+  site: https://www.medplum.com
+  destaque: true
+- repo: ehrbase/ehrbase
+  nome: EHRbase
+  alternativa_a:
+  - Epic
+  pt: Servidor de registros de saúde no padrão openEHR, com API REST e armazenamento estruturado.
+  en: Health record server on the openEHR standard, with a REST API and structured storage.
+  stack:
+  - Java
+  - Spring
+  - PostgreSQL
+- repo: samply/blaze
+  nome: Blaze
+  alternativa_a:
+  - Azure Health Data Services
+  pt: Servidor FHIR rápido para guardar e consultar grandes volumes de dados clínicos.
+  en: Fast FHIR server to store and query large volumes of clinical data.
+  stack:
+  - Clojure
+  - Java
+- repo: hapifhir/hapi-fhir-jpaserver-starter
+  nome: HAPI FHIR JPA Server
+  alternativa_a:
+  - Azure Health Data Services
+  pt: Servidor FHIR pronto para subir, com banco relacional, para integrar sistemas de saúde.
+  en: Ready-to-run FHIR server with a relational database for integrating health systems.
+  stack:
+  - Java
+  - Spring
+  - PostgreSQL
+- repo: ohcnetwork/care
+  nome: CARE
+  alternativa_a:
+  - Epic
+  pt: Sistema de gestão hospitalar com pacientes, leitos, UTI e telemedicina, criado por rede aberta indiana.
+  en: Hospital management system with patients, beds, ICU and telemedicine, built by an open Indian network.
+  stack:
+  - Python
+  - Django
+  - React
+- repo: medic/cht-core
+  nome: Community Health Toolkit
+  alternativa_a:
+  - CommCare
+  pt: Apps offline para agentes comunitários de saúde registrarem visitas, acompanharem gestantes e crianças.
+  en: Offline apps for community health workers to log visits and follow pregnant women and children.
+  stack:
+  - JavaScript
+  - CouchDB
+  - Angular
+- repo: dhis2/dhis2-core
+  nome: DHIS2
+  alternativa_a: []
+  pt: Plataforma de coleta e análise de dados de saúde pública usada por ministérios em dezenas de países.
+  en: Platform for collecting and analyzing public health data used by health ministries in dozens of countries.
+  stack:
+  - Java
+  - Spring
+  - PostgreSQL
+- repo: openelisglobal/openelisglobal-core
+  nome: OpenELIS Global
+  alternativa_a: []
+  pt: Sistema de informação laboratorial para registrar amostras, exames e resultados clínicos.
+  en: Laboratory information system to register samples, tests and clinical results.
+  stack:
+  - Java
+  - Spring
+  - PostgreSQL
+- repo: informatici/openhospital-core
+  nome: Open Hospital
+  alternativa_a: []
+  pt: Software de gestão de hospitais pequenos, com pacientes, internações, farmácia e laboratório.
+  en: Management software for small hospitals, covering patients, admissions, pharmacy and lab.
+  stack:
+  - Java
+  - MySQL
+- repo: OHIF/Viewers
+  nome: OHIF Viewer
+  alternativa_a:
+  - PACS comerciais
+  pt: Visualizador de imagens médicas DICOM no navegador, para radiologia e pesquisa clínica.
+  en: Browser-based DICOM medical image viewer for radiology and clinical research.
+  stack:
+  - TypeScript
+  - React
+  site: https://ohif.org
+- repo: dcm4che/dcm4chee-arc-light
+  nome: dcm4che Archive
+  alternativa_a:
+  - PACS comerciais
+  pt: Arquivo de imagens médicas DICOM (PACS) com armazenamento, consulta e distribuição de estudos.
+  en: DICOM medical image archive (PACS) with storage, query and distribution of studies.
+  stack:
+  - Java
+  - Wildfly
+- repo: nroduit/Weasis
+  nome: Weasis
+  alternativa_a:
+  - PACS comerciais
+  pt: Visualizador DICOM multiplataforma para estudos de imagem, integrado a arquivos PACS.
+  en: Cross-platform DICOM viewer for imaging studies, integrable with PACS archives.
+  stack:
+  - Java
+- repo: fastenhealth/fasten-onprem
+  nome: Fasten Health
+  alternativa_a:
+  - Apple Health Records
+  pt: Reúne os prontuários de vários hospitais do próprio paciente num painel pessoal, em casa.
+  en: Gathers a patient's records from many providers into a personal self-hosted dashboard.
+  stack:
+  - Go
+  - Angular
+- repo: nightscout/cgm-remote-monitor
+  nome: Nightscout
+  alternativa_a:
+  - Dexcom Follow
+  pt: Monitoramento remoto de glicose em tempo real para pessoas com diabetes, com alertas e relatórios.
+  en: Real-time remote glucose monitoring for people with diabetes, with alerts and reports.
+  stack:
+  - JavaScript
+  - Node.js
+  - MongoDB
+- repo: masslight/ottehr
+  nome: Ottehr
+  alternativa_a:
+  - Zocdoc
+  - Doxy.me
+  pt: Plataforma de telemedicina e atendimento imediato com agendamento, vídeo e prontuário.
+  en: Telemedicine and urgent care platform with booking, video visits and charting.
+  stack:
+  - TypeScript
+  - React
+  - AWS
+  open_core: true
+- repo: openeyes/OpenEyes
+  nome: OpenEyes
+  alternativa_a:
+  - Medisoft
+  pt: Prontuário eletrônico especializado em oftalmologia, com exames, cirurgias e documentos clínicos.
+  en: Electronic medical record specialized in ophthalmology, with exams, surgeries and clinical documents.
+  stack:
+  - PHP
+  - Yii
+  - MySQL
+- repo: openboxes/openboxes
+  nome: OpenBoxes
+  alternativa_a: []
+  pt: Gestão de estoque e logística de suprimentos médicos em hospitais e clínicas de poucos recursos.
+  en: Inventory and supply chain management for medical supplies in low-resource hospitals and clinics.
+  stack:
+  - Groovy
+  - Grails
+  - MySQL
+- repo: opensrp/opensrp-client-core
+  nome: OpenSRP
+  alternativa_a:
+  - CommCare
+  pt: Plataforma móvel offline de registros de saúde familiar e atendimento comunitário, baseada em FHIR.
+  en: Offline mobile platform for family health records and community care, built on FHIR.
+  stack:
+  - Kotlin
+  - Java
+  - Android

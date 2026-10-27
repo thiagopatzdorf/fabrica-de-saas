@@ -1,0 +1,239 @@
+categoria: atendimento-helpdesk
+titulo_pt: Atendimento e helpdesk
+titulo_en: Support and helpdesk
+itens:
+- repo: chatwoot/chatwoot
+  nome: Chatwoot
+  alternativa_a:
+  - Intercom
+  - Zendesk
+  pt: 'Caixa de entrada omnicanal: chat do site, e-mail, WhatsApp e redes sociais num só lugar para a equipe de suporte.'
+  en: 'Omnichannel inbox: site chat, email, WhatsApp and social channels in one place for support teams.'
+  stack:
+  - Ruby
+  - Rails
+  - Vue
+  - PostgreSQL
+  site: https://www.chatwoot.com
+  open_core: true
+  nota: Pasta enterprise com licença própria
+- repo: zammad/zammad
+  nome: Zammad
+  alternativa_a:
+  - Zendesk
+  - Freshdesk
+  pt: Sistema de tickets web com e-mail, telefone, chat e redes sociais, base de conhecimento e busca potente.
+  en: Web ticketing system with email, phone, chat and social channels, a knowledge base and strong search.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  - Elasticsearch
+  site: https://zammad.org
+  open_core: false
+- repo: osTicket/osTicket
+  nome: osTicket
+  alternativa_a:
+  - Zendesk
+  - Freshdesk
+  pt: Sistema clássico de tickets por e-mail e web, com filas, SLA, respostas prontas e regras de atribuição.
+  en: Classic ticketing by email and web, with queues, SLAs, canned replies and assignment rules.
+  stack:
+  - PHP
+  - MySQL
+  site: https://osticket.com
+  open_core: false
+- repo: frappe/helpdesk
+  nome: Frappe Helpdesk
+  alternativa_a:
+  - Zendesk
+  - Freshdesk
+  pt: Helpdesk moderno do ecossistema Frappe, com tickets, SLA, base de conhecimento e portal do cliente.
+  en: Modern helpdesk from the Frappe ecosystem with tickets, SLAs, a knowledge base and a customer portal.
+  stack:
+  - Python
+  - Frappe
+  - Vue
+  - MariaDB
+  site: https://frappe.io/helpdesk
+  open_core: false
+- repo: freescout-help-desk/freescout
+  nome: FreeScout
+  alternativa_a:
+  - Help Scout
+  - Zendesk
+  pt: Helpdesk leve estilo caixa de e-mail compartilhada, com módulos extras para automações e integrações.
+  en: Lightweight shared-mailbox helpdesk with add-on modules for automations and integrations.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  site: https://freescout.net
+  open_core: true
+  nota: Muitos módulos são pagos
+- repo: peppermint-lab/peppermint
+  nome: Peppermint
+  alternativa_a:
+  - Zendesk
+  - Jira Service Management
+  pt: Gestão de tickets simples e rápida, com notas, anexos, notificações e instalação via Docker.
+  en: Simple, fast ticket management with notes, attachments, notifications and Docker installation.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  site: https://peppermint.sh
+  open_core: false
+- repo: znuny/Znuny
+  nome: Znuny
+  alternativa_a:
+  - Zendesk
+  - ServiceNow
+  pt: Sistema de tickets e service desk em Perl, derivado do OTRS, com processos, SLA e gestão de serviços.
+  en: Perl ticketing and service desk system forked from OTRS, with processes, SLAs and service management.
+  stack:
+  - Perl
+  - PostgreSQL
+  - MySQL
+  site: https://www.znuny.org
+  open_core: false
+- repo: glpi-project/glpi
+  nome: GLPI
+  alternativa_a:
+  - ServiceNow
+  - Jira Service Management
+  pt: Service desk e gestão de ativos de TI em um produto, com chamados, inventário, contratos e SLA.
+  en: IT service desk and asset management in one product, with tickets, inventory, contracts and SLAs.
+  stack:
+  - PHP
+  - MySQL
+  site: https://glpi-project.org
+  open_core: false
+- repo: uvdesk/community-skeleton
+  nome: UVdesk
+  alternativa_a:
+  - Zendesk
+  - Freshdesk
+  pt: Plataforma de helpdesk em Symfony com tickets por e-mail, agentes, grupos, automação e portal do cliente.
+  en: Symfony-based helpdesk with email tickets, agents, groups, workflow automation and a customer portal.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+  site: https://www.uvdesk.com
+  open_core: false
+- repo: livehelperchat/livehelperchat
+  nome: Live Helper Chat
+  alternativa_a:
+  - LiveChat
+  - Intercom
+  pt: Chat ao vivo para sites com painel de operadores, transferência de conversa, bots e relatórios.
+  en: Live chat for websites with operator console, chat transfer, bots and reporting.
+  stack:
+  - PHP
+  - MySQL
+  site: https://livehelperchat.com
+  open_core: false
+- repo: tiledesk/tiledesk-server
+  nome: Tiledesk
+  alternativa_a:
+  - Intercom
+  - Drift
+  pt: Plataforma de atendimento com chatbots e chat ao vivo, voltada a conversas automatizadas com transbordo humano.
+  en: Customer conversation platform combining chatbots and live chat with handoff to human agents.
+  stack:
+  - Node.js
+  - MongoDB
+  site: https://tiledesk.com
+  open_core: false
+- repo: abhinavxd/libredesk
+  nome: Libredesk
+  alternativa_a:
+  - Help Scout
+  - Zendesk
+  pt: Central de atendimento omnicanal em um binário só, com caixas de entrada, atribuição, SLA e macros.
+  en: Single-binary omnichannel support desk with inboxes, assignment, SLAs and macros.
+  stack:
+  - Go
+  - Vue
+  - PostgreSQL
+  site: https://libredesk.io
+  open_core: false
+- repo: chaskiq/chaskiq
+  nome: Chaskiq
+  alternativa_a:
+  - Intercom
+  - Drift
+  pt: 'Mensageria para clientes: chat, campanhas por e-mail, bots e central de ajuda em uma só aplicação.'
+  en: 'Customer messaging: live chat, email campaigns, bots and help center in one app.'
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  site: https://chaskiq.io
+  open_core: false
+- repo: ladybirdweb/faveo-helpdesk
+  nome: Faveo Helpdesk
+  alternativa_a:
+  - Zendesk
+  - Freshdesk
+  pt: Helpdesk em Laravel com tickets por e-mail, SLA, fluxos de trabalho e base de conhecimento.
+  en: Laravel helpdesk with email tickets, SLAs, workflows and a knowledge base.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  site: https://www.faveohelpdesk.com
+  open_core: true
+  nota: Edição enterprise paga
+- repo: opensupports/opensupports
+  nome: OpenSupports
+  alternativa_a:
+  - Zendesk
+  - Freshdesk
+  pt: Sistema de tickets enxuto com portal do cliente, departamentos e personalização simples.
+  en: Lean ticketing system with customer portal, departments and simple customization.
+  stack:
+  - PHP
+  - React
+  - MySQL
+  site: https://www.opensupports.com
+  open_core: false
+- repo: bestpractical/rt
+  nome: Request Tracker
+  alternativa_a:
+  - Zendesk
+  - Jira Service Management
+  pt: Rastreador de tickets maduro e muito configurável para suporte, TI e operações, com automações.
+  en: Mature, highly configurable ticket tracker for support, IT and operations, with automation.
+  stack:
+  - Perl
+  - PostgreSQL
+  - MySQL
+  site: https://bestpractical.com/request-tracker
+  open_core: false
+- repo: Combodo/iTop
+  nome: iTop
+  alternativa_a:
+  - ServiceNow
+  - Jira Service Management
+  pt: Portal ITSM com CMDB, gestão de incidentes, solicitações, mudanças e catálogo de serviços.
+  en: ITSM portal with CMDB plus incident, request and change management and a service catalog.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.combodo.com/itop
+  open_core: false
+- repo: erxes/erxes
+  nome: erxes
+  alternativa_a:
+  - HubSpot
+  - Intercom
+  pt: Plataforma de experiência do cliente com inbox omnicanal, CRM, marketing e automação.
+  en: Customer experience platform with omnichannel inbox, CRM, marketing and automation.
+  stack:
+  - TypeScript
+  - Node.js
+  - MongoDB
+  site: https://erxes.io
+  open_core: false

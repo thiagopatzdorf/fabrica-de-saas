@@ -1,0 +1,122 @@
+categoria: contratos-assinatura-eletronica
+titulo_pt: Contratos e assinatura eletrônica
+titulo_en: Contracts and e-signature
+itens:
+- repo: documenso/documenso
+  nome: Documenso
+  alternativa_a:
+  - DocuSign
+  - Clicksign
+  pt: Assinatura eletrônica de documentos com fluxo de envio, campos e trilha de auditoria.
+  en: E-signature for documents with sending flow, form fields and an audit trail.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  site: https://documenso.com
+  open_core: true
+- repo: OpenSignLabs/OpenSign
+  nome: OpenSign
+  alternativa_a:
+  - DocuSign
+  - Adobe Sign
+  pt: Assinatura eletrônica com modelos, múltiplos signatários e envio por link ou e-mail.
+  en: E-signature with templates, multiple signers and delivery by link or email.
+  stack:
+  - JavaScript
+  - React
+  - MongoDB
+  site: https://www.opensignlabs.com
+  open_core: false
+- repo: docusealco/docuseal
+  nome: DocuSeal
+  alternativa_a:
+  - DocuSign
+  - PandaDoc
+  pt: Criação de formulários PDF preenchíveis e coleta de assinaturas, com API e webhooks.
+  en: Build fillable PDF forms and collect signatures, with an API and webhooks.
+  stack:
+  - Ruby
+  - Rails
+  - Vue
+  site: https://www.docuseal.com
+  open_core: true
+- repo: LibreSign/libresign
+  nome: LibreSign
+  alternativa_a:
+  - DocuSign
+  - Clicksign
+  pt: App do Nextcloud para assinar PDFs com certificado digital, com validação pública.
+  en: Nextcloud app to sign PDFs with digital certificates and verify them publicly.
+  stack:
+  - PHP
+  - Vue
+  site: https://libresign.coop
+  open_core: false
+  nota: Bom ponto de partida para certificados ICP-Brasil, sem garantia de conformidade.
+- repo: 24eme/signaturepdf
+  nome: Signature PDF
+  alternativa_a:
+  - Smallpdf
+  - DocuSign
+  pt: Ferramenta web para assinar, organizar e marcar PDFs sem enviar o arquivo a terceiros.
+  en: Web tool to sign, reorder and annotate PDFs without sending the file to third parties.
+  stack:
+  - PHP
+  - JavaScript
+  open_core: false
+- repo: kwart/jsignpdf
+  nome: JSignPdf
+  alternativa_a:
+  - Adobe Acrobat
+  pt: Aplicativo Java para assinar PDFs com certificado digital, em tela ou linha de comando.
+  en: Java app to sign PDFs with digital certificates, by GUI or command line.
+  stack:
+  - Java
+  open_core: false
+- repo: Keyfactor/signserver-ce
+  nome: SignServer
+  alternativa_a:
+  - DocuSign
+  pt: Servidor de assinatura digital centralizado para documentos, código e carimbo de tempo.
+  en: Centralized digital signing server for documents, code and timestamping.
+  stack:
+  - Java
+  open_core: true
+- repo: docassemble/docassemble
+  nome: docassemble
+  alternativa_a:
+  - HotDocs
+  - Documate
+  pt: Entrevistas guiadas que geram contratos e documentos jurídicos, com assinatura.
+  en: Guided interviews that generate contracts and legal documents, with signing.
+  stack:
+  - Python
+  - Flask
+  site: https://docassemble.org
+  open_core: false
+- repo: JSv4/OpenContracts
+  nome: OpenContracts
+  alternativa_a:
+  - Kira Systems
+  - Luminance
+  pt: Anotação e análise de contratos e documentos com extração assistida por IA.
+  en: Annotate and analyze contracts and documents with AI-assisted extraction.
+  stack:
+  - Python
+  - Django
+  - React
+  open_core: false
+- repo: mfts/papermark
+  nome: Papermark
+  alternativa_a:
+  - DocSend
+  - Pitch
+  pt: Compartilha documentos por link com métricas de leitura e salas de dados.
+  en: Share documents by link with viewing analytics and data rooms.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  site: https://www.papermark.com
+  open_core: true

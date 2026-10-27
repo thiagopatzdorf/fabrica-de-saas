@@ -1,0 +1,435 @@
+categoria: backend-api-baas
+titulo_pt: Backend, APIs e BaaS
+titulo_en: Backend, APIs and BaaS
+itens:
+- repo: supabase/supabase
+  nome: Supabase
+  alternativa_a:
+  - Firebase
+  pt: Backend completo sobre Postgres com autenticação, APIs automáticas, storage, realtime e funções de borda.
+  en: Full backend on Postgres with auth, auto-generated APIs, storage, realtime and edge functions.
+  stack:
+  - TypeScript
+  - Elixir
+  - Postgres
+  site: https://supabase.com
+  open_core: false
+- repo: appwrite/appwrite
+  nome: Appwrite
+  alternativa_a:
+  - Firebase
+  pt: Plataforma de backend com autenticação, banco, storage, funções e mensageria, para web e mobile.
+  en: Backend platform with auth, database, storage, functions and messaging for web and mobile apps.
+  stack:
+  - PHP
+  - TypeScript
+  - MariaDB
+  site: https://appwrite.io
+  open_core: false
+- repo: pocketbase/pocketbase
+  nome: PocketBase
+  alternativa_a:
+  - Firebase
+  pt: Backend em um único binário Go com banco SQLite, autenticação, arquivos, API em tempo real e painel admin.
+  en: Single-binary Go backend with SQLite, auth, file storage, realtime API and an admin dashboard.
+  stack:
+  - Go
+  - SQLite
+  site: https://pocketbase.io
+  open_core: false
+- repo: nhost/nhost
+  nome: Nhost
+  alternativa_a:
+  - Firebase
+  pt: Backend com Postgres, GraphQL via Hasura, autenticação, storage e funções serverless.
+  en: Backend with Postgres, GraphQL through Hasura, auth, storage and serverless functions.
+  stack:
+  - Go
+  - TypeScript
+  - Postgres
+  site: https://nhost.io
+  open_core: false
+- repo: parse-community/parse-server
+  nome: Parse Server
+  alternativa_a:
+  - Firebase
+  - Back4App
+  pt: Servidor de backend para apps com banco, usuários, push, cloud code e APIs REST e GraphQL.
+  en: App backend server with database, users, push, cloud code and REST and GraphQL APIs.
+  stack:
+  - Node.js
+  - MongoDB
+  - Postgres
+  site: https://parseplatform.org
+  open_core: false
+- repo: hasura/graphql-engine
+  nome: Hasura
+  alternativa_a:
+  - AWS AppSync
+  - Firebase
+  pt: Gera uma API GraphQL em tempo real sobre bancos de dados existentes, com permissões por linha.
+  en: Instantly serves a realtime GraphQL API over existing databases, with row-level permissions.
+  stack:
+  - Haskell
+  - Rust
+  - Postgres
+  site: https://hasura.io
+  open_core: true
+  nota: Recursos enterprise são pagos.
+- repo: PostgREST/postgrest
+  nome: PostgREST
+  alternativa_a:
+  - Firebase
+  pt: Transforma um banco Postgres em uma API REST pronta, usando o próprio esquema e as permissões do banco.
+  en: Turns a Postgres database straight into a REST API driven by its schema and role permissions.
+  stack:
+  - Haskell
+  - Postgres
+  site: https://postgrest.org
+  open_core: false
+- repo: kuzzleio/kuzzle
+  nome: Kuzzle
+  alternativa_a:
+  - Firebase
+  pt: Backend pronto com API em tempo real, busca, controle de acesso e plugins para IoT e apps.
+  en: Ready-made backend with realtime API, search, access control and plugins for IoT and apps.
+  stack:
+  - Node.js
+  - Elasticsearch
+  - Redis
+  site: https://kuzzle.io
+  open_core: false
+- repo: heroiclabs/nakama
+  nome: Nakama
+  alternativa_a:
+  - PlayFab
+  pt: Servidor de backend para jogos com contas, partidas em tempo real, ranking, chat e lógica em Lua ou Go.
+  en: Game backend server with accounts, realtime matches, leaderboards, chat and Lua or Go logic.
+  stack:
+  - Go
+  - Postgres
+  site: https://heroiclabs.com
+  open_core: false
+- repo: electric-sql/electric
+  nome: Electric
+  alternativa_a:
+  - Firebase
+  pt: Motor de sincronização que replica partes do Postgres para apps em tempo real via HTTP.
+  en: Sync engine that streams subsets of Postgres to apps in realtime over HTTP.
+  stack:
+  - Elixir
+  - TypeScript
+  - Postgres
+  site: https://electric-sql.com
+  open_core: false
+- repo: Kong/kong
+  nome: Kong Gateway
+  alternativa_a:
+  - Apigee
+  - AWS API Gateway
+  pt: Gateway de APIs e microsserviços com plugins de autenticação, limite de taxa e observabilidade.
+  en: API and microservice gateway with plugins for auth, rate limiting and observability.
+  stack:
+  - Lua
+  - Nginx
+  - Postgres
+  site: https://konghq.com
+  open_core: true
+- repo: apache/apisix
+  nome: Apache APISIX
+  alternativa_a:
+  - Apigee
+  - AWS API Gateway
+  pt: Gateway de APIs dinâmico e de alto desempenho com plugins, balanceamento e painel de controle.
+  en: High-performance dynamic API gateway with plugins, load balancing and a control dashboard.
+  stack:
+  - Lua
+  - Nginx
+  - etcd
+  site: https://apisix.apache.org
+  open_core: false
+- repo: TykTechnologies/tyk
+  nome: Tyk
+  alternativa_a:
+  - Apigee
+  - AWS API Gateway
+  pt: Gateway de APIs com autenticação, cotas, GraphQL e analytics, escrito em Go.
+  en: API gateway in Go with authentication, quotas, GraphQL support and analytics.
+  stack:
+  - Go
+  - Redis
+  site: https://tyk.io
+  open_core: true
+- repo: krakend/krakend-ce
+  nome: KrakenD
+  alternativa_a:
+  - Apigee
+  - AWS API Gateway
+  pt: Gateway de APIs sem estado que agrega e transforma respostas de vários serviços por configuração declarativa.
+  en: Stateless API gateway that aggregates and reshapes responses from many services via declarative config.
+  stack:
+  - Go
+  site: https://www.krakend.io
+  open_core: true
+- repo: gravitee-io/gravitee-api-management
+  nome: Gravitee
+  alternativa_a:
+  - Apigee
+  - Kong Konnect
+  pt: Plataforma de gestão de APIs com gateway, portal de desenvolvedores, políticas e analytics.
+  en: API management platform with gateway, developer portal, policies and analytics.
+  stack:
+  - Java
+  - Angular
+  - MongoDB
+  site: https://gravitee.io
+  open_core: true
+- repo: wso2/product-apim
+  nome: WSO2 API Manager
+  alternativa_a:
+  - Apigee
+  - Azure API Management
+  pt: Plataforma de gestão do ciclo de vida de APIs com gateway, portal, publicação e monetização.
+  en: API lifecycle management platform with gateway, portal, publishing and monetization.
+  stack:
+  - Java
+  site: https://wso2.com/api-manager
+  open_core: false
+- repo: alibaba/higress
+  nome: Higress
+  alternativa_a:
+  - AWS API Gateway
+  pt: Gateway nativo de nuvem baseado em Envoy, também usado como gateway de IA e de MCP.
+  en: Cloud-native gateway built on Envoy that also works as an AI and MCP gateway.
+  stack:
+  - Go
+  - Envoy
+  site: https://higress.cn
+  open_core: false
+- repo: hoppscotch/hoppscotch
+  nome: Hoppscotch
+  alternativa_a:
+  - Postman
+  pt: Cliente de APIs leve no navegador para testar REST, GraphQL e WebSocket, com coleções em equipe.
+  en: Lightweight browser API client for testing REST, GraphQL and WebSocket, with team collections.
+  stack:
+  - TypeScript
+  - Vue
+  - Postgres
+  site: https://hoppscotch.io
+  open_core: true
+- repo: usebruno/bruno
+  nome: Bruno
+  alternativa_a:
+  - Postman
+  pt: Cliente de APIs que guarda as coleções como arquivos de texto no Git, sem nuvem obrigatória.
+  en: API client that stores collections as plain files in Git, with no mandatory cloud.
+  stack:
+  - JavaScript
+  - Electron
+  site: https://www.usebruno.com
+  open_core: true
+- repo: Kong/insomnia
+  nome: Insomnia
+  alternativa_a:
+  - Postman
+  pt: Cliente de APIs para desenhar, depurar e testar REST, GraphQL e gRPC.
+  en: API client to design, debug and test REST, GraphQL and gRPC.
+  stack:
+  - JavaScript
+  - Electron
+  site: https://insomnia.rest
+  open_core: true
+- repo: mockoon/mockoon
+  nome: Mockoon
+  alternativa_a:
+  - Postman
+  pt: Cria APIs simuladas locais em segundos, com interface gráfica e CLI para rodar em CI.
+  en: Spins up local mock APIs in seconds, with a desktop GUI and a CLI for CI.
+  stack:
+  - TypeScript
+  - Electron
+  site: https://mockoon.com
+  open_core: false
+- repo: stoplightio/prism
+  nome: Prism
+  alternativa_a:
+  - Postman
+  pt: Servidor de mock e proxy de validação que usa um contrato OpenAPI como fonte da verdade.
+  en: Mock server and validation proxy that uses an OpenAPI contract as the source of truth.
+  stack:
+  - TypeScript
+  site: https://stoplight.io/open-source/prism
+  open_core: false
+- repo: wiremock/wiremock
+  nome: WireMock
+  alternativa_a:
+  - Postman
+  pt: Simula APIs HTTP para testes, com respostas programáveis, gravação e reprodução de tráfego.
+  en: Mocks HTTP APIs for testing, with programmable responses plus record and playback of traffic.
+  stack:
+  - Java
+  site: https://wiremock.org
+  open_core: true
+- repo: svix/svix-webhooks
+  nome: Svix
+  alternativa_a:
+  - Hookdeck
+  pt: Serviço para enviar webhooks com retentativas, assinatura, painel do cliente e logs de entrega.
+  en: Service for sending webhooks with retries, signing, a customer portal and delivery logs.
+  stack:
+  - Rust
+  - Postgres
+  - Redis
+  site: https://www.svix.com
+  open_core: false
+- repo: dapr/dapr
+  nome: Dapr
+  alternativa_a:
+  - AWS App Mesh
+  pt: 'Runtime com blocos prontos para microsserviços: estado, mensagens, segredos e chamadas entre serviços.'
+  en: 'Runtime with ready-made building blocks for microservices: state, pub/sub, secrets and service calls.'
+  stack:
+  - Go
+  site: https://dapr.io
+  open_core: false
+- repo: cloudflare/workerd
+  nome: workerd
+  alternativa_a:
+  - Cloudflare Workers
+  pt: Runtime de JavaScript e WebAssembly dos Cloudflare Workers, que roda funções de borda em servidor próprio.
+  en: The JavaScript and WebAssembly runtime behind Cloudflare Workers, to run edge functions on your own servers.
+  stack:
+  - C++
+  - JavaScript
+  site: https://workers.cloudflare.com
+  open_core: false
+- repo: Kinto/kinto
+  nome: Kinto
+  alternativa_a:
+  - Firebase
+  pt: Serviço de armazenamento de documentos JSON com sincronização, permissões e API HTTP.
+  en: JSON document storage service with sync, permissions and an HTTP API.
+  stack:
+  - Python
+  - Postgres
+  site: https://kinto-storage.org
+  open_core: false
+- repo: apache/couchdb
+  nome: Apache CouchDB
+  alternativa_a:
+  - Firebase
+  pt: Banco de documentos com API HTTP e replicação multimestre, bom para apps que sincronizam offline.
+  en: Document database with an HTTP API and multi-master replication, good for offline-first sync apps.
+  stack:
+  - Erlang
+  site: https://couchdb.apache.org
+  open_core: false
+- repo: FerretDB/FerretDB
+  nome: FerretDB
+  alternativa_a:
+  - MongoDB Atlas
+  pt: Camada que fala o protocolo do MongoDB e guarda os dados em Postgres ou SQLite.
+  en: Layer that speaks the MongoDB protocol and stores the data in Postgres or SQLite.
+  stack:
+  - Go
+  - Postgres
+  site: https://www.ferretdb.com
+  open_core: false
+- repo: wundergraph/cosmo
+  nome: WunderGraph Cosmo
+  alternativa_a:
+  - Apollo GraphOS
+  pt: Plataforma de GraphQL federado com roteador, registro de esquemas e observabilidade.
+  en: Federated GraphQL platform with a router, schema registry and observability.
+  stack:
+  - Go
+  - TypeScript
+  site: https://wundergraph.com
+  open_core: false
+- repo: ThreeMammals/Ocelot
+  nome: Ocelot
+  alternativa_a:
+  - Azure API Management
+  pt: Gateway de APIs para .NET com roteamento, autenticação, cache e limite de taxa por configuração.
+  en: API gateway for .NET with routing, authentication, caching and rate limiting via configuration.
+  stack:
+  - C#
+  - .NET
+  open_core: false
+- repo: apache/shenyu
+  nome: Apache ShenYu
+  alternativa_a:
+  - AWS API Gateway
+  pt: Gateway de APIs assíncrono em Java com plugins, painel de administração e várias linguagens de protocolo.
+  en: Asynchronous Java API gateway with plugins, an admin dashboard and many protocol adapters.
+  stack:
+  - Java
+  - Netty
+  site: https://shenyu.apache.org
+  open_core: false
+- repo: kumahq/kuma
+  nome: Kuma
+  alternativa_a:
+  - AWS App Mesh
+  pt: Malha de serviços universal sobre Envoy, para Kubernetes e VMs, com políticas e observabilidade.
+  en: Universal service mesh on Envoy for Kubernetes and VMs, with policies and observability.
+  stack:
+  - Go
+  - Envoy
+  site: https://kuma.io
+  open_core: false
+- repo: megaease/easegress
+  nome: Easegress
+  alternativa_a:
+  - AWS API Gateway
+  pt: Gateway de tráfego com proxy, orquestração de APIs, balanceamento e resiliência por configuração.
+  en: Traffic gateway with proxying, API orchestration, load balancing and resilience via configuration.
+  stack:
+  - Go
+  site: https://megaease.com/easegress
+  open_core: false
+- repo: instantdb/instant
+  nome: InstantDB
+  alternativa_a:
+  - Firebase
+  pt: Backend em tempo real com banco relacional no cliente, sincronização offline e permissões.
+  en: Realtime backend with a client-side relational database, offline sync and permissions.
+  stack:
+  - Clojure
+  - TypeScript
+  - Postgres
+  site: https://instantdb.com
+  open_core: false
+- repo: rocicorp/mono
+  nome: Zero
+  alternativa_a:
+  - Firebase
+  pt: Motor de sincronização que consulta no cliente e mantém o estado do servidor em tempo real.
+  en: Sync engine that runs queries on the client and keeps server state live.
+  stack:
+  - TypeScript
+  - Postgres
+  site: https://zero.rocicorp.dev
+  open_core: false
+- repo: unkeyed/unkey
+  nome: Unkey
+  alternativa_a:
+  - Kong Konnect
+  pt: Gerencia chaves de API com verificação rápida, limites de uso, expiração e analytics.
+  en: Manages API keys with fast verification, usage limits, expiry and analytics.
+  stack:
+  - Go
+  - TypeScript
+  site: https://unkey.com
+  open_core: false
+- repo: traefik/traefik
+  nome: Traefik
+  alternativa_a:
+  - AWS API Gateway
+  pt: Proxy reverso e gateway de borda que descobre serviços sozinho em Docker e Kubernetes.
+  en: Edge reverse proxy and gateway that discovers services on its own in Docker and Kubernetes.
+  stack:
+  - Go
+  site: https://traefik.io
+  open_core: true

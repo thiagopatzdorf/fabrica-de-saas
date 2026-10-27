@@ -1,0 +1,28 @@
+categoria: gestao-de-projetos
+titulo_pt: Gestão de projetos
+titulo_en: Project management
+itens:
+  - repo: plane/plane
+    nome: Plane
+    alternativa_a: [Jira, Linear]
+    pt: "Gestão de projetos com ciclos, módulos e visões, alternativa ao Jira."
+    en: "Project management with cycles, modules and views, a Jira alternative."
+    stack: [TypeScript, Django]
+    open_core: true
+    destaque: true
+  - repo: openclock/clockwork
+    nome: "Clock | Work *pro*"
+    alternativa_a: [Ponto Mais]
+    pt: "Ponto eletrônico com <b>HTML</b> e | barra no texto."
+    en: "Time clock with tricky characters _in_ the text."
+    stack: [Java]
+  - repo: old/archived
+    nome: Arquivado
+    pt: "Projeto arquivado pelo dono."
+    en: "Project archived by its owner."
+    stack: [C]
+  - repo: noassert/repo
+    nome: Sem Licença
+    pt: "Projeto sem licença identificável."
+    en: "Project without an identifiable license."
+    stack: [Rust]

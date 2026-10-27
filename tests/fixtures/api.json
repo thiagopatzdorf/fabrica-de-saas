@@ -1,0 +1,11 @@
+{
+  "_agora": "2026-10-27T00:00:00Z",
+  "twentyhq/twenty": {"nameWithOwner": "twentyhq/twenty", "isArchived": false, "isPrivate": false, "pushedAt": "2026-10-20T10:00:00Z", "stargazerCount": 31500, "licenseInfo": {"spdxId": "AGPL-3.0"}},
+  "acme/crmoss": {"nameWithOwner": "acme/crmoss", "isArchived": false, "isPrivate": false, "pushedAt": "2024-12-01T10:00:00Z", "stargazerCount": 420, "licenseInfo": {"spdxId": "MIT"}},
+  "evilcorp/bsl": {"nameWithOwner": "EvilCorp/Bsl", "isArchived": false, "isPrivate": false, "pushedAt": "2026-10-01T10:00:00Z", "stargazerCount": 9000, "licenseInfo": {"spdxId": "BUSL-1.1"}},
+  "ghost/gone": null,
+  "plane/plane": {"nameWithOwner": "makeplane/plane", "isArchived": false, "isPrivate": false, "pushedAt": "2026-10-25T10:00:00Z", "stargazerCount": 38000, "licenseInfo": {"spdxId": "AGPL-3.0"}},
+  "openclock/clockwork": {"nameWithOwner": "openclock/clockwork", "isArchived": false, "isPrivate": false, "pushedAt": "2026-09-01T10:00:00Z", "stargazerCount": 120, "licenseInfo": {"spdxId": "Apache-2.0"}},
+  "old/archived": {"nameWithOwner": "old/archived", "isArchived": true, "isPrivate": false, "pushedAt": "2026-09-01T10:00:00Z", "stargazerCount": 700, "licenseInfo": {"spdxId": "MIT"}},
+  "noassert/repo": {"nameWithOwner": "noassert/repo", "isArchived": false, "isPrivate": false, "pushedAt": "2026-10-01T10:00:00Z", "stargazerCount": 300, "licenseInfo": {"spdxId": "NOASSERTION"}}
+}

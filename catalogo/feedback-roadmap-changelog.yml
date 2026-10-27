@@ -1,0 +1,114 @@
+categoria: feedback-roadmap-changelog
+titulo_pt: Feedback, roadmap e changelog
+titulo_en: Feedback, roadmap and changelog
+itens:
+- repo: getfider/fider
+  nome: Fider
+  alternativa_a:
+  - Canny
+  - UserVoice
+  pt: Quadro público onde clientes sugerem e votam ideias, e a equipe responde e acompanha o andamento.
+  en: Public board where customers suggest and vote on ideas while the team replies and tracks progress.
+  stack:
+  - Go
+  - React
+  - PostgreSQL
+  site: https://fider.io
+  destaque: true
+- repo: astuto/astuto
+  nome: Astuto
+  alternativa_a:
+  - Canny
+  pt: Ferramenta de feedback com quadros de ideias, votação, status de roadmap e moderação.
+  en: Feedback tool with idea boards, voting, roadmap statuses and moderation.
+  stack:
+  - Ruby
+  - Rails
+  - React
+- repo: logchimp/logchimp
+  nome: LogChimp
+  alternativa_a:
+  - Canny
+  - Nolt
+  pt: Quadros de feedback e roadmap públicos para produtos, com votos, comentários e painel de moderação.
+  en: Public feedback boards and roadmaps for products, with votes, comments and a moderation panel.
+  stack:
+  - Vue
+  - Node.js
+  - PostgreSQL
+  site: https://logchimp.codecarrot.net
+- repo: clearflask/clearflask
+  nome: ClearFlask
+  alternativa_a:
+  - Canny
+  - UserVoice
+  pt: Plataforma de feedback com ideias, roadmap público, changelog e fórum de comunidade.
+  en: Feedback platform with ideas, a public roadmap, a changelog and a community forum.
+  stack:
+  - Java
+  - React
+  - TypeScript
+  open_core: true
+- repo: Plajer/Feedbacky
+  nome: Feedbacky
+  alternativa_a:
+  - Canny
+  pt: Quadro de sugestões e votação para projetos, com tags, status e notificações por e-mail.
+  en: Suggestion and voting board for projects, with tags, statuses and email notifications.
+  stack:
+  - Java
+  - Spring
+  - React
+- repo: JhumanJ/OpnForm
+  nome: OpnForm
+  alternativa_a:
+  - Typeform
+  - Google Forms
+  pt: Criador de formulários sem código com respostas ilimitadas, integrações e campos personalizados.
+  en: No-code form builder with unlimited responses, integrations and custom fields.
+  stack:
+  - Laravel
+  - Vue
+  - PHP
+  open_core: true
+- repo: opf/openproject
+  nome: OpenProject
+  alternativa_a:
+  - Jira
+  - MS Project
+  pt: Gestão de projetos com roadmap, Gantt, quadros ágeis e controle de versões de entrega.
+  en: Project management with roadmap, Gantt, agile boards and release version tracking.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  open_core: true
+- repo: usertour/usertour
+  nome: Usertour
+  alternativa_a:
+  - Appcues
+  - Userflow
+  pt: Cria tours guiados, checklists e avisos dentro do app para apresentar novidades aos usuários.
+  en: Builds in-app guided tours, checklists and announcements to introduce new features to users.
+  stack:
+  - TypeScript
+  - React
+  - NestJS
+- repo: Changerawr/changerawr
+  nome: Changerawr
+  alternativa_a:
+  - Beamer
+  - Headway
+  pt: Publica changelogs e notas de versão com editor, widget embutível e página pública.
+  en: Publishes changelogs and release notes with an editor, an embeddable widget and a public page.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+- repo: release-drafter/release-drafter
+  nome: Release Drafter
+  alternativa_a: []
+  pt: Monta rascunhos de notas de versão automaticamente a partir dos pull requests mesclados.
+  en: Drafts release notes automatically from merged pull requests.
+  stack:
+  - TypeScript

@@ -1,0 +1,396 @@
+categoria: ecommerce-pdv
+titulo_pt: E-commerce e PDV
+titulo_en: E-commerce and POS
+itens:
+- repo: medusajs/medusa
+  nome: Medusa
+  alternativa_a:
+  - Shopify
+  - BigCommerce
+  pt: Plataforma de comércio headless e modular em Node, com módulos de catálogo, pedidos, pagamentos e promoções.
+  en: Headless, modular commerce platform in Node with catalog, orders, payments and promotions modules.
+  stack:
+  - TypeScript
+  - Node.js
+  - PostgreSQL
+  site: https://medusajs.com
+  destaque: true
+- repo: saleor/saleor
+  nome: Saleor
+  alternativa_a:
+  - Shopify Plus
+  - BigCommerce
+  pt: Plataforma de e-commerce headless com API GraphQL, multicanal, multimoeda e painel administrativo.
+  en: Headless e-commerce platform with a GraphQL API, multichannel, multicurrency and an admin dashboard.
+  stack:
+  - Python
+  - Django
+  - GraphQL
+  - PostgreSQL
+  site: https://saleor.io
+  open_core: true
+  destaque: true
+- repo: vendure-ecommerce/vendure
+  nome: Vendure
+  alternativa_a:
+  - Shopify
+  - Commercetools
+  pt: Framework de e-commerce headless em TypeScript com API GraphQL, plugins e painel administrativo.
+  en: Headless TypeScript commerce framework with a GraphQL API, plugins and an admin UI.
+  stack:
+  - TypeScript
+  - NestJS
+  - GraphQL
+  site: https://vendure.io
+  open_core: true
+- repo: spree/spree
+  nome: Spree Commerce
+  alternativa_a:
+  - Shopify
+  - BigCommerce
+  pt: E-commerce em Ruby on Rails com API, multiloja, multimoeda e painel de administração.
+  en: Ruby on Rails e-commerce with an API, multi-store, multicurrency and an admin panel.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  open_core: true
+- repo: solidusio/solidus
+  nome: Solidus
+  alternativa_a:
+  - Shopify
+  - BigCommerce
+  pt: Plataforma de e-commerce em Rails, nascida do Spree, voltada a lojas grandes e muito customizadas.
+  en: Rails e-commerce platform forked from Spree, aimed at large, heavily customized stores.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+- repo: bagisto/bagisto
+  nome: Bagisto
+  alternativa_a:
+  - Shopify
+  - Magento
+  pt: E-commerce em Laravel com multiloja, multimoeda, marketplace e painel completo.
+  en: Laravel e-commerce with multi-store, multicurrency, marketplace options and a full admin.
+  stack:
+  - PHP
+  - Laravel
+  - Vue
+  - MySQL
+  site: https://bagisto.com
+- repo: prestashop/prestashop
+  nome: PrestaShop
+  alternativa_a:
+  - Shopify
+  - Wix Stores
+  pt: Plataforma de loja virtual popular, com milhares de módulos e temas e suporte a vários idiomas.
+  en: Popular online store platform with thousands of modules and themes and multilingual support.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+  site: https://prestashop.com
+- repo: opencart/opencart
+  nome: OpenCart
+  alternativa_a:
+  - Shopify
+  - Wix Stores
+  pt: Carrinho de compras leve em PHP com painel simples, extensões e multiloja.
+  en: Lightweight PHP shopping cart with a simple admin, extensions and multi-store.
+  stack:
+  - PHP
+  - MySQL
+  site: https://www.opencart.com
+- repo: woocommerce/woocommerce
+  nome: WooCommerce
+  alternativa_a:
+  - Shopify
+  - Squarespace Commerce
+  pt: Plugin de loja virtual para WordPress com produtos, pagamentos, frete e muitas extensões.
+  en: Online store plugin for WordPress with products, payments, shipping and a large extension ecosystem.
+  stack:
+  - PHP
+  - WordPress
+  - MySQL
+  site: https://woocommerce.com
+- repo: magento/magento2
+  nome: Magento Open Source
+  alternativa_a:
+  - Adobe Commerce
+  - Shopify Plus
+  pt: Plataforma de e-commerce robusta para lojas grandes, com catálogo complexo e muitas extensões.
+  en: Robust e-commerce platform for large stores with complex catalogs and a wide extension market.
+  stack:
+  - PHP
+  - MySQL
+  - Elasticsearch
+  open_core: true
+- repo: shopware/shopware
+  nome: Shopware
+  alternativa_a:
+  - Shopify
+  - Adobe Commerce
+  pt: Plataforma de e-commerce alemã em Symfony, com loja, API, editor de páginas e extensões.
+  en: German Symfony-based e-commerce platform with storefront, API, page builder and extensions.
+  stack:
+  - PHP
+  - Symfony
+  - Vue
+  - MySQL
+  site: https://www.shopware.com
+  open_core: true
+- repo: Sylius/Sylius
+  nome: Sylius
+  alternativa_a:
+  - Magento
+  - Shopify
+  pt: Framework de e-commerce em Symfony, headless e flexível, para lojas sob medida.
+  en: Headless, flexible Symfony e-commerce framework for custom-built stores.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+  site: https://sylius.com
+  open_core: true
+- repo: oroinc/orocommerce
+  nome: OroCommerce
+  alternativa_a:
+  - Adobe Commerce
+  - SAP Commerce
+  pt: E-commerce B2B com contas de empresa, listas de preços, cotações e fluxos de aprovação.
+  en: B2B e-commerce with company accounts, price lists, quotes and approval workflows.
+  stack:
+  - PHP
+  - Symfony
+  - PostgreSQL
+  open_core: true
+- repo: evershopcommerce/evershop
+  nome: EverShop
+  alternativa_a:
+  - Shopify
+  pt: Plataforma de e-commerce em Node e React, rápida de instalar, com tema e painel administrativo.
+  en: Node and React e-commerce platform, quick to set up, with a theme system and admin dashboard.
+  stack:
+  - JavaScript
+  - React
+  - Node.js
+  - PostgreSQL
+- repo: nopSolutions/nopCommerce
+  nome: nopCommerce
+  alternativa_a:
+  - Shopify
+  - Magento
+  pt: E-commerce em .NET com multiloja, plugins, temas e recursos B2B e B2C.
+  en: .NET e-commerce with multi-store, plugins, themes and both B2B and B2C features.
+  stack:
+  - C#
+  - ASP.NET Core
+  - SQL Server
+  site: https://www.nopcommerce.com
+- repo: smartstore/Smartstore
+  nome: Smartstore
+  alternativa_a:
+  - Shopify
+  - Magento
+  pt: Plataforma de e-commerce em ASP.NET Core com multiloja, CMS integrado e mercado de extensões.
+  en: ASP.NET Core e-commerce platform with multi-store, built-in CMS and an extension marketplace.
+  stack:
+  - C#
+  - ASP.NET Core
+  - SQL Server
+- repo: VirtoCommerce/vc-platform
+  nome: Virto Commerce
+  alternativa_a:
+  - Adobe Commerce
+  - SAP Commerce
+  pt: Plataforma de comércio B2B modular em .NET, com catálogo, preços, pedidos e marketplace.
+  en: Modular .NET B2B commerce platform with catalog, pricing, orders and marketplace.
+  stack:
+  - C#
+  - .NET
+  - SQL Server
+  open_core: true
+- repo: aimeos/aimeos-laravel
+  nome: Aimeos
+  alternativa_a:
+  - Shopify
+  - Magento
+  pt: Pacote de e-commerce para Laravel com loja, painel, multi-fornecedor e alto volume de produtos.
+  en: Laravel e-commerce package with storefront, admin, multi-vendor and large catalog support.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  open_core: true
+- repo: lunarphp/lunar
+  nome: Lunar
+  alternativa_a:
+  - Shopify
+  pt: Pacote de comércio para Laravel com produtos, carrinho, pedidos, descontos e painel Filament.
+  en: Laravel commerce package with products, carts, orders, discounts and a Filament admin.
+  stack:
+  - PHP
+  - Laravel
+  - Livewire
+- repo: shopizer-ecommerce/shopizer
+  nome: Shopizer
+  alternativa_a:
+  - Magento
+  - Shopify
+  pt: E-commerce em Java com API REST, múltiplas lojas, catálogo e checkout.
+  en: Java e-commerce with a REST API, multiple stores, catalog and checkout.
+  stack:
+  - Java
+  - Spring Boot
+  - MySQL
+- repo: thelia/thelia
+  nome: Thelia
+  alternativa_a:
+  - PrestaShop
+  - Magento
+  pt: Solução de e-commerce francesa em Symfony, com loja, módulos e templates flexíveis.
+  en: French Symfony-based e-commerce solution with storefront, modules and flexible templates.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+- repo: zencart/zencart
+  nome: Zen Cart
+  alternativa_a:
+  - Shopify
+  - Wix Stores
+  pt: Carrinho de compras clássico em PHP, com muitos recursos de loja e longa história de comunidade.
+  en: Classic PHP shopping cart with extensive store features and a long community history.
+  stack:
+  - PHP
+  - MySQL
+- repo: pimcore/pimcore
+  nome: Pimcore
+  alternativa_a:
+  - Akeneo
+  - Salsify
+  pt: Plataforma de dados de produto, conteúdo e comércio digital em Symfony, com PIM, MDM e CMS.
+  en: Symfony platform for product data, content and digital commerce, with PIM, MDM and CMS.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+  open_core: true
+- repo: akeneo/pim-community-dev
+  nome: Akeneo PIM
+  alternativa_a:
+  - Salsify
+  - inRiver
+  pt: Gestão de informação de produto para centralizar, enriquecer e distribuir catálogos a vários canais.
+  en: Product information management to centralize, enrich and distribute catalogs across channels.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+  - Elasticsearch
+  open_core: true
+- repo: openfoodfoundation/openfoodnetwork
+  nome: Open Food Network
+  alternativa_a:
+  - Local Line
+  - Barn2Door
+  pt: Plataforma de venda direta e cooperativas de alimentos, ligando produtores, distribuidores e consumidores.
+  en: Platform for direct food sales and food hubs, linking producers, distributors and shoppers.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+- repo: opensourcepos/opensourcepos
+  nome: Open Source Point of Sale
+  alternativa_a:
+  - Square POS
+  - Lightspeed
+  pt: Sistema de ponto de venda web com estoque, vendas, clientes, fornecedores e relatórios.
+  en: Web point-of-sale with inventory, sales, customers, suppliers and reports.
+  stack:
+  - PHP
+  - CodeIgniter
+  - MySQL
+  destaque: true
+- repo: Blair2004/NexoPOS
+  nome: NexoPOS
+  alternativa_a:
+  - Square POS
+  - Lightspeed
+  pt: PDV e gestão de varejo em Laravel com caixa, estoque, clientes, pedidos e relatórios.
+  en: Laravel POS and retail management with cash register, stock, customers, orders and reports.
+  stack:
+  - PHP
+  - Laravel
+  - Vue
+  - MySQL
+  open_core: true
+- repo: floreantpos/floreantpos
+  nome: Floreant POS
+  alternativa_a:
+  - Toast
+  - Square for Restaurants
+  pt: PDV de restaurante em Java com mesas, cozinha, comandas, estoque e relatórios de vendas.
+  en: Java restaurant POS with tables, kitchen tickets, orders, inventory and sales reports.
+  stack:
+  - Java
+  - Swing
+  - MySQL
+- repo: unicenta/unicentaopos
+  nome: uniCenta oPOS
+  alternativa_a:
+  - Square POS
+  - Lightspeed
+  pt: PDV de desktop em Java para varejo e restaurantes, com caixa, estoque e integração a balanças.
+  en: Java desktop POS for retail and restaurants, with till, stock and scale integration.
+  stack:
+  - Java
+  - MySQL
+- repo: yrestom/POS-Awesome
+  nome: POS Awesome
+  alternativa_a:
+  - Square POS
+  - Lightspeed
+  pt: Interface de ponto de venda rápida para o ERPNext, com offline, múltiplos pagamentos e fidelidade.
+  en: Fast point-of-sale interface for ERPNext with offline mode, split payments and loyalty.
+  stack:
+  - Python
+  - Vue
+  - MariaDB
+- repo: TastyIgniter/TastyIgniter
+  nome: TastyIgniter
+  alternativa_a:
+  - Toast Online Ordering
+  - Olo
+  pt: Sistema de pedidos online para restaurantes, com cardápio, entrega, reservas e pagamentos.
+  en: Online ordering for restaurants with menu, delivery, reservations and payments.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+- repo: mercurjs/mercur
+  nome: Mercur
+  alternativa_a:
+  - Sharetribe
+  - Shopify Markets
+  pt: Marketplace multi-vendedor construído sobre o Medusa, com painéis de vendedor e administrador.
+  en: Multi-vendor marketplace built on Medusa, with seller and admin dashboards.
+  stack:
+  - TypeScript
+  - Medusa
+  - PostgreSQL
+  nota: Confirmar slug e atividade.
+- repo: antiwork/gumroad
+  nome: Gumroad
+  alternativa_a:
+  - Gumroad
+  - Lemon Squeezy
+  pt: Plataforma para criadores venderem produtos digitais, assinaturas e cursos com checkout próprio.
+  en: Platform for creators to sell digital products, memberships and courses with their own checkout.
+  stack:
+  - Ruby
+  - Rails
+  - React
+  - MySQL
+  nota: Confirmar slug e licença (aberto em 2025).

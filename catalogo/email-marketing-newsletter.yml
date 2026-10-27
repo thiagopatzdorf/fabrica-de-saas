@@ -1,0 +1,248 @@
+categoria: email-marketing-newsletter
+titulo_pt: E-mail marketing e newsletter
+titulo_en: Email marketing and newsletters
+itens:
+- repo: knadh/listmonk
+  nome: listmonk
+  alternativa_a:
+  - Mailchimp
+  - Sendinblue
+  pt: Servidor de newsletters e listas de e-mail em um binário só, com campanhas, segmentos, templates e métricas.
+  en: Single-binary newsletter and mailing-list server with campaigns, segments, templates and delivery stats.
+  stack:
+  - Go
+  - Vue
+  - PostgreSQL
+  open_core: false
+  destaque: true
+- repo: sendportal/sendportal
+  nome: SendPortal
+  alternativa_a:
+  - Mailchimp
+  - Mailgun
+  pt: Envio de campanhas de e-mail por Amazon SES, Mailgun ou Postmark, com assinantes, tags e relatórios.
+  en: Email campaign manager that sends through SES, Mailgun or Postmark, with subscribers, tags and reports.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  open_core: false
+- repo: mautic/mautic
+  nome: Mautic
+  alternativa_a:
+  - HubSpot
+  - Mailchimp
+  - ActiveCampaign
+  pt: Automação de marketing com captura de leads, campanhas por e-mail, pontuação de contatos e formulários.
+  en: Marketing automation with lead capture, email campaigns, contact scoring, forms and landing pages.
+  stack:
+  - PHP
+  - Symfony
+  - MySQL
+  open_core: false
+- repo: keila-io/keila
+  nome: Keila
+  alternativa_a:
+  - Mailchimp
+  - Sendinblue
+  pt: Ferramenta de newsletter com editor visual, formulários de inscrição, segmentos e envio por SMTP ou provedores.
+  en: Newsletter tool with a visual editor, signup forms, segments and delivery over SMTP or email providers.
+  stack:
+  - Elixir
+  - Phoenix
+  - PostgreSQL
+  open_core: false
+- repo: postalserver/postal
+  nome: Postal
+  alternativa_a:
+  - SendGrid
+  - Mailgun
+  - Postmark
+  pt: Servidor de envio de e-mail transacional e em massa, com API, webhooks, rastreio de aberturas e cliques.
+  en: Mail delivery platform for transactional and bulk sending, with API, webhooks and open and click tracking.
+  stack:
+  - Ruby
+  - MariaDB
+  open_core: false
+- repo: mailtrain-org/mailtrain
+  nome: Mailtrain
+  alternativa_a:
+  - Mailchimp
+  pt: Aplicação de newsletters com listas, campos personalizados, segmentação, automações e relatórios de campanha.
+  en: Newsletter app with lists, custom fields, segmentation, automations and campaign reports.
+  stack:
+  - Node.js
+  - MySQL
+  open_core: false
+- repo: phpList/phplist3
+  nome: phpList
+  alternativa_a:
+  - Mailchimp
+  - Constant Contact
+  pt: Gerenciador de listas de e-mail veterano, com campanhas, assinantes, bounces e envio em fila.
+  en: Long-running mailing list manager with campaigns, subscribers, bounce handling and queued sending.
+  stack:
+  - PHP
+  - MySQL
+  open_core: false
+- repo: TryGhost/Ghost
+  nome: Ghost
+  alternativa_a:
+  - Substack
+  - Medium
+  - Beehiiv
+  pt: Plataforma de publicação com assinaturas pagas e envio de newsletter por e-mail integrados ao site.
+  en: Publishing platform with paid memberships and built-in email newsletters tied to the site.
+  stack:
+  - Node.js
+  - Ember
+  - MySQL
+  open_core: false
+  destaque: true
+- repo: usesend/usesend
+  nome: useSend
+  alternativa_a:
+  - Resend
+  - SendGrid
+  pt: Alternativa ao Resend para enviar e-mails pela sua conta AWS SES, com API, templates e campanhas.
+  en: Resend alternative for sending email through your own AWS SES account, with API, templates and campaigns.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  open_core: false
+  nota: Antes se chamava unsend; confirmar slug.
+- repo: useplunk/plunk
+  nome: Plunk
+  alternativa_a:
+  - Resend
+  - Mailchimp
+  - Loops
+  pt: Plataforma de e-mail que junta envio transacional, campanhas e automações por eventos sobre AWS SES.
+  en: Email platform combining transactional sending, campaigns and event-driven automations on top of AWS SES.
+  stack:
+  - TypeScript
+  - Next.js
+  - PostgreSQL
+  open_core: false
+- repo: dittofeed/dittofeed
+  nome: Dittofeed
+  alternativa_a:
+  - Customer.io
+  - Braze
+  - Iterable
+  pt: Automação de mensagens ao cliente por e-mail, SMS e push, com jornadas e segmentos em tempo real.
+  en: Customer messaging automation over email, SMS and push, with journeys and real-time segments.
+  stack:
+  - TypeScript
+  - ClickHouse
+  - PostgreSQL
+  open_core: false
+- repo: novuhq/novu
+  nome: Novu
+  alternativa_a:
+  - Courier
+  - Knock
+  - OneSignal
+  pt: Infraestrutura de notificações que unifica e-mail, SMS, push e in-app com templates e preferências do usuário.
+  en: Notification infrastructure unifying email, SMS, push and in-app messages with templates and user preferences.
+  stack:
+  - TypeScript
+  - NestJS
+  - MongoDB
+  open_core: true
+  nota: Há partes enterprise em pasta separada.
+- repo: Notifuse/notifuse
+  nome: Notifuse
+  alternativa_a:
+  - Mailchimp
+  - Customer.io
+  pt: Plataforma de e-mail para campanhas, mensagens transacionais e automações, com editor visual de templates.
+  en: Email platform for campaigns, transactional messages and automations with a visual template editor.
+  stack:
+  - Go
+  - React
+  - PostgreSQL
+  open_core: false
+  nota: Menos certeza do slug e da licença.
+- repo: sympa-community/sympa
+  nome: Sympa
+  alternativa_a:
+  - Google Groups
+  - Mailman
+  pt: Gerenciador de listas de discussão e distribuição com moderação, arquivos web e autenticação flexível.
+  en: Mailing list manager for discussion and distribution lists with moderation, web archives and flexible auth.
+  stack:
+  - Perl
+  open_core: false
+- repo: mlandauer/cuttlefish
+  nome: Cuttlefish
+  alternativa_a:
+  - Mailgun
+  - SendGrid
+  pt: Servidor SMTP de envio transacional que registra cada mensagem e mostra entrega, aberturas e cliques.
+  en: Transactional SMTP server that records every message and shows delivery, opens and clicks.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+  open_core: false
+  nota: 'Menos certeza: projeto pequeno.'
+- repo: laudspeaker/laudspeaker
+  nome: Laudspeaker
+  alternativa_a:
+  - Braze
+  - Customer.io
+  - Klaviyo
+  pt: Plataforma de jornadas de cliente com mensagens por e-mail, SMS e push disparadas por eventos.
+  en: Customer journey platform sending email, SMS and push messages triggered by events.
+  stack:
+  - TypeScript
+  - NestJS
+  - PostgreSQL
+  open_core: true
+  nota: 'Menos certeza: licença com parte enterprise.'
+- repo: gophish/gophish
+  nome: Gophish
+  alternativa_a:
+  - KnowBe4
+  pt: Plataforma para simular campanhas de phishing e medir quem abre, clica e envia dados, com painel de resultados.
+  en: Phishing simulation platform to run campaigns and measure who opens, clicks and submits data.
+  stack:
+  - Go
+  - SQLite
+  open_core: false
+- repo: axllent/mailpit
+  nome: Mailpit
+  alternativa_a:
+  - Mailtrap
+  - MailHog
+  pt: Servidor SMTP de testes que captura e-mails de desenvolvimento e os exibe numa interface web com API.
+  en: Test SMTP server that captures development emails and shows them in a web UI with an API.
+  stack:
+  - Go
+  - SQLite
+  open_core: false
+- repo: mailpoet/mailpoet
+  nome: MailPoet
+  alternativa_a:
+  - Mailchimp
+  pt: Plugin de WordPress para criar newsletters, e-mails automáticos e e-mails de loja WooCommerce.
+  en: WordPress plugin for newsletters, automated emails and WooCommerce store emails.
+  stack:
+  - PHP
+  - React
+  - MySQL
+  open_core: true
+  nota: Plano pago libera mais envio e recursos.
+- repo: reacherhq/check-if-email-exists
+  nome: Reacher
+  alternativa_a:
+  - ZeroBounce
+  - NeverBounce
+  pt: Verificador de e-mail que checa sintaxe, MX e caixa de destino sem enviar mensagem, via API ou CLI.
+  en: Email verifier that checks syntax, MX records and mailbox existence without sending, via API or CLI.
+  stack:
+  - Rust
+  open_core: true
+  nota: AGPL com licença comercial alternativa.

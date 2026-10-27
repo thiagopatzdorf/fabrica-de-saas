@@ -1,0 +1,528 @@
+categoria: paas-deploy-hospedagem
+titulo_pt: PaaS, deploy e hospedagem
+titulo_en: PaaS, deploy and hosting
+itens:
+- repo: coollabsio/coolify
+  nome: Coolify
+  alternativa_a:
+  - Heroku
+  - Vercel
+  - Netlify
+  pt: Hospeda aplicações, bancos e serviços em seus próprios servidores, com deploy por Git, domínios e certificados.
+  en: Hosts apps, databases and services on your own servers, with Git deploys, domains and certificates.
+  stack:
+  - PHP
+  - Laravel
+  - Docker
+  open_core: false
+- repo: dokku/dokku
+  nome: Dokku
+  alternativa_a:
+  - Heroku
+  pt: 'Mini-PaaS num único servidor: git push publica o app usando buildpacks ou Docker.'
+  en: 'A single-server mini PaaS: git push publishes your app using buildpacks or Docker.'
+  stack:
+  - Shell
+  - Go
+  - Docker
+  open_core: false
+- repo: caprover/caprover
+  nome: CapRover
+  alternativa_a:
+  - Heroku
+  pt: PaaS auto-hospedado sobre Docker, com painel web, HTTPS automático e instalação de apps em um clique.
+  en: Self-hosted Docker PaaS with a web panel, automatic HTTPS and one-click app installs.
+  stack:
+  - TypeScript
+  - Docker
+  - Nginx
+  open_core: false
+- repo: Dokploy/dokploy
+  nome: Dokploy
+  alternativa_a:
+  - Vercel
+  - Heroku
+  - Netlify
+  pt: Plataforma de deploy para apps e bancos em servidores próprios, com Docker, Compose e Traefik.
+  en: Deployment platform for apps and databases on your own servers, using Docker, Compose and Traefik.
+  stack:
+  - TypeScript
+  - Next.js
+  - Docker
+  open_core: false
+- repo: piku/piku
+  nome: Piku
+  alternativa_a:
+  - Heroku
+  pt: Deploy por git push no estilo Heroku, mínimo, para servidores pequenos como o Raspberry Pi.
+  en: Minimal Heroku-style git push deployment for small servers such as a Raspberry Pi.
+  stack:
+  - Python
+  - uWSGI
+  - nginx
+  open_core: false
+- repo: portainer/portainer
+  nome: Portainer
+  alternativa_a:
+  - Docker Desktop
+  pt: Interface web para administrar containers, stacks e clusters Docker e Kubernetes.
+  en: Web UI to manage containers, stacks and Docker and Kubernetes clusters.
+  stack:
+  - Go
+  - TypeScript
+  - Docker
+  open_core: true
+- repo: kubero-dev/kubero
+  nome: Kubero
+  alternativa_a:
+  - Heroku
+  - Vercel
+  pt: PaaS sobre Kubernetes com pipelines de deploy, apps de revisão e catálogo de serviços.
+  en: PaaS on Kubernetes with deploy pipelines, review apps and a service catalog.
+  stack:
+  - TypeScript
+  - Kubernetes
+  open_core: false
+- repo: epinio/epinio
+  nome: Epinio
+  alternativa_a:
+  - Heroku
+  pt: Leva código ao Kubernetes com um comando, montando a imagem e o deploy sem escrever YAML.
+  en: Takes code to Kubernetes with one command, building the image and deploy without writing YAML.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: tsuru/tsuru
+  nome: Tsuru
+  alternativa_a:
+  - Heroku
+  pt: PaaS extensível sobre Kubernetes, com pools, planos de recursos e deploy a partir de código ou imagem.
+  en: Extensible PaaS on Kubernetes with pools, resource plans and deploys from source or image.
+  stack:
+  - Go
+  - Kubernetes
+  - MongoDB
+  open_core: false
+- repo: convox/convox
+  nome: Convox
+  alternativa_a:
+  - Heroku
+  pt: PaaS que roda na sua conta de nuvem, com deploy por manifesto e escala automática de serviços.
+  en: A PaaS that runs in your own cloud account, with manifest-based deploys and service autoscaling.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: porter-dev/porter
+  nome: Porter
+  alternativa_a:
+  - Heroku
+  - Vercel
+  pt: Camada PaaS sobre Kubernetes na sua nuvem, com deploy por Git, logs e variáveis de ambiente.
+  en: PaaS layer over Kubernetes in your own cloud, with Git deploys, logs and environment variables.
+  stack:
+  - Go
+  - TypeScript
+  - Kubernetes
+  open_core: false
+- repo: labring/sealos
+  nome: Sealos
+  alternativa_a:
+  - Heroku
+  - Vercel
+  pt: 'Sistema operacional de nuvem sobre Kubernetes: instala clusters e hospeda apps, bancos e IDEs.'
+  en: 'A cloud OS over Kubernetes: installs clusters and hosts apps, databases and dev environments.'
+  stack:
+  - Go
+  - TypeScript
+  - Kubernetes
+  open_core: false
+- repo: YunoHost/yunohost
+  nome: YunoHost
+  alternativa_a:
+  - Cloudron
+  pt: Distribuição para auto-hospedagem que instala e atualiza apps web com usuários e certificados centralizados.
+  en: Self-hosting distribution that installs and updates web apps with unified users and certificates.
+  stack:
+  - Python
+  - Shell
+  - Debian
+  open_core: false
+- repo: IceWhaleTech/CasaOS
+  nome: CasaOS
+  alternativa_a:
+  - Synology DSM
+  pt: Sistema doméstico com painel simples para rodar apps em Docker e gerenciar arquivos num servidor pessoal.
+  en: Home server system with a simple dashboard to run Docker apps and manage files on a personal box.
+  stack:
+  - Go
+  - Vue
+  - Docker
+  open_core: false
+- repo: runtipi/runtipi
+  nome: Runtipi
+  alternativa_a:
+  - Umbrel
+  pt: Servidor doméstico que instala apps auto-hospedados em Docker por uma loja de aplicativos.
+  en: Home server that installs self-hosted Docker apps from an app store.
+  stack:
+  - TypeScript
+  - Docker
+  open_core: false
+- repo: azukaar/Cosmos-Server
+  nome: Cosmos Server
+  alternativa_a:
+  - Synology DSM
+  pt: Servidor doméstico com proxy reverso, VPN, autenticação e gerência de containers e apps.
+  en: Home server with reverse proxy, VPN, authentication, and container and app management.
+  stack:
+  - Go
+  - React
+  - Docker
+  open_core: false
+- repo: SelfhostedPro/Yacht
+  nome: Yacht
+  alternativa_a:
+  - Portainer
+  pt: Painel web leve para gerenciar containers Docker com templates de aplicativos.
+  en: Lightweight web dashboard to manage Docker containers with application templates.
+  stack:
+  - Vue
+  - Python
+  - Docker
+  open_core: false
+- repo: louislam/dockge
+  nome: Dockge
+  alternativa_a:
+  - Portainer
+  pt: Gerenciador de stacks do Docker Compose, com editor de arquivos e terminal no navegador.
+  en: Docker Compose stack manager with a file editor and terminal in the browser.
+  stack:
+  - TypeScript
+  - Vue
+  - Docker
+  open_core: false
+- repo: moghtech/komodo
+  nome: Komodo
+  alternativa_a:
+  - Portainer
+  pt: Constrói e implanta software em vários servidores, com builds, deploys, stacks e monitoramento.
+  en: Builds and deploys software across many servers, with builds, deployments, stacks and monitoring.
+  stack:
+  - Rust
+  - TypeScript
+  - Docker
+  open_core: false
+- repo: uselagoon/lagoon
+  nome: Lagoon
+  alternativa_a:
+  - Pantheon
+  - Platform.sh
+  pt: Plataforma de deploy para sites e apps sobre Kubernetes, com ambientes por branch e pull request.
+  en: Deployment platform for sites and apps on Kubernetes with branch and pull request environments.
+  stack:
+  - TypeScript
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: okteto/okteto
+  nome: Okteto
+  alternativa_a:
+  - Gitpod
+  pt: Ambientes de desenvolvimento e previews dentro de clusters Kubernetes, sincronizados com seu código.
+  en: Development environments and previews inside Kubernetes clusters, synced with your code.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: garden-io/garden
+  nome: Garden
+  alternativa_a:
+  - Skaffold
+  pt: Automatiza build, deploy e testes de sistemas em vários ambientes, com um grafo de dependências.
+  en: Automates build, deploy and tests across many environments using a dependency graph.
+  stack:
+  - TypeScript
+  - Kubernetes
+  open_core: true
+- repo: openfaas/faas
+  nome: OpenFaaS
+  alternativa_a:
+  - AWS Lambda
+  pt: Plataforma de funções serverless que roda em Kubernetes ou numa máquina, empacotando código em containers.
+  en: Serverless functions platform that runs on Kubernetes or a single host, packaging code as containers.
+  stack:
+  - Go
+  - Docker
+  - Kubernetes
+  open_core: true
+- repo: nuclio/nuclio
+  nome: Nuclio
+  alternativa_a:
+  - AWS Lambda
+  pt: Funções serverless de alto desempenho para processamento de dados e eventos em tempo real.
+  en: High-performance serverless functions for real-time data and event processing.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: apache/openwhisk
+  nome: Apache OpenWhisk
+  alternativa_a:
+  - AWS Lambda
+  pt: Plataforma serverless distribuída que executa funções em resposta a eventos e escala sob demanda.
+  en: Distributed serverless platform that runs functions in response to events and scales on demand.
+  stack:
+  - Scala
+  - Docker
+  - Kubernetes
+  open_core: false
+- repo: fission/fission
+  nome: Fission
+  alternativa_a:
+  - AWS Lambda
+  pt: Framework serverless para Kubernetes que sobe funções em milissegundos a partir de código fonte.
+  en: Serverless framework for Kubernetes that starts functions in milliseconds from source code.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: knative/serving
+  nome: Knative Serving
+  alternativa_a:
+  - Google Cloud Run
+  pt: Roda aplicações em containers no Kubernetes com escala a zero, revisões e divisão de tráfego.
+  en: Runs containerized apps on Kubernetes with scale to zero, revisions and traffic splitting.
+  stack:
+  - Go
+  - Kubernetes
+  open_core: false
+- repo: hestiacp/hestiacp
+  nome: HestiaCP
+  alternativa_a:
+  - cPanel
+  pt: Painel de hospedagem para servidores Linux com sites, e-mail, DNS e bancos de dados.
+  en: Hosting control panel for Linux servers with websites, email, DNS and databases.
+  stack:
+  - PHP
+  - Shell
+  - Nginx
+  open_core: false
+- repo: usmannasir/cyberpanel
+  nome: CyberPanel
+  alternativa_a:
+  - cPanel
+  pt: Painel de hospedagem baseado em OpenLiteSpeed, com sites, e-mail, DNS, SSL e bancos.
+  en: Hosting control panel built on OpenLiteSpeed, with sites, email, DNS, SSL and databases.
+  stack:
+  - Python
+  - Django
+  - OpenLiteSpeed
+  open_core: true
+- repo: 1Panel-dev/1Panel
+  nome: 1Panel
+  alternativa_a:
+  - cPanel
+  - aaPanel
+  pt: Painel de administração de servidores Linux com sites, containers, bancos de dados e arquivos.
+  en: Linux server admin panel for websites, containers, databases and files.
+  stack:
+  - Go
+  - Vue
+  - Docker
+  open_core: true
+- repo: webmin/webmin
+  nome: Webmin
+  alternativa_a:
+  - cPanel
+  pt: 'Interface web para administrar sistemas Unix e Linux: usuários, serviços, discos e servidores.'
+  en: 'Web interface to administer Unix and Linux systems: users, services, disks and servers.'
+  stack:
+  - Perl
+  - JavaScript
+  open_core: false
+- repo: virtualmin/virtualmin-gpl
+  nome: Virtualmin
+  alternativa_a:
+  - cPanel
+  - Plesk
+  pt: Gestão de hospedagem multi-domínio sobre o Webmin, com contas, sites, e-mail e backups.
+  en: Multi-domain hosting management on top of Webmin, with accounts, sites, email and backups.
+  stack:
+  - Perl
+  - Webmin
+  open_core: true
+- repo: Froxlor/Froxlor
+  nome: Froxlor
+  alternativa_a:
+  - cPanel
+  - Plesk
+  pt: Painel de hospedagem leve para servidores, com domínios, e-mail, FTP e limites por cliente.
+  en: Lightweight server hosting panel with domains, email, FTP and per-customer limits.
+  stack:
+  - PHP
+  - MySQL
+  open_core: false
+- repo: ajenti/ajenti
+  nome: Ajenti
+  alternativa_a:
+  - cPanel
+  pt: Painel web modular para administrar servidores Linux e BSD, com plugins para serviços comuns.
+  en: Modular web panel to administer Linux and BSD servers, with plugins for common services.
+  stack:
+  - Python
+  - JavaScript
+  open_core: false
+- repo: cockpit-project/cockpit
+  nome: Cockpit
+  alternativa_a:
+  - cPanel
+  pt: Console web para administrar servidores Linux, com terminal, serviços, rede, armazenamento e logs.
+  en: Web console to manage Linux servers, with terminal, services, networking, storage and logs.
+  stack:
+  - C
+  - JavaScript
+  open_core: false
+- repo: pterodactyl/panel
+  nome: Pterodactyl
+  alternativa_a:
+  - Nitrado
+  pt: Painel para hospedar servidores de jogos em containers, com usuários, nós e controle por navegador.
+  en: Panel to host game servers in containers, with users, nodes and browser-based control.
+  stack:
+  - PHP
+  - Laravel
+  - Go
+  open_core: false
+- repo: pelican-dev/panel
+  nome: Pelican
+  alternativa_a:
+  - Nitrado
+  pt: Painel de servidores de jogos e aplicações em containers, evolução do conceito do Pterodactyl.
+  en: Panel for game and app servers in containers, an evolution of the Pterodactyl concept.
+  stack:
+  - PHP
+  - Laravel
+  - Go
+  open_core: false
+- repo: basecamp/kamal
+  nome: Kamal
+  alternativa_a:
+  - Heroku
+  pt: Ferramenta de deploy que publica apps em containers em servidores comuns, sem parar o serviço.
+  en: Deploy tool that ships containerized apps to plain servers with zero downtime.
+  stack:
+  - Ruby
+  - Docker
+  - SSHKit
+  open_core: false
+- repo: raghavyuva/nixopus
+  nome: Nixopus
+  alternativa_a:
+  - Vercel
+  - Heroku
+  pt: Plataforma para publicar e gerir apps em servidores próprios, com deploy, domínios e monitoramento.
+  en: Platform to publish and manage apps on your own servers, with deploys, domains and monitoring.
+  stack:
+  - Go
+  - Next.js
+  - Docker
+  open_core: false
+- repo: shuttle-hq/shuttle
+  nome: Shuttle
+  alternativa_a:
+  - Heroku
+  pt: Plataforma de deploy para apps Rust em que a infraestrutura é declarada no próprio código.
+  en: Deployment platform for Rust apps where infrastructure is declared in the code itself.
+  stack:
+  - Rust
+  - Docker
+  open_core: false
+- repo: encoredev/encore
+  nome: Encore
+  alternativa_a:
+  - Vercel
+  pt: Framework de back-ends com infraestrutura derivada do código, mais nuvem para deploy e ambientes.
+  en: Backend framework that derives infrastructure from code, plus a cloud for deploys and environments.
+  stack:
+  - Go
+  - TypeScript
+  open_core: true
+- repo: kubesphere/kubesphere
+  nome: KubeSphere
+  alternativa_a:
+  - Rancher
+  - OpenShift
+  pt: Plataforma de containers sobre Kubernetes com multicluster, DevOps, observabilidade e multi-inquilino.
+  en: Kubernetes container platform with multi-cluster, DevOps, observability and multi-tenancy.
+  stack:
+  - Go
+  - React
+  - Kubernetes
+  open_core: true
+- repo: devtron-labs/devtron
+  nome: Devtron
+  alternativa_a:
+  - OpenShift
+  pt: 'Painel de entrega de software para Kubernetes: pipelines CI/CD, deploys e gestão de aplicações.'
+  en: 'Software delivery dashboard for Kubernetes: CI/CD pipelines, deploys and application management.'
+  stack:
+  - Go
+  - TypeScript
+  - Kubernetes
+  open_core: true
+- repo: gimlet-io/gimlet
+  nome: Gimlet
+  alternativa_a:
+  - Heroku
+  pt: Painel de deploy GitOps para Kubernetes, que mostra o estado de cada app e publica por commit.
+  en: GitOps deploy dashboard for Kubernetes, showing each app state and shipping on commit.
+  stack:
+  - Go
+  - React
+  - Kubernetes
+  open_core: false
+- repo: rancher/rancher
+  nome: Rancher
+  alternativa_a:
+  - OpenShift
+  pt: Gerencia vários clusters Kubernetes de qualquer nuvem ou local, com acesso, políticas e catálogo.
+  en: Manages many Kubernetes clusters across clouds and on-prem, with access, policies and catalog.
+  stack:
+  - Go
+  - Vue
+  - Kubernetes
+  open_core: false
+- repo: letsdiscodev/disco-daemon
+  nome: Disco
+  alternativa_a:
+  - Heroku
+  - Render
+  pt: Hospedagem de apps em servidor próprio com deploy por Git e certificados automáticos.
+  en: App hosting on your own server with Git-based deploys and automatic certificates.
+  stack:
+  - Python
+  - Docker
+  open_core: false
+- repo: psviderski/uncloud
+  nome: Uncloud
+  alternativa_a:
+  - Docker Swarm
+  pt: Orquestra containers em máquinas variadas com rede privada entre elas e sem plano de controle central.
+  en: Orchestrates containers across mixed machines with a private network and no central control plane.
+  stack:
+  - Go
+  - Docker
+  - WireGuard
+  open_core: false
+- repo: fermyon/spin
+  nome: Spin
+  alternativa_a:
+  - AWS Lambda
+  pt: Framework para criar e rodar aplicações de eventos com WebAssembly, de partida muito rápida.
+  en: Framework for building and running event-driven apps with WebAssembly and very fast cold starts.
+  stack:
+  - Rust
+  - WebAssembly
+  open_core: false

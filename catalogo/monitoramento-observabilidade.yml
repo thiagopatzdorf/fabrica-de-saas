@@ -1,0 +1,526 @@
+categoria: monitoramento-observabilidade
+titulo_pt: Monitoramento e observabilidade
+titulo_en: Monitoring and observability
+itens:
+- repo: grafana/grafana
+  nome: Grafana
+  alternativa_a:
+  - Datadog
+  - New Relic
+  pt: Painéis e alertas para métricas, logs e traces vindos de dezenas de fontes de dados.
+  en: Dashboards and alerts for metrics, logs and traces from dozens of data sources.
+  stack:
+  - Go
+  - TypeScript
+  open_core: true
+  nota: Edição enterprise e Grafana Cloud pagas
+- repo: prometheus/prometheus
+  nome: Prometheus
+  alternativa_a:
+  - Datadog
+  pt: Coleta e armazena métricas como séries temporais, com linguagem de consulta e regras de alerta.
+  en: Collects and stores metrics as time series, with a query language and alerting rules.
+  stack:
+  - Go
+  open_core: false
+- repo: prometheus/alertmanager
+  nome: Alertmanager
+  alternativa_a:
+  - PagerDuty
+  pt: Agrupa, silencia e roteia alertas do Prometheus para e-mail, chat e plantão.
+  en: Groups, silences and routes Prometheus alerts to email, chat and on-call tools.
+  stack:
+  - Go
+  open_core: false
+- repo: prometheus/blackbox_exporter
+  nome: Blackbox Exporter
+  alternativa_a:
+  - Pingdom
+  pt: Sonda endpoints por HTTP, TCP, DNS e ICMP e expõe o resultado como métricas do Prometheus.
+  en: Probes endpoints over HTTP, TCP, DNS and ICMP and exposes the results as Prometheus metrics.
+  stack:
+  - Go
+  open_core: false
+- repo: grafana/loki
+  nome: Grafana Loki
+  alternativa_a:
+  - Datadog Logs
+  - Splunk
+  pt: Armazena logs indexando só os rótulos, barato de operar e integrado ao Grafana.
+  en: Log storage that indexes only labels, cheap to run and integrated with Grafana.
+  stack:
+  - Go
+  open_core: false
+- repo: grafana/tempo
+  nome: Grafana Tempo
+  alternativa_a:
+  - Datadog APM
+  - Honeycomb
+  pt: Backend de traces distribuídos de alto volume, guardado em armazenamento de objetos.
+  en: High-volume distributed tracing backend that keeps traces in object storage.
+  stack:
+  - Go
+  open_core: false
+- repo: grafana/mimir
+  nome: Grafana Mimir
+  alternativa_a:
+  - Datadog
+  - Amazon Managed Prometheus
+  pt: Armazenamento de métricas Prometheus em escala, multi-inquilino e de longo prazo.
+  en: Horizontally scalable, multi-tenant long-term storage for Prometheus metrics.
+  stack:
+  - Go
+  open_core: false
+- repo: grafana/pyroscope
+  nome: Pyroscope
+  alternativa_a:
+  - Datadog Profiler
+  pt: Profiling contínuo para ver quais funções consomem CPU e memória em produção.
+  en: Continuous profiling to see which functions use CPU and memory in production.
+  stack:
+  - Go
+  open_core: false
+- repo: grafana/alloy
+  nome: Grafana Alloy
+  alternativa_a:
+  - Datadog Agent
+  pt: Distribuição do coletor OpenTelemetry que envia métricas, logs, traces e perfis.
+  en: An OpenTelemetry collector distribution that ships metrics, logs, traces and profiles.
+  stack:
+  - Go
+  open_core: false
+- repo: grafana/k6
+  nome: k6
+  alternativa_a:
+  - BlazeMeter
+  - LoadRunner
+  pt: Ferramenta de teste de carga com scripts em JavaScript e métricas em tempo real.
+  en: Load testing tool with JavaScript scripts and real-time metrics.
+  stack:
+  - Go
+  - JavaScript
+  open_core: false
+- repo: VictoriaMetrics/VictoriaMetrics
+  nome: VictoriaMetrics
+  alternativa_a:
+  - Datadog
+  - Grafana Cloud
+  pt: Banco de séries temporais rápido e econômico, compatível com Prometheus, para monitoramento em escala.
+  en: Fast, cost-efficient time series database compatible with Prometheus for large-scale monitoring.
+  stack:
+  - Go
+  open_core: true
+  nota: Edição enterprise separada
+- repo: VictoriaMetrics/VictoriaLogs
+  nome: VictoriaLogs
+  alternativa_a:
+  - Datadog Logs
+  - Splunk
+  pt: Banco de logs de alto desempenho com pouca memória e consulta por linguagem própria.
+  en: High-performance log database with low memory use and its own query language.
+  stack:
+  - Go
+  open_core: false
+- repo: thanos-io/thanos
+  nome: Thanos
+  alternativa_a:
+  - Datadog
+  pt: Estende o Prometheus com retenção ilimitada, visão global e alta disponibilidade.
+  en: Extends Prometheus with unlimited retention, a global view and high availability.
+  stack:
+  - Go
+  open_core: false
+- repo: cortexproject/cortex
+  nome: Cortex
+  alternativa_a:
+  - Datadog
+  pt: Armazenamento horizontal e multi-inquilino de métricas compatível com Prometheus.
+  en: Horizontally scalable, multi-tenant metrics storage compatible with Prometheus.
+  stack:
+  - Go
+  open_core: false
+- repo: perses/perses
+  nome: Perses
+  alternativa_a:
+  - Grafana
+  pt: Painéis de observabilidade definidos como código, com foco em GitOps e padrão aberto.
+  en: Observability dashboards defined as code, built around GitOps and an open specification.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: SigNoz/signoz
+  nome: SigNoz
+  alternativa_a:
+  - Datadog
+  - New Relic
+  pt: Observabilidade unificada de métricas, logs e traces sobre OpenTelemetry e ClickHouse.
+  en: Unified observability for metrics, logs and traces built on OpenTelemetry and ClickHouse.
+  stack:
+  - Go
+  - TypeScript
+  - ClickHouse
+  open_core: true
+  nota: Recursos enterprise sob licença própria
+- repo: openobserve/openobserve
+  nome: OpenObserve
+  alternativa_a:
+  - Datadog
+  - Splunk
+  pt: Plataforma de logs, métricas e traces em binário único, com armazenamento barato em objetos.
+  en: Logs, metrics and traces platform in a single binary with cheap object storage.
+  stack:
+  - Rust
+  - Vue
+  open_core: true
+  nota: Edição enterprise separada
+- repo: hyperdxio/hyperdx
+  nome: HyperDX
+  alternativa_a:
+  - Datadog
+  - Sentry
+  pt: Reúne logs, traces, métricas e replays de sessão numa busca única sobre ClickHouse.
+  en: Brings logs, traces, metrics and session replays into one search on top of ClickHouse.
+  stack:
+  - TypeScript
+  - ClickHouse
+  open_core: false
+- repo: coroot/coroot
+  nome: Coroot
+  alternativa_a:
+  - Datadog
+  - Dynatrace
+  pt: Observabilidade com eBPF que mapeia serviços e aponta a causa raiz de lentidão e falhas.
+  en: eBPF-based observability that maps services and points to the root cause of slowness and failures.
+  stack:
+  - Go
+  - Vue
+  open_core: true
+  nota: Edição enterprise paga
+- repo: jaegertracing/jaeger
+  nome: Jaeger
+  alternativa_a:
+  - Datadog APM
+  - Lightstep
+  pt: Rastreamento distribuído para seguir requisições entre microsserviços e achar gargalos.
+  en: Distributed tracing to follow requests across microservices and find bottlenecks.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: openzipkin/zipkin
+  nome: Zipkin
+  alternativa_a:
+  - Datadog APM
+  pt: Sistema de rastreamento distribuído que coleta e exibe latência entre serviços.
+  en: Distributed tracing system that collects and displays latency data across services.
+  stack:
+  - Java
+  open_core: false
+- repo: apache/skywalking
+  nome: Apache SkyWalking
+  alternativa_a:
+  - Dynatrace
+  - New Relic
+  pt: APM para microsserviços e Kubernetes com traces, métricas, topologia e alertas.
+  en: APM for microservices and Kubernetes with traces, metrics, topology and alerting.
+  stack:
+  - Java
+  - Vue
+  open_core: false
+- repo: parca-dev/parca
+  nome: Parca
+  alternativa_a:
+  - Datadog Profiler
+  pt: Profiling contínuo com eBPF que mostra o custo de código em produção sem mudar a aplicação.
+  en: Continuous eBPF profiling that shows code cost in production without changing the application.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: open-telemetry/opentelemetry-collector
+  nome: OpenTelemetry Collector
+  alternativa_a:
+  - Datadog Agent
+  pt: Recebe, processa e exporta telemetria de qualquer fonte para vários backends.
+  en: Receives, processes and exports telemetry from any source to multiple backends.
+  stack:
+  - Go
+  open_core: false
+- repo: fluent/fluentd
+  nome: Fluentd
+  alternativa_a:
+  - Splunk Forwarder
+  pt: Coletor de dados que unifica a coleta de logs e os envia a muitos destinos por plugins.
+  en: Data collector that unifies log collection and routes it to many destinations via plugins.
+  stack:
+  - Ruby
+  - C
+  open_core: false
+- repo: fluent/fluent-bit
+  nome: Fluent Bit
+  alternativa_a:
+  - Datadog Agent
+  pt: Coletor leve de logs, métricas e traces para contêineres e dispositivos embarcados.
+  en: Lightweight collector of logs, metrics and traces for containers and embedded devices.
+  stack:
+  - C
+  open_core: false
+- repo: vectordotdev/vector
+  nome: Vector
+  alternativa_a:
+  - Datadog Agent
+  - Splunk Forwarder
+  pt: Pipeline de observabilidade que coleta, transforma e encaminha logs e métricas com alto desempenho.
+  en: High-performance observability pipeline that collects, transforms and routes logs and metrics.
+  stack:
+  - Rust
+  open_core: false
+- repo: quickwit-oss/quickwit
+  nome: Quickwit
+  alternativa_a:
+  - Datadog Logs
+  - Elastic Cloud
+  pt: Motor de busca de logs e traces em armazenamento de objetos, pensado para custo baixo.
+  en: Search engine for logs and traces on object storage, designed for low cost.
+  stack:
+  - Rust
+  open_core: false
+- repo: influxdata/influxdb
+  nome: InfluxDB
+  alternativa_a:
+  - Datadog
+  - Timestream
+  pt: Banco de séries temporais para métricas, eventos e dados de sensores.
+  en: Time series database for metrics, events and sensor data.
+  stack:
+  - Rust
+  - Go
+  open_core: true
+  nota: Parte dos recursos é só da edição comercial
+- repo: influxdata/telegraf
+  nome: Telegraf
+  alternativa_a:
+  - Datadog Agent
+  pt: Agente que coleta métricas de sistemas, serviços e sensores por mais de 300 plugins.
+  en: Agent that collects metrics from systems, services and sensors through 300+ plugins.
+  stack:
+  - Go
+  open_core: false
+- repo: questdb/questdb
+  nome: QuestDB
+  alternativa_a:
+  - Timestream
+  pt: Banco de séries temporais de alto desempenho com SQL, para métricas e dados financeiros.
+  en: High-performance time series database with SQL, for metrics and financial data.
+  stack:
+  - Java
+  - Rust
+  open_core: false
+- repo: zabbix/zabbix
+  nome: Zabbix
+  alternativa_a:
+  - SolarWinds
+  - PRTG
+  pt: Monitoramento corporativo de servidores, redes e aplicações com alertas e mapas.
+  en: Enterprise monitoring of servers, networks and applications with alerts and maps.
+  stack:
+  - C
+  - PHP
+  open_core: false
+- repo: icinga/icinga2
+  nome: Icinga
+  alternativa_a:
+  - Nagios XI
+  - PRTG
+  pt: Monitoramento de infraestrutura e redes, descendente do Nagios, com configuração por regras.
+  en: Infrastructure and network monitoring, descended from Nagios, with rule-based configuration.
+  stack:
+  - C++
+  open_core: false
+- repo: NagiosEnterprises/nagioscore
+  nome: Nagios Core
+  alternativa_a:
+  - SolarWinds
+  - PRTG
+  pt: Motor clássico de monitoramento de hosts e serviços com notificações e plugins.
+  en: Classic monitoring engine for hosts and services with notifications and plugins.
+  stack:
+  - C
+  open_core: true
+  nota: Nagios XI é a edição comercial
+- repo: librenms/librenms
+  nome: LibreNMS
+  alternativa_a:
+  - PRTG
+  - SolarWinds
+  pt: Monitoramento de rede com descoberta automática via SNMP, gráficos e alertas.
+  en: Network monitoring with automatic SNMP discovery, graphs and alerting.
+  stack:
+  - PHP
+  open_core: false
+- repo: Checkmk/checkmk
+  nome: Checkmk
+  alternativa_a:
+  - SolarWinds
+  - Datadog
+  pt: Monitoramento de TI com descoberta automática de serviços em servidores, nuvem e contêineres.
+  en: IT monitoring with automatic service discovery across servers, cloud and containers.
+  stack:
+  - Python
+  - C++
+  open_core: true
+  nota: Edições comerciais com recursos extras
+- repo: Cacti/cacti
+  nome: Cacti
+  alternativa_a:
+  - PRTG
+  pt: Frontend de gráficos RRDtool para acompanhar tráfego e desempenho de dispositivos de rede.
+  en: RRDtool-based graphing frontend to track traffic and performance of network devices.
+  stack:
+  - PHP
+  open_core: false
+- repo: OpenNMS/opennms
+  nome: OpenNMS
+  alternativa_a:
+  - SolarWinds
+  pt: Plataforma de gestão de redes com descoberta, eventos, SNMP e monitoramento de serviços.
+  en: Network management platform with discovery, events, SNMP and service monitoring.
+  stack:
+  - Java
+  open_core: true
+  nota: Há versão comercial Meridian
+- repo: munin-monitoring/munin
+  nome: Munin
+  alternativa_a:
+  - PRTG
+  pt: Monitoramento simples de servidores com gráficos históricos e plugins por recurso.
+  en: Simple server monitoring with historical graphs and per-resource plugins.
+  stack:
+  - Perl
+  open_core: false
+- repo: centreon/centreon
+  nome: Centreon
+  alternativa_a:
+  - PRTG
+  - SolarWinds
+  pt: Plataforma de monitoramento de infraestrutura e aplicações com mapas e relatórios.
+  en: Infrastructure and application monitoring platform with maps and reports.
+  stack:
+  - PHP
+  - C++
+  open_core: true
+  nota: Edições comerciais separadas
+- repo: netdata/netdata
+  nome: Netdata
+  alternativa_a:
+  - Datadog
+  pt: Monitoramento em tempo real por segundo com detecção de anomalias e quase nenhuma configuração.
+  en: Per-second real-time monitoring with anomaly detection and almost no configuration.
+  stack:
+  - C
+  - JavaScript
+  open_core: true
+  nota: Netdata Cloud é parte proprietária
+- repo: nicolargo/glances
+  nome: Glances
+  alternativa_a:
+  - Datadog Agent
+  pt: Monitor de sistema em terminal ou web que mostra CPU, memória, disco, rede e processos.
+  en: Terminal and web system monitor showing CPU, memory, disk, network and processes.
+  stack:
+  - Python
+  open_core: false
+- repo: google/cadvisor
+  nome: cAdvisor
+  alternativa_a:
+  - Datadog Containers
+  pt: Coleta uso de recursos e desempenho de contêineres em execução num host.
+  en: Collects resource usage and performance data of running containers on a host.
+  stack:
+  - Go
+  open_core: false
+- repo: henrygd/beszel
+  nome: Beszel
+  alternativa_a:
+  - Datadog
+  - Netdata
+  pt: Monitor leve de servidores com histórico de CPU, memória, disco e Docker em painel único.
+  en: Lightweight server monitor with CPU, memory, disk and Docker history in a single dashboard.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: amir20/dozzle
+  nome: Dozzle
+  alternativa_a:
+  - Papertrail
+  pt: Visualizador de logs de contêineres Docker em tempo real, direto no navegador.
+  en: Real-time Docker container log viewer that runs in the browser.
+  stack:
+  - Go
+  - Vue
+  open_core: false
+- repo: graphite-project/graphite-web
+  nome: Graphite
+  alternativa_a:
+  - Datadog
+  pt: Armazena métricas numéricas de séries temporais e desenha gráficos sob demanda.
+  en: Stores numeric time series metrics and renders graphs on demand.
+  stack:
+  - Python
+  open_core: false
+- repo: ccfos/nightingale
+  nome: Nightingale
+  alternativa_a:
+  - Datadog
+  - PagerDuty
+  pt: Plataforma chinesa de alertas e monitoramento que reúne regras, notificações e painéis.
+  en: Alerting and monitoring platform that combines rules, notifications and dashboards.
+  stack:
+  - Go
+  - JavaScript
+  open_core: false
+- repo: kiali/kiali
+  nome: Kiali
+  alternativa_a:
+  - Datadog
+  pt: Console de observabilidade para o Istio que mostra a topologia e a saúde da malha de serviços.
+  en: Observability console for Istio that shows service mesh topology and health.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: robusta-dev/robusta
+  nome: Robusta
+  alternativa_a:
+  - PagerDuty
+  - Datadog
+  pt: Enriquece alertas do Prometheus no Kubernetes com contexto e ações automáticas de correção.
+  en: Enriches Prometheus alerts on Kubernetes with context and automated remediation actions.
+  stack:
+  - Python
+  open_core: true
+  nota: Há SaaS pago
+- repo: keephq/keep
+  nome: Keep
+  alternativa_a:
+  - PagerDuty
+  - BigPanda
+  pt: Central de alertas que agrega, correlaciona e automatiza respostas a alertas de várias ferramentas.
+  en: Alert hub that aggregates, correlates and automates responses to alerts from many tools.
+  stack:
+  - Python
+  - TypeScript
+  open_core: true
+  nota: Alguns recursos exigem licença enterprise
+- repo: opensearch-project/OpenSearch-Dashboards
+  nome: OpenSearch Dashboards
+  alternativa_a:
+  - Kibana
+  - Splunk
+  pt: Interface para explorar e visualizar dados e logs do OpenSearch com painéis e alertas.
+  en: Interface to explore and visualize OpenSearch data and logs with dashboards and alerts.
+  stack:
+  - TypeScript
+  open_core: false

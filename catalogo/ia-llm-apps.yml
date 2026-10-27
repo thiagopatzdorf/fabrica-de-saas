@@ -1,0 +1,681 @@
+categoria: ia-llm-apps
+titulo_pt: IA e aplicações de LLM
+titulo_en: AI and LLM apps
+itens:
+- repo: open-webui/open-webui
+  nome: Open WebUI
+  alternativa_a:
+  - ChatGPT
+  pt: Interface de chat self-hosted para modelos locais e APIs, com RAG, usuários, ferramentas e histórico.
+  en: Self-hosted chat interface for local models and APIs, with RAG, users, tools and history.
+  stack:
+  - Python
+  - Svelte
+  site: https://openwebui.com
+  open_core: false
+  nota: 'Licença própria com cláusula de marca: o verificador decide.'
+- repo: danny-avila/LibreChat
+  nome: LibreChat
+  alternativa_a:
+  - ChatGPT
+  pt: Clone auto-hospedado do ChatGPT que reúne vários provedores de modelo, agentes, arquivos e plugins.
+  en: Self-hosted ChatGPT-style app that unifies many model providers, agents, files and plugins.
+  stack:
+  - Node.js
+  - React
+  - MongoDB
+  site: https://librechat.ai
+  open_core: false
+- repo: lobehub/lobe-chat
+  nome: LobeChat
+  alternativa_a:
+  - ChatGPT
+  pt: Interface de chat moderna com vários provedores, plugins, voz, base de conhecimento e agentes.
+  en: Modern chat UI with many providers, plugins, voice, knowledge base and agents.
+  stack:
+  - TypeScript
+  - Next.js
+  - Postgres
+  site: https://lobehub.com
+  open_core: false
+  nota: Repositório pode ter sido renomeado; conferir.
+- repo: Mintplex-Labs/anything-llm
+  nome: AnythingLLM
+  alternativa_a:
+  - ChatGPT Enterprise
+  - NotebookLM
+  pt: App tudo-em-um para conversar com seus documentos usando qualquer modelo, com agentes e espaços de trabalho.
+  en: All-in-one app to chat with your documents using any model, with agents and workspaces.
+  stack:
+  - JavaScript
+  - Node.js
+  site: https://anythingllm.com
+  open_core: false
+- repo: langgenius/dify
+  nome: Dify
+  alternativa_a:
+  - OpenAI Assistants
+  - Zapier
+  pt: Plataforma para montar apps de LLM com fluxos visuais, RAG, agentes e observabilidade.
+  en: Platform to build LLM apps with visual workflows, RAG, agents and observability.
+  stack:
+  - Python
+  - TypeScript
+  - Postgres
+  site: https://dify.ai
+  open_core: true
+  nota: Licença Dify é Apache modificada; verificador decide.
+- repo: infiniflow/ragflow
+  nome: RAGFlow
+  alternativa_a:
+  - NotebookLM
+  pt: Motor de RAG que entende layout de documentos complexos e entrega respostas com citações.
+  en: RAG engine that understands complex document layouts and answers with citations.
+  stack:
+  - Python
+  - Go
+  - React
+  site: https://ragflow.io
+  open_core: false
+- repo: onyx-dot-app/onyx
+  nome: Onyx
+  alternativa_a:
+  - Glean
+  - ChatGPT Enterprise
+  pt: Busca e chat de IA sobre os apps da empresa (Slack, Drive, Confluence), com permissões respeitadas.
+  en: AI search and chat over company apps (Slack, Drive, Confluence) that respects permissions.
+  stack:
+  - Python
+  - Next.js
+  - Postgres
+  site: https://onyx.app
+  open_core: true
+  nota: Antigo Danswer.
+- repo: dust-tt/dust
+  nome: Dust
+  alternativa_a:
+  - Glean
+  - ChatGPT Enterprise
+  pt: Plataforma para criar assistentes de IA conectados aos dados e ferramentas da empresa.
+  en: Platform to build AI assistants connected to a company's data and tools.
+  stack:
+  - TypeScript
+  - Next.js
+  site: https://dust.tt
+  open_core: false
+- repo: ollama/ollama
+  nome: Ollama
+  alternativa_a:
+  - OpenAI API
+  pt: Roda modelos de linguagem abertos na sua máquina com um comando e expõe uma API local.
+  en: Runs open language models on your own machine with one command and serves a local API.
+  stack:
+  - Go
+  - C++
+  site: https://ollama.com
+  open_core: false
+- repo: mudler/LocalAI
+  nome: LocalAI
+  alternativa_a:
+  - OpenAI API
+  pt: Servidor local compatível com a API da OpenAI para texto, imagem, áudio e embeddings, sem GPU obrigatória.
+  en: Local OpenAI-compatible server for text, image, audio and embeddings, no GPU required.
+  stack:
+  - Go
+  - C++
+  site: https://localai.io
+  open_core: false
+- repo: janhq/jan
+  nome: Jan
+  alternativa_a:
+  - ChatGPT
+  pt: App de desktop para conversar com modelos rodando 100% offline ou ligar a APIs na nuvem.
+  en: Desktop app to chat with models running fully offline or hooked to cloud APIs.
+  stack:
+  - TypeScript
+  - Rust
+  site: https://jan.ai
+  open_core: false
+- repo: nomic-ai/gpt4all
+  nome: GPT4All
+  alternativa_a:
+  - ChatGPT
+  pt: Aplicativo de desktop para rodar modelos de linguagem localmente e conversar com seus arquivos.
+  en: Desktop app to run language models locally and chat with your own files.
+  stack:
+  - C++
+  - QML
+  site: https://gpt4all.io
+  open_core: false
+- repo: CherryHQ/cherry-studio
+  nome: Cherry Studio
+  alternativa_a:
+  - ChatGPT
+  pt: Cliente de desktop para vários provedores de LLM, com assistentes, base de conhecimento e MCP.
+  en: Desktop client for many LLM providers, with assistants, knowledge base and MCP.
+  stack:
+  - TypeScript
+  - Electron
+  site: https://cherry-ai.com
+  open_core: false
+- repo: ChatGPTNextWeb/NextChat
+  nome: NextChat
+  alternativa_a:
+  - ChatGPT
+  pt: Interface de chat leve e rápida para publicar na web, com vários provedores e máscaras de prompt.
+  en: Light, fast chat UI you can host on the web, with several providers and prompt presets.
+  stack:
+  - TypeScript
+  - Next.js
+  site: https://nextchat.dev
+  open_core: false
+- repo: mckaywrigley/chatbot-ui
+  nome: Chatbot UI
+  alternativa_a:
+  - ChatGPT
+  pt: Interface de chat de código aberto para múltiplos modelos, com arquivos, assistentes e Supabase.
+  en: Open source multi-model chat interface with files, assistants and Supabase storage.
+  stack:
+  - TypeScript
+  - Next.js
+  - Supabase
+  open_core: false
+- repo: enricoros/big-AGI
+  nome: big-AGI
+  alternativa_a:
+  - ChatGPT
+  pt: Interface avançada de chat para usuários intensivos, com vários modelos, personas, voz e comparação lado a lado.
+  en: Advanced chat UI for power users with many models, personas, voice and side-by-side comparison.
+  stack:
+  - TypeScript
+  - Next.js
+  site: https://big-agi.com
+  open_core: false
+- repo: huggingface/chat-ui
+  nome: HuggingFace Chat UI
+  alternativa_a:
+  - ChatGPT
+  pt: Interface de chat do HuggingChat, que conversa com modelos abertos por endpoints compatíveis.
+  en: The HuggingChat interface, able to talk to open models through compatible endpoints.
+  stack:
+  - Svelte
+  - TypeScript
+  - MongoDB
+  site: https://huggingface.co/chat
+  open_core: false
+- repo: khoj-ai/khoj
+  nome: Khoj
+  alternativa_a:
+  - NotebookLM
+  - ChatGPT
+  pt: Assistente pessoal de IA que pesquisa suas notas e documentos e responde por chat, web ou editor.
+  en: Personal AI assistant that searches your notes and documents and answers via chat, web or editor.
+  stack:
+  - Python
+  - Django
+  site: https://khoj.dev
+  open_core: true
+- repo: Cinnamon/kotaemon
+  nome: Kotaemon
+  alternativa_a:
+  - NotebookLM
+  pt: Interface de RAG para conversar com documentos, com citações no PDF e pipelines configuráveis.
+  en: RAG interface to chat with documents, with in-PDF citations and configurable pipelines.
+  stack:
+  - Python
+  - Gradio
+  open_core: false
+- repo: zylon-ai/private-gpt
+  nome: PrivateGPT
+  alternativa_a:
+  - ChatGPT Enterprise
+  pt: Faz perguntas sobre seus documentos sem enviar dados para fora, com API e interface locais.
+  en: Ask questions about your documents without data leaving your machine, with a local API and UI.
+  stack:
+  - Python
+  - FastAPI
+  site: https://privategpt.dev
+  open_core: false
+- repo: labring/FastGPT
+  nome: FastGPT
+  alternativa_a:
+  - Dify
+  - OpenAI Assistants
+  pt: Plataforma de base de conhecimento e fluxos de IA com RAG, editor visual de workflows e API.
+  en: Knowledge base and AI workflow platform with RAG, a visual workflow editor and an API.
+  stack:
+  - TypeScript
+  - Next.js
+  - MongoDB
+  site: https://fastgpt.in
+  open_core: true
+- repo: 1Panel-dev/MaxKB
+  nome: MaxKB
+  alternativa_a:
+  - Dify
+  pt: Assistente de conhecimento corporativo com RAG, fluxos de trabalho e integração em sites de terceiros.
+  en: Enterprise knowledge assistant with RAG, workflows and embedding into third-party sites.
+  stack:
+  - Python
+  - Vue
+  - Postgres
+  site: https://maxkb.pro
+  open_core: false
+- repo: casibase/casibase
+  nome: Casibase
+  alternativa_a:
+  - ChatGPT Enterprise
+  pt: Plataforma de base de conhecimento com IA e chat, com administração de usuários e vários modelos.
+  en: AI knowledge base and chat platform with user administration and many models.
+  stack:
+  - Go
+  - React
+  site: https://casibase.org
+  open_core: false
+- repo: chatchat-space/Langchain-Chatchat
+  nome: Langchain-Chatchat
+  alternativa_a:
+  - NotebookLM
+  pt: Chat com base de conhecimento local usando LangChain e modelos abertos, em ambiente offline.
+  en: Local knowledge-base chat using LangChain and open models, runnable offline.
+  stack:
+  - Python
+  - Streamlit
+  open_core: false
+- repo: HKUDS/LightRAG
+  nome: LightRAG
+  alternativa_a:
+  - NotebookLM
+  pt: RAG baseado em grafo de conhecimento, com servidor, interface web e API para consultas.
+  en: Knowledge-graph based RAG with a server, web UI and query API.
+  stack:
+  - Python
+  open_core: false
+- repo: weaviate/Verba
+  nome: Verba
+  alternativa_a:
+  - NotebookLM
+  pt: Aplicativo de RAG pronto para importar documentos e conversar com eles, sobre o Weaviate.
+  en: Ready-made RAG app to ingest documents and chat with them, built on Weaviate.
+  stack:
+  - Python
+  - TypeScript
+  open_core: false
+- repo: lfnovo/open-notebook
+  nome: Open Notebook
+  alternativa_a:
+  - NotebookLM
+  pt: Alternativa aberta ao NotebookLM para pesquisar fontes, conversar e gerar podcasts com vários modelos.
+  en: Open alternative to NotebookLM to research sources, chat and generate podcasts with many models.
+  stack:
+  - Python
+  - Next.js
+  open_core: false
+- repo: MODSetter/SurfSense
+  nome: SurfSense
+  alternativa_a:
+  - NotebookLM
+  - Glean
+  pt: Agente de pesquisa pessoal que indexa seus apps e notas e responde com citações.
+  en: Personal research agent that indexes your apps and notes and answers with citations.
+  stack:
+  - Python
+  - Next.js
+  - Postgres
+  open_core: false
+- repo: ItzCrazyKns/Perplexica
+  nome: Perplexica
+  alternativa_a:
+  - Perplexity
+  pt: Motor de busca com IA que pesquisa na web via SearXNG e responde com fontes citadas.
+  en: AI search engine that searches the web through SearXNG and answers with cited sources.
+  stack:
+  - TypeScript
+  - Next.js
+  open_core: false
+- repo: miurla/morphic
+  nome: Morphic
+  alternativa_a:
+  - Perplexity
+  pt: Buscador generativo com respostas em tempo real, fontes e perguntas de acompanhamento.
+  en: Generative answer engine with realtime responses, sources and follow-up questions.
+  stack:
+  - TypeScript
+  - Next.js
+  open_core: false
+- repo: assafelovic/gpt-researcher
+  nome: GPT Researcher
+  alternativa_a:
+  - Perplexity
+  pt: Agente que pesquisa um tema em muitas fontes e escreve um relatório com referências.
+  en: Agent that researches a topic across many sources and writes a report with references.
+  stack:
+  - Python
+  site: https://gptr.dev
+  open_core: false
+- repo: letta-ai/letta
+  nome: Letta
+  alternativa_a:
+  - OpenAI Assistants
+  pt: Plataforma para agentes com memória persistente de longo prazo, exposta por API e painel.
+  en: Platform for agents with persistent long-term memory, exposed through an API and dashboard.
+  stack:
+  - Python
+  - Postgres
+  site: https://letta.com
+  open_core: false
+- repo: OpenHands/OpenHands
+  nome: OpenHands
+  alternativa_a:
+  - Devin
+  pt: Agente de engenharia de software que escreve código, roda comandos e abre PRs em ambiente isolado.
+  en: Software engineering agent that writes code, runs commands and opens PRs in a sandbox.
+  stack:
+  - Python
+  - React
+  site: https://openhands.dev
+  open_core: true
+- repo: OpenInterpreter/open-interpreter
+  nome: Open Interpreter
+  alternativa_a:
+  - ChatGPT Code Interpreter
+  pt: Deixa um modelo executar código no seu computador para automatizar tarefas por conversa.
+  en: Lets a language model run code on your computer to automate tasks through conversation.
+  stack:
+  - Python
+  site: https://openinterpreter.com
+  open_core: false
+- repo: kortix-ai/suna
+  nome: Suna
+  alternativa_a:
+  - Manus
+  pt: Agente de IA de propósito geral que navega, pesquisa e executa tarefas em um ambiente próprio.
+  en: General-purpose AI agent that browses, researches and carries out tasks in its own sandbox.
+  stack:
+  - Python
+  - Next.js
+  site: https://kortix.com
+  open_core: false
+- repo: coze-dev/coze-studio
+  nome: Coze Studio
+  alternativa_a:
+  - Coze
+  - Dify
+  pt: Plataforma visual para criar agentes e fluxos de IA, com plugins, base de conhecimento e publicação.
+  en: Visual platform to create AI agents and workflows, with plugins, knowledge base and publishing.
+  stack:
+  - Go
+  - TypeScript
+  open_core: false
+- repo: TabbyML/tabby
+  nome: Tabby
+  alternativa_a:
+  - GitHub Copilot
+  pt: Assistente de código auto-hospedado com autocompletar, chat e contexto do seu repositório.
+  en: Self-hosted coding assistant with completion, chat and repository context.
+  stack:
+  - Rust
+  - TypeScript
+  site: https://www.tabbyml.com
+  open_core: true
+- repo: continuedev/continue
+  nome: Continue
+  alternativa_a:
+  - GitHub Copilot
+  pt: Assistente de código para VS Code e JetBrains com chat, edição e autocompletar usando qualquer modelo.
+  en: Coding assistant for VS Code and JetBrains with chat, edit and autocomplete on any model.
+  stack:
+  - TypeScript
+  site: https://continue.dev
+  open_core: false
+- repo: cline/cline
+  nome: Cline
+  alternativa_a:
+  - Cursor
+  - GitHub Copilot
+  pt: Agente de programação dentro do VS Code que edita arquivos e roda comandos com sua aprovação.
+  en: Coding agent inside VS Code that edits files and runs commands with your approval.
+  stack:
+  - TypeScript
+  site: https://cline.bot
+  open_core: false
+- repo: RooCodeInc/Roo-Code
+  nome: Roo Code
+  alternativa_a:
+  - Cursor
+  - GitHub Copilot
+  pt: Equipe de agentes de código no editor, com modos especializados e suporte a vários provedores.
+  en: Team of coding agents in the editor, with specialized modes and multi-provider support.
+  stack:
+  - TypeScript
+  site: https://roocode.com
+  open_core: false
+- repo: Aider-AI/aider
+  nome: Aider
+  alternativa_a:
+  - Cursor
+  - GitHub Copilot
+  pt: Parceiro de programação no terminal que edita seu repositório Git e faz commits com um LLM.
+  en: Terminal pair programmer that edits your Git repo and commits changes using an LLM.
+  stack:
+  - Python
+  site: https://aider.chat
+  open_core: false
+- repo: block/goose
+  nome: Goose
+  alternativa_a:
+  - Cursor
+  pt: Agente de IA local e extensível que instala, executa, edita e testa código por conversa.
+  en: Local, extensible AI agent that installs, runs, edits and tests code through conversation.
+  stack:
+  - Rust
+  - TypeScript
+  site: https://block.github.io/goose
+  open_core: false
+- repo: stackblitz-labs/bolt.diy
+  nome: bolt.diy
+  alternativa_a:
+  - Bolt
+  - Lovable
+  - v0
+  pt: Cria e edita apps web completos por conversa no navegador, com escolha livre de modelo.
+  en: Builds and edits full web apps through chat in the browser, with a free choice of model.
+  stack:
+  - TypeScript
+  - Remix
+  open_core: false
+- repo: dyad-sh/dyad
+  nome: Dyad
+  alternativa_a:
+  - Lovable
+  - Bolt
+  pt: App local para gerar aplicativos com IA no seu computador, usando suas próprias chaves de modelo.
+  en: Local app to generate apps with AI on your own computer using your own model keys.
+  stack:
+  - TypeScript
+  - Electron
+  site: https://dyad.sh
+  open_core: true
+  nota: Parte fica sob licença própria; conferir.
+- repo: abi/screenshot-to-code
+  nome: screenshot-to-code
+  alternativa_a:
+  - v0
+  pt: Converte capturas de tela e mockups em código HTML, React ou Vue usando modelos de visão.
+  en: Turns screenshots and mockups into HTML, React or Vue code using vision models.
+  stack:
+  - Python
+  - React
+  open_core: false
+- repo: BerriAI/litellm
+  nome: LiteLLM
+  alternativa_a:
+  - OpenRouter
+  pt: Gateway e proxy que fala com mais de cem provedores de LLM pela API da OpenAI, com custos e chaves.
+  en: Gateway and proxy that reaches 100+ LLM providers through the OpenAI API, with spend and keys.
+  stack:
+  - Python
+  - Postgres
+  site: https://litellm.ai
+  open_core: true
+- repo: Portkey-AI/gateway
+  nome: Portkey Gateway
+  alternativa_a:
+  - OpenRouter
+  pt: Gateway de IA rápido com roteamento entre modelos, fallback, cache e guardrails.
+  en: Fast AI gateway with model routing, fallback, caching and guardrails.
+  stack:
+  - TypeScript
+  site: https://portkey.ai
+  open_core: true
+- repo: songquanpeng/one-api
+  nome: One API
+  alternativa_a:
+  - OpenRouter
+  pt: Gerencia e distribui chaves de vários provedores de LLM sob uma única API compatível com a OpenAI.
+  en: Manages and distributes keys of many LLM providers behind one OpenAI-compatible API.
+  stack:
+  - Go
+  - React
+  open_core: false
+- repo: langfuse/langfuse
+  nome: Langfuse
+  alternativa_a:
+  - LangSmith
+  pt: 'Plataforma de observabilidade para apps de LLM: traces, prompts, avaliações e métricas de custo.'
+  en: LLM observability platform with traces, prompt management, evaluations and cost metrics.
+  stack:
+  - TypeScript
+  - Postgres
+  - ClickHouse
+  site: https://langfuse.com
+  open_core: true
+- repo: Helicone/helicone
+  nome: Helicone
+  alternativa_a:
+  - LangSmith
+  pt: Monitoramento de chamadas a LLMs com logs, custo, cache e testes de prompts, via proxy ou SDK.
+  en: LLM call monitoring with logs, cost, caching and prompt experiments via proxy or SDK.
+  stack:
+  - TypeScript
+  - ClickHouse
+  site: https://helicone.ai
+  open_core: false
+- repo: comet-ml/opik
+  nome: Opik
+  alternativa_a:
+  - LangSmith
+  pt: Plataforma para registrar, avaliar e monitorar aplicações de LLM, da prototipagem à produção.
+  en: Platform to log, evaluate and monitor LLM applications from prototype to production.
+  stack:
+  - Java
+  - Python
+  - TypeScript
+  site: https://www.comet.com/site/products/opik
+  open_core: false
+- repo: promptfoo/promptfoo
+  nome: Promptfoo
+  alternativa_a:
+  - LangSmith
+  pt: Testa e compara prompts e modelos, e faz red teaming de apps de LLM por CLI ou CI.
+  en: Tests and compares prompts and models and red-teams LLM apps from CLI or CI.
+  stack:
+  - TypeScript
+  site: https://promptfoo.dev
+  open_core: false
+- repo: Agenta-AI/agenta
+  nome: Agenta
+  alternativa_a:
+  - LangSmith
+  pt: Plataforma para gerenciar prompts, avaliar versões e observar apps de LLM em equipe.
+  en: Platform to manage prompts, evaluate versions and observe LLM apps as a team.
+  stack:
+  - Python
+  - TypeScript
+  site: https://agenta.ai
+  open_core: true
+- repo: lunary-ai/lunary
+  nome: Lunary
+  alternativa_a:
+  - LangSmith
+  pt: Observabilidade e gestão de prompts para chatbots de LLM, com análises de usuários e avaliações.
+  en: Observability and prompt management for LLM chatbots, with user analytics and evaluations.
+  stack:
+  - TypeScript
+  - Postgres
+  site: https://lunary.ai
+  open_core: true
+- repo: vllm-project/vllm
+  nome: vLLM
+  alternativa_a:
+  - OpenAI API
+  pt: Servidor de inferência de alto desempenho para LLMs, com API compatível com a OpenAI.
+  en: High-throughput LLM inference server with an OpenAI-compatible API.
+  stack:
+  - Python
+  - CUDA
+  site: https://vllm.ai
+  open_core: false
+- repo: sgl-project/sglang
+  nome: SGLang
+  alternativa_a:
+  - OpenAI API
+  pt: Servidor rápido de inferência para LLMs e modelos multimodais, com linguagem de programação própria.
+  en: Fast serving framework for LLMs and multimodal models, with its own programming interface.
+  stack:
+  - Python
+  - CUDA
+  site: https://sglang.ai
+  open_core: false
+- repo: huggingface/text-generation-inference
+  nome: Text Generation Inference
+  alternativa_a:
+  - OpenAI API
+  pt: Servidor de produção da Hugging Face para modelos de texto, com batching e streaming.
+  en: Hugging Face production server for text models, with batching and streaming.
+  stack:
+  - Rust
+  - Python
+  open_core: false
+- repo: oobabooga/text-generation-webui
+  nome: text-generation-webui
+  alternativa_a:
+  - ChatGPT
+  pt: Interface web para rodar e conversar com modelos de linguagem locais em vários formatos.
+  en: Web UI to run and chat with local language models in many formats.
+  stack:
+  - Python
+  - Gradio
+  open_core: false
+- repo: comfyanonymous/ComfyUI
+  nome: ComfyUI
+  alternativa_a:
+  - Midjourney
+  pt: Interface de nós para montar fluxos de geração de imagem, vídeo e áudio com modelos de difusão.
+  en: Node-based interface to build image, video and audio generation workflows with diffusion models.
+  stack:
+  - Python
+  site: https://comfy.org
+  open_core: false
+- repo: invoke-ai/InvokeAI
+  nome: InvokeAI
+  alternativa_a:
+  - Midjourney
+  - Adobe Firefly
+  pt: Estúdio de criação de imagens com IA, com tela infinita, camadas e edição por região.
+  en: AI image creation studio with unlimited canvas, layers and region-based editing.
+  stack:
+  - Python
+  - TypeScript
+  site: https://invoke.com
+  open_core: true
+- repo: AUTOMATIC1111/stable-diffusion-webui
+  nome: Stable Diffusion WebUI
+  alternativa_a:
+  - Midjourney
+  pt: Interface web popular para gerar e editar imagens com Stable Diffusion e extensões.
+  en: Popular web UI to generate and edit images with Stable Diffusion and extensions.
+  stack:
+  - Python
+  - Gradio
+  open_core: false

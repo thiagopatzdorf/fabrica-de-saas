@@ -1,0 +1,163 @@
+categoria: crm-vendas
+titulo_pt: CRM e vendas
+titulo_en: CRM and sales
+itens:
+- repo: twentyhq/twenty
+  nome: Twenty
+  alternativa_a:
+  - Salesforce
+  - HubSpot
+  pt: CRM moderno com objetos e campos personalizáveis, visões em tabela e kanban, e automações, pensado para equipes comerciais.
+  en: Modern CRM with customizable objects and fields, table and kanban views, and workflow automation for sales teams.
+  stack:
+  - TypeScript
+  - React
+  - NestJS
+  - PostgreSQL
+  site: https://twenty.com
+  open_core: true
+  destaque: true
+- repo: frappe/crm
+  nome: Frappe CRM
+  alternativa_a:
+  - Pipedrive
+  - HubSpot
+  pt: CRM enxuto da família Frappe com leads, negócios, contatos, chamadas e e-mail em uma interface simples.
+  en: Lean CRM from the Frappe family with leads, deals, contacts, calls and email in a simple interface.
+  stack:
+  - Python
+  - Vue
+  - MariaDB
+- repo: espocrm/espocrm
+  nome: EspoCRM
+  alternativa_a:
+  - Salesforce
+  - Zoho CRM
+  pt: 'CRM web completo e configurável: contas, oportunidades, campanhas, calendário e fluxos sem programar.'
+  en: 'Full, configurable web CRM: accounts, opportunities, campaigns, calendar and no-code workflows.'
+  stack:
+  - PHP
+  - JavaScript
+  - MySQL
+  site: https://www.espocrm.com
+  open_core: true
+- repo: salesagility/SuiteCRM-Core
+  nome: SuiteCRM
+  alternativa_a:
+  - Salesforce
+  - Microsoft Dynamics
+  pt: CRM empresarial derivado do SugarCRM, com vendas, marketing, suporte, relatórios e módulos extensíveis.
+  en: Enterprise CRM forked from SugarCRM, covering sales, marketing, support, reporting and extensible modules.
+  stack:
+  - PHP
+  - Angular
+  - MySQL
+  site: https://suitecrm.com
+  nota: 'Confirmar slug: o repo do SuiteCRM 8 pode ser salesagility/SuiteCRM-Core.'
+- repo: krayin/laravel-crm
+  nome: Krayin CRM
+  alternativa_a:
+  - Pipedrive
+  - Zoho CRM
+  pt: CRM em Laravel com funil de vendas, leads, cotações, produtos e automação, fácil de customizar.
+  en: Laravel CRM with sales pipeline, leads, quotes, products and automation, easy to customize.
+  stack:
+  - PHP
+  - Laravel
+  - Vue
+  - MySQL
+  site: https://krayincrm.com
+- repo: marmelab/atomic-crm
+  nome: Atomic CRM
+  alternativa_a:
+  - Pipedrive
+  - HubSpot
+  pt: CRM minimalista com contatos, tarefas, notas e negócios em kanban, feito para ser clonado e adaptado.
+  en: Minimalist CRM with contacts, tasks, notes and a kanban deal board, built to be forked and adapted.
+  stack:
+  - TypeScript
+  - React
+  - Supabase
+- repo: monicahq/monica
+  nome: Monica
+  alternativa_a:
+  - Folk
+  - Dex
+  pt: 'CRM pessoal para lembrar de amigos, família e contatos: conversas, presentes, datas e lembretes.'
+  en: 'Personal CRM to keep track of friends, family and contacts: conversations, gifts, dates and reminders.'
+  stack:
+  - PHP
+  - Laravel
+  - Vue
+  - MySQL
+  nota: Em modo de manutenção; sucessor é o Chandler.
+- repo: DjangoCRM/django-crm
+  nome: Django-CRM
+  alternativa_a:
+  - Zoho CRM
+  - Pipedrive
+  pt: CRM em Django com leads, contatos, negócios, tarefas, campanhas de e-mail e relatórios.
+  en: Django-based CRM with leads, contacts, deals, tasks, email campaigns and reports.
+  stack:
+  - Python
+  - Django
+  - SQLite
+- repo: fatfreecrm/fat_free_crm
+  nome: Fat Free CRM
+  alternativa_a:
+  - Salesforce
+  - Highrise
+  pt: CRM em Ruby on Rails, simples e colaborativo, com leads, contas, campanhas e comentários.
+  en: Simple collaborative CRM built on Ruby on Rails with leads, accounts, campaigns and comments.
+  stack:
+  - Ruby
+  - Rails
+  - PostgreSQL
+- repo: YetiForceCompany/YetiForceCRM
+  nome: YetiForce CRM
+  alternativa_a:
+  - Salesforce
+  - Microsoft Dynamics
+  pt: CRM e ERP leve, derivado do vtiger, com vendas, suporte, finanças e módulos de gestão.
+  en: Lightweight CRM and ERP descended from vtiger, covering sales, support, finance and management modules.
+  stack:
+  - PHP
+  - JavaScript
+  - MySQL
+  open_core: true
+- repo: civicrm/civicrm-core
+  nome: CiviCRM
+  alternativa_a:
+  - Salesforce Nonprofit
+  - Bloomerang
+  pt: 'CRM para ONGs e associações: doações, membros, eventos, campanhas e comunicação.'
+  en: 'CRM for nonprofits and associations: donations, memberships, events, campaigns and outreach.'
+  stack:
+  - PHP
+  - JavaScript
+  - MySQL
+- repo: monicahq/chandler
+  nome: Monica Chandler
+  alternativa_a:
+  - Folk
+  - Dex
+  pt: Reescrita do CRM pessoal Monica, com vaults de contatos, lembretes, diário e relacionamentos.
+  en: Rewrite of the Monica personal CRM with contact vaults, reminders, journal and relationships.
+  stack:
+  - PHP
+  - Laravel
+  - MySQL
+  nota: Verificar se continua ativo.
+- repo: idurar/idurar-erp-crm
+  nome: IDURAR ERP CRM
+  alternativa_a:
+  - Zoho Invoice
+  - Pipedrive
+  pt: Aplicação de ERP e CRM leve com clientes, orçamentos, faturas e pagamentos em MERN.
+  en: Lightweight ERP and CRM app with customers, quotes, invoices and payments on the MERN stack.
+  stack:
+  - Node.js
+  - React
+  - MongoDB
+  - Ant Design
+  nota: Também poderia estar em ERP; mantido só aqui.

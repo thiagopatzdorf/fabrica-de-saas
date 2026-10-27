@@ -9,7 +9,7 @@ function criarKV() {
   const m = new Map();
   return { m, get: async (k) => m.get(k) ?? null, put: async (k, v) => void m.set(k, v), delete: async (k) => void m.delete(k), list: async ({ prefix = "" } = {}) => ({ keys: [...m.keys()].filter((k) => k.startsWith(prefix)).map((name) => ({ name })), list_complete: true }) };
 }
-const prod = (id, extra = {}) => ({ id, nome: `Produto ${id}`, categoria: "Mochilas", descricao: "", preco: 10000, preco_antigo: null, fotos: [`https://cdn.test/${id}.jpg`], estoque: 5, variacoes: [], destaque: false, ativo: true, origem: { loja: "mybagcenter", sku: id.toUpperCase() }, ...extra });
+const prod = (id, extra = {}) => ({ id, nome: `Produto ${id}`, categoria: "Mochilas", descricao: "", preco: 10000, preco_antigo: null, fotos: [`https://cdn.test/${id}.jpg`], estoque: 5, variacoes: [], destaque: false, ativo: true, origem: { loja: "loja-exemplo", sku: id.toUpperCase() }, ...extra });
 const CLIENTE = { cliente: { nome: "Maria Silva", whatsapp: "47999999999" }, entrega: { cep: "89000000", rua: "Rua A", numero: "10", bairro: "Centro", cidade: "Blumenau", uf: "SC" } };
 
 let env, cobrancas;
