@@ -1,0 +1,9 @@
+id,nome,categoria,descricao,preco,preco_antigo,estoque,variacoes,fotos,destaque,ativo
+camiseta-basica,Camiseta Básica,Camisetas,"Camiseta de algodão, corte reto. Produto fictício de demonstração.","59,90","79,90",40,P|M|G|GG,/img/camiseta-basica.svg,sim,sim
+bone-aba-reta,Boné Aba Reta,Acessórios,Boné ajustável com aba reta. Produto fictício de demonstração.,"44,90",,25,,/img/bone-aba-reta.svg,não,sim
+caneca-ceramica,Caneca de Cerâmica,Casa,"Caneca de 300 ml, vai ao micro-ondas. Produto fictício de demonstração.","29,90",,60,,/img/caneca-ceramica.svg,sim,sim
+mochila-urbana,Mochila Urbana,Mochilas,Mochila de 20 litros com compartimento para notebook. Produto fictício de demonstração.,"159,90","189,90",12,,/img/mochila-urbana.svg,sim,sim
+garrafa-termica,Garrafa Térmica,Casa,"Garrafa de aço inox, 500 ml, mantém a temperatura por 12 horas. Produto fictício de demonstração.","89,90",,30,,/img/garrafa-termica.svg,não,sim
+caderno-pontilhado,Caderno Pontilhado,Papelaria,"Caderno de 96 folhas, capa dura. Produto fictício de demonstração.","34,90",,,,/img/caderno-pontilhado.svg,não,sim
+tenis-casual,Tênis Casual,Calçados,Tênis de lona com solado de borracha. Produto fictício de demonstração.,"199,90","249,90",18,38|39|40|41|42,/img/tenis-casual.svg,sim,sim
+chaveiro-metal,Chaveiro de Metal,Acessórios,Chaveiro gravável em metal. Produto fictício de demonstração.,"15,00",,0,,/img/chaveiro-metal.svg,não,sim

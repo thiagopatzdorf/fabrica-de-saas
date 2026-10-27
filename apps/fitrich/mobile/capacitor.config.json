@@ -1,0 +1,16 @@
+{
+  "appId": "com.example.fitrich",
+  "appName": "Fitrich",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "iconColor": "#2A78D6"
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "versao": 1,
+  "atualizadoEm": "2026-10-05",
+  "comentario": "Padrões `contem` (comparados sem acento, em minúsculas e sem pontuação, depois de normalizarDescricao; o padrão tem de começar em início de palavra) para categorias comuns em extratos brasileiros. Fonte: a grafia que esses estabelecimentos usam na própria descrição de extrato/fatura (prefixos de adquirente como 'PG *' e 'IFD*' já saem na normalização) e os nomes das maiores redes de cada setor conforme os próprios sites das empresas — não existe lista oficial, por isso o arquivo é editável e toda regra base pode ser sobreposta por uma regra do usuário. Conflito entre categorias: maior `prioridade` vence; no empate, o padrão mais longo (mais específico). Os ids de categoria são resolvidos pelo NOME contra as categorias do núcleo (regrasDaBase).",
+  "categorias": [
+    {
+      "nome": "Restaurante e delivery",
+      "tipo": "despesa",
+      "grupo": "desejo",
+      "prioridade": 0,
+      "padroes": ["ifood", "rappi", "uber eats", "aiqfome", "zé delivery", "ze delivery", "james delivery", "mcdonald", "mc donald", "burger king", "bk", "subway", "habib", "bob's", "bobs", "giraffas", "outback", "madero", "coco bambu", "spoleto", "china in box", "domino", "pizza hut", "starbucks", "kopenhagen", "cacau show", "restaurante", "lanchonete", "pizzaria", "padaria", "cafeteria", "sorveteria", "churrascaria", "hamburgueria", "sushi", "bar e", "boteco", "food", "lanches", "pastel", "açai", "acai"]
+    },
+    {
+      "nome": "Mercado",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["pão de açúcar", "pao de acucar", "carrefour", "assaí", "assai", "atacadão", "atacadao", "extra", "supermercado", "super mercado", "mercado", "hipermercado", "atacado", "sam's club", "sams club", "makro", "big", "walmart", "zaffari", "angeloni", "condor", "muffato", "savegnago", "mateus", "guanabara", "prezunic", "dia supermercado", "hortifruti", "sacolão", "sacolao", "oba hortifruti", "st marche", "mambo", "mundial", "fort atacadista", "roldão", "roldao", "tenda atacado", "mercadinho", "minimercado", "mercearia", "açougue", "acougue", "frutaria", "quitanda"]
+    },
+    {
+      "nome": "Transporte",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["uber", "99app", "99 tecnologia", "99pop", "99 pop", "99 viagem", "99 corrida", "indriver", "cabify", "posto", "shell", "ipiranga", "petrobras", "br mania", "ale combustiveis", "auto posto", "combustivel", "combustível", "gasolina", "etanol", "estacionamento", "estapar", "zona azul", "sem parar", "conectcar", "veloe", "pedágio", "pedagio", "ccr", "ecorodovias", "arteris", "bilhete unico", "bilhete único", "metro", "metrô", "cptm", "sptrans", "riocard", "top recarga", "cartão top", "lavagem", "lava rapido", "lava jato", "mecanica", "mecânica", "oficina", "pneu", "borracharia", "auto center", "autocenter", "despachante", "detran", "licenciamento", "ipva", "localiza", "movida", "unidas", "buser", "clickbus", "passagem", "rodoviaria", "rodoviária"]
+    },
+    {
+      "nome": "Saúde e fitness",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["smart fit", "smartfit", "bluefit", "bodytech", "selfit", "bio ritmo", "bioritmo", "panobianco", "skyfit", "just fit", "academia", "crossfit", "box", "pilates", "yoga", "natação", "natacao", "personal", "gympass", "wellhub", "totalpass", "strava", "nutricionista", "suplemento", "growth supplements", "integralmedica", "integral medica", "max titanium", "dark lab", "centauro", "netshoes", "decathlon", "nike", "adidas"]
+    },
+    {
+      "nome": "Saúde",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["drogasil", "droga raia", "raia", "pague menos", "drogaria", "farmacia", "farmácia", "ultrafarma", "panvel", "pacheco", "drogaria sao paulo", "araujo", "nissei", "venancio", "farma conde", "indiana", "extrafarma", "hospital", "clinica", "clínica", "laboratorio", "laboratório", "fleury", "dasa", "hermes pardini", "sabin", "delboni", "a+ medicina", "unimed", "amil", "bradesco saude", "sulamerica saude", "hapvida", "notredame", "porto seguro saude", "prevent senior", "medico", "médico", "dentista", "odonto", "odontologia", "otica", "ótica", "oculos", "óculos", "psicolog", "terapia", "fisioterapia", "exame", "consulta", "dr consulta", "cuidado"]
+    },
+    {
+      "nome": "Assinaturas",
+      "tipo": "despesa",
+      "grupo": "desejo",
+      "prioridade": 0,
+      "padroes": ["netflix", "spotify", "prime video", "amazon prime", "primevideo", "disney", "disneyplus", "hbo", "max.com", "globoplay", "paramount", "apple.com/bill", "apple com bill", "itunes", "apple music", "google one", "google storage", "google play", "youtube premium", "youtube", "deezer", "crunchyroll", "star+", "telecine", "premiere", "claro tv", "sky", "icloud", "dropbox", "microsoft 365", "office 365", "adobe", "canva", "chatgpt", "openai", "anthropic", "claude.ai", "notion", "kindle unlimited", "audible", "duolingo", "playstation", "xbox", "nintendo", "steam", "twitch", "patreon", "ubook", "nuvem"]
+    },
+    {
+      "nome": "Moradia",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["enel", "light", "light s", "cemig", "copel", "celesc", "cpfl", "elektro", "neoenergia", "coelba", "celpe", "cosern", "energisa", "equatorial", "eletropaulo", "rge", "edp", "amazonas energia", "ceee", "sabesp", "cedae", "copasa", "sanepar", "casan", "embasa", "cagece", "compesa", "caesb", "saneago", "corsan", "aguas", "águas", "comgás", "comgas", "naturgy", "ultragaz", "supergasbras", "liquigas", "liquigás", "copagaz", "consigaz", "gas", "gás", "aluguel", "aluguer", "quintoandar", "quinto andar", "loft", "condominio", "condomínio", "iptu", "imobiliaria", "imobiliária", "financiamento imobiliario", "caixa habitacao", "seguro residencial", "porteiro", "zelador", "diarista", "faxina", "sindico", "síndico"]
+    },
+    {
+      "nome": "Telefone e internet",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["vivo", "claro", "tim", "tim s", "tim celular", "oi", "oi s", "oi movel", "algar", "nextel", "sercomtel", "net servicos", "net serviços", "net virtua", "virtua", "gvt", "brisanet", "desktop", "unifique", "vero internet", "sumicity", "mob telecom", "copel telecom", "telefonica", "telefônica", "internet", "fibra", "recarga", "celular", "telefone"]
+    },
+    {
+      "nome": "Educação",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["escola", "colegio", "colégio", "faculdade", "universidade", "unip", "uninove", "anhanguera", "estacio", "estácio", "cruzeiro do sul", "mackenzie", "puc", "fgv", "insper", "senac", "senai", "fisk", "wizard", "ccaa", "cultura inglesa", "cna", "yazigi", "wise up", "kumon", "alura", "udemy", "coursera", "hotmart", "eduzz", "kiwify", "descomplica", "estratégia concursos", "estrategia concursos", "gran cursos", "livraria", "saraiva", "amazon livros", "cultura", "papelaria", "kalunga", "material escolar", "curso", "aula"]
+    },
+    {
+      "nome": "Lazer",
+      "tipo": "despesa",
+      "grupo": "desejo",
+      "prioridade": 0,
+      "padroes": ["cinema", "cinemark", "cinepolis", "cinépolis", "kinoplex", "uci", "ingresso.com", "ingresso", "sympla", "eventim", "ticket360", "ticketmaster", "livepass", "teatro", "show", "festa", "balada", "parque", "hopi hari", "beto carrero", "beach park", "clube", "boliche", "karaoke", "karaokê", "jogo", "games", "steam games", "lojas americanas games", "viagem", "hotel", "pousada", "airbnb", "booking", "decolar", "latam", "gol linhas", "azul linhas", "123milhas", "hurb", "cvc", "resort", "hostel", "passeio", "turismo"]
+    },
+    {
+      "nome": "Compras",
+      "tipo": "despesa",
+      "grupo": "desejo",
+      "prioridade": 0,
+      "padroes": ["amazon", "amazon.com.br", "mercado livre", "mercadolivre", "mercadopago", "mercado pago", "shopee", "aliexpress", "shein", "temu", "magazine luiza", "magalu", "casas bahia", "ponto frio", "pontofrio", "americanas", "submarino", "kabum", "fast shop", "fastshop", "renner", "riachuelo", "c&a", "cea", "marisa", "zara", "hering", "pernambucanas", "leader", "havan", "lojas lebes", "dafiti", "zattini", "arezzo", "melissa", "havaianas", "boticario", "boticário", "o boticario", "natura", "avon", "eudora", "sephora", "mac cosmetics", "leroy merlin", "telhanorte", "c&c", "tok&stok", "tok stok", "etna", "mobly", "madeiramadeira", "camicado", "presente", "flores", "floricultura", "joalheria", "vivara", "pandora", "relojoaria"]
+    },
+    {
+      "nome": "Beleza e cuidados",
+      "tipo": "despesa",
+      "grupo": "desejo",
+      "prioridade": 0,
+      "padroes": ["salão", "salao", "barbearia", "barbeiro", "cabeleireiro", "cabelereiro", "manicure", "estetica", "estética", "depilação", "depilacao", "espaço laser", "espaco laser", "sobrancelha", "massagem", "spa"]
+    },
+    {
+      "nome": "Tarifas e juros",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["tarifa", "pacote de servicos", "pacote de serviços", "cesta de servicos", "manutencao de conta", "manutenção de conta", "anuidade", "juros", "iof", "multa", "encargos", "mora", "cheque especial", "adiantamento a depositante", "taxa", "tar", "custodia", "custódia", "corretagem", "emolumentos"]
+    },
+    {
+      "nome": "Impostos",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["darf", "das", "das simples", "simples nacional", "receita federal", "irpf", "imposto de renda", "inss", "gps", "fgts", "iss", "icms", "taxa de licenciamento", "dpvat", "tributo", "imposto"]
+    },
+    {
+      "nome": "Seguros",
+      "tipo": "despesa",
+      "grupo": "necessidade",
+      "prioridade": 0,
+      "padroes": ["seguro", "porto seguro", "azul seguros", "tokio marine", "allianz", "liberty seguros", "hdi seguros", "mapfre", "bradesco seguros", "itau seguros", "sulamerica", "prudential", "metlife", "youse", "pier seguros", "previdencia", "previdência"]
+    },
+    {
+      "nome": "Pets",
+      "tipo": "despesa",
+      "grupo": "desejo",
+      "prioridade": 0,
+      "padroes": ["petz", "cobasi", "petlove", "pet shop", "petshop", "veterinari", "ração", "racao", "banho e tosa", "pet center", "petcenter"]
+    },
+    {
+      "nome": "Salário",
+      "tipo": "receita",
+      "grupo": "poupanca",
+      "prioridade": 0,
+      "padroes": ["salario", "salário", "folha de pagamento", "pagamento de salario", "credito salario", "crédito salário", "remuneracao", "remuneração", "pro labore", "pró-labore", "prolabore", "adiantamento salarial", "13o salario", "13º salário", "decimo terceiro", "décimo terceiro", "ferias", "férias", "pagamento de ferias", "holerite", "proventos", "honorarios", "honorários", "vale alimentacao", "vale refeicao", "beneficio", "benefício"]
+    },
+    {
+      "nome": "Rendimentos",
+      "tipo": "receita",
+      "grupo": "poupanca",
+      "prioridade": 0,
+      "padroes": ["rendimento", "rendimentos", "rend pago", "rend. pago", "juros sobre capital", "jcp", "dividendo", "dividendos", "proventos fii", "resgate cdb", "resgate rdb", "resgate tesouro", "rentabilidade", "cashback", "cash back", "credito de juros", "remuneracao de saldo", "rendimento poupanca", "rendimento poupança", "rendimento aplic", "nuconta rendimento"]
+    },
+    {
+      "nome": "Transferência",
+      "tipo": "transferencia",
+      "grupo": "poupanca",
+      "prioridade": -1,
+      "padroes": ["transferencia entre contas", "transferência entre contas", "transf entre contas", "aplicacao", "aplicação", "resgate", "pagamento de fatura", "pagamento fatura", "pagto fatura", "pagamento recebido", "ted mesma titularidade", "pix mesma titularidade", "porta a porta", "portabilidade"]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+/* Folha Lançar. Valor grande com teclado numérico, chips de categoria, o resto recolhido. */
+.lancar .segmentos{display:inline-flex;border:1px solid var(--grade);border-radius:999px;padding:3px;background:var(--sup2)}
+.lancar .seg{min-height:38px;padding:0 14px;border:0;border-radius:999px;background:transparent;color:var(--ink2);font-weight:600}
+.lancar .seg[aria-pressed="true"]{background:var(--ink);color:var(--sup)}
+.lancar.receita .seg[aria-pressed="true"]{background:var(--azul);color:#fff}
+.form-lancar{display:grid;gap:14px}
+.form-lancar .campo{display:grid;gap:6px}
+.form-lancar .campo>span{font-size:0.8125rem;font-weight:600;color:var(--ink2)}
+.form-lancar input[type="text"],.form-lancar input[type="date"],.form-lancar select{min-height:var(--toque);border:1px solid var(--eixo);border-radius:var(--raio-p);background:var(--sup);color:var(--ink);padding:8px 12px;width:100%}
+.valor-campo{display:flex;align-items:baseline;gap:8px;border-bottom:2px solid var(--eixo);padding:4px 0}
+.valor-campo:focus-within{border-bottom-color:var(--azul)}
+.valor-campo .moeda{font:600 1.375rem Sora,sans-serif;color:var(--ink2)}
+.form-lancar .valor-input{font:700 2.5rem/1.1 Sora,sans-serif;letter-spacing:-.02em;border:0!important;background:transparent!important;padding:0!important;min-height:52px!important;width:100%;outline:none}
+.form-lancar .valor-input::placeholder{color:var(--eixo)}
+.lancar.receita .valor-input{color:var(--azul)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;min-height:var(--toque);padding:0 14px;border-radius:999px;border:1px solid var(--eixo);background:var(--sup);color:var(--ink);font-weight:600;font-size:0.875rem;cursor:pointer;position:relative}
+.chip input[type="radio"],.chip input[type="date"]{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:pointer}
+.chip:has(:focus-visible){outline:3px solid var(--foco);outline-offset:2px}
+.chip.marcado{background:var(--ink);color:var(--sup);border-color:var(--ink)}
+.lancar.receita .chip.marcado{background:var(--azul);border-color:var(--azul);color:#fff}
+.chip.mais{color:var(--azul);border-style:dashed}
+.mais-opcoes summary{display:flex;align-items:center;gap:6px;min-height:var(--toque);cursor:pointer;color:var(--ink2);font-weight:600;font-size:0.875rem;list-style:none}
+.mais-opcoes summary::-webkit-details-marker{display:none}
+.mais-opcoes summary svg{width:18px;height:18px;transition:transform .15s}
+.mais-opcoes[open] summary svg{transform:rotate(90deg)}
+.mais-opcoes>.campo{margin-top:12px}
+.form-lancar .salvar{width:100%;min-height:52px;font-size:1.062rem;background:var(--azul);border-color:var(--azul);color:#fff}
+.form-lancar .erro{color:var(--laranja);font-weight:600;font-size:0.875rem}
+.feito{border:1px solid var(--grade);border-left:4px solid var(--agua);background:var(--agua-fundo);border-radius:var(--raio-p);padding:12px 14px;margin-top:14px;display:grid;gap:8px}
+.feito-linha{display:flex;align-items:center;gap:10px;font-weight:600}
+.feito-linha svg{width:22px;height:22px;flex:none;color:var(--agua)}
+.feito .acoes{display:flex;flex-wrap:wrap;gap:8px}
+.feito .repetido{display:flex;align-items:center;gap:6px}
+.feito .repetido svg{width:18px;height:18px;color:var(--agua)}
+.ultimos-sec{margin-top:18px}
+.ultimos-sec h3{color:var(--ink2);font-size:0.8125rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.ultimos li span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ultimos small{color:var(--mud)}
+@media (prefers-reduced-motion:reduce){.mais-opcoes summary svg{transition:none}}

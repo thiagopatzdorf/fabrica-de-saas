@@ -1,0 +1,15 @@
+/* Páginas legais do Fitrich (política de privacidade): texto corrido, claro e escuro, sem nada de rede. */
+@font-face{font-family:Sora;src:url(/fonts/sora.woff2) format("woff2");font-weight:100 800;font-display:optional}
+@font-face{font-family:Manrope;src:url(/fonts/manrope.woff2) format("woff2");font-weight:200 800;font-display:optional}
+:root{--sup:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--link:#216cc6;color-scheme:light}
+html[data-gs-theme="dark"]{--sup:#1a1a19;--ink:#fff;--ink2:#c3c2b7;--link:#5a9af0;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--sup);color:var(--ink)}
+body{font:400 1.0625rem/1.6 Manrope,system-ui,sans-serif;padding:24px max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left))}
+main{max-width:680px;margin:0 auto}
+h1{font:600 clamp(1.625rem,6vw,2.25rem)/1.15 Sora,sans-serif;margin:24px 0 8px}
+h2{font:600 1.1875rem/1.25 Sora,sans-serif;margin:28px 0 6px}
+p{margin:0 0 12px}
+.data{color:var(--ink2)}
+a{color:var(--link)}
+:focus-visible{outline:3px solid var(--link);outline-offset:2px;border-radius:4px}

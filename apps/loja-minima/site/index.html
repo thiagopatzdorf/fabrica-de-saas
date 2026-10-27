@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Loja Mínima</title>
+<meta name="description" content="Loja Mínima: uma loja pequena e completa em um Cloudflare Worker, com API aberta para agentes de IA comprarem.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo topo-vitrine">
+  <a class="marca" href="/" aria-label="Loja Mínima, página inicial">LOJA<small>MÍNIMA</small></a>
+  <form class="busca" role="search" id="form-busca"><input id="busca" type="search" placeholder="Buscar produtos" aria-label="Buscar produtos" autocomplete="off" enterkeyhint="search"></form>
+  <nav aria-label="Principal"><a href="agentes.html">Para agentes</a></nav>
+  <button id="abrir-carrinho" class="carrinho" type="button" aria-label="Abrir o carrinho">Carrinho <span id="qtd-carrinho">0</span></button>
+</header>
+<div class="meandro" aria-hidden="true"></div>
+<p id="aviso" class="faixa" hidden></p>
+<section class="heroi">
+  <p class="sobre">Loja de demonstração</p>
+  <h2>Uma loja pequena, inteira em um Worker</h2>
+  <p class="sub"><span id="qtd-produtos">Alguns</span> produtos fictícios para você ver o fluxo: vitrine, carrinho, checkout e painel do dono. Troque tudo pelo seu catálogo.</p>
+  <div class="botoes"><a class="btn cheio" href="#catalogo">Ver o catálogo</a><a class="btn" href="agentes.html">Comprar com um agente</a></div>
+</section>
+<div class="pilares">
+  <div class="pilar"><b>Preço sempre do servidor</b><span>O carrinho manda só o código e a quantidade; o total é recalculado no Worker.</span></div>
+  <div class="pilar"><b>Pagamento plugável</b><span>Um único arquivo conhece o provedor de pagamento; trocar não mexe no resto.</span></div>
+  <div class="pilar"><b>Feita para agentes</b><span>API aberta, preços em centavos, pedido repetível sem cobrar duas vezes.</span></div>
+</div>
+<main id="catalogo">
+  <div id="categorias" class="chips" role="group" aria-label="Categorias"></div>
+  <section id="destaques-bloco" hidden><h2>Lançamentos</h2><div id="destaques" class="grade"></div></section>
+  <section><h2 id="titulo-lista">Produtos</h2><div id="produtos" class="grade"></div><button id="mais" class="mais" type="button" hidden>Ver mais produtos</button></section>
+</main>
+<div class="agente-faixa"><div class="agente-caixa">
+  <h2>Você é um agente de IA?</h2>
+  <p>Descubra o contrato em uma chamada e compre sem ler esta vitrine.</p>
+  <pre class="codigo">curl -s https://SEU-DOMINIO/api/agente</pre>
+  <a class="btn" href="agentes.html">Guia para agentes</a>
+</div></div>
+<footer class="rodape"><div class="meandro" aria-hidden="true"></div><p>Loja Mínima · <a href="agentes.html">Para agentes</a> · <a href="llms.txt">llms.txt</a></p></footer>
+<dialog id="dlg-produto"></dialog>
+<dialog id="dlg-carrinho"></dialog>
+<script type="module" src="loja.js"></script>
+</body>
+</html>

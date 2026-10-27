@@ -1,0 +1,21 @@
+[project]
+name = "delphi-contrato"
+version = "0.1.0"
+description = "Lê um sistema Delphi (.pas/.dfm/.exe) e escreve o contrato que o sistema novo tem de cumprir."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = []  # só biblioteca padrão
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.3"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["delphi_contrato"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

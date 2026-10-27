@@ -1,0 +1,45 @@
+# Cabeçalhos de segurança do Fitrich para hospedagem estática.
+# Formato compatível com Cloudflare Pages/Workers Static Assets e Netlify (_headers).
+# Todo rule que casa se aplica; "! Nome" tira um cabeçalho posto por rule mais larga.
+#
+# connect-src 'none' é a PROVA TÉCNICA do "nada sai do aparelho": o navegador
+# bloqueia fetch, XHR, beacon, WebSocket e EventSource da página, venha de onde vier.
+# Sem 'unsafe-inline': CSS e scripts vivem em arquivos (css/, js/). O <script
+# type="application/ld+json"> é bloco de dados, não executa, e a CSP não o cobre.
+
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: blob:; connect-src 'none'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=(), browsing-topics=()
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  X-Frame-Options: DENY
+
+# O service worker usa fetch() para pré-cachear e repassar pedidos: no worker a CSP
+# que vale é a da resposta DESTE arquivo, e connect-src 'none' quebraria o cache.
+# 'self' continua sem saída para fora do domínio.
+/sw.js
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'none'; connect-src 'self'; base-uri 'none'
+  Cache-Control: no-cache
+
+# A página e o service worker sempre revalidam, senão a versão nova não chega.
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/404.html
+  Cache-Control: no-cache
+/manifest.webmanifest
+  Cache-Control: no-cache
+
+# Só o que não muda de conteúdo sem mudar de nome ganha cache longo. JS e CSS NÃO
+# têm nome com hash (index.html pede /js/app.mjs fixo): cache longo neles serviria
+# código velho a quem ainda não tem o service worker. Ficam na revalidação padrão
+# do CDN (max-age=0, must-revalidate + ETag); o pré-cache do sw.js é quem
+# dá o carregamento instantâneo e o offline.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/icons/*
+  Cache-Control: public, max-age=604800

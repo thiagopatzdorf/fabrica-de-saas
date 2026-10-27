@@ -1,0 +1,28 @@
+/* Onboarding de 3 passos (sheet no celular, diálogo centrado no computador). Herda tokens do app.css. */
+.onboarding{max-height:94vh;max-height:94dvh}
+.onb-corpo{display:grid;gap:var(--e3);padding-bottom:var(--e2)}
+.onb-topo{display:flex;align-items:center;justify-content:space-between;gap:var(--e3)}
+.onb-passo{font-size:var(--t-1);color:var(--mud);font-weight:600}
+.onb-pontos{display:flex;gap:var(--e2)}
+.onb-pontos i{width:1.3125rem;height:.3125rem;border-radius:3px;background:var(--grade)}
+.onb-pontos i.feito{background:var(--ouro-vivo)}
+.onb-corpo .marca-ouro{display:block;width:2.125rem;height:.1875rem;border-radius:2px;background:var(--ouro-vivo)}
+.onb-corpo h2{font-size:var(--t2);line-height:var(--lh-t)}
+.onb-corpo h2:focus{outline:0}
+.onb-grupo{border:0;margin:0;padding:0;display:grid;gap:var(--e2)}
+.onb-opcao{display:flex;align-items:center;gap:var(--e3);min-height:3.5rem;padding:var(--e2) var(--e3);border:1px solid var(--eixo);border-radius:var(--raio);background:var(--sup);cursor:pointer}
+.onb-opcao input{width:1.375rem;height:1.375rem;margin:0;accent-color:var(--azul);flex:none}
+.onb-opcao:has(input:checked){border-color:var(--azul);background:var(--azul-fundo);box-shadow:inset 0 0 0 1px var(--azul)}
+.onb-opcao:has(input:focus-visible){outline:3px solid var(--foco);outline-offset:2px}
+.onb-opcao-texto{display:grid;gap:2px}
+.onb-opcao-texto small{color:var(--ink2);font-size:var(--t-1)}
+.onb-form{display:grid;gap:var(--e3)}
+.onb-campos{display:grid;gap:var(--e2)}
+.onb-campos input{min-height:var(--toque);border:1px solid var(--eixo);border-radius:var(--raio-p);background:var(--sup);padding:var(--e2) var(--e3);width:100%}
+.onb-campos .campo{font-weight:600;font-size:var(--t-1);color:var(--ink2)}
+.onb-rodape{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:var(--e2);margin-top:var(--e2)}
+.onb-rodape .fino{margin-right:auto}
+/* No celular o botão principal ocupa a linha de cima e os secundários ficam embaixo, ao alcance do polegar. */
+@media (max-width:480px){.onb-rodape .botao:not(.leve):not(.fino){order:-1;flex:1 0 100%}.onb-rodape{justify-content:space-between}}
+.onboarding .erro{color:var(--laranja);font-weight:600;display:flex;gap:var(--e2)}
+.onboarding .erro::before{content:"!";display:inline-grid;place-items:center;width:1.25rem;height:1.25rem;border-radius:50%;background:var(--laranja);color:var(--sobre-laranja);font-size:var(--t-1);flex:none}

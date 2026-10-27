@@ -1,0 +1,86 @@
+/* Base compartilhada das telas Patrimônio, Metas, Dívidas, Shape e Check-in (não é app.css: o shell não
+   depende daqui, e nenhuma tela escreve em app.css). Tokens vêm do shell (--sup, --ink, --s1, --s2…);
+   a terceira cor da paleta (verde-água) tem fallback porque o shell ainda está sendo escrito. */
+:root { --s3: var(--fitrich-s3, #1b9e8a); --s1b: color-mix(in srgb, var(--s1) 55%, var(--sup)); }
+.cartao { border: 1px solid var(--grade); background: var(--sup); border-radius: 16px; padding: 18px; margin: 0 0 16px; }
+.cartao > h2 { font: 600 1.25rem/1.2 Sora, system-ui, sans-serif; margin: 0 0 12px; }
+.cartao h3 { font: 600 0.9375rem Sora, system-ui, sans-serif; margin: 16px 0 8px; grid-column: 1 / -1; }
+.heroi { display: grid; gap: 10px; border: 1px solid var(--grade); background: var(--sup2); border-radius: 20px; padding: 20px; margin-bottom: 16px; }
+.rot { font: 600 0.8125rem Sora, system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--ink2); }
+.gran { font: 700 clamp(2rem, 10vw, 3.5rem)/1.05 Sora, system-ui, sans-serif; letter-spacing: -.03em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.leg { margin: 0; color: var(--ink2); }
+.grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 8px 0 14px; }
+.st { border: 1px solid var(--grade); border-radius: 14px; padding: 12px 14px; background: var(--sup); display: grid; gap: 2px; min-width: 0; }
+.st-rot { color: var(--ink2); font-size: 0.875rem; }
+.st-val { font: 600 1.375rem Sora, system-ui, sans-serif; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.st-sub { color: var(--mud); font-size: 0.8125rem; }
+.graf { margin: 6px 0; }
+svg.grafico { width: 100%; height: auto; display: block; overflow: visible; }
+.grafico text { font: 0.75rem Manrope, system-ui, sans-serif; fill: var(--ink2); }
+.grafico .fim { font-weight: 600; fill: var(--ink); }
+.grafico .g { stroke: var(--grade); stroke-width: 1; }
+.grafico .eixo { stroke: var(--eixo); stroke-width: 1; }
+.grafico .meta { stroke: var(--ink2); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.grafico .ln { stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; fill: none; }
+.grafico .ln.s1 { stroke: var(--s1); } .grafico .ln.s2 { stroke: var(--s2); } .grafico .ln.s3 { stroke: var(--s3); }
+.grafico path.s1, .grafico circle.s1, .grafico rect.s1 { fill: var(--s1); }
+.grafico path.s2, .grafico circle.s2, .grafico rect.s2 { fill: var(--s2); }
+.grafico path.s3, .grafico circle.s3, .grafico rect.s3 { fill: var(--s3); }
+.grafico rect.s1b, .grafico path.s1b { fill: var(--s1b); }
+.grafico circle.pt { stroke: var(--sup); stroke-width: 2; }
+.grafico .hit { fill: transparent; stroke: none; cursor: pointer; }
+.grafico .hit:focus-visible { stroke: var(--s1); stroke-width: 2; outline: none; }
+.legenda { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; color: var(--ink2); font-size: 0.875rem; }
+.legenda li { display: inline-flex; align-items: center; gap: 6px; }
+.legenda b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.q { display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: var(--grade); }
+.q.s1 { background: var(--s1); } .q.s2 { background: var(--s2); } .q.s3 { background: var(--s3); } .q.s1b { background: var(--s1b); }
+.nota { color: var(--ink2); font-size: 0.875rem; margin: 8px 0; }
+.vazio { color: var(--ink2); padding: 14px; border: 1px dashed var(--eixo); border-radius: 12px; margin: 8px 0; }
+.aviso { border: 1px solid var(--aten); border-radius: 12px; padding: 12px; color: var(--ink); background: var(--sup2); margin: 0 0 12px; }
+.estado { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); }
+.estado-ic { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; font: 700 0.75rem/1 Sora, system-ui, sans-serif; font-style: normal; border: 2px solid currentColor; flex: none; }
+.estado-ok .estado-ic { color: var(--bom); } .estado-atencao .estado-ic { color: var(--aten); } .estado-info .estado-ic { color: var(--s1); } .estado-passou .estado-ic { color: var(--s2); }
+.barra { display: grid; grid-template-columns: 1fr 48px; align-items: center; gap: 10px; }
+.barra progress { width: 100%; height: 10px; appearance: none; -webkit-appearance: none; border: 0; border-radius: 5px; background: var(--grade); overflow: hidden; accent-color: var(--s1); }
+.barra progress::-webkit-progress-bar { background: var(--grade); border-radius: 5px; }
+.barra progress::-webkit-progress-value { background: var(--s1); border-radius: 5px; }
+.barra progress::-moz-progress-bar { background: var(--s1); border-radius: 5px; }
+.barra-s3 progress::-webkit-progress-value, .barra-s3 progress::-moz-progress-bar { background: var(--s3); }
+.barra-pct { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.semanas { display: flex; gap: 4px; margin: 6px 0; }
+.semanas .semana { width: 22px; height: 12px; border-radius: 3px; background: var(--grade); display: block; }
+.semanas .semana-ok { background: var(--s3); }
+.tab summary { cursor: pointer; color: var(--ink2); min-height: 44px; display: flex; align-items: center; }
+.rolar { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: 0.875rem; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--grade); white-space: nowrap; }
+th { color: var(--ink2); font-weight: 600; }
+form.form-crud, form.form-saldos, form.form-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; align-items: end; margin-top: 12px; }
+form[hidden] { display: none; }
+.campo { display: grid; gap: 4px; font-size: 0.875rem; color: var(--ink2); min-width: 0; }
+.campo-ajuda { color: var(--mud); font-size: 0.75rem; }
+.campo-check { display: flex; align-items: center; gap: 10px; min-height: 44px; color: var(--ink); }
+/* flex: none — como item flex ao lado de um rótulo longo, o checkbox encolhia de 24 para 13 px (medido no teste). */
+.campo-check input { flex: none; width: 24px; height: 24px; min-height: 24px; padding: 0; margin: 10px; accent-color: var(--s1); }
+input, select, button { font: inherit; min-height: 44px; border-radius: 10px; border: 1px solid var(--eixo); background: var(--sup); color: var(--ink); padding: 8px 12px; width: 100%; }
+button { cursor: pointer; font-weight: 600; background: var(--ink); color: var(--sup); border-color: var(--ink); display: inline-flex; align-items: center; justify-content: center; width: auto; min-width: 44px; }
+button.peq { background: transparent; color: var(--ink); border-color: var(--eixo); font-weight: 500; }
+button.perigo { background: transparent; color: var(--perigo); border-color: var(--perigo); }
+button[aria-pressed="true"] { background: var(--ink); color: var(--sup); border-color: var(--ink); }
+.botoes { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 0; grid-column: 1 / -1; }
+.lista { list-style: none; margin: 0; padding: 0; }
+.lista li { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--grade); }
+.lista .item { display: grid; min-width: 0; } .lista .item small { color: var(--ink2); }
+.lista .valor { font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; }
+.lista .acoes { grid-column: 1 / -1; display: flex; gap: 8px; justify-content: flex-end; }
+.acoes { display: flex; gap: 8px; flex-wrap: wrap; }
+/* min-width: 0 — item de grid com tabela nowrap dentro (`.rolar`) puxava a largura da página (121 px de estouro medidos). */
+.cards { display: grid; gap: 12px; } .cards > * { min-width: 0; grid-template-columns: minmax(0, 1fr); }
+.avisos { margin: 6px 0 0; padding-left: 18px; color: var(--mud); font-size: 0.8125rem; }
+.dialogo { border: 1px solid var(--grade); border-radius: 16px; padding: 20px; background: var(--sup); color: var(--ink); max-width: min(92vw, 420px); }
+.dialogo::backdrop { background: rgb(0 0 0 / .45); }
+.dialogo h2 { font: 600 1.125rem Sora, system-ui, sans-serif; margin: 0 0 8px; }
+.gran[data-negativo] { color: var(--s2); }
+@media (min-width: 560px) { .lista li { grid-template-columns: 1fr auto auto; } .lista .acoes { grid-column: auto; } }
+@media (prefers-contrast: more) { .st, .cartao, .heroi { border-color: var(--ink); } }

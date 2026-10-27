@@ -1,0 +1,12 @@
+/* Tela Metas: um cartão por meta. */
+.tela-metas .meta { border: 1px solid var(--grade); border-radius: 14px; padding: 14px; display: grid; gap: 10px; }
+/* No celular o valor vai para a linha de baixo: lado a lado, "Reserva de 6 meses" virava três linhas (medido a 390 px). */
+.tela-metas .meta-cab { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px 12px; align-items: start; }
+.tela-metas .meta-cab h3 { margin: 0; font: 600 1.062rem Sora, system-ui, sans-serif; }
+.tela-metas .meta-tipo { font-size: 0.75rem; color: var(--ink2); text-transform: uppercase; letter-spacing: .06em; }
+.tela-metas .meta-valor { font: 600 1.125rem Sora, system-ui, sans-serif; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.tela-metas .meta-cab .acoes { justify-content: flex-end; }
+.tela-metas .meta-frase { margin: 0; color: var(--ink); }
+.tela-metas .meta .grade { margin: 0; }
+.tela-metas .meta .nota { margin: 0; }
+@media (min-width: 560px) { .tela-metas .meta-cab { grid-template-columns: minmax(0, 1fr) auto auto; } .tela-metas .meta-valor { text-align: right; } }

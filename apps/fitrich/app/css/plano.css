@@ -1,0 +1,32 @@
+/* Tela Plano: cinco abas (para onde vai, reserva, dívidas, independência, renda fixa). O comum está em _telas.css. */
+.tela-plano .abas { display: grid; grid-template-columns: repeat(auto-fit, minmax(128px, 1fr)); gap: 8px; margin: 0 0 16px; }
+.tela-plano .aba { background: var(--sup); color: var(--ink); border: 2px solid var(--grade); font-weight: 600; width: 100%; text-align: center; }
+.tela-plano .aba[aria-selected="true"] { border-color: var(--s1); background: var(--sup2); }
+.tela-plano .aba:focus-visible, .tela-plano #plano-resultado:focus-visible { outline: 3px solid var(--s1); outline-offset: 2px; }
+.tela-plano #plano-resultado { font: 600 1.0625rem Sora, system-ui, sans-serif; margin: 0 0 12px; }
+.tela-plano .painel { min-width: 0; }
+.tela-plano h4 { font: 600 0.9375rem Sora, system-ui, sans-serif; margin: 18px 0 6px; }
+.tela-plano .form-plano { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; align-items: end; margin-top: 12px; }
+.tela-plano .form-plano > .botoes, .tela-plano .form-plano > .avancado, .tela-plano .form-plano > .grade, .tela-plano .form-plano > .leg { grid-column: 1 / -1; }
+.tela-plano .avancado summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; color: var(--ink2); }
+.tela-plano .passos { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.tela-plano .passo { border: 1px solid var(--grade); border-radius: 14px; padding: 14px; display: grid; gap: 8px; min-width: 0; }
+.tela-plano .passo-cab { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 4px 12px; align-items: baseline; }
+.tela-plano .passo-nome { font-weight: 600; overflow-wrap: anywhere; }
+.tela-plano .passo-valor { font: 600 1.125rem Sora, system-ui, sans-serif; font-variant-numeric: tabular-nums; }
+.tela-plano .passo-pct { color: var(--ink2); font-variant-numeric: tabular-nums; min-width: 48px; text-align: right; }
+.tela-plano .porque { margin: 0; color: var(--ink2); font-size: 0.875rem; }
+.tela-plano .barra-s2 progress::-webkit-progress-value, .tela-plano .barra-s2 progress::-moz-progress-bar { background: var(--s2); }
+.tela-plano .metodos-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 0 0 12px; }
+.tela-plano .metodo-card { border: 1px solid var(--grade); border-radius: 14px; padding: 14px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.tela-plano .metodo-card b { font: 600 1.375rem Sora, system-ui, sans-serif; }
+.tela-plano .metodo-card small { color: var(--ink2); }
+.tela-plano .metodo-nome { font: 600 0.8125rem Sora, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .06em; color: var(--ink2); }
+.tela-plano .gran-mc { font-size: clamp(1.75rem, 8vw, 2.75rem); margin: 4px 0 0; }
+.tela-plano .meta-frase { margin: 6px 0; }
+.tela-plano .marcos-lista { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.tela-plano .ressalvas li { margin: 4px 0; }
+.tela-plano .grafico .faixa { stroke: none; }
+.tela-plano .sec-plano-cab .leg { margin-bottom: 10px; }
+@media (max-width: 420px) { .tela-plano .passo-cab { grid-template-columns: minmax(0, 1fr) auto; } .tela-plano .passo-pct { grid-column: 2; } }
+.tela-plano .grade { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }

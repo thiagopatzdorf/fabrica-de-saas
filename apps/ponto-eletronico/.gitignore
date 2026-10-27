@@ -1,0 +1,9 @@
+node_modules/
+.env
+.dev.vars
+wrangler.toml
+.wrangler/
+*.sqlite
+site/app/modelos/
+site/app/vendor/human.esm.js
+site/app/vendor/LICENSE-human.txt

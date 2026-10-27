@@ -1,0 +1,10 @@
+/* Tela "App e aparelho". Só layout; cores e botões vêm do shell (app.css). */
+.ap{display:grid;gap:14px;max-width:720px}
+.ap .cartao{margin:0}
+.ap h3{font:600 0.9375rem Sora,sans-serif;margin:0 0 6px}
+.ap-bloco{display:grid;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid var(--grade);justify-items:start}
+.ap-estado{margin:8px 0 0;overflow-wrap:anywhere}
+.ap-campo{display:grid;gap:4px}
+.ap-campo input{min-height:var(--toque);border:1px solid var(--eixo);border-radius:var(--raio-p);background:var(--sup);padding:0 12px}
+.ap .cartao > p + p,.ap .cartao > p + .botao{margin-top:10px}
+.ap .cartao > .botao{margin-top:12px}

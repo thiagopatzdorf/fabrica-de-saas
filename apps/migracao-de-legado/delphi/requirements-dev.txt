@@ -1,0 +1,2 @@
+# Só para testar. O motor em si usa apenas a biblioteca padrão do Python.
+pytest==9.0.3

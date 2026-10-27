@@ -1,0 +1,225 @@
+// Banco de Questões — schema do banco de dados
+// Documentação do modelo de dados: ver README.md ("Modelo de dados")
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  // URL de conexão direta (sem pgbouncer/pooling), usada só para migrations
+  // em provedores serverless (com pooler). Se o seu Postgres não
+  // usa connection pooling, aponte DIRECT_URL para a mesma URL de DATABASE_URL.
+  directUrl = env("DIRECT_URL")
+}
+
+// ──────────────────────────────────────────────
+// Auth (NextAuth.js / Auth.js v5 + @auth/prisma-adapter)
+// ──────────────────────────────────────────────
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  accounts Account[]
+  sessions Session[]
+
+  answers  UserAnswer[]
+  progress UserProgress[]
+
+  @@map("users")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("sessions")
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verification_tokens")
+}
+
+// ──────────────────────────────────────────────
+// Domínio: concursos, matérias e questões
+// ──────────────────────────────────────────────
+
+model Contest {
+  id             String   @id @default(cuid())
+  slug           String   @unique
+  name           String
+  organization   String // órgão, ex: "Tribunal Regional Exemplo"
+  examBoard      String // banca examinadora, ex: "Banca Alfa"
+  year           Int
+  description    String?  @db.Text
+  examDate       DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  subjects  ContestSubject[]
+  questions Question[]
+  progress  UserProgress[]
+
+  @@index([year])
+  @@map("contests")
+}
+
+model Subject {
+  id   String @id @default(cuid())
+  slug String @unique
+  name String
+
+  contests  ContestSubject[]
+  questions Question[]
+  progress  UserProgress[]
+
+  @@map("subjects")
+}
+
+// Relação N:N entre Contest e Subject, carregando o peso da matéria no edital
+// (usado na fórmula de predição da "chance de passar").
+model ContestSubject {
+  id        String @id @default(cuid())
+  contestId String
+  subjectId String
+
+  // Peso da matéria no edital, em % (soma das matérias de um concurso = 100).
+  weight Float
+
+  // Nº de questões dessa matéria na prova, se conhecido (informativo).
+  questionCount Int?
+
+  contest Contest @relation(fields: [contestId], references: [id], onDelete: Cascade)
+  subject Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+
+  @@unique([contestId, subjectId])
+  @@map("contest_subjects")
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+model Question {
+  id        String     @id @default(cuid())
+  contestId String
+  subjectId String
+
+  statement    String     @db.Text
+  explanation  String?    @db.Text
+  difficulty   Difficulty @default(MEDIUM)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  contest Contest         @relation(fields: [contestId], references: [id], onDelete: Cascade)
+  subject Subject         @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  options QuestionOption[]
+  answers UserAnswer[]
+
+  @@index([contestId, subjectId])
+  @@map("questions")
+}
+
+model QuestionOption {
+  id         String  @id @default(cuid())
+  questionId String
+  // Rótulo da alternativa: "A", "B", "C", "D", "E"
+  label      String
+  text       String  @db.Text
+  isCorrect  Boolean @default(false)
+
+  question Question     @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  answers  UserAnswer[]
+
+  @@unique([questionId, label])
+  @@map("question_options")
+}
+
+// ──────────────────────────────────────────────
+// Respostas e progresso do usuário
+// ──────────────────────────────────────────────
+
+model UserAnswer {
+  id         String @id @default(cuid())
+  userId     String
+  questionId String
+
+  selectedOptionId String
+  isCorrect        Boolean
+
+  answeredAt DateTime @default(now())
+
+  user           User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question       Question       @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  selectedOption QuestionOption @relation(fields: [selectedOptionId], references: [id], onDelete: Cascade)
+
+  @@index([userId, questionId])
+  @@index([userId, answeredAt])
+  @@map("user_answers")
+}
+
+// Agregado de desempenho por usuário + concurso + matéria. Atualizado
+// (upsert) a cada resposta para permitir cálculos rápidos de progresso e
+// predição sem varrer todo o histórico de respostas.
+model UserProgress {
+  id        String @id @default(cuid())
+  userId    String
+  contestId String
+  subjectId String
+
+  totalAnswered Int @default(0)
+  totalCorrect  Int @default(0)
+
+  updatedAt DateTime @updatedAt
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  contest Contest @relation(fields: [contestId], references: [id], onDelete: Cascade)
+  subject Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, contestId, subjectId])
+  @@index([userId, contestId])
+  @@map("user_progress")
+}

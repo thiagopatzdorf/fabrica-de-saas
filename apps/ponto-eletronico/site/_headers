@@ -1,0 +1,19 @@
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), geolocation=(), microphone=()
+/app/*
+  ! Content-Security-Policy
+  ! Permissions-Policy
+  ! Referrer-Policy
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'
+  Permissions-Policy: camera=(self), geolocation=(self), microphone=()
+  Referrer-Policy: no-referrer
+  Cache-Control: no-cache
+/app/modelos/*
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+/app/vendor/*
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000

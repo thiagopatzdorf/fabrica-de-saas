@@ -1,0 +1,5 @@
+# Para `wrangler dev`: copie para .dev.vars (já ignorado pelo git) e troque os valores. Nunca versione o .dev.vars.
+ADMIN_TOKEN=troque-por-uma-chave-longa-de-20-ou-mais-caracteres
+SESSAO_SEGREDO=troque-por-outro-segredo-longo-e-aleatorio
+PAGAR_URL=https://pagamentos.seu-dominio.example
+PAGAR_TOKEN=token-do-servico-de-pagamento

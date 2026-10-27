@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?OFX OFXHEADER="200" VERSION="211" SECURITY="NONE" OLDFILEUID="NONE" NEWFILEUID="NONE"?>
+<OFX>
+  <SIGNONMSGSRSV1>
+    <SONRS>
+      <STATUS><CODE>0</CODE><SEVERITY>INFO</SEVERITY></STATUS>
+      <DTSERVER>20260805120000[-3:BRT]</DTSERVER>
+      <LANGUAGE>POR</LANGUAGE>
+      <FI><ORG>Cartão Fictício</ORG><FID>260</FID></FI>
+    </SONRS>
+  </SIGNONMSGSRSV1>
+  <CREDITCARDMSGSRSV1>
+    <CCSTMTTRNRS>
+      <TRNUID>1</TRNUID>
+      <STATUS><CODE>0</CODE><SEVERITY>INFO</SEVERITY></STATUS>
+      <CCSTMTRS>
+        <CURDEF>BRL</CURDEF>
+        <CCACCTFROM><ACCTID>1234********5678</ACCTID></CCACCTFROM>
+        <BANKTRANLIST>
+          <DTSTART>20260701000000[-3:BRT]</DTSTART>
+          <DTEND>20260731000000[-3:BRT]</DTEND>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20260703000000[-3:BRT]</DTPOSTED>
+            <TRNAMT>-94.59</TRNAMT>
+            <FITID>66a1b2c3-0001</FITID>
+            <MEMO>Ifood *Restaurante Sabor &amp; Arte 2/3</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20260704000000[-3:BRT]</DTPOSTED>
+            <TRNAMT>-29.90</TRNAMT>
+            <FITID>66a1b2c3-0002</FITID>
+            <MEMO>&lt;img src=x onerror=alert(1)&gt; Netflix.com</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT</TRNTYPE>
+            <DTPOSTED>20260710000000[-3:BRT]</DTPOSTED>
+            <TRNAMT>1500.00</TRNAMT>
+            <FITID>66a1b2c3-0003</FITID>
+            <MEMO>Pagamento recebido</MEMO>
+          </STMTTRN>
+        </BANKTRANLIST>
+        <LEDGERBAL>
+          <BALAMT>-124.49</BALAMT>
+          <DTASOF>20260731000000[-3:BRT]</DTASOF>
+        </LEDGERBAL>
+      </CCSTMTRS>
+    </CCSTMTTRNRS>
+  </CREDITCARDMSGSRSV1>
+</OFX>

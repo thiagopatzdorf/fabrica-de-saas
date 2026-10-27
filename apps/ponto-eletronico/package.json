@@ -1,0 +1,15 @@
+{
+  "name": "ponto-eletronico",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Electronic time clock with GPS fence and on-device face recognition (Cloudflare Worker + D1). Not an MTE-homologated REP-P.",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "modelos": "node scripts/baixar-modelos.mjs",
+    "dev": "node servidor/servir-local.mjs",
+    "test": "node --test servidor/worker.test.mjs servidor/higiene.test.mjs",
+    "convite": "node scripts/convite.mjs"
+  }
+}

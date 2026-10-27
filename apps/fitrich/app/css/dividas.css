@@ -1,0 +1,18 @@
+/* Tela Dívidas. */
+.tela-dividas .divida { border: 1px solid var(--grade); border-radius: 14px; padding: 14px; display: grid; gap: 10px; }
+.tela-dividas .div-cab { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px 12px; align-items: start; }
+.tela-dividas .div-cab h3 { margin: 0; font: 600 1.062rem Sora, system-ui, sans-serif; }
+.tela-dividas .div-cab small { color: var(--ink2); display: block; }
+.tela-dividas .div-valor { font: 600 1.125rem Sora, system-ui, sans-serif; font-variant-numeric: tabular-nums; }
+.tela-dividas .div-cab .acoes { justify-content: flex-end; }
+.tela-dividas .divida .grade { margin: 0; }
+.tela-dividas .form-sim { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; align-items: end; }
+.tela-dividas .metodos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0 6px; }
+.tela-dividas .metodo { display: grid; gap: 4px; text-align: left; align-content: start; padding: 12px; border-radius: 14px; background: var(--sup); color: var(--ink); border: 2px solid var(--grade); font-weight: 500; width: 100%; min-height: 44px; }
+.tela-dividas .metodo b { font: 600 1.375rem Sora, system-ui, sans-serif; }
+.tela-dividas .metodo small { color: var(--ink2); }
+.tela-dividas .metodo-nome { font: 600 0.8125rem Sora, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .06em; color: var(--ink2); }
+.tela-dividas .metodo[aria-pressed="true"] { border-color: var(--s1); background: var(--sup2); color: var(--ink); }
+.tela-dividas .escolha { margin: 4px 0; }
+@media (max-width: 420px) { .tela-dividas .metodos { grid-template-columns: 1fr; } }
+@media (min-width: 560px) { .tela-dividas .div-cab { grid-template-columns: minmax(0, 1fr) auto auto; } }

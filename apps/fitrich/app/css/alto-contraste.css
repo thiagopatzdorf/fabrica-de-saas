@@ -1,0 +1,16 @@
+/* Alto contraste (Mais → Aparência, ou prefers-contrast: more). O tema.js injeta este arquivo no <head> antes da primeira
+   pintura, só para quem precisa. Mesmas funções de cor, mais firmes; foco de 4 px. */
+html[data-gs-contraste="alto"]{
+  --sup:#fff;--sup2:#f4f4f4;--sup3:#e4e4e4;--ink:#000;--ink2:#000;--mud:#1f1f1f;--grade:#6b6b6b;--eixo:#3d3d3d;
+  --azul:#00428a;--laranja:#8a2c00;--agua:#005a49;--agua-t:#005a49;--ouro:#5c4200;--ouro-vivo:#7d5c00;
+  --azul-fundo:#e0ebfa;--laranja-fundo:#fbe6d8;--agua-fundo:#dff3ec;--ouro-fundo:#f3e6c0;
+  --sobre-azul:#ffffff;--sobre-laranja:#ffffff;
+}
+html[data-gs-theme="dark"][data-gs-contraste="alto"]{
+  --sup:#000;--sup2:#0f0f0f;--sup3:#1c1c1c;--ink:#fff;--ink2:#fff;--mud:#e6e6e6;--grade:#9a9a9a;--eixo:#c8c8c8;
+  --azul:#8cbcff;--laranja:#ff9a66;--agua:#5fe0c5;--agua-t:#5fe0c5;--ouro:#ffd36b;--ouro-vivo:#e6b94a;
+  --azul-fundo:#0a1d3a;--laranja-fundo:#3a1a08;--agua-fundo:#06302a;--ouro-fundo:#3a2f08;
+  --sobre-azul:#000;--sobre-laranja:#000;
+}
+
+html[data-gs-contraste="alto"] :focus-visible{outline-width:4px}

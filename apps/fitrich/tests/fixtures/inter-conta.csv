@@ -1,0 +1,11 @@
+Extrato Conta Corrente
+Conta;1234567-8
+Período;01/07/2026 a 31/07/2026
+Saldo inicial;R$ 1.000,00
+Saldo final;R$ 2.038,66
+
+Data Lançamento;Histórico;Descrição;Valor;Saldo
+02/07/2026;Pix enviado;José da Silva;-R$ 45,90;R$ 954,10
+05/07/2026;Pix recebido;Empresa Ltda;R$ 1.234,56;R$ 2.188,66
+10/07/2026;Compra no débito;ENEL SAO PAULO;-R$ 89,90;R$ 2.098,76
+15/07/2026;Pagamento efetuado;"FATURA CARTAO; INTER";-R$ 60,10;R$ 2.038,66

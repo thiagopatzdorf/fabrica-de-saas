@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ativar celular · Ponto Eletrônico</title>
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23888' stroke-width='3'/%3E%3Cpath d='M16 8v8l5 3' fill='none' stroke='%23888' stroke-width='3'/%3E%3C/svg%3E">
+<script src="/tema.js"></script>
+<link rel="stylesheet" href="/estilo.css">
+<link rel="stylesheet" href="/app/app.css">
+<script type="module" src="/app/ativar.js"></script>
+</head>
+<body class="app">
+<header class="app-topo">
+  <a class="marca" href="/app/" aria-label="Ponto Eletrônico">
+    <span class="produto">Ponto Eletrônico</span>
+  </a>
+  <nav><button type="button" class="tema-botao" data-tema-botao aria-label="Tema"><svg class="ti-auto" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor" stroke="none"/></svg><svg class="ti-claro" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="ti-escuro" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button></nav>
+</header>
+<main class="app-main app-estreito">
+  <section class="cartao-app" data-etapa="info">
+    <h1 data-ola>Ativar este celular</h1>
+    <p class="sub-app" data-empresa-at>Conferindo o link…</p>
+    <div data-termo hidden>
+      <h2>Termo de uso do rosto e da localização</h2>
+      <div class="termo">
+        <p><b>O que coletamos:</b> um modelo numérico do seu rosto (não é a foto), uma foto pequena a cada ponto e a localização no momento do ponto.</p>
+        <p><b>Para quê:</b> só para confirmar que é você registrando o seu ponto, no local de trabalho. Nada disso é usado para outra finalidade nem vendido.</p>
+        <p><b>Quem vê:</b> o RH da sua empresa vê as fotos e a localização das suas marcações. O modelo do rosto fica cifrado e ninguém o vê.</p>
+        <p><b>Por quanto tempo:</b> enquanto você trabalhar na empresa e pelo prazo que a lei trabalhista exige guardar o registro de ponto.</p>
+        <p><b>Seus direitos (LGPD):</b> você pode pedir ao RH para ver, corrigir ou apagar o cadastro do rosto a qualquer momento. Sem ele, combine com o RH outra forma de registrar o ponto.</p>
+      </div>
+      <label class="marcar"><input type="checkbox" data-aceito> Li e autorizo o uso do meu rosto e da minha localização para o registro de ponto.</label>
+      <button class="btn cheio" type="button" data-comecar disabled>Cadastrar meu rosto</button>
+    </div>
+    <p class="aviso" data-aviso hidden></p>
+  </section>
+  <section class="cartao-app" data-etapa="camera" hidden>
+    <h1>Cadastro do rosto</h1>
+    <p class="sub-app">Três fotos, olhando para a câmera, com boa luz. Só você na imagem.</p>
+    <div class="passos-foto" aria-label="fotos tiradas"><i></i><i></i><i></i></div>
+    <div class="camera"><video playsinline muted></video><div class="moldura"></div><div class="estado" data-estado>Abrindo a câmera…</div></div>
+    <button class="btn cheio" type="button" data-foto disabled>Tirar foto 1 de 3</button>
+    <p class="aviso" data-aviso-cam hidden></p>
+  </section>
+  <section class="cartao-app" data-etapa="pronto" hidden>
+    <h1>Pronto!</h1>
+    <p class="sub-app">Este celular está ativado. Use-o para bater o ponto.</p>
+    <a class="btn cheio" href="/app/ponto">Bater o ponto agora</a>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "fitrich-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Casca nativa (Capacitor) do Fitrich: o mesmo app web empacotado para Android e iOS. Nada de rede.",
+  "license": "MIT",
+  "engines": { "node": ">=22.0.0" },
+  "scripts": {
+    "montar": "node scripts/montar-www.mjs",
+    "recursos": "python3 scripts/gerar-recursos.py && capacitor-assets generate",
+    "sync": "npm run montar && cap sync",
+    "android:add": "npm run montar && cap add android",
+    "android:abrir": "cap open android",
+    "android:aab": "npm run sync && cd android && ./gradlew bundleRelease",
+    "ios:add": "npm run montar && cap add ios",
+    "ios:abrir": "cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/filesystem": "^8.1.4",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/ios": "^8.5.2",
+    "@capacitor/local-notifications": "^8.3.1",
+    "@capacitor/share": "^8.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.5.2"
+  }
+}

@@ -1,0 +1,3 @@
+# Troque por 'Allow: /' (e tire o X-Robots-Tag de _headers) quando for abrir a loja ao público.
+User-agent: *
+Disallow: /

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ligar o Stripe · Links de Pagamento</title>
+<meta name="robots" content="noindex"><meta name="referrer" content="no-referrer">
+<link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="topo"><a class="marca" href="/"><img src="/favicon.svg" alt="" width="28" height="28">Links de Pagamento</a></header>
+  <main>
+    <h1>Ligar o Stripe</h1>
+    <section class="painel">
+      <p class="sub">Cole a chave secreta restrita do Stripe. Ela é conferida agora, guardada cifrada e <b>nunca</b> aparece de volta nesta tela. O webhook é criado sozinho.</p>
+      <form class="form" id="f">
+        <label class="campo">Chave restrita (rk_live_… ou rk_test_…)<input id="chave" type="password" autocomplete="off" spellcheck="false" required></label>
+        <label class="campo">Segredo do webhook (whsec_…), só se o webhook não puder ser criado sozinho<input id="whsec" type="password" autocomplete="off" spellcheck="false"></label>
+        <p class="erro" id="erro" role="alert"></p>
+        <button class="botao" type="submit">Ligar</button>
+      </form>
+      <p class="ok-msg" id="ok" role="status"></p>
+    </section>
+  </main>
+</div>
+<script src="/configurar.js" type="module"></script>
+</body>
+</html>
