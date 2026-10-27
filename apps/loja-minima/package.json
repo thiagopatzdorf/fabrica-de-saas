@@ -1,0 +1,13 @@
+{
+  "name": "loja-minima",
+  "version": "0.1.0",
+  "description": "Loja pequena em um Cloudflare Worker: vitrine, carrinho, checkout, painel do dono.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node servir-local.mjs",
+    "test": "node --test"
+  }
+}

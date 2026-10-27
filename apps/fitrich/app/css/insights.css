@@ -1,0 +1,14 @@
+/* Insights: lista de linhas (frase, próximo passo, prova, dispensar). Compartilhado entre a tela Revisão e o cartão
+   "Para olhar hoje" da Hoje; só usa as variáveis do shell (app.css). Estado nunca só por cor: ícone + palavra. */
+.insights { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.insight { display: grid; gap: 6px; border: 1px solid var(--grade); border-left: 4px solid var(--azul); border-radius: var(--raio-p); background: var(--sup); padding: 12px 14px; min-width: 0; }
+.insight-atencao { border-left-color: var(--laranja); background: var(--laranja-fundo); }
+.insight-estado { display: inline-flex; align-items: center; gap: 6px; color: var(--ink2); font-size: 0.8125rem; font-weight: 600; }
+.insight-estado svg { width: 18px; height: 18px; flex: none; }
+.insight-atencao .insight-estado svg { color: var(--laranja); }
+.insight-info .insight-estado svg { color: var(--azul); }
+.insight-frase { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+.insight-passo { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+.insight-prova { color: var(--ink2); font-size: 0.8125rem; }
+.insight-dispensar { justify-self: start; min-height: var(--toque); }
+.olhar-hoje .botao { margin-top: 12px; }

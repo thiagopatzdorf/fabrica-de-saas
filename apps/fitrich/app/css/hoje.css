@@ -1,0 +1,69 @@
+/* Tela Hoje. Tudo acima da dobra em 390px: herói, alerta, três tiles. */
+.hoje-corpo>*+*{margin-top:var(--e3)}
+/* Marca de azeite: um traço dourado curto no topo do cartão-herói, a única ornamentação do app. */
+.hoje .marca-ouro{display:block;width:2.125rem;height:.1875rem;border-radius:2px;background:var(--ouro-vivo);margin-bottom:var(--e3)}
+.hoje .heroi{background:var(--sup2);border-radius:var(--raio-g);padding:var(--e4) 1.3125rem;box-shadow:var(--sombra-1)}
+.hoje .ritmo{color:var(--ink2);font-size:var(--t-1);margin-top:var(--e2)}
+.hoje .slot-hoje.ocupado{min-height:0}
+.hoje .slot-hoje:empty{display:none}
+.hoje .slot-hoje>*+*{margin-top:var(--e3)}
+.hoje .rot{font:600 0.8125rem Sora,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+.hoje .gran{font:700 min(var(--t5),13.5vw)/1.05 Sora,sans-serif;letter-spacing:-.03em;margin:6px 0 2px;color:var(--ink);overflow-wrap:anywhere}
+.hoje .heroi.acima .gran{color:var(--laranja)}
+.hoje .gran-texto{font:600 1.625rem/1.2 Sora,sans-serif;margin:6px 0 8px}
+.hoje .leg{color:var(--ink2)}
+.hoje .heroi .botao{margin:12px 0 8px}
+.hoje .medidor{display:grid;gap:6px;margin:14px 0 6px}
+.hoje .barra{display:block;width:100%;height:8px}
+.hoje .barra .fundo{fill:var(--grade)}
+.hoje .barra .cheio{fill:var(--ink2)}
+.hoje .barra.tempo .cheio{fill:var(--eixo)}
+.hoje .barra.gasto .cheio{fill:var(--azul)}
+.hoje .heroi.acima .barra.gasto .cheio{fill:var(--laranja)}
+.hoje .medidor-legenda{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--ink2);font-size:0.8125rem}
+.hoje .q{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--eixo)}
+.hoje .q.gasto{background:var(--azul)}
+.hoje .heroi.acima .q.gasto{background:var(--laranja)}
+.hoje details.formula{margin-top:6px}
+
+.hoje .tudo-certo{display:flex;align-items:center;gap:8px;color:var(--agua-t);font-weight:600;padding:4px 2px}
+.hoje .tudo-certo svg{width:20px;height:20px}
+.hoje .alerta-hoje{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--grade);border-left:4px solid var(--laranja);background:var(--laranja-fundo);border-radius:var(--raio-p);padding:12px 14px;color:var(--ink)}
+.hoje .alerta-hoje svg{width:22px;height:22px;flex:none;color:var(--laranja)}
+
+.hoje .tiles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.hoje .tile{border:1px solid var(--grade);border-radius:14px;padding:12px;background:var(--sup);display:grid;gap:4px;align-content:start;min-width:0}
+.hoje .tile-cab{display:flex;align-items:center;gap:6px;color:var(--ink2);font-size:0.8125rem;font-weight:600}
+.hoje .tile-cab svg{width:18px;height:18px;flex:none}
+.hoje .tile b{font:600 1.375rem/1.1 Sora,sans-serif;overflow-wrap:anywhere}
+.hoje .tile small{color:var(--mud);font-size:0.7812rem;overflow-wrap:anywhere}
+.hoje .sparkline{width:100%;height:36px;color:var(--azul)}
+.hoje .sparkline polyline{stroke:currentColor}
+.hoje .sparkline circle{fill:currentColor}
+
+.hoje .checkin .tile-cab{color:var(--ink);margin-bottom:6px}
+.hoje .checkin .tile-cab svg{width:22px;height:22px}
+.hoje .checkin .semanas{margin-top:6px;color:var(--ink)}
+.hoje .checkin .botao{margin-top:12px}
+
+.hoje .partes{list-style:none;margin:8px 0 6px;padding:0;display:grid;gap:8px}
+.hoje .partes li{display:grid;grid-template-columns:90px 1fr 44px;gap:10px;align-items:center;font-size:0.875rem}
+.hoje .partes .barra{height:6px}
+.hoje .partes .barra .cheio{fill:var(--azul)}
+.hoje .partes b{text-align:right;font-weight:600}
+
+.hoje .vazio-hoje{text-align:center;padding:var(--e5) var(--e4)}
+.hoje .vazio-hoje .marca-ouro{margin-left:auto;margin-right:auto}
+.hoje .vazio-hoje .passo{color:var(--mud);font-size:var(--t-1);margin-top:var(--e3)}
+.hoje .vazio-hoje h2{font-size:1.375rem;margin-bottom:8px}
+.hoje .vazio-hoje .acoes{display:grid;gap:10px;margin-top:18px}
+
+@media (max-width:420px){
+  .hoje .tiles{grid-template-columns:1fr 1fr}
+  .hoje .tiles .tile:first-child{grid-column:1/-1}
+  .hoje .gran{font-size:min(3rem,13.5vw)}
+}
+@media (min-width:768px){
+  .hoje .gran{font-size:4rem}
+  .hoje .vazio-hoje .acoes{display:flex;justify-content:center}
+}

@@ -1,0 +1,29 @@
+/* Componentes compartilhados que não precisam estar na carga inicial: o shell os carrega junto com a primeira tela
+   (estado vazio que ensina, controles de aparência, cores forçadas). Mesmos tokens do app.css. */
+/* Estado vazio que ensina (O quê? Por quê? E agora?): ícone, uma frase do que vai aparecer aqui, um próximo passo.
+   Peça única do app: `estadoVazio()` em ui/estado-vazio.mjs. Nunca é só texto cinza. */
+.vazio-ensina{display:grid;justify-items:center;gap:var(--e2);text-align:center;padding:var(--e5) var(--e4);border:1px dashed var(--grade);border-radius:var(--raio);background:var(--sup2)}
+.vazio-ensina .vazio-icone{display:grid;place-items:center;width:3.4375rem;height:3.4375rem;border-radius:50%;background:var(--ouro-fundo);color:var(--ouro)}
+.vazio-ensina .vazio-icone svg{width:1.625rem;height:1.625rem}
+.vazio-ensina h3{font:600 var(--t1)/var(--lh-t) Sora,sans-serif;color:var(--ink)}
+.vazio-ensina p{color:var(--ink2);max-width:34ch;margin:0 auto}
+.vazio-ensina .acoes{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--e2);margin-top:var(--e2)}
+.vazio-ensina .passo{font-size:var(--t-1);color:var(--mud)}
+
+/* Aparência (Mais → Aparência): alto contraste e texto maior. */
+.aparencia{display:grid;gap:var(--e2);margin-top:var(--e3)}
+.aparencia h3{font-size:var(--t-1);letter-spacing:.08em;text-transform:uppercase;color:var(--mud);font-family:Sora,sans-serif}
+.aparencia button{display:flex;align-items:center;justify-content:space-between;gap:var(--e3);min-height:var(--toque);padding:0 var(--e3);border:1px solid var(--eixo);border-radius:var(--raio-p);background:var(--sup);font-weight:600;text-align:left}
+.aparencia button[aria-pressed="true"]{background:var(--azul-fundo);border-color:var(--azul);color:var(--ink)}
+.aparencia .chave{font-size:var(--t-1);color:var(--ink2);border:1px solid var(--eixo);border-radius:999px;padding:0 var(--e2);min-width:3rem;text-align:center}
+.aparencia button[aria-pressed="true"] .chave{background:var(--azul);color:var(--sobre-azul);border-color:var(--azul)}
+.nav-lateral .aparencia{margin:var(--e4) .625rem 0}
+
+/* Modo de cores forçadas do sistema (Windows Alto Contraste): bordas e foco viram cores do sistema. */
+@media (forced-colors:active){
+  .botao,.icone-btn,.cartao,.aviso,.estado,.vazio-ensina,.vazio{border:1px solid CanvasText}
+  :focus-visible{outline:3px solid Highlight;box-shadow:none}
+  .nav-ind{background:Highlight}
+  svg .cheio{fill:CanvasText}
+}.vazio-ensina+*{margin-top:var(--e3)}
+.nav-lateral .aparencia button{flex-direction:column;align-items:flex-start;justify-content:center;gap:var(--e1);padding:var(--e2) var(--e3);line-height:1.3}

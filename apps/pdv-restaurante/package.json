@@ -1,0 +1,12 @@
+{
+  "name": "pdv-restaurante",
+  "version": "1.0.0",
+  "description": "PDV de restaurante open source: HTML, CSS e JS puros, motor em centavos, estado em localStorage.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "serve": "node serve.mjs"
+  }
+}

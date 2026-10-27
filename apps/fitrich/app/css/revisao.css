@@ -1,0 +1,25 @@
+/* Tela Revisão da semana. */
+.tela-revisao textarea { width: 100%; min-height: 64px; resize: vertical; border: 1px solid var(--eixo); border-radius: 10px; background: var(--sup); color: var(--ink); padding: 10px 12px; font: inherit; }
+/* Rótulo da semana em cima e os dois botões lado a lado embaixo; a partir de 560 px tudo na mesma linha. */
+.tela-revisao .semana-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; margin: 0 0 16px; }
+.tela-revisao .semana-rotulo { grid-column: 1 / -1; grid-row: 1; text-align: center; }
+.tela-revisao .semana-nav button { width: 100%; grid-row: 2; }
+@media (min-width: 560px) {
+  .tela-revisao .semana-nav { grid-template-columns: auto 1fr auto; }
+  .tela-revisao .semana-rotulo { grid-column: 2; grid-row: 1; }
+  .tela-revisao .semana-nav button { width: auto; grid-row: 1; }
+  .tela-revisao #rev-ant { grid-column: 1; } .tela-revisao #rev-seg { grid-column: 3; }
+}
+/* Entrou / saiu / sobrou: uma linha por número no celular (valor nunca quebra no meio), três colunas a partir de 480 px. */
+.tela-revisao .sec-rev-dinheiro .grade { grid-template-columns: 1fr; gap: 8px; }
+.tela-revisao .sec-rev-dinheiro .st { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+@media (min-width: 480px) { .tela-revisao .sec-rev-dinheiro .grade { grid-template-columns: repeat(3, minmax(0, 1fr)); } .tela-revisao .sec-rev-dinheiro .st { display: grid; } }
+.tela-revisao .sugestoes button { text-align: left; height: auto; padding-block: 8px; }
+.tela-revisao .eixo { border-top: 1px solid var(--grade); padding: 14px 0 6px; display: grid; gap: 6px; }
+.tela-revisao .eixo h3 { margin: 0; }
+.tela-revisao .eixo-valor { margin: 0; font: 600 1.25rem Sora, system-ui, sans-serif; font-variant-numeric: tabular-nums; }
+.tela-revisao .regua { width: 100%; height: 14px; display: block; }
+.tela-revisao .regua-fundo { fill: var(--grade); }
+.tela-revisao .regua-faixa { fill: var(--agua-fundo); stroke: var(--agua); stroke-width: .5; }
+.tela-revisao .regua-marca { fill: var(--ink); }
+.tela-revisao .eixo-sem-dado { opacity: .9; }

@@ -1,0 +1,8 @@
+/* Tela Patrimônio. O comum das cinco telas da área B está em _telas.css (o shell carrega os dois em
+   paralelo, pela lista `css` da tela; sem cascata de requests). */
+.tela-patrimonio .sec-saldos .botoes button:not(.peq) { width: 100%; }
+.tela-patrimonio .card-inv { border: 1px solid var(--grade); border-radius: 14px; padding: 14px; display: grid; gap: 8px; }
+.tela-patrimonio .card-inv .item { display: grid; } .tela-patrimonio .card-inv .item small { color: var(--ink2); }
+.tela-patrimonio .card-inv .grade { margin: 0; }
+.tela-patrimonio .fonte { margin-top: 0; }
+@media (min-width: 560px) { .tela-patrimonio .sec-saldos .botoes button:not(.peq) { width: auto; } }

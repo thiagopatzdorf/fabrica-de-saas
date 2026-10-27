@@ -1,0 +1,91 @@
+/* Links de Pagamento. Fontes Sora e Manrope (SIL OFL 1.1). */
+@font-face{font-family:Sora;src:url(/fonts/sora.woff2) format("woff2");font-weight:100 800;font-display:swap}
+@font-face{font-family:Manrope;src:url(/fonts/manrope.woff2) format("woff2");font-weight:200 800;font-display:swap}
+:root{--bg:#F6FDFF;--ink:#05070C;--mut:rgba(5,7,12,.7);--dim:rgba(5,7,12,.58);--line:rgba(5,7,12,.12);--card:#fff;--card2:rgba(5,7,12,.04);--brand:#1557D6;--acc:#0E8A4A;--acc-bg:rgba(14,138,74,.1);--bad:#C2261D;--bad-bg:rgba(194,38,29,.09);--on-brand:#fff;--glow:rgba(53,198,244,.22);--sombra:0 1px 2px rgba(5,7,12,.04),0 8px 28px rgba(5,7,12,.06);color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#05060A;--ink:#F6FDFF;--mut:rgba(246,253,255,.7);--dim:rgba(246,253,255,.56);--line:rgba(246,253,255,.14);--card:rgba(246,253,255,.04);--card2:rgba(246,253,255,.07);--brand:#35C6F4;--acc:#22F07F;--acc-bg:rgba(34,240,127,.1);--bad:#FF7A7A;--bad-bg:rgba(255,122,122,.11);--on-brand:#05070C;--glow:rgba(27,99,240,.25);--sombra:none;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:400 17px/1.65 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:-20% -10% auto -10%;height:60vh;background:radial-gradient(60% 60% at 50% 0%,var(--glow),transparent 70%);pointer-events:none;z-index:0}
+a{color:var(--brand)}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+.wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:0 20px}
+.wrap.larga{max-width:980px}
+.topo{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:22px 0 8px}
+.marca{display:flex;align-items:center;gap:10px;font:600 15px/1 Sora,sans-serif;color:var(--ink);text-decoration:none}
+.selo{font:500 12px/1 ui-monospace,monospace;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:6px 10px}
+#conta{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--mut)}
+.hero{padding:40px 0 4px}
+.olho{font:500 13px/1.4 ui-monospace,monospace;color:var(--brand);margin:0 0 14px}
+h1{font:650 clamp(28px,5vw,42px)/1.14 Sora,sans-serif;letter-spacing:-.02em;margin:0 0 14px}
+h1 em{font-style:normal;color:var(--brand)}
+h2{font:600 22px/1.25 Sora,sans-serif;margin:0 0 6px}
+h3{font:600 18px/1.3 Sora,sans-serif;margin:0 0 8px}
+.lead{font-size:19px;color:var(--mut);margin:0;max-width:640px}
+.sub,.dica{color:var(--mut);margin:0 0 16px;font-size:15px}
+section{margin:34px 0}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.cartao{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--sombra)}
+.cartao p{margin:0 0 12px;color:var(--mut);font-size:16px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--dim);font-size:14px;margin:0 0 16px;padding:0;list-style:none}
+.botao,button.botao{display:inline-block;font:600 16px/1 Sora,sans-serif;background:var(--brand);color:var(--on-brand);border:0;border-radius:12px;padding:14px 20px;cursor:pointer;text-decoration:none}
+.botao.sec{background:transparent;color:var(--brand);border:1.5px solid var(--brand)}
+.botao[disabled]{opacity:.45;cursor:not-allowed}
+button.link{background:none;border:0;color:var(--brand);font:inherit;cursor:pointer;text-decoration:underline;padding:0}
+.lista{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.lista li{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+/* Curso */
+.curso{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:start}
+.passos{display:grid;gap:8px;position:sticky;top:16px}
+.passo{display:flex;align-items:center;gap:10px;text-align:left;width:100%;font:500 15px/1.3 Manrope,sans-serif;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer}
+.passo[aria-current="step"]{border-color:var(--brand);box-shadow:0 0 0 1px var(--brand)}
+.passo .marca-passo{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font:700 13px/1 Sora,sans-serif;background:var(--card2);color:var(--dim)}
+.passo.feito .marca-passo{background:var(--acc-bg);color:var(--acc)}
+.palco{min-width:0}
+.texto{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:0 0 22px}
+.texto p{margin:0 0 10px}.texto p:last-child{margin:0}
+.progresso{font:600 14px/1 ui-monospace,monospace;color:var(--dim);margin:0 0 14px}
+.exercicio{background:var(--card);border:1px solid var(--line);border-left-width:5px;border-radius:14px;padding:16px 18px;margin:0 0 14px}
+.exercicio.certo{border-color:var(--acc);background:var(--acc-bg)}
+.exercicio.errado{border-color:var(--bad);background:var(--bad-bg)}
+.enunciado{margin:0 0 12px;font-weight:500}
+.opcoes{display:flex;flex-wrap:wrap;gap:10px}
+.opcao{font:500 16px/1.2 Manrope,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:11px 16px;cursor:pointer}
+.opcao:hover:not([disabled]){border-color:var(--brand)}
+.opcao.certo{border-color:var(--acc);background:var(--acc-bg);color:var(--acc);font-weight:700}
+.opcao.errado{border-color:var(--bad);background:var(--bad-bg);color:var(--bad);text-decoration:line-through}
+.opcao.escolhida{border-color:var(--brand);box-shadow:0 0 0 1px var(--brand)}
+.opcao.certo:before{content:"✓ "}.opcao.errado:before{content:"✗ "}
+.lacuna{display:flex;gap:10px;flex-wrap:wrap}
+.lacuna input,.campo input{font:500 16px/1.2 Manrope,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;min-width:0;flex:1 1 160px}
+.lacuna input.certo{border-color:var(--acc);color:var(--acc)}.lacuna input.errado{border-color:var(--bad);color:var(--bad)}
+.feedback{margin:10px 0 0;font-weight:700;font-size:15px;min-height:1.4em}
+.certo>.feedback{color:var(--acc)}.errado>.feedback{color:var(--bad)}
+.resultado{border-radius:16px;padding:20px 22px;margin:0 0 18px;border:2px solid var(--line)}
+.resultado.ok{border-color:var(--acc);background:var(--acc-bg)}.resultado.nao{border-color:var(--bad);background:var(--bad-bg)}
+.resultado b{font:700 28px/1.1 Sora,sans-serif;display:block;margin:0 0 6px}
+.form{display:grid;gap:12px;max-width:420px}
+.campo{display:grid;gap:4px;font-size:15px;color:var(--mut)}
+.erro{color:var(--bad);font-weight:600;margin:0;min-height:1.4em}
+.abas{display:flex;gap:16px;margin:0 0 14px}
+.abas button{background:none;border:0;border-bottom:2px solid transparent;font:600 16px/1 Sora,sans-serif;color:var(--dim);padding:6px 0;cursor:pointer}
+.abas button[aria-selected="true"]{color:var(--ink);border-color:var(--brand)}
+.rodape{color:var(--dim);font-size:14px;margin:48px 0 32px}
+/* Certificado */
+.verificado{display:flex;align-items:center;gap:10px;font-weight:600;margin:24px 0 16px}
+.luz.ok{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--acc-bg);color:var(--acc);font-weight:700}
+.certificado{margin:0 0 20px;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:var(--sombra)}
+.certificado svg{display:block;width:100%;height:auto}
+.acoes{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 14px}
+@media (max-width:760px){.curso{grid-template-columns:1fr}.passos{position:static;grid-auto-flow:column;grid-auto-columns:max-content;overflow-x:auto;padding-bottom:6px}.passo{white-space:nowrap}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* Links de Pagamento */
+.painel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--sombra)}
+.resultado-link{display:grid;gap:10px;margin-top:16px}
+.resultado-link code{display:block;word-break:break-all;background:var(--card2);border-radius:10px;padding:12px 14px;font-size:16px}
+.ok-msg{color:var(--acc);font-weight:700}
+.campo select,.campo textarea{font:500 16px/1.2 Manrope,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;min-width:0}
+.lista li small{color:var(--dim)}
+
+/* O atributo hidden perde para display:grid das classes; sem isto campo e formulário "escondidos" continuam na tela. */
+[hidden]{display:none!important}

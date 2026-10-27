@@ -1,0 +1,18 @@
+# Leitor de PHP (MIT): só para extrair o contrato.
+tree-sitter==0.26.0
+tree-sitter-php==0.25.1
+# Runtime do app gerado (o gerador copia a lista para requirements.txt do app).
+fastapi==0.149.0
+starlette==1.9.0
+pydantic==2.14.1
+SQLAlchemy==2.1.5
+uvicorn==0.54.0
+bcrypt==5.0.0
+regex==2026.9.29
+anyio==4.15.1        # transitiva do starlette; <4.14.2 tem CVE-2026-63374 (TLS IDNA, crítico)
+# Testes
+httpx==0.28.1
+certifi==2026.10.19  # transitiva do httpx; <2026.10.19 tem CVE emSign (GHSA-6q48-6c7w-9gw2, crítico)
+idna==3.20           # transitiva do httpx; <3.15 tem CVE-2026-45409
+pytest==9.0.3        # <9.0.3 tem CVE-2025-71176 (tmpdir em /tmp/pytest-of-*)
+pygments==2.20.0     # transitiva do pytest; <2.20.0 tem CVE-2026-4539 (ReDoS)

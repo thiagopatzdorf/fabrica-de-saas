@@ -1,0 +1,29 @@
+[project]
+name = "laravel-fastapi"
+version = "0.1.0"
+description = "Lê um app Laravel, escreve o contrato JSON e gera um app FastAPI equivalente, com avaliador diferencial."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+  "tree-sitter==0.26.0",
+  "tree-sitter-php==0.25.1",
+  "fastapi==0.149.0",
+  "pydantic==2.14.1",
+  "SQLAlchemy==2.1.5",
+  "bcrypt==5.0.0",
+  "regex==2026.9.29",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.3", "httpx==0.28.1"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["laravel_fastapi*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

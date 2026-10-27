@@ -1,0 +1,13 @@
+# Loja Mínima
+
+Loja de demonstração (produtos fictícios). Preços em reais. Troque este arquivo pelo texto da sua loja.
+
+## Para agentes de IA
+
+Guia com exemplos: /agentes.html
+Contrato completo em JSON: GET /api/agente
+Catálogo (busca e paginação): GET /api/agente/catalogo?q=camiseta&limite=20
+Comprar: POST /api/agente/pedidos (application/json). Devolve o link de pagamento para a pessoa que você representa pagar. Use o cabeçalho Idempotency-Key para repetir a chamada sem criar dois pedidos.
+Acompanhar: GET /api/pedido/{id}
+
+O pagamento exige uma pessoa no link. Pagamento autônomo por agente não existe nesta loja.

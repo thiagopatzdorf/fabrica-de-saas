@@ -1,0 +1,59 @@
+/* Tela Cartões. A base (tiles, botões, gráficos, diálogo) está em financas-comum.css. */
+
+.car-cartao { border: 1px solid var(--fin-grade); background: var(--fin-sup); border-radius: 16px; padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.car-regra { margin: 2px 0 0; color: var(--fin-ink2); font-size: 0.875rem; }
+.car-kpi { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.car-status { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8125rem; color: var(--fin-ink2); white-space: nowrap; }
+.car-status.is-paga .fin-ic { color: var(--fin-bom); }
+.car-status.is-aberta .fin-ic { color: var(--fin-s1); }
+.car-status.is-fechada .fin-ic { color: var(--fin-ink); }
+.car-status.is-vencida .fin-ic { color: var(--fin-s2); }
+.car-status.is-futura .fin-ic { color: var(--fin-mud); }
+
+/* Fatura fechada a pagar: aviso calmo (sem vermelho), com o rotativo rotulado como média de mercado. */
+.car-apagar { border: 1px solid var(--fin-eixo); border-radius: 12px; padding: 12px; background: var(--fin-sup2); display: grid; gap: 8px; }
+.car-apagar p { margin: 0; }
+.car-rotativo { color: var(--fin-ink2); font-size: 0.875rem; }
+.car-apagar .fin-btn { justify-self: start; }
+
+/* Linha do tempo de 3 ciclos: três tons da rampa azul. */
+.car-ciclos svg.ciclos { width: 100%; height: 14px; display: block; }
+.grafico.ciclos .ciclo-anterior { fill: color-mix(in oklab, var(--fin-s1) 35%, var(--fin-sup)); }
+.grafico.ciclos .ciclo-aberta { fill: var(--fin-s1); }
+.grafico.ciclos .ciclo-proxima { fill: color-mix(in oklab, var(--fin-s1) 65%, var(--fin-sup)); }
+.car-ciclos-lista { list-style: none; margin: 6px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; font-size: 0.8125rem; }
+.car-ciclos-lista li { display: grid; gap: 2px; min-width: 0; }
+.car-ciclos-lista li span:last-child { font-variant-numeric: tabular-nums; }
+
+.car-itens, .car-futuras, .car-eventos { list-style: none; margin: 0; padding: 0; }
+.car-itens li, .car-futuras li, .car-eventos li { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--fin-grade); }
+.car-futuras li .car-valor, .car-eventos li .car-valor { grid-column: 2; justify-self: start; }
+.car-itens li { grid-template-columns: auto 1fr auto; }
+.car-itens li button { grid-column: 1 / -1; justify-self: end; }
+.car-item-data { color: var(--fin-mud); font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
+.car-item-desc { overflow-wrap: anywhere; }
+.car-item-desc .fin-etq { margin-left: 6px; }
+.car-valor { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; text-align: right; }
+.car-valor.is-entrada { color: var(--fin-s1); }
+.car-valor.is-saida { color: var(--fin-s2); }
+
+/* Calendário: marcador = ícone + número (o texto para leitor de tela vai em .fin-sr); a cor só reforça. */
+.car-nav { display: flex; gap: 6px; }
+.car-grade { width: 100%; border-collapse: collapse; table-layout: fixed; font-variant-numeric: tabular-nums; }
+.car-grade th { font-weight: 600; color: var(--fin-ink2); font-size: 0.75rem; padding: 4px 0; text-align: center; }
+.car-grade td { height: 48px; vertical-align: top; text-align: center; border-top: 1px solid var(--fin-grade); padding: 4px 2px; font-size: 0.875rem; }
+.car-grade td.is-fora { background: var(--fin-sup2); }
+.car-dia-n { display: block; }
+.car-dia.is-hoje .car-dia-n { font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.car-ev { display: inline-block; font-size: 0.6875rem; line-height: 1; margin: 2px 1px 0; }
+.car-ev.is-vence { color: var(--fin-s2); }
+.car-ev.is-fecha { color: var(--fin-s1); }
+.car-legenda { display: flex; gap: 16px; color: var(--fin-ink2); font-size: 0.8125rem; margin: 8px 0; }
+.car-legenda span span { font-size: 0.6875rem; }
+
+@media (min-width: 700px) {
+  .car-itens li button { grid-column: auto; }
+  .car-itens li { grid-template-columns: auto 1fr auto auto; }
+  .car-futuras li, .car-eventos li { grid-template-columns: auto 1fr auto; }
+  .car-futuras li .car-valor, .car-eventos li .car-valor { grid-column: auto; justify-self: end; }
+}

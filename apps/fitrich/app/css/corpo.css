@@ -1,0 +1,17 @@
+/* Tela Corpo e recuperação. Cores só pelos tokens do shell (claro e escuro); estado nunca só por cor. */
+.tela-corpo .corpo-aviso { border-left: 3px solid var(--s3); padding: 6px 12px; margin: 0 0 16px; }
+.tela-corpo .st-rec .st-val { font-size: 1.75rem; }
+.tela-corpo .rec-sug, .tela-corpo .rec-dor, .tela-corpo .peso-proj, .tela-corpo .peso-alerta { margin: 8px 0; }
+.tela-corpo .corpo-form { margin-top: 12px; }
+.tela-corpo .corpo-fontes { display: grid; gap: 10px; margin: 8px 0; }
+.tela-corpo .corpo-fontes li { overflow-wrap: anywhere; }
+.tela-corpo .botoes { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.tela-corpo .fotos-grade { list-style: none; margin: 8px 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
+.tela-corpo .foto { display: grid; gap: 6px; font-size: 0.8125rem; color: var(--ink2); min-width: 0; }
+.tela-corpo .foto img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 10px; border: 1px solid var(--grade); background: var(--sup2); }
+.tela-corpo .foto span { overflow-wrap: anywhere; }
+.tela-corpo .foto-seletores { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.tela-corpo .foto-lado { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+.tela-corpo .foto-lado figure { margin: 0; min-width: 0; }
+.tela-corpo .foto-lado img { width: 100%; aspect-ratio: 3 / 4; object-fit: contain; border-radius: 12px; border: 1px solid var(--grade); background: var(--sup2); }
+.tela-corpo .foto-lado figcaption { color: var(--ink2); font-size: 0.8125rem; margin-top: 4px; overflow-wrap: anywhere; }

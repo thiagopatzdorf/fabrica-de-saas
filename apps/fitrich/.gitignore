@@ -1,0 +1,6 @@
+node_modules/
+__pycache__/
+*.pyc
+mobile/www/
+mobile/android/
+mobile/ios/

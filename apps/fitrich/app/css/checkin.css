@@ -1,0 +1,27 @@
+/* Tela Check-in semanal: um passo por vez, barra de progresso no topo. */
+.tela-checkin .chk-cab { display: grid; gap: 8px; margin-bottom: 14px; }
+.tela-checkin .chk-prog { display: grid; gap: 6px; }
+.tela-checkin .chk-prog progress { width: 100%; height: 8px; appearance: none; -webkit-appearance: none; border: 0; border-radius: 4px; background: var(--grade); overflow: hidden; accent-color: var(--s1); }
+.tela-checkin .chk-prog progress::-webkit-progress-bar { background: var(--grade); }
+.tela-checkin .chk-prog progress::-webkit-progress-value { background: var(--s1); border-radius: 4px; }
+.tela-checkin .chk-prog progress::-moz-progress-bar { background: var(--s1); }
+.tela-checkin .chk-prog span { color: var(--ink2); font-size: 0.875rem; }
+.tela-checkin .chk-passo h2 { outline-offset: 4px; }
+.tela-checkin .chk-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; align-items: end; }
+.tela-checkin .chk-form .nota, .tela-checkin .chk-form .vazio, .tela-checkin .chk-form .chk-faturas { grid-column: 1 / -1; }
+.tela-checkin .chk-nav { justify-content: flex-end; }
+.tela-checkin .chk-nav button:not(.peq) { min-width: 160px; }
+.tela-checkin .chk-dias { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 6px; }
+.tela-checkin .chk-dias li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--grade); min-height: 44px; }
+.tela-checkin .dia-nome { font-weight: 600; text-transform: capitalize; }
+.tela-checkin .chk-lancs { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 12px; }
+.tela-checkin .chk-lancs li { display: grid; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--grade); }
+.tela-checkin .lanc { display: grid; } .tela-checkin .lanc small { color: var(--ink2); overflow-wrap: anywhere; }
+.tela-checkin .lista-simples { list-style: none; margin: 0; padding: 0; }
+.tela-checkin .lista-simples li { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--grade); }
+.tela-checkin .chk-frase { font: 500 1.125rem/1.5 Manrope, system-ui, sans-serif; margin: 0 0 12px; }
+.tela-checkin .chk-cartao { max-width: 360px; }
+.tela-checkin .chk-canvas { width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--grade); display: block; }
+.tela-checkin .chk-linhas { margin: 8px 0; padding-left: 18px; color: var(--ink2); font-size: 0.875rem; }
+.tela-checkin .chk-fim { margin: 18px 0 4px; font-weight: 600; }
+@media (min-width: 600px) { .tela-checkin .chk-lancs li { grid-template-columns: 1fr 1fr; align-items: end; } }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" data-gs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<link rel="alternate" hreflang="pt-BR" href="{{base}}/">
+<link rel="alternate" hreflang="en" href="{{base}}/en/">
+<link rel="alternate" hreflang="x-default" href="{{base}}/">
+<meta name="theme-color" content="#1A1917">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="{{manifest}}">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{app_nome}}">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fitrich">
+<meta property="og:locale" content="{{og_locale}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:title" content="{{og_title}}">
+<meta property="og:description" content="{{og_description}}">
+<meta name="twitter:card" content="summary">
+<script src="/js/tema.js"></script>
+<link rel="stylesheet" href="/css/app.css">
+<link rel="preload" href="/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="modulepreload" href="/js/app.mjs">
+<link rel="modulepreload" href="/js/v2/armazem.mjs">
+<link rel="modulepreload" href="/js/v2/esquema.mjs">
+<script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body>
+<a class="pular" id="pular" href="#vista">{{pular}}</a>
+<div class="app">
+<header class="topo"><div class="topo-w">
+<a class="logo" href="{{raiz}}" aria-label="{{app_nome}}"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1A1917"/><path d="M10 38h10l6-16 10 26 7-18h11" fill="none" stroke="#5596E6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="52" cy="14" r="5" fill="#D9B45A"/></svg>Fitrich</a>
+<h1 id="titulo-tela">{{app_nome}}</h1>
+<div class="topo-acoes">
+<nav class="idioma" aria-label="{{idioma}}"><a href="/" lang="pt-BR" hreflang="pt-BR" data-idioma="pt-BR"{{atual_pt}}>PT</a><a href="/en/" lang="en" hreflang="en" data-idioma="en"{{atual_en}}>EN</a></nav>
+<button class="icone-btn" id="tema" type="button" aria-label="{{tema}}" aria-pressed="false"></button>
+</div>
+</div></header>
+<nav class="nav-lateral" id="nav-lateral" aria-label="{{secoes}}"></nav>
+<div class="conteudo">
+<div id="avisos"></div>
+<div id="avisos-app"></div>
+<main id="vista" tabindex="-1"><noscript><p class="aviso">{{sem_js}}</p></noscript></main>
+<footer class="rodape" id="rodape"></footer>
+</div>
+<nav class="nav-inferior" id="nav-inferior" aria-label="{{secoes}}"></nav>
+</div>
+<button class="fab" id="fab" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>{{lancar}}</button>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<script type="module" src="/js/app.mjs"></script>
+</body>
+</html>

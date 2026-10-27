@@ -1,0 +1,29 @@
+{
+  "packageId": "com.example.fitrich",
+  "host": "fitrich.example.com",
+  "name": "Fitrich: finanças e shape",
+  "launcherName": "Fitrich",
+  "display": "standalone",
+  "themeColor": "#1A1A19",
+  "themeColorDark": "#1A1A19",
+  "navigationColor": "#1A1A19",
+  "navigationColorDark": "#1A1A19",
+  "backgroundColor": "#1A1A19",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://fitrich.example.com/icons/icon-512.png",
+  "maskableIconUrl": "https://fitrich.example.com/icons/icon-maskable-512.png",
+  "monochromeIconUrl": "https://fitrich.example.com/icons/icon-monochrome-512.png",
+  "webManifestUrl": "https://fitrich.example.com/manifest.webmanifest",
+  "appVersionName": "1.0.0",
+  "appVersion": "1",
+  "fallbackType": "customtabs",
+  "enableSiteSettingsShortcut": false,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "signingKey": { "path": "./fitrich-upload.keystore", "alias": "fitrich-upload" },
+  "shortcuts": [
+    { "name": "Lançar gasto", "shortName": "Lançar", "url": "/#/lancar", "chosenIconUrl": "https://fitrich.example.com/icons/icon-192.png" },
+    { "name": "Registrar treino", "shortName": "Treino", "url": "/#/shape", "chosenIconUrl": "https://fitrich.example.com/icons/icon-192.png" }
+  ]
+}

@@ -1,0 +1,3 @@
+# Dados do escritório nunca vão para o Git (documentos de clientes, banco, segredo).
+data/
+__pycache__/

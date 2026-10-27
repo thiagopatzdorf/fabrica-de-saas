@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR" data-gs-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitrich v2 — harness de tela</title>
+<!-- Harness mínimo de TESTE (o shell ainda está sendo escrito): tokens do v1 para os dois temas e o contrato
+     `ctx` real sobre dados de exemplo. Não é a página do app; só o teste de navegador o serve. -->
+<link rel="stylesheet" href="/_teste/harness.css">
+</head>
+<body>
+<main class="w"><div id="app"></div></main>
+<script type="module">
+import { criarCtx } from "/js/v2/ui/ctx.mjs";
+import { criarI18n } from "/js/v2/ui/i18n.mjs";
+import { ErroEsquema, validar, vazio } from "/js/v2/esquema.mjs";
+import { indicesVigentes } from "/js/v2/indices.mjs";
+import { AGORA, HOJE, contadorDeIds, dadosExemplo } from "/_teste/dados-exemplo.mjs";
+
+const q = new URLSearchParams(location.search);
+const telaId = q.get("tela") ?? "financas", idioma = q.get("idioma") ?? "pt-BR", tema = q.get("tema") ?? "light";
+document.documentElement.setAttribute("data-gs-theme", tema);
+document.documentElement.lang = idioma;
+const { tela } = await import(`/js/v2/ui/telas/${telaId}.mjs`);
+for (const href of [].concat(tela.css)) { const link = document.createElement("link"); link.rel = "stylesheet"; link.href = href; document.head.append(link); }
+const dic = (await import(tela.i18n)).default;
+const vazios = (await import("/js/v2/ui/vazios.i18n.mjs")).default;
+const i18n = criarI18n({ idioma, dicionarios: [dic, vazios] });
+let dados = q.get("vazio") ? vazio({ agora: () => AGORA }) : dadosExemplo();
+let montado = null;
+const harness = { pronto: false, mudancas: 0, erros: [], faltando: () => i18n.faltando(), estado: () => dados, destruir: () => montado?.destruir?.() };
+const mudar = async (fn) => {
+  const novo = fn(dados);
+  const v = validar(novo);
+  if (!v.ok) throw new ErroEsquema(v.erros);
+  dados = novo; harness.mudancas += 1;
+  montado?.atualizar?.();
+};
+const ctx = criarCtx({ estado: () => dados, mudar, i18n, hoje: () => HOJE, agora: () => AGORA, novoId: contadorDeIds("ui"), indices: indicesVigentes() });
+montado = tela.montar(ctx);
+document.getElementById("app").append(montado.elemento);
+await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+harness.pronto = true;
+window.harness = harness;
+</script>
+</body>
+</html>

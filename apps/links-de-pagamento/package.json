@@ -1,0 +1,13 @@
+{
+  "name": "links-de-pagamento",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Links de pagamento no Stripe da sua conta (Cloudflare Worker, sem dependências).",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node servir-local.mjs",
+    "test": "node --test worker.test.mjs"
+  }
+}

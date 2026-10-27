@@ -1,0 +1,24 @@
+# Exemplo de configuração para `wrangler deploy`. Copie para wrangler.toml, troque os valores marcados e NÃO coloque segredos aqui.
+# Segredos (ADMIN_TOKEN, SESSAO_SEGREDO, PAGAR_TOKEN) entram com `wrangler secret put`, nunca neste arquivo.
+name = "loja-minima"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# As páginas (pasta site/) são servidas como Static Assets; o Worker só acorda para /api/*.
+[assets]
+directory = "./site"
+binding = "ASSETS"
+not_found_handling = "none"
+html_handling = "auto-trailing-slash"
+# Rode o Worker antes dos assets só para /api/*: assim a página estática não gasta invocação.
+run_worker_first = ["/api/*"]
+
+# KV com catálogo, configuração e pedidos. Crie com: wrangler kv namespace create ESTADO
+# e cole aqui o id que o comando imprimir.
+[[kv_namespaces]]
+binding = "ESTADO"
+id = "COLE_AQUI_O_ID_DO_KV"
+
+[vars]
+# Endereço do serviço de links de pagamento (sem barra no fim). O token vai como segredo: wrangler secret put PAGAR_TOKEN
+PAGAR_URL = "https://pagamentos.seu-dominio.example"

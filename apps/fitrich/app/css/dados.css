@@ -1,0 +1,69 @@
+/* Tela Dados do Fitrich v2. Só tokens do tema (claro/escuro vêm de html[data-gs-theme]); nenhum estilo inline. */
+.fd { display: grid; gap: 14px; padding-bottom: 24px; }
+.fd h2 { margin: 0; }
+.fd h3 { margin: 0 0 6px; grid-column: auto; }
+.fd h4 { font: 600 0.9375rem/1.3 Sora, sans-serif; margin: 12px 0 6px; }
+.fd p { margin: 0 0 8px; }
+.fd code { font: 500 0.875rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--sup2); border-radius: 6px; padding: 1px 6px; overflow-wrap: anywhere; }
+.fd-sub, .fd-mudo { color: var(--ink2); }
+.fd-mudo { font-size: 0.875rem; }
+.fd-forte { font-weight: 600; }
+.fd-cartao { border: 1px solid var(--grade); background: var(--sup); border-radius: 16px; padding: 16px; display: grid; gap: 8px; min-width: 0; }
+.fd-cartao > details, .fd-ajuda { margin: 0; }
+.fd-aviso { border-left: 4px solid var(--aten); background: var(--sup2); padding: 10px 12px; border-radius: 8px; margin: 0; }
+.fd-aviso-erro, .fd-erro { border-left-color: var(--perigo); }
+.fd-erro { border-left: 4px solid var(--perigo); background: var(--sup2); padding: 10px 12px; border-radius: 8px; }
+.fd-erro-campo { color: var(--perigo); font-size: 0.875rem; min-height: 1.2em; margin: 0; }
+.fd-ok { border-color: var(--bom); }
+.fd-btn { font: inherit; font-weight: 600; min-height: 44px; min-width: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--grade); background: var(--sup2); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; text-align: center; }
+.fd-btn:hover { border-color: var(--eixo); }
+.fd-btn:disabled { opacity: .55; cursor: not-allowed; }
+.fd-primario { background: var(--ink); color: var(--sup); border-color: var(--ink); }
+.fd-perigo { background: var(--perigo); color: #fff; border-color: var(--perigo); }
+.fd-mini { min-height: 44px; padding: 0 12px; font-size: 0.875rem; }
+.fd-acoes { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; margin-top: 4px; }
+.fd-acoes-ini { justify-content: flex-start; }
+.fd-acoes-fim { padding: 10px 0; border-top: 1px solid var(--grade); }
+.fd label { display: block; font-weight: 600; font-size: 0.875rem; margin: 0 0 4px; }
+.fd-campo { font: inherit; width: 100%; min-height: 44px; padding: 8px 12px; border: 1px solid var(--eixo); border-radius: 10px; background: var(--sup); color: var(--ink); }
+.fd-campo-bloco { min-width: 0; }
+.fd-grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px 12px; }
+.fd-fieldset { border: 1px solid var(--grade); border-radius: 10px; padding: 8px 12px; margin: 0; display: grid; gap: 4px; }
+.fd-fieldset legend { font-weight: 600; font-size: 0.875rem; padding: 0 4px; }
+/* `.fd label` acima é display:block; a classe sozinha perderia (mesma especificidade não: menor), por isso o seletor repete `label`. */
+.fd label.fd-check, .fd label.fd-radio { display: flex; align-items: center; gap: 10px; min-height: 44px; font-weight: 400; cursor: pointer; }
+.fd-check input, .fd-radio input { width: 22px; height: 22px; margin: 0; flex: none; accent-color: var(--s1); }
+.fd-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.fd-num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.fd-saida { color: var(--s2); }
+.fd-entrada { color: var(--s1); }
+.fd-origem { font-size: 0.75rem; font-weight: 600; letter-spacing: .02em; border-radius: 999px; padding: 2px 8px; background: var(--sup2); border: 1px solid var(--grade); color: var(--ink2); white-space: nowrap; }
+.fd-origem-usuario { border-color: var(--s1); color: var(--s1); }
+.fd-origem-aprendida { border-color: var(--s2); color: var(--s2); }
+.fd-tabela { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.fd-tabela th, .fd-tabela td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--grade); overflow-wrap: anywhere; }
+.fd-tabela th.fd-num, .fd-tabela td.fd-num { text-align: right; }
+.fd-dialogo { border: 1px solid var(--grade); border-radius: 16px; padding: 20px; max-width: min(92vw, 480px); background: var(--sup); color: var(--ink); }
+.fd-dialogo::backdrop { background: rgba(0, 0, 0, .45); }
+.fd-dialogo h3 { margin-top: 0; }
+.fd-input-arquivo { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+@media (prefers-reduced-motion: no-preference) { .fd-btn { transition: border-color .15s, background .15s; } }
+@media (prefers-contrast: more) { .fd-cartao, .fd-campo, .fd-btn { border-color: var(--ink); } }
+
+.fd-aqui { font: 600 1.062rem/1.4 Sora, sans-serif; color: var(--ink); border-left: 4px solid var(--s1); padding-left: 12px; }
+.fd-lembrete { border-color: var(--aten); }
+.fd-lembrete-ok { border-color: var(--bom); }
+.fd-motivo { margin: 0; padding-left: 12px; border-left: 3px solid var(--aten); }
+.fd-sempre { display: grid; gap: 6px; justify-items: start; border-top: 1px solid var(--grade); padding-top: 10px; }
+.fd-lista { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.fd-form { display: grid; gap: 8px; }
+.fd-forca { display: grid; gap: 4px; font-size: 0.875rem; color: var(--ink2); min-height: 1.4em; }
+.fd-forca-barra { display: block; height: 6px; border-radius: 3px; background: var(--grade); position: relative; overflow: hidden; }
+.fd-forca-barra::after { content: ""; position: absolute; inset: 0; width: 0; background: var(--perigo); border-radius: 3px; }
+.fd-forca-barra[data-nivel="1"]::after { width: 33%; background: var(--perigo); }
+.fd-forca-barra[data-nivel="2"]::after { width: 66%; background: var(--aten); }
+.fd-forca-barra[data-nivel="3"]::after { width: 100%; background: var(--bom); }
+.fd-opcao { display: grid; gap: 4px; justify-items: start; padding: 6px 0; }
+.fd label.fd-btn-label { display: inline-flex; margin: 0; font-size: 1rem; }
+.fd-opcao:focus-within .fd-btn-label { outline: 2px solid var(--s1); outline-offset: 3px; }
+.fd-zona { border-color: var(--perigo); }

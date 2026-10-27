@@ -1,0 +1,9 @@
+{
+  "nome": "Links de Pagamento",
+  "icone": "/marca/icone-512.png",
+  "logo": "/marca/logo-1550x450.png",
+  "fundo": "#FFFFFF",
+  "botao": "#111827",
+  "bordas": "rectangular",
+  "_doc": "Marca do checkout (Stripe branding_settings). Troque o nome, as cores e os dois PNGs pelos do seu negócio: ícone quadrado (mínimo 128x128, aqui 512x512) e logo (aqui 1550x450), os dois abaixo de 512 KB como o Stripe exige. Trocou um arquivo? O Worker sobe o novo sozinho (o id no Stripe é guardado pelo sha256 do arquivo)."
+}

@@ -1,0 +1,106 @@
+{
+  "id": "/",
+  "name": "Fitrich: finanças e shape",
+  "short_name": "Fitrich",
+  "description": "Finanças e shape num app só. Funciona sem internet e seus dados ficam no aparelho.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#1A1A19",
+  "theme_color": "#1A1A19",
+  "categories": [
+    "finance",
+    "health",
+    "lifestyle"
+  ],
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-monochrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "monochrome"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Lançar gasto",
+      "short_name": "Lançar",
+      "description": "Abre o Fitrich direto no lançamento de um gasto",
+      "url": "/#/lancar",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Registrar treino",
+      "short_name": "Treino",
+      "description": "Abre o Fitrich na tela de peso e treinos",
+      "url": "/#/shape",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/pt-financas.png",
+      "sizes": "780x1688",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "financas"
+    },
+    {
+      "src": "/screenshots/pt-hoje.png",
+      "sizes": "780x1688",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "hoje"
+    },
+    {
+      "src": "/screenshots/pt-metas.png",
+      "sizes": "780x1688",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "metas"
+    }
+  ]
+}

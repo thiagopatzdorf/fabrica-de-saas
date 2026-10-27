@@ -1,0 +1,17 @@
+{
+  "name": "fitrich",
+  "version": "1.0.0",
+  "description": "Fitrich: finanças pessoais e treino/nutrição local-first (PWA, JS puro, sem backend).",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.0.0" },
+  "scripts": {
+    "serve": "node scripts/servir.mjs",
+    "build": "python3 scripts/fitrich_build.py && python3 scripts/fitrich_plataforma.py build",
+    "test": "npm run test:unit && npm run test:py",
+    "test:unit": "node --test tests/unit/*.test.mjs",
+    "test:py": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests/py -t tests/py -p \"test_*.py\"",
+    "test:ui": "node tests/ui/shell.navegador.mjs"
+  }
+}

@@ -1,0 +1,36 @@
+/* Tela Nutrição. Tokens do shell (--sup, --ink, --grade, --s1…); nada de cor fixa além do fallback do verde-água. */
+.tela-nutricao .segmentos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin: 0 0 16px; }
+.tela-nutricao .segmentos button { width: 100%; padding: 8px 4px; min-width: 0; }
+.tela-nutricao .desfazer { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; border: 1px solid var(--grade); border-radius: 12px; padding: 8px 12px; margin: 0 0 12px; background: var(--sup2); }
+.tela-nutricao .desfazer button { width: auto; }
+.tela-nutricao .heroi .botoes { margin-top: 4px; }
+.tela-nutricao .macros { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.tela-nutricao .macro { display: grid; gap: 6px; min-width: 0; }
+.tela-nutricao .macro-topo { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.tela-nutricao .macro-topo b { font-variant-numeric: tabular-nums; }
+.tela-nutricao .chips-linha { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 12px; }
+.tela-nutricao .chips-linha button { width: auto; max-width: 100%; text-align: left; overflow-wrap: anywhere; }
+.tela-nutricao .chip-acao { border-color: var(--s1); }
+.tela-nutricao .rot-peq { margin: 10px 0 4px; color: var(--ink2); font-size: 0.8125rem; letter-spacing: .04em; text-transform: uppercase; }
+.tela-nutricao .achados li { display: block; padding: 4px 0; }
+.tela-nutricao .achado { width: 100%; justify-content: flex-start; text-align: left; }
+.tela-nutricao .achado .item { display: grid; min-width: 0; }
+.tela-nutricao .achado .item span { overflow-wrap: anywhere; }
+.tela-nutricao .quantidade { border: 1px solid var(--s1); border-radius: 14px; padding: 14px; margin: 8px 0 12px; background: var(--sup2); }
+.tela-nutricao .quantidade[hidden] { display: none; }
+.tela-nutricao .quantidade h3 { margin-top: 0; overflow-wrap: anywhere; }
+.tela-nutricao .grade-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.tela-nutricao .previa { margin: 10px 0 0; font-variant-numeric: tabular-nums; font-weight: 600; overflow-wrap: anywhere; }
+.tela-nutricao .salvar-nut { min-width: 140px; }
+.tela-nutricao .bloco h3 small { color: var(--ink2); font-weight: 400; }
+.tela-nutricao .lista .acoes { grid-column: 1 / -1; }
+.tela-nutricao .lista .item span { overflow-wrap: anywhere; }
+.tela-nutricao .segmentos + .cartao, .tela-nutricao .desfazer + .segmentos { margin-top: 0; }
+.tela-nutricao .gran-peq { font: 700 1.5rem/1.2 Sora, system-ui, sans-serif; margin: 0 0 8px; }
+.tela-nutricao .alertas { display: grid; gap: 8px; margin-top: 8px; }
+.tela-nutricao .formula { border: 1px solid var(--grade); border-radius: 16px; padding: 4px 18px; margin: 0 0 16px; background: var(--sup); }
+.tela-nutricao .formula summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; font-weight: 600; }
+.tela-nutricao .formula-corpo p { margin: 8px 0; color: var(--ink2); }
+.tela-nutricao .formula-corpo b { color: var(--ink); }
+@media (max-width: 420px) { .tela-nutricao .segmentos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { .tela-nutricao * { transition: none !important; animation: none !important; } }

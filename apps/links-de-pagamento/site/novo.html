@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Novo link · Links de Pagamento</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="topo"><a class="marca" href="/"><img src="/favicon.svg" alt="" width="28" height="28">Links de Pagamento</a></header>
+  <main>
+    <h1>Novo link de pagamento</h1>
+    <section class="painel" id="acesso" hidden>
+      <h2>Chave de acesso</h2>
+      <p class="sub">Cole uma vez. Fica só neste aparelho.</p>
+      <form class="form" id="f-token"><label class="campo">Chave de acesso<input id="token" type="password" autocomplete="off" required></label><button class="botao" type="submit">Guardar</button></form>
+    </section>
+    <section class="painel" id="criar" hidden>
+      <form class="form" id="f-link">
+        <label class="campo">O que a pessoa está pagando<input id="descricao" required minlength="3" maxlength="120" placeholder="Site institucional, sinal de 50%"></label>
+        <label class="campo">Tipo
+          <select id="tipo"><option value="fixo">Valor fixo</option><option value="livre">Valor livre (a pessoa digita)</option><option value="month">Mensal</option><option value="year">Anual</option></select></label>
+        <label class="campo" id="l-valor">Valor em reais<input id="valor" inputmode="decimal" placeholder="150,00"></label>
+        <label class="campo" id="l-minimo" hidden>Valor mínimo em reais<input id="minimo" inputmode="decimal" placeholder="10,00"></label>
+        <p class="erro" id="erro" role="alert"></p>
+        <button class="botao" type="submit">Criar link</button>
+      </form>
+      <div class="resultado-link" id="resultado" hidden>
+        <p class="ok-msg">Link criado. É este que você manda:</p>
+        <code id="url"></code>
+        <div class="acoes"><button class="botao" type="button" id="copiar">Copiar link</button><button class="botao sec" type="button" id="whats">Mandar no WhatsApp</button></div>
+      </div>
+    </section>
+    <section id="recentes" hidden><h2>Pagamentos recentes</h2><ul class="lista" id="lista"></ul></section>
+  </main>
+</div>
+<script src="/novo.js" type="module"></script>
+</body>
+</html>

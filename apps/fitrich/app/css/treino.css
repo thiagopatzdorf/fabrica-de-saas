@@ -1,0 +1,106 @@
+/* Tela Treino. Mobile-first: alvos ≥ 44 px (56 px no que se toca com o polegar durante a série), campo de número
+   com − e +, nada depende só de cor (estado = ícone + texto). Tokens vêm do shell e de _telas.css. */
+.tela-treino { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; }
+.tela-treino > * { min-width: 0; }
+.tela-treino .cartao { margin: 0 0 14px; }
+.treino-abas { display: flex; gap: 6px; overflow-x: auto; padding: 2px 0 10px; margin: 0 -2px; scrollbar-width: thin; }
+.treino-aba { flex: none; min-height: 44px; padding: 0 16px; border-radius: 999px; background: transparent; color: var(--ink); border: 1px solid var(--eixo); font-weight: 600; }
+.treino-aba[aria-current="page"] { background: var(--ink); color: var(--sup); border-color: var(--ink); }
+.treino-aviso { margin: 8px 0 24px; font-size: 0.8125rem; color: var(--mud); }
+button.grande { min-height: 56px; padding: 0 22px; font-size: 1.125rem; border-radius: 14px; flex: 1 1 220px; }
+.treino-hoje-nome { font: 700 clamp(1.5rem, 7vw, 2rem)/1.15 Sora, system-ui, sans-serif; margin: 0 0 4px; overflow-wrap: anywhere; }
+.treino-previa { list-style: none; margin: 8px 0; padding: 0; display: grid; gap: 2px; }
+.treino-previa li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--grade); }
+.treino-previa li span { min-width: 0; overflow-wrap: anywhere; }
+.treino-previa small { color: var(--ink2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+/* sessão ao vivo */
+.treino-exs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 12px; scroll-snap-type: x proximity; }
+.treino-ex-chip { flex: none; display: grid; gap: 0; text-align: left; min-height: 56px; scroll-snap-align: start; max-width: 70vw; }
+.treino-ex-chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 60vw; }
+.treino-ex-chip small { font-size: 0.75rem; font-weight: 500; opacity: .85; }
+.chip { min-height: 44px; min-width: 44px; padding: 0 14px; border-radius: 999px; background: transparent; color: var(--ink); border: 1px solid var(--eixo); font-weight: 600; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--sup); border-color: var(--ink); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.treino-ex-cab h3 { font: 700 1.25rem/1.2 Sora, system-ui, sans-serif; margin: 0 0 4px; grid-column: auto; overflow-wrap: anywhere; }
+.treino-ultima { margin: 10px 0 4px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.treino-sugestao { margin: 4px 0 10px; }
+.treino-sugestao .estado { align-items: flex-start; }
+.treino-series { list-style: none; margin: 10px 0; padding: 0; display: grid; gap: 4px; counter-reset: s; }
+.treino-series li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--grade); font-variant-numeric: tabular-nums; font-size: 1.125rem; }
+.treino-serie-txt { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 6px; }
+.treino-serie-txt small { color: var(--ink2); font-size: 0.875rem; }
+.tag { font-style: normal; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--eixo); border-radius: 6px; padding: 1px 6px; color: var(--ink2); }
+.treino-recorde { margin: 8px 0; }
+.treino-form { display: grid; gap: 14px; margin-top: 14px; }
+.passo, .escolha { display: grid; gap: 4px; min-width: 0; }
+.passo-rot { color: var(--ink2); font-size: 0.875rem; font-weight: 600; }
+.passo-caixa { display: grid; grid-template-columns: 64px minmax(0, 1fr) 64px; gap: 8px; align-items: stretch; }
+.passo-btn { min-height: 60px; font-size: 1.875rem; line-height: 1; padding: 0; width: 100%; background: var(--sup2); color: var(--ink); border: 1px solid var(--eixo); border-radius: 14px; }
+.passo-input { min-height: 60px; text-align: center; font: 700 1.875rem Sora, system-ui, sans-serif; font-variant-numeric: tabular-nums; border-radius: 14px; padding: 0 4px; }
+.treino-form .botoes { margin-top: 0; }
+/* descanso */
+.relogio { display: grid; gap: 8px; border: 1px solid var(--grade); border-radius: 14px; padding: 12px 14px; background: var(--sup2); margin-top: 10px; }
+.relogio-parado { grid-template-columns: auto 1fr; align-items: center; }
+.relogio-rot { color: var(--ink2); font-size: 0.875rem; font-weight: 600; }
+.relogio-tempo { font: 700 clamp(2.5rem, 14vw, 3.5rem)/1 Sora, system-ui, sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.relogio-fim { text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 6px; }
+.relogio-barra { width: 100%; height: 10px; appearance: none; -webkit-appearance: none; border: 0; border-radius: 5px; background: var(--grade); overflow: hidden; }
+.relogio-barra::-webkit-progress-bar { background: var(--grade); border-radius: 5px; }
+.relogio-barra::-webkit-progress-value { background: var(--s1); border-radius: 5px; }
+.relogio-barra::-moz-progress-bar { background: var(--s1); border-radius: 5px; }
+.relogio .botoes { margin-top: 0; }
+.treino-add-linha { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; margin-top: 8px; }
+.treino-add summary, .treino-fim .botoes { margin-top: 0; }
+.treino-fim .botoes { margin-top: 10px; }
+/* sessões recentes */
+.treino-sessoes li { display: block; }
+.treino-sessoes summary { min-height: 56px; }
+.treino-sessoes .item small { color: var(--ink2); display: block; }
+.treino-detalhe { list-style: none; margin: 4px 0 8px; padding: 0; display: grid; gap: 6px; font-size: 0.875rem; }
+.treino-detalhe li { display: grid; grid-template-columns: 1fr; gap: 0; padding: 4px 0; border-bottom: 1px solid var(--grade); }
+.treino-detalhe span { color: var(--ink2); overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+/* rotinas */
+.treino-rotina { border: 1px solid var(--grade); border-radius: 14px; padding: 12px 14px; margin: 0 0 10px; background: var(--sup); }
+.treino-rotina-cab { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.treino-rotina .item { display: grid; min-width: 0; } .treino-rotina .item small { color: var(--ink2); }
+.treino-editor { display: grid; gap: 12px; margin-top: 12px; }
+.treino-itens { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.treino-item { border-top: 1px solid var(--grade); padding-top: 10px; display: grid; gap: 8px; }
+.treino-item-nome { display: grid; } .treino-item-nome small { color: var(--ink2); } .treino-item-nome b { overflow-wrap: anywhere; }
+.treino-item-campos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.mini-campo { display: grid; gap: 2px; font-size: 0.8125rem; color: var(--ink2); min-width: 0; }
+.mini { text-align: center; font-variant-numeric: tabular-nums; padding: 0 4px; }
+.treino-item-acoes { display: flex; gap: 8px; flex-wrap: wrap; }
+.treino-nova { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: end; margin-top: 12px; }
+.treino-prog { border: 1px solid var(--grade); border-radius: 14px; padding: 14px; display: grid; gap: 4px; align-content: start; }
+.treino-prog h3 { margin: 0; grid-column: auto; } .treino-prog p { margin: 0; }
+.treino-prog button { justify-self: start; margin-top: 6px; }
+.treino-volplano h3 { grid-column: auto; }
+/* progresso */
+.treino-semana-nav { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+.treino-semana-rot { font-weight: 600; font-variant-numeric: tabular-nums; }
+.treino-tabela-vol td, .treino-tabela-vol th, .treino-recordes td, .treino-recordes th { white-space: normal; vertical-align: middle; }
+.treino-tabela-vol th[scope=row] { display: grid; gap: 4px; min-width: 110px; }
+.treino-tabela-vol td.num { text-align: right; }
+.barra-vol { width: 100%; min-width: 60px; height: 10px; appearance: none; -webkit-appearance: none; border: 0; border-radius: 5px; background: var(--grade); overflow: hidden; }
+.barra-vol::-webkit-progress-bar { background: var(--grade); border-radius: 5px; }
+.barra-vol::-webkit-progress-value { background: var(--s1b); border-radius: 5px; }
+.barra-vol::-moz-progress-bar { background: var(--s1b); border-radius: 5px; }
+.barra-vol.na-faixa::-webkit-progress-value { background: var(--s3); } .barra-vol.na-faixa::-moz-progress-bar { background: var(--s3); }
+.treino-platos { margin: 6px 0; }
+.treino-platos li { display: block; } .treino-platos .item { display: grid; } .treino-platos small { color: var(--ink2); }
+/* cardio e biblioteca */
+td.num { text-align: right; }
+.treino-filtros { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 10px; }
+.treino-filtros .campo { grid-column: 1 / -1; }
+.treino-bib li { display: block; } .treino-bib summary { min-height: 56px; } .treino-bib .item { display: grid; } .treino-bib .item small { color: var(--ink2); }
+.tela-treino .lista li span { overflow-wrap: anywhere; }
+.tela-treino .lista .item small { display: block; }
+.tela-treino .estado { align-items: flex-start; }
+@media (min-width: 768px) {
+  .treino-vivo-cab { display: grid; grid-template-columns: 1fr minmax(260px, 340px); gap: 4px 20px; align-items: start; }
+  .treino-vivo-cab h2 { grid-column: 1; margin: 0; } .treino-vivo-cab > p { grid-column: 1; } .treino-vivo-cab .relogio { grid-column: 2; grid-row: 1 / span 2; margin-top: 0; }
+  .treino-form { grid-template-columns: repeat(2, minmax(0, 1fr)); } .treino-form .escolha, .treino-form .campo-check, .treino-form .botoes { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: no-preference) { .treino-aba, .chip { transition: background .15s, color .15s; } }
+@media (prefers-contrast: more) { .relogio, .treino-rotina, .treino-prog { border-color: var(--ink); } }

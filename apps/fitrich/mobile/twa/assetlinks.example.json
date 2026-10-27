@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.fitrich",
+      "sha256_cert_fingerprints": [
+        "SUBSTITUA:PELA:IMPRESSAO:SHA-256:DA:CHAVE:DE:ASSINATURA:DO:APP:NO:PLAY:CONSOLE",
+        "SUBSTITUA:PELA:IMPRESSAO:SHA-256:DA:CHAVE:DE:UPLOAD:SE:DIFERENTE"
+      ]
+    }
+  }
+]

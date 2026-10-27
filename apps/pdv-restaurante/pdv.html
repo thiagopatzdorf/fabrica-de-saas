@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Nada inline. O PDV não fala com servidor nenhum: connect-src 'none' prova que o que se digita fica no aparelho. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>PDV Restaurante</title>
+<meta name="description" content="PDV de restaurante open source: mesas, comandas, balcão, delivery, cozinha, caixa, divisão de conta e prévia de NFC-e. Roda no navegador.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:,">
+<script src="js/tema.js"></script>
+<link rel="stylesheet" href="css/pdv.css">
+<script type="module" src="js/pdv.js"></script>
+</head>
+<body class="pdv">
+<header class="topo">
+  <a class="marca" href="index.html"><span class="sigla" aria-hidden="true">PDV</span><span>PDV Restaurante</span></a>
+  <span class="selo" id="selo-demo">Os dados ficam só neste navegador</span>
+  <span class="caixa-st" id="caixa-st" aria-live="polite">Caixa fechado</span>
+  <button class="ib tema" id="tema" type="button" aria-label="Usar tema claro" aria-pressed="false">
+    <svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>
+    <svg class="lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+  </button>
+</header>
+
+<nav class="abas" role="tablist" aria-label="Áreas do PDV">
+  <button role="tab" id="t-salao" aria-controls="p-salao" aria-selected="true" data-aba="salao">Salão</button>
+  <button role="tab" id="t-balcao" aria-controls="p-balcao" aria-selected="false" data-aba="balcao" tabindex="-1">Balcão e delivery</button>
+  <button role="tab" id="t-cozinha" aria-controls="p-cozinha" aria-selected="false" data-aba="cozinha" tabindex="-1">Cozinha <span class="cont" id="cont-cozinha"></span></button>
+  <button role="tab" id="t-caixa" aria-controls="p-caixa" aria-selected="false" data-aba="caixa" tabindex="-1">Caixa</button>
+  <button role="tab" id="t-cardapio" aria-controls="p-cardapio" aria-selected="false" data-aba="cardapio" tabindex="-1">Cardápio</button>
+  <button role="tab" id="t-relatorio" aria-controls="p-relatorio" aria-selected="false" data-aba="relatorio" tabindex="-1">Relatórios</button>
+  <button role="tab" id="t-ajustes" aria-controls="p-ajustes" aria-selected="false" data-aba="ajustes" tabindex="-1">Ajustes</button>
+</nav>
+
+<main id="conteudo">
+<noscript><p class="aviso-js">O PDV precisa de JavaScript ligado.</p></noscript>
+
+<section role="tabpanel" id="p-salao" aria-labelledby="t-salao">
+  <h1>Salão</h1>
+  <p class="dica">Toque numa mesa para abrir a comanda. Mesa ocupada mostra o valor parcial.</p>
+  <div class="mesas" id="mesas"></div>
+</section>
+
+<section role="tabpanel" id="p-balcao" aria-labelledby="t-balcao" hidden>
+  <h2>Balcão e delivery</h2>
+  <div class="acoes-l">
+    <button class="bt p" type="button" data-acao="nova-balcao">Novo pedido de balcão</button>
+    <button class="bt" type="button" data-acao="nova-delivery">Novo delivery</button>
+  </div>
+  <h3>Pedidos abertos</h3>
+  <ul class="lista-pedidos" id="pedidos-abertos"></ul>
+</section>
+
+<section role="tabpanel" id="p-cozinha" aria-labelledby="t-cozinha" hidden>
+  <h2>Cozinha</h2>
+  <p class="dica">O que foi mandado das comandas aparece aqui, na ordem de chegada. Bebidas de geladeira não vêm para a cozinha.</p>
+  <div class="kds" id="kds"></div>
+</section>
+
+<section role="tabpanel" id="p-caixa" aria-labelledby="t-caixa" hidden>
+  <h2>Caixa</h2>
+  <div id="caixa"></div>
+</section>
+
+<section role="tabpanel" id="p-cardapio" aria-labelledby="t-cardapio" hidden>
+  <h2>Cardápio</h2>
+  <p class="dica">NCM e CFOP vão para a nota fiscal. Os do exemplo são ilustrativos: quem define os do seu restaurante é o seu contador.</p>
+  <form class="form-item" id="form-item" novalidate>
+    <label>Nome<input name="nome" required maxlength="80" autocomplete="off"></label>
+    <label>Categoria<input name="cat" required maxlength="40" list="cats" autocomplete="off"></label>
+    <label>Preço<input name="preco" required inputmode="decimal" placeholder="0,00" autocomplete="off"></label>
+    <label>NCM<input name="ncm" inputmode="numeric" maxlength="8" placeholder="21069090" autocomplete="off"></label>
+    <label>CFOP<input name="cfop" inputmode="numeric" maxlength="4" placeholder="5102" autocomplete="off"></label>
+    <label class="chk"><input type="checkbox" name="cozinha" checked> Vai para a cozinha</label>
+    <button class="bt p" type="submit">Adicionar item</button>
+    <p class="erro" id="erro-item" role="alert"></p>
+  </form>
+  <datalist id="cats"></datalist>
+  <div class="tabela-rola"><table class="tabela" id="tabela-cardapio"></table></div>
+</section>
+
+<section role="tabpanel" id="p-relatorio" aria-labelledby="t-relatorio" hidden>
+  <h2>Relatórios</h2>
+  <div id="relatorio"></div>
+</section>
+
+<section role="tabpanel" id="p-ajustes" aria-labelledby="t-ajustes" hidden>
+  <h2>Ajustes</h2>
+  <form class="form-ajustes" id="form-ajustes" novalidate>
+    <label>Nome do restaurante<input name="nome" maxlength="60" autocomplete="off"></label>
+    <label>CNPJ<input name="cnpj" inputmode="numeric" maxlength="18" autocomplete="off"></label>
+    <label>Inscrição estadual<input name="ie" maxlength="20" autocomplete="off"></label>
+    <label>UF<select name="uf" id="sel-uf"></select></label>
+    <label>Endereço<input name="endereco" maxlength="120" autocomplete="off"></label>
+    <label>Mesas no salão<input name="mesas" type="number" min="1" max="99"></label>
+    <label>Taxa de serviço (%)<input name="servicoPct" type="number" min="0" max="20" step="1"></label>
+    <label>Tributos aproximados (%)<input name="tributosPct" type="number" min="0" max="60" step="0.01"></label>
+    <button class="bt p" type="submit">Salvar ajustes</button>
+    <p class="erro" id="erro-ajustes" role="alert"></p>
+  </form>
+  <div class="zona">
+    <h3>Seus dados</h3>
+    <p>Tudo o que você fez aqui está guardado neste navegador. Baixe uma cópia ou comece do zero.</p>
+    <div class="acoes-l">
+      <button class="bt" type="button" data-acao="exportar">Baixar cópia (JSON)</button>
+      <button class="bt perigo" type="button" data-acao="zerar">Apagar tudo e recomeçar</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<dialog id="dlg-comanda" class="dlg grande" aria-labelledby="cmd-titulo">
+  <div class="cmd">
+    <div class="cmd-menu">
+      <input type="search" id="busca" placeholder="Buscar no cardápio" aria-label="Buscar no cardápio" autocomplete="off">
+      <div class="chips" id="chips" role="group" aria-label="Categorias"></div>
+      <div class="itens" id="itens-menu"></div>
+    </div>
+    <div class="cmd-conta">
+      <div class="cmd-topo">
+        <h2 id="cmd-titulo">Comanda</h2>
+        <button class="ib fechar" type="button" data-acao="fechar-dlg" aria-label="Fechar comanda">×</button>
+      </div>
+      <div id="cmd-cliente"></div>
+      <ul class="linhas" id="linhas"></ul>
+      <div class="ajustes-conta">
+        <label class="chk"><input type="checkbox" id="chk-servico"> Taxa de serviço</label>
+        <label>Desconto<input id="inp-desconto" inputmode="decimal" placeholder="0,00 ou 10%" autocomplete="off"></label>
+      </div>
+      <dl class="tot" id="cmd-totais"></dl>
+      <div class="acoes-l">
+        <button class="bt" type="button" data-acao="cozinha">Mandar para a cozinha</button>
+        <button class="bt p" type="button" data-acao="pagar">Fechar conta</button>
+        <button class="bt perigo" type="button" data-acao="cancelar-comanda">Cancelar</button>
+      </div>
+      <p class="erro" id="erro-comanda" role="alert"></p>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="dlg-pagar" class="dlg" aria-labelledby="pg-titulo">
+  <div class="cmd-topo"><h2 id="pg-titulo">Pagamento</h2><button class="ib fechar" type="button" data-acao="fechar-dlg" aria-label="Fechar pagamento">×</button></div>
+  <dl class="tot" id="pg-resumo"></dl>
+  <div class="formas" id="formas" role="group" aria-label="Forma de pagamento"></div>
+  <div class="linha-pg">
+    <label>Valor<input id="pg-valor" inputmode="decimal" autocomplete="off"></label>
+    <button class="bt" type="button" data-acao="add-pg">Lançar</button>
+  </div>
+  <div class="dividir">
+    <label>Dividir por<input id="pg-dividir" type="number" min="1" max="30" value="1"></label>
+    <span id="pg-partes" aria-live="polite"></span>
+  </div>
+  <ul class="pgs" id="pg-lista"></ul>
+  <fieldset class="nota">
+    <legend>Nota fiscal</legend>
+    <label class="chk"><input type="checkbox" id="pg-nfce" checked> Emitir NFC-e</label>
+    <label>CPF ou CNPJ na nota (opcional)<input id="pg-doc" inputmode="numeric" maxlength="18" autocomplete="off"></label>
+  </fieldset>
+  <button class="bt p largo" type="button" data-acao="finalizar" id="btn-finalizar">Finalizar venda</button>
+  <p class="erro" id="erro-pg" role="alert"></p>
+</dialog>
+
+<dialog id="dlg-cupom" class="dlg" aria-labelledby="cp-titulo">
+  <div class="cmd-topo"><h2 id="cp-titulo">Venda finalizada</h2><button class="ib fechar" type="button" data-acao="fechar-dlg" aria-label="Fechar">×</button></div>
+  <div id="impressao" class="cupom"></div>
+  <div class="acoes-l">
+    <button class="bt p" type="button" data-acao="imprimir">Imprimir</button>
+    <button class="bt" type="button" data-acao="fechar-dlg">Nova venda</button>
+  </div>
+</dialog>
+
+<dialog id="dlg-confirmar" class="dlg" aria-labelledby="cf-titulo">
+  <h2 id="cf-titulo">Tem certeza?</h2>
+  <p id="cf-texto"></p>
+  <div class="acoes-l">
+    <button class="bt perigo" type="button" id="cf-sim">Sim</button>
+    <button class="bt" type="button" data-acao="fechar-dlg">Não</button>
+  </div>
+</dialog>
+</body>
+</html>

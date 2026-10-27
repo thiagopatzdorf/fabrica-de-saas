@@ -1,0 +1,44 @@
+html, body { margin:0; padding:0; background:#000107; color:#F6FDFF; font-family:'Inter', system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+* { box-sizing:border-box; }
+a { color:#4A9BFF; text-decoration:none; }
+a:hover { color:#8CBEFF; }
+::selection { background:rgba(11,113,245,.35); }
+:focus-visible { outline:2px solid #0B71F5; outline-offset:2px; }
+::-webkit-scrollbar { width:9px; height:9px; }
+::-webkit-scrollbar-thumb { background:#232A3A; border-radius:8px; }
+::-webkit-scrollbar-track { background:transparent; }
+input, textarea, select, button { font-family:inherit; }
+button { cursor:pointer; }
+
+/* Adaptacao mobile (2026-09-07) -- o app nao tinha nenhum @media antes disso.
+   O layout eh todo estilo inline no HTML gerado por app.js, entao aqui
+   precisa de !important pra vencer o inline em telas estreitas. */
+@media (max-width: 768px) {
+  .app-shell { flex-direction: column !important; }
+  .app-sidebar {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 76px !important;
+    position: relative !important;
+    top: auto !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 8px 12px !important;
+    gap: 14px !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(246,253,255,.07) !important;
+  }
+  .app-sidebar > div, .app-sidebar > nav {
+    flex-direction: row !important;
+    flex: none !important;
+    margin-top: 0 !important;
+  }
+  .app-header {
+    flex-wrap: wrap !important;
+    padding: 16px !important;
+    gap: 10px !important;
+  }
+  .modal-overlay { padding: 12px !important; }
+}

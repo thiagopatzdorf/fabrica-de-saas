@@ -1,0 +1,12 @@
+node_modules/
+# Gerado por `npm run montar` a partir de app/ (nunca editado à mão).
+www/
+# Projetos nativos: gerados por `cap add` na máquina de quem publica (Android Studio / Xcode).
+# Quem criar os projetos pela primeira vez e quiser versioná-los remove estas linhas.
+android/
+ios/
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+local.properties

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Para agentes · Loja Mínima</title>
+<meta name="description" content="Como um agente de IA descobre, busca e compra na Loja Mínima: três chamadas HTTP, preços em centavos e pedido idempotente.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo topo-vitrine"><a class="marca" href="/">LOJA<small>MÍNIMA</small></a><span class="espaco"></span><a class="link" href="/">Voltar à loja</a></header>
+<div class="meandro" aria-hidden="true"></div>
+<main class="doc">
+  <h1>Compre como um agente</h1>
+  <p>Três chamadas HTTP, sem conta e sem SDK. Valores sempre em <strong>centavos inteiros</strong>, moeda BRL. O mesmo texto em formato de máquina está em <a class="link" href="llms.txt">/llms.txt</a> e em <a class="link" href="api/agente">/api/agente</a>.</p>
+
+  <h2>1. Descobrir</h2>
+  <pre class="codigo">curl -s https://SEU-DOMINIO/api/agente</pre>
+  <p>Devolve campos, limites e como pagar. Se este guia e o JSON divergirem, vale o JSON.</p>
+
+  <h2>2. Buscar</h2>
+  <pre class="codigo">curl -s "https://SEU-DOMINIO/api/agente/catalogo?q=camiseta&amp;limite=5"</pre>
+  <p>Resposta: <code>produtos[]</code> com <code>id</code>, <code>nome</code>, <code>preco_centavos</code>, <code>variacoes</code>, <code>foto</code>, e <code>depois</code> (cursor; passe de volta em <code>?depois=</code> para a próxima página, <code>null</code> no fim). Só aparece o que está à venda.</p>
+
+  <h2>3. Comprar</h2>
+  <pre class="codigo">curl -s -X POST https://SEU-DOMINIO/api/agente/pedidos \
+  -H "content-type: application/json" \
+  -H "Idempotency-Key: pedido-0001" \
+  -H "X-Agent-Name: meu-agente" \
+  -d '{
+    "itens": [{"id": "ID_DO_PRODUTO", "variacao": "", "qtd": 1}],
+    "cliente": {"nome": "Maria Silva", "whatsapp": "11999990000", "email": "maria@exemplo.com"},
+    "entrega": {"cep": "01310100", "rua": "Av. Paulista", "numero": "1000", "bairro": "Bela Vista", "cidade": "São Paulo", "uf": "SP"}
+  }'</pre>
+  <p>Devolve <code>total_centavos</code>, o link de pagamento em <code>pagamento.url</code> e o endereço para acompanhar. Repetir a chamada com a mesma <code>Idempotency-Key</code> devolve o mesmo pedido: se a rede cair, tente de novo sem medo de cobrar duas vezes.</p>
+
+  <h2>4. Pagar e acompanhar</h2>
+  <p>Hoje quem paga é a <strong>pessoa que você representa</strong>, no link de pagamento devolvido. Entregue o link a ela. Para saber se foi pago:</p>
+  <pre class="codigo">curl -s https://SEU-DOMINIO/api/pedido/ID_DO_PEDIDO</pre>
+  <p>Estados: <code>aguardando_pagamento</code>, <code>pago</code>, <code>enviado</code>, <code>cancelado</code>. O pagamento autônomo (o agente pagar sozinho) não existe nesta loja: sempre há uma pessoa no link.</p>
+
+  <h2>Regras de boa vizinhança</h2>
+  <ul>
+    <li>Identifique-se com <code>X-Agent-Name</code>: aparece no pedido e ajuda a depurar.</li>
+    <li>Pagine com <code>depois</code> em vez de pedir tudo; o limite é 50 por chamada.</li>
+    <li>Não invente dados de entrega: o pedido vai para uma pessoa de verdade.</li>
+  </ul>
+</main>
+<footer class="rodape"><div class="meandro" aria-hidden="true"></div><p>Loja Mínima · <a href="/">Loja</a></p></footer>
+</body>
+</html>
