@@ -4,4 +4,4 @@ uvicorn==0.54.0
 # Upload multipart (documentos) exige este pacote.
 python-multipart>=0.0.20
 # Texto de PDF para a busca dentro dos documentos.
-pypdf==6.17.0
+pypdf==6.21.2
