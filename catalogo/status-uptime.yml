@@ -245,3 +245,13 @@ itens:
   - JavaScript
   open_core: false
   nota: Parado há tempos
+- repo: NikKurkov/sitewatcher
+  nome: SiteWatcher
+  alternativa_a:
+  - UptimeRobot
+  pt: Monitor de sites auto-hospedado com alertas de expiração de TLS e domínios e páginas públicas de status.
+  en: Self-hosted website monitor with TLS and domain expiry alerts and public status pages.
+  stack:
+  - Python
+  - Django
+  site: https://monitoring.kurkov.dev/demo
